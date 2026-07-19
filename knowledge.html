@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>知识图谱 · ChemAI 三草酸合铁酸钾制备实验</title>
+<style>
+:root{
+  --bg:#0a0e1a; --bg2:#111827; --card:#1a2235; --hover:#243049;
+  --emerald:#10b981; --teal:#2dd4bf; --purple:#a78bfa; --yellow:#fbbf24; --red:#f87171; --blue:#60a5fa;
+  --txt:#f1f5f9; --txt2:#94a3b8; --txt3:#64748b;
+  --border:rgba(148,163,184,.08); --border2:rgba(148,163,184,.15);
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{height:100%}
+body{
+  background:var(--bg); color:var(--txt); overflow:hidden;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,-apple-system,"Segoe UI",sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background:rgba(148,163,184,.22);border-radius:8px}
+::-webkit-scrollbar-track{background:transparent}
+
+/* ============ 顶部导航 ============ */
+.nav{
+  position:fixed;top:0;left:0;right:0;height:60px;z-index:80;
+  display:flex;align-items:center;gap:16px;padding:0 18px;
+  background:rgba(10,14,26,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border2);
+}
+.nav-logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo-icon{
+  width:36px;height:36px;border-radius:11px;flex-shrink:0;
+  background:linear-gradient(135deg,#10b981,#2dd4bf);
+  display:flex;align-items:center;justify-content:center;font-size:19px;
+  box-shadow:0 4px 16px rgba(16,185,129,.35);
+}
+.logo-text{display:flex;flex-direction:column;line-height:1.18}
+.logo-name{font-weight:700;font-size:16px;letter-spacing:.01em;
+  background:linear-gradient(90deg,#34d399,#2dd4bf);-webkit-background-clip:text;background-clip:text;color:transparent}
+.logo-sub{font-size:10.5px;color:var(--txt3);letter-spacing:.02em;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:3px;margin-left:auto;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-link{padding:7px 12px;border-radius:10px;font-size:13.5px;color:var(--txt2);white-space:nowrap;transition:all .18s}
+.nav-link:hover{color:var(--txt);background:var(--hover)}
+.nav-link.active{color:#6ee7b7;background:rgba(16,185,129,.13);box-shadow:inset 0 0 0 1px rgba(16,185,129,.35)}
+
+/* ============ 页面骨架 ============ */
+.page{padding-top:60px;height:100vh;display:flex;flex-direction:column}
+
+/* ============ 工具栏 ============ */
+.toolbar{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 16px;
+  padding:9px 16px;background:var(--bg2);border-bottom:1px solid var(--border2);
+  z-index:40;position:relative;
+}
+.tb-group{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.tb-label{font-size:11.5px;color:var(--txt3);font-weight:600;letter-spacing:.06em;flex-shrink:0}
+.tb-sep{width:1px;height:20px;background:var(--border2);flex-shrink:0}
+.search-wrap{position:relative;display:flex;align-items:center}
+.search-wrap .sicon{position:absolute;left:10px;font-size:13px;color:var(--txt3);pointer-events:none}
+#searchInput{
+  width:200px;padding:7px 30px 7px 30px;border-radius:11px;font-size:13px;color:var(--txt);
+  background:var(--card);border:1px solid var(--border2);outline:none;transition:all .18s;
+}
+#searchInput::placeholder{color:var(--txt3)}
+#searchInput:focus{border-color:rgba(16,185,129,.55);box-shadow:0 0 0 3px rgba(16,185,129,.12);width:230px}
+#searchCount{position:absolute;right:8px;font-size:11px;color:var(--emerald);display:none;font-weight:600}
+.fchip{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 11px;border-radius:999px;
+  font-size:12.5px;color:var(--txt3);background:var(--card);border:1px solid var(--border2);
+  cursor:pointer;user-select:none;transition:all .16s;white-space:nowrap;
+}
+.fchip input{display:none}
+.fchip .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0;opacity:.45;transition:opacity .16s}
+.fchip:hover{border-color:rgba(148,163,184,.35);color:var(--txt2)}
+.fchip.on{color:var(--txt);border-color:rgba(148,163,184,.3)}
+.fchip.on .dot{opacity:1;box-shadow:0 0 6px currentColor}
+.fchip:not(.on){background:rgba(26,34,53,.5)}
+.badge{
+  display:inline-flex;align-items:center;gap:6px;padding:5px 12px;border-radius:999px;
+  font-size:12px;color:var(--txt2);background:var(--card);border:1px solid var(--border);white-space:nowrap;
+}
+.badge b{color:var(--emerald);font-size:13px;font-weight:700}
+.badge.b-teal b{color:var(--teal)}
+.badge.b-purple b{color:var(--purple)}
+.legend-note{font-size:11px;color:var(--txt3)}
+
+/* ============ 图谱舞台 ============ */
+.stage{position:relative;flex:1;overflow:hidden;
+  background:radial-gradient(1200px 700px at 50% 42%,#101a30 0%,var(--bg) 62%)}
+#cv{position:absolute;inset:0;display:block;cursor:grab;touch-action:none}
+#cv.grabbing{cursor:grabbing}
+#cv.on-node{cursor:pointer}
+
+.zoom-ctrl{
+  position:absolute;left:14px;bottom:14px;z-index:20;display:flex;flex-direction:column;gap:6px;
+}
+.zoom-ctrl button{
+  width:36px;height:36px;border-radius:11px;border:1px solid var(--border2);
+  background:rgba(26,34,53,.9);color:var(--txt2);font-size:16px;transition:all .16s;
+  display:flex;align-items:center;justify-content:center;backdrop-filter:blur(6px);
+}
+.zoom-ctrl button:hover{background:var(--hover);color:var(--txt);border-color:rgba(148,163,184,.35)}
+.stage-hint{
+  position:absolute;right:14px;bottom:14px;z-index:20;font-size:11.5px;color:var(--txt3);
+  background:rgba(26,34,53,.75);border:1px solid var(--border);border-radius:10px;
+  padding:6px 12px;backdrop-filter:blur(6px);pointer-events:none;
+}
+#tooltip{
+  position:absolute;z-index:30;pointer-events:none;display:none;
+  background:rgba(17,24,39,.94);border:1px solid var(--border2);border-radius:10px;
+  padding:6px 11px;font-size:12.5px;box-shadow:0 8px 24px rgba(0,0,0,.45);max-width:260px;
+}
+#tooltip .tt-cat{font-size:11px;color:var(--txt3);margin-top:1px}
+
+/* ============ 右侧详情面板 ============ */
+.panel{
+  position:absolute;top:12px;right:12px;bottom:12px;width:402px;max-width:calc(100vw - 24px);
+  z-index:50;display:flex;flex-direction:column;
+  background:var(--card);border:1px solid var(--border2);border-radius:var(--radius);
+  box-shadow:0 18px 50px rgba(0,0,0,.5);
+  transform:translateX(calc(100% + 24px));transition:transform .32s cubic-bezier(.22,.9,.3,1);
+  overflow:hidden;
+}
+.panel.open{transform:translateX(0)}
+.panel-head{
+  padding:16px 18px 13px;border-bottom:1px solid var(--border);
+  background:linear-gradient(135deg,rgba(16,185,129,.1),rgba(45,212,191,.04));
+  position:relative;flex-shrink:0;
+}
+.panel-close{
+  position:absolute;top:12px;right:12px;width:28px;height:28px;border-radius:9px;
+  border:1px solid var(--border2);background:rgba(10,14,26,.4);color:var(--txt2);font-size:14px;
+  display:flex;align-items:center;justify-content:center;transition:all .15s;
+}
+.panel-close:hover{background:var(--hover);color:var(--txt)}
+.panel-title{font-size:18px;font-weight:700;line-height:1.35;padding-right:34px}
+.panel-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.tag{
+  display:inline-flex;align-items:center;gap:5px;padding:3px 10px;border-radius:999px;
+  font-size:11.5px;font-weight:600;border:1px solid transparent;
+}
+.tag .dot{width:7px;height:7px;border-radius:50%}
+.tag-lvl{background:rgba(96,165,250,.12);color:#93c5fd;border-color:rgba(96,165,250,.25)}
+.tag-diff{background:rgba(251,191,36,.1);color:#fcd34d;border-color:rgba(251,191,36,.25);letter-spacing:1px}
+.panel-body{flex:1;overflow-y:auto;padding:14px 18px 16px}
+.p-sec{margin-bottom:16px}
+.p-sec-title{
+  font-size:12px;font-weight:700;color:var(--txt3);letter-spacing:.08em;margin-bottom:7px;
+  display:flex;align-items:center;gap:6px;
+}
+.p-sec-title::before{content:"";width:3px;height:12px;border-radius:2px;background:linear-gradient(180deg,var(--emerald),var(--teal))}
+.p-text{font-size:13.5px;line-height:1.75;color:#cbd5e1}
+.p-conn{
+  font-size:13.5px;line-height:1.75;color:#a7f3d0;
+  background:rgba(16,185,129,.07);border:1px solid rgba(16,185,129,.18);
+  border-radius:12px;padding:10px 13px;
+}
+.rel-chips{display:flex;flex-wrap:wrap;gap:7px}
+.rel-chip{
+  padding:5px 12px;border-radius:999px;font-size:12.5px;color:var(--txt2);
+  background:var(--bg2);border:1px solid var(--border2);cursor:pointer;transition:all .15s;
+  display:inline-flex;align-items:center;gap:6px;
+}
+.rel-chip .dot{width:7px;height:7px;border-radius:50%}
+.rel-chip:hover{background:var(--hover);color:var(--txt);border-color:rgba(148,163,184,.35);transform:translateY(-1px)}
+
+/* 文献卡片 */
+.doc-card{
+  background:var(--bg2);border:1px solid var(--border);border-radius:13px;
+  padding:11px 13px;margin-bottom:9px;transition:all .16s;
+}
+.doc-card:hover{border-color:rgba(45,212,191,.3);background:#141d31}
+.doc-top{display:flex;align-items:flex-start;gap:8px}
+.doc-idx{
+  flex-shrink:0;min-width:26px;height:20px;padding:0 6px;border-radius:7px;
+  background:rgba(45,212,191,.13);color:#5eead4;font-size:11px;font-weight:700;
+  display:inline-flex;align-items:center;justify-content:center;margin-top:1px;
+}
+.doc-title{font-size:13px;font-weight:600;line-height:1.5;color:#e2e8f0;flex:1}
+.doc-meta{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0 0}
+.doc-chip{font-size:10.5px;padding:2px 8px;border-radius:999px;background:rgba(96,165,250,.1);color:#93c5fd;border:1px solid rgba(96,165,250,.18)}
+.doc-chip.up{background:rgba(167,139,250,.12);color:#c4b5fd;border-color:rgba(167,139,250,.25)}
+.doc-q{margin:8px 0 0;padding-left:2px}
+.doc-q li{font-size:12px;color:var(--txt2);line-height:1.6;list-style:none;display:flex;gap:6px;margin-top:3px}
+.doc-q li::before{content:"❓";font-size:10px;flex-shrink:0;margin-top:2px;opacity:.7}
+.doc-path{
+  margin-top:8px;font-size:10.5px;color:var(--txt3);word-break:break-all;line-height:1.5;
+  background:rgba(10,14,26,.55);border-radius:8px;padding:5px 8px;border:1px solid var(--border);
+  font-family:"JetBrains Mono","SF Mono",Consolas,monospace;
+}
+.doc-empty{
+  text-align:center;color:var(--txt3);font-size:12.5px;padding:22px 10px;
+  border:1px dashed rgba(148,163,184,.2);border-radius:12px;line-height:1.8;
+}
+.panel-foot{
+  flex-shrink:0;padding:12px 18px;border-top:1px solid var(--border);
+  background:rgba(17,24,39,.6);display:flex;gap:9px;
+}
+.btn-ai{
+  flex:1;display:flex;align-items:center;justify-content:center;gap:8px;
+  padding:11px 14px;border-radius:12px;font-size:14px;font-weight:700;color:#041812;
+  background:linear-gradient(135deg,#10b981,#2dd4bf);border:none;transition:all .18s;
+  box-shadow:0 6px 18px rgba(16,185,129,.28);
+}
+.btn-ai:hover{transform:translateY(-1px);box-shadow:0 9px 24px rgba(16,185,129,.4);filter:brightness(1.06)}
+
+/* ============ 覆盖层：加载 / 错误 ============ */
+.overlay{
+  position:fixed;inset:0;z-index:100;display:flex;align-items:center;justify-content:center;
+  background:rgba(10,14,26,.9);backdrop-filter:blur(8px);padding:20px;
+}
+.overlay[hidden]{display:none}
+.ov-card{
+  max-width:560px;width:100%;background:var(--card);border:1px solid var(--border2);
+  border-radius:20px;padding:30px 32px;text-align:center;box-shadow:0 24px 60px rgba(0,0,0,.5);
+}
+.ov-icon{font-size:42px;margin-bottom:12px}
+.ov-title{font-size:19px;font-weight:700;margin-bottom:10px}
+.ov-text{font-size:13.5px;color:var(--txt2);line-height:1.9;text-align:left}
+.ov-code{
+  display:block;margin:12px auto 0;padding:10px 14px;border-radius:10px;text-align:left;
+  background:#0a0e1a;border:1px solid var(--border2);color:#6ee7b7;font-size:12.5px;
+  font-family:"JetBrains Mono",Consolas,monospace;overflow-x:auto;white-space:nowrap;
+}
+.spinner{
+  width:44px;height:44px;margin:0 auto 16px;border-radius:50%;
+  border:3px solid rgba(16,185,129,.18);border-top-color:var(--emerald);
+  animation:spin .9s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+@media (max-width:900px){
+  .logo-sub{display:none}
+  #searchInput{width:150px}
+  #searchInput:focus{width:170px}
+  .stage-hint{display:none}
+}
+@media (max-width:640px){
+  .nav{padding:0 10px;gap:8px}
+  .nav-link{padding:6px 9px;font-size:12.5px}
+  .panel{top:8px;right:8px;bottom:8px;left:8px;width:auto;max-width:none}
+  .toolbar{gap:6px 10px;padding:8px 10px}
+}
+</style>
+</head>
+<body>
+<!-- ============ 顶部导航（全站统一） ============ -->
+<nav class="nav">
+  <a class="nav-logo" href="index.html" title="返回首页">
+    <span class="logo-icon">⚗</span>
+    <span class="logo-text">
+      <span class="logo-name">ChemAI</span>
+      <span class="logo-sub">K₃[Fe(C₂O₄)₃]·3H₂O 制备实验</span>
+    </span>
+  </a>
+  <div class="nav-links">
+    <a class="nav-link" href="assistant.html">AI助手</a>
+    <a class="nav-link active" href="knowledge.html">知识图谱</a>
+    <a class="nav-link" href="prep.html">课前预习</a>
+    <a class="nav-link" href="index.html#/videos">视频资源</a>
+    <a class="nav-link" href="index.html#/report">实验报告检测评估</a>
+    <a class="nav-link" href="index.html#/explore">科普探索</a>
+    <a class="nav-link" href="corpus.html">语料库</a>
+  </div>
+</nav>
+
+<div class="page">
+  <!-- ============ 工具栏 ============ -->
+  <div class="toolbar">
+    <div class="tb-group">
+      <span class="tb-label">搜索</span>
+      <div class="search-wrap">
+        <span class="sicon">🔍</span>
+        <input id="searchInput" type="text" placeholder="搜索知识点名称…" autocomplete="off"/>
+        <span id="searchCount"></span>
+      </div>
+    </div>
+    <div class="tb-sep"></div>
+    <div class="tb-group" id="catFilter">
+      <span class="tb-label">分类</span>
+      <!-- 分类复选 chips 由 JS 生成 -->
+    </div>
+    <div class="tb-sep"></div>
+    <div class="tb-group" id="lvlFilter">
+      <span class="tb-label">层级</span>
+      <!-- 层级复选 chips 由 JS 生成 -->
+    </div>
+    <div class="tb-sep"></div>
+    <div class="tb-group">
+      <span class="badge">知识点总数 <b id="statNodes">–</b></span>
+      <span class="badge b-teal">关联链接 <b id="statLinks">–</b></span>
+      <span class="badge b-purple">语料文献 <b id="statDocs">–</b></span>
+    </div>
+    <div class="tb-group" style="margin-left:auto">
+      <span class="tb-label">图例</span>
+      <span id="legendBox" style="display:flex;align-items:center;gap:7px;flex-wrap:wrap"></span>
+      <span class="legend-note">节点大小∝重要度 · 边色=知识方向</span>
+    </div>
+  </div>
+
+  <!-- ============ 图谱舞台 ============ -->
+  <div class="stage" id="stage">
+    <canvas id="cv"></canvas>
+    <div id="tooltip"></div>
+    <div class="zoom-ctrl">
+      <button id="zoomIn" title="放大">＋</button>
+      <button id="zoomOut" title="缩小">－</button>
+      <button id="zoomReset" title="复位视图（双击画布同效）">⟳</button>
+    </div>
+    <div class="stage-hint">🖱 拖拽节点 · 滚轮缩放 · 拖空白平移 · 双击复位 · 点击节点查看详情</div>
+
+    <!-- ============ 节点详情面板 ============ -->
+    <aside class="panel" id="panel" aria-hidden="true">
+      <div class="panel-head">
+        <button class="panel-close" id="panelClose" title="关闭">✕</button>
+        <div class="panel-title" id="pName">–</div>
+        <div class="panel-tags" id="pTags"></div>
+      </div>
+      <div class="panel-body">
+        <div class="p-sec">
+          <div class="p-sec-title">知识点描述</div>
+          <div class="p-text" id="pDesc">–</div>
+        </div>
+        <div class="p-sec">
+          <div class="p-sec-title">与本实验的联系</div>
+          <div class="p-conn" id="pConn">–</div>
+        </div>
+        <div class="p-sec">
+          <div class="p-sec-title">相关节点</div>
+          <div class="rel-chips" id="pRel"></div>
+        </div>
+        <div class="p-sec">
+          <div class="p-sec-title">关联语料文献（Top 5）</div>
+          <div id="pDocs"></div>
+        </div>
+      </div>
+      <div class="panel-foot">
+        <a class="btn-ai" id="pAskAI" href="assistant.html" target="_self">🤖 问 AI 助手</a>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- ============ 加载中 ============ -->
+<div class="overlay" id="loadingOv">
+  <div class="ov-card" style="text-align:center">
+    <div class="spinner"></div>
+    <div class="ov-title">正在加载知识图谱…</div>
+    <div style="font-size:13px;color:var(--txt2)">读取 data/kg.json 与语料库 data/corpus.json</div>
+  </div>
+</div>
+
+<!-- ============ 错误提示 ============ -->
+<div class="overlay" id="errorOv" hidden>
+  <div class="ov-card">
+    <div class="ov-icon">🧪⚠️</div>
+    <div class="ov-title">知识图谱数据加载失败</div>
+    <div class="ov-text" id="errorText">
+      无法读取 <b>data/kg.json</b>。如果您是直接双击以 <b>file://</b> 方式打开本页面，
+      浏览器会拦截 fetch 请求。请在 <b>app</b> 目录下启动本地服务器后再访问：
+    </div>
+    <code class="ov-code">cd app &amp;&amp; python3 -m http.server 8899&nbsp;&nbsp;# 然后访问 http://localhost:8899/knowledge.html</code>
+  </div>
+</div>
+
+<script>
+'use strict';
+/* ==================== 常量与全局状态 ==================== */
+const $ = s => document.querySelector(s);
+const CATS = {
+  center:      {name:'中心实验',     color:'#10b981'},
+  coordination:{name:'配位化学',     color:'#2dd4bf'},
+  redox:       {name:'氧化还原',     color:'#f59e0b'},
+  analytical:  {name:'分析化学',     color:'#3b82f6'},
+  physical:    {name:'物理结构化学', color:'#a855f7'},
+};
+const CAT_FALLBACK = ['#60a5fa','#f87171','#fbbf24','#a78bfa','#34d399','#fb923c'];
+const LEVEL_NAMES = {0:'中心节点', 1:'方向节点', 2:'知识点', 3:'细分点'};
+const RING_R = {0:0, 1:280, 2:560, 3:810};   // 各层级的目标径向距离
+const IDEAL = 130;                            // FR 理想边长
+
+let nodes = [], links = [], nodeById = new Map(), adj = new Map();
+let corpus = [], corpusFailed = false;
+const visibleCat = new Set();
+const visibleLvl = new Set([0,1,2,3]);
+let searchQ = '';
+let hoverId = null, selectedId = null;
+let temp = 55;                                // 布局温度（初始动画用）
+const view = {x:0, y:0, k:1};
+let W = 0, H = 0, DPR = 1;
+let dragState = null;
+let viewTween = null;
+
+function catOf(c){
+  if(!CATS[c]){
+    const i = Object.keys(CATS).filter(k=>CATS[k]._fb).length % CAT_FALLBACK.length;
+    CATS[c] = {name:c, color:CAT_FALLBACK[i], _fb:true};
+  }
+  return CATS[c];
+}
+function esc(s){
+  return String(s==null?'':s).replace(/[&<>"']/g, m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]));
+}
+
+/* ==================== 数据加载 ==================== */
+async function loadData(){
+  // 知识图谱数据（必需）
+  let kg;
+  try{
+    const res = await fetch('data/kg.json');
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    kg = await res.json();
+  }catch(err){
+    showError(err);
+    return;
+  }
+  // 语料库数据（可选，失败不阻塞图谱）
+  try{
+    const res = await fetch('data/corpus.json');
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const cj = await res.json();
+    corpus = Array.isArray(cj.entries) ? cj.entries.slice() : [];
+  }catch(err){
+    corpusFailed = true;
+    corpus = [];
+  }
+  // 合并用户上传语料（localStorage，可能不存在）
+  try{
+    const raw = localStorage.getItem('chemai_corpus_uploaded');
+    if(raw){
+      const up = JSON.parse(raw);
+      if(Array.isArray(up)){
+        up.forEach((e,i)=>{
+          if(!e || typeof e!=='object') return;
+          corpus.push({
+            id: e.id!=null ? e.id : ('UP'+(i+1)),
+            title: e.title || e.name || '未命名文献',
+            subfield: e.subfield || '用户上传',
+            objects: e.objects || '', methods: e.methods || '',
+            questions: Array.isArray(e.questions) ? e.questions : [],
+            path: e.path || e.fileName || '（本地上传语料）',
+            lang: e.lang || '', _uploaded: true,
+          });
+        });
+      }
+    }
+  }catch(err){ /* localStorage 不可用或数据损坏时忽略 */ }
+
+  initGraph(kg);
+  $('#loadingOv').hidden = true;
+}
+function showError(err){
+  $('#loadingOv').hidden = true;
+  $('#errorOv').hidden = false;
+  if(location.protocol === 'file:'){
+    $('#errorText').innerHTML = '检测到当前以 <b>file://</b> 方式直接打开页面，浏览器安全策略会拦截 fetch(’data/kg.json’)。请在 app 目录下启动本地服务器后访问：';
+  }else{
+    $('#errorText').innerHTML = '请求 <b>data/kg.json</b> 失败（'+esc(err && err.message || err)+'）。请确认数据文件存在，并通过本地 HTTP 服务器访问本页面：';
+  }
+}
+
+/* ==================== 图谱初始化 ==================== */
+function initGraph(kg){
+  const rand = (a,b)=>a+Math.random()*(b-a);
+  const byLevel = {1:[],2:[],3:[]};
+  (kg.nodes||[]).forEach(nd=>{
+    const n = Object.assign({}, nd);
+    n.r = 5 + (n.symbolSize||30)*0.17;
+    n.x = 0; n.y = 0; n.dx = 0; n.dy = 0;
+    n.fixed = (n.level === 0);
+    n.visible = true;
+    catOf(n.category);
+    visibleCat.add(n.category);
+    if(n.level>0) byLevel[n.level] ? byLevel[n.level].push(n) : (byLevel[3].push(n));
+    nodes.push(n); nodeById.set(n.id, n);
+  });
+  // 初始位置：按层级同心环分布
+  [1,2,3].forEach(lv=>{
+    const arr = byLevel[lv]||[];
+    arr.forEach((n,i)=>{
+      const ang = (i/arr.length)*Math.PI*2 + rand(-0.25,0.25);
+      const rr  = (RING_R[lv]||900) + rand(-60,60);
+      n.x = Math.cos(ang)*rr; n.y = Math.sin(ang)*rr;
+    });
+  });
+  links = (kg.links||[]).map(l=>({
+    s: nodeById.get(l.source), t: nodeById.get(l.target),
+    w: (l.lineStyle && l.lineStyle.width) || 1.5,
+    color: (l.lineStyle && l.lineStyle.color) || 'rgba(148,163,184,.4)',
+  })).filter(l=>l.s && l.t);
+  // 邻接表
+  links.forEach(l=>{
+    if(!adj.has(l.s.id)) adj.set(l.s.id, new Set());
+    if(!adj.has(l.t.id)) adj.set(l.t.id, new Set());
+    adj.get(l.s.id).add(l.t.id); adj.get(l.t.id).add(l.s.id);
+  });
+
+  buildToolbar();
+  updateStats();
+  applyFilters(false);
+  resizeCanvas();
+  resetView(false);
+  bindEvents();
+  requestAnimationFrame(frame);
+  // 调试/测试句柄（只读用途）
+  window.__kg = {nodes, links, view, nodeById};
+}
+function updateStats(){
+  $('#statNodes').textContent = nodes.length;
+  $('#statLinks').textContent = links.length;
+  $('#statDocs').textContent  = corpus.length;
+}
+
+/* ==================== 工具栏构建 ==================== */
+function buildToolbar(){
+  const catBox = $('#catFilter'), lvlBox = $('#lvlFilter'), legBox = $('#legendBox');
+  Object.keys(CATS).forEach(c=>{
+    const meta = CATS[c];
+    const lab = document.createElement('label');
+    lab.className = 'fchip on';
+    lab.innerHTML = `<input type="checkbox" checked><i class="dot" style="background:${meta.color};color:${meta.color}"></i>${esc(meta.name)}`;
+    lab.querySelector('input').addEventListener('change', ev=>{
+      ev.target.checked ? visibleCat.add(c) : visibleCat.delete(c);
+      lab.classList.toggle('on', ev.target.checked);
+      applyFilters(true);
+    });
+    catBox.appendChild(lab);
+    const lg = document.createElement('span');
+    lg.style.cssText = 'display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--txt2)';
+    lg.innerHTML = `<i style="width:8px;height:8px;border-radius:50%;background:${meta.color};display:inline-block"></i>${esc(meta.name)}`;
+    legBox.appendChild(lg);
+  });
+  [0,1,2,3].forEach(lv=>{
+    const lab = document.createElement('label');
+    lab.className = 'fchip on';
+    lab.innerHTML = `<input type="checkbox" checked>${LEVEL_NAMES[lv]}`;
+    lab.querySelector('input').addEventListener('change', ev=>{
+      ev.target.checked ? visibleLvl.add(lv) : visibleLvl.delete(lv);
+      lab.classList.toggle('on', ev.target.checked);
+      applyFilters(true);
+    });
+    lvlBox.appendChild(lab);
+  });
+}
+function applyFilters(reheatLayout){
+  nodes.forEach(n=>{ n.visible = visibleCat.has(n.category) && visibleLvl.has(n.level); });
+  if(hoverId && !(nodeById.get(hoverId)||{}).visible) hoverId = null;
+  if(reheatLayout) reheat(18);
+}
+
+/* ==================== 力导向布局（Fruchterman-Reingold） ==================== */
+function iterate(){
+  const ns = [];
+  for(const n of nodes){ if(n.visible){ n.dx=0; n.dy=0; ns.push(n); } }
+  const k = IDEAL;
+  // 斥力（所有节点对）
+  for(let i=0;i<ns.length;i++){
+    const a = ns[i];
+    for(let j=i+1;j<ns.length;j++){
+      const b = ns[j];
+      let dx = a.x-b.x, dy = a.y-b.y;
+      let d2 = dx*dx + dy*dy;
+      if(d2 < 0.01){ dx = Math.random()-0.5; dy = Math.random()-0.5; d2 = dx*dx+dy*dy+0.01; }
+      if(d2 > 2400*2400) continue;
+      const d = Math.sqrt(d2);
+      const f = (k*k/d)/d;
+      dx *= f; dy *= f;
+      a.dx += dx; a.dy += dy; b.dx -= dx; b.dy -= dy;
+    }
+  }
+  // 引力（沿边）
+  for(const l of links){
+    const s = l.s, t = l.t;
+    if(!s.visible || !t.visible) continue;
+    let dx = s.x-t.x, dy = s.y-t.y;
+    const d = Math.sqrt(dx*dx+dy*dy) || 0.01;
+    const f = (d*d/k)/d;
+    dx *= f; dy *= f;
+    s.dx -= dx; s.dy -= dy; t.dx += dx; t.dy += dy;
+  }
+  // 径向分层引力（保持 中心→方向→知识→细分 的同心结构）
+  for(const n of ns){
+    const r = Math.sqrt(n.x*n.x + n.y*n.y) || 0.01;
+    const tr = RING_R[n.level] != null ? RING_R[n.level] : 930;
+    const pull = (r - tr) * 0.012;
+    n.dx += -n.x/r*pull; n.dy += -n.y/r*pull;
+  }
+  // 以温度限制位移上限，逐步降温收敛
+  for(const n of ns){
+    if(n.fixed){ continue; }
+    const d = Math.sqrt(n.dx*n.dx + n.dy*n.dy) || 0.01;
+    const m = Math.min(d, temp);
+    n.x += n.dx/d*m; n.y += n.dy/d*m;
+  }
+}
+function reheat(t){ temp = Math.max(temp, t); }
+
+/* ==================== 主循环 ==================== */
+let settleFitted = false;
+function frame(){
+  if(temp > 0.5){
+    iterate(); iterate();
+    temp *= 0.982;              // 初始布局动画：迭代过程平滑呈现
+    if(temp <= 0.5 && !settleFitted){
+      settleFitted = true;      // 布局稳定后自动取景，避免边缘节点被裁切
+      const t = fitTarget();
+      animateView(t.x, t.y, t.k, 700);
+    }
+  }
+  stepTween();
+  draw();
+  requestAnimationFrame(frame);
+}
+
+/* ==================== 视图变换与动画 ==================== */
+function resizeCanvas(){
+  const r = $('#stage').getBoundingClientRect();
+  W = Math.max(200, r.width); H = Math.max(200, r.height);
+  DPR = Math.min(window.devicePixelRatio || 1, 2);
+  const cv = $('#cv');
+  cv.width = Math.round(W*DPR); cv.height = Math.round(H*DPR);
+  cv.style.width = W+'px'; cv.style.height = H+'px';
+}
+function graphBounds(){
+  let x0=Infinity, y0=Infinity, x1=-Infinity, y1=-Infinity, c=0;
+  for(const n of nodes){
+    if(!n.visible) continue;
+    c++;
+    x0=Math.min(x0, n.x-n.r); x1=Math.max(x1, n.x+n.r);
+    y0=Math.min(y0, n.y-n.r); y1=Math.max(y1, n.y+n.r);
+  }
+  if(!c) return {x:0, y:0, w:1600, h:1200};
+  return {x:(x0+x1)/2, y:(y0+y1)/2, w:Math.max(x1-x0, 200), h:Math.max(y1-y0, 200)};
+}
+function fitTarget(){
+  const b = graphBounds();
+  const k = Math.min(W/(b.w+260), H/(b.h+240));
+  return {x:b.x, y:b.y, k:Math.min(Math.max(k, 0.15), 1.35)};
+}
+function resetView(anim){
+  // 解除拖放钉住的节点（中心节点除外），让布局轻微回弹
+  for(const n of nodes){ if(n.level !== 0) n.fixed = false; }
+  reheat(10);
+  const t = fitTarget();
+  if(anim) animateView(t.x, t.y, t.k, 460);
+  else { view.x=t.x; view.y=t.y; view.k=t.k; }
+}
+function animateView(tx, ty, tk, dur){
+  viewTween = {sx:view.x, sy:view.y, sk:view.k, tx, ty, tk, t0:performance.now(), dur:dur||380};
+}
+function stepTween(){
+  if(!viewTween) return;
+  const t = Math.min(1, (performance.now()-viewTween.t0)/viewTween.dur);
+  const e = 1-Math.pow(1-t, 3);
+  view.x = viewTween.sx + (viewTween.tx-viewTween.sx)*e;
+  view.y = viewTween.sy + (viewTween.ty-viewTween.sy)*e;
+  view.k = viewTween.sk + (viewTween.tk-viewTween.sk)*e;
+  if(t>=1) viewTween = null;
+}
+function zoomAt(mx, my, factor){
+  const wx = (mx-W/2)/view.k + view.x;
+  const wy = (my-H/2)/view.k + view.y;
+  view.k = Math.min(4, Math.max(0.15, view.k*factor));
+  view.x = wx - (mx-W/2)/view.k;
+  view.y = wy - (my-H/2)/view.k;
+}
+
+/* ==================== 渲染 ==================== */
+function draw(){
+  const cv = $('#cv'), ctx = cv.getContext('2d');
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  ctx.clearRect(0,0,W,H);
+  ctx.save();
+  ctx.translate(W/2, H/2); ctx.scale(view.k, view.k); ctx.translate(-view.x, -view.y);
+
+  const focusId = hoverId || selectedId;
+  let focusSet = null;
+  if(focusId){
+    focusSet = new Set([focusId]);
+    const nb = adj.get(focusId);
+    if(nb) nb.forEach(x=>focusSet.add(x));
+  }
+  const q = searchQ;
+  let matchSet = null;
+  if(q){
+    matchSet = new Set();
+    for(const n of nodes) if(n.visible && n.name.toLowerCase().includes(q)) matchSet.add(n.id);
+  }
+
+  // ---- 边 ----
+  for(const l of links){
+    if(!l.s.visible || !l.t.visible) continue;
+    let alpha = 0.5, w = l.w;
+    if(focusSet){
+      const inf = focusSet.has(l.s.id) && focusSet.has(l.t.id);
+      alpha = inf ? 0.95 : 0.05;
+      w = inf ? l.w*1.6 : l.w*0.8;
+    }
+    if(matchSet && !(matchSet.has(l.s.id) && matchSet.has(l.t.id))) alpha *= 0.3;
+    ctx.globalAlpha = alpha;
+    ctx.strokeStyle = l.color;
+    ctx.lineWidth = w;
+    ctx.beginPath(); ctx.moveTo(l.s.x, l.s.y); ctx.lineTo(l.t.x, l.t.y); ctx.stroke();
+  }
+
+  // ---- 节点 ----
+  ctx.textAlign = 'center'; ctx.textBaseline = 'top';
+  for(const n of nodes){
+    if(!n.visible) continue;
+    let alpha = 1;
+    if(focusSet && !focusSet.has(n.id)) alpha = 0.14;
+    if(matchSet && !matchSet.has(n.id)) alpha = Math.min(alpha, 0.22);
+    const meta = catOf(n.category);
+    const isSel = n.id === selectedId, isHov = n.id === hoverId;
+    const isMatch = matchSet && matchSet.has(n.id);
+
+    ctx.globalAlpha = alpha;
+    if(n.level === 0 || isSel || isMatch){
+      ctx.save();
+      ctx.shadowColor = meta.color;
+      ctx.shadowBlur = isSel ? 30 : 20;
+      ctx.fillStyle = meta.color;
+      ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI*2); ctx.fill();
+      ctx.restore();
+      ctx.globalAlpha = alpha;
+      ctx.strokeStyle = 'rgba(255,255,255,.35)'; ctx.lineWidth = 1.6;
+      ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI*2); ctx.stroke();
+    }else{
+      ctx.fillStyle = meta.color;
+      ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI*2); ctx.fill();
+      ctx.strokeStyle = 'rgba(255,255,255,.22)'; ctx.lineWidth = 1.2;
+      ctx.beginPath(); ctx.arc(n.x, n.y, n.r, 0, Math.PI*2); ctx.stroke();
+    }
+    if(isSel || isHov){
+      ctx.globalAlpha = Math.max(alpha, 0.9);
+      ctx.strokeStyle = isSel ? '#f1f5f9' : 'rgba(241,245,249,.55)';
+      ctx.lineWidth = isSel ? 2.4 : 1.6;
+      ctx.beginPath(); ctx.arc(n.x, n.y, n.r+4.5, 0, Math.PI*2); ctx.stroke();
+    }
+
+    // ---- 标签（中心/一级常显，小节点缩放后显示；字号按屏幕像素恒定） ----
+    let show = false, fs = 12;   // fs = 期望的屏幕字号
+    if(n.level === 0){ show = true; fs = 17; }
+    else if(n.level === 1){ show = true; fs = 13.5; }
+    else if(n.level === 2){ show = view.k > 0.5; fs = 11.5; }
+    else { show = view.k > 0.9; fs = 10.5; }
+    if(isSel || isHov || isMatch || (focusSet && focusSet.has(n.id) && view.k > 0.32)) show = true;
+    if(show){
+      // 世界字号 = 屏幕字号/k，并限制极端缩放下的过大/过小
+      const wf = Math.min(Math.max(fs/view.k, fs/1.25), fs/0.32);
+      ctx.globalAlpha = Math.max(alpha, 0.6);
+      ctx.font = (n.level<=1 ? '700 ' : '500 ') + wf + 'px "PingFang SC","Microsoft YaHei",sans-serif';
+      ctx.lineWidth = wf*0.28; ctx.strokeStyle = 'rgba(10,14,26,.92)';
+      ctx.strokeText(n.name, n.x, n.y + n.r + wf*0.35);
+      ctx.fillStyle = n.level === 0 ? '#ffffff' : '#dbe4f0';
+      ctx.fillText(n.name, n.x, n.y + n.r + wf*0.35);
+    }
+  }
+  ctx.restore();
+  ctx.globalAlpha = 1;
+}
+
+/* ==================== 交互 ==================== */
+function nodeAt(wx, wy){
+  let best = null, bd = Infinity;
+  for(const n of nodes){
+    if(!n.visible) continue;
+    const d = Math.hypot(n.x-wx, n.y-wy);
+    if(d <= n.r + 4 && d < bd){ best = n; bd = d; }
+  }
+  return best;
+}
+function toWorld(e){
+  const r = $('#cv').getBoundingClientRect();
+  const mx = e.clientX - r.left, my = e.clientY - r.top;
+  return {mx, my, wx:(mx-W/2)/view.k + view.x, wy:(my-H/2)/view.k + view.y};
+}
+function bindEvents(){
+  const cv = $('#cv'), tt = $('#tooltip');
+  const pointers = new Map();
+  let pinch = null;
+
+  cv.addEventListener('pointerdown', e=>{
+    cv.setPointerCapture(e.pointerId);
+    pointers.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if(pointers.size === 2){
+      const ps = [...pointers.values()];
+      pinch = {d0: Math.hypot(ps[0].x-ps[1].x, ps[0].y-ps[1].y) || 1, k0: view.k};
+      dragState = null; return;
+    }
+    const p = toWorld(e);
+    const n = nodeAt(p.wx, p.wy);
+    if(n){ dragState = {type:'node', node:n, moved:0}; reheat(7); }
+    else dragState = {type:'pan', sx:p.mx, sy:p.my, vx:view.x, vy:view.y, moved:0};
+    cv.classList.add('grabbing');
+    viewTween = null;
+  });
+
+  cv.addEventListener('pointermove', e=>{
+    if(pointers.has(e.pointerId)) pointers.set(e.pointerId, {x:e.clientX, y:e.clientY});
+    if(pinch && pointers.size === 2){
+      const ps = [...pointers.values()];
+      const d = Math.hypot(ps[0].x-ps[1].x, ps[0].y-ps[1].y) || 1;
+      const r = $('#cv').getBoundingClientRect();
+      zoomAt((ps[0].x+ps[1].x)/2 - r.left, (ps[0].y+ps[1].y)/2 - r.top, (d/pinch.d0)*(pinch.k0/view.k));
+      return;
+    }
+    const p = toWorld(e);
+    if(dragState && dragState.type === 'node'){
+      const n = dragState.node;
+      n.x = p.wx; n.y = p.wy;
+      dragState.moved += Math.abs(e.movementX||0) + Math.abs(e.movementY||0);
+      reheat(3);
+      tt.style.display = 'none';
+      return;
+    }
+    if(dragState && dragState.type === 'pan'){
+      view.x = dragState.vx - (p.mx-dragState.sx)/view.k;
+      view.y = dragState.vy - (p.my-dragState.sy)/view.k;
+      dragState.moved += Math.abs(e.movementX||0) + Math.abs(e.movementY||0);
+      return;
+    }
+    // 悬停高亮
+    const n = nodeAt(p.wx, p.wy);
+    hoverId = n ? n.id : null;
+    cv.classList.toggle('on-node', !!n);
+    if(n){
+      const meta = catOf(n.category);
+      tt.innerHTML = `<b>${esc(n.name)}</b><div class="tt-cat">${esc(meta.name)} · ${LEVEL_NAMES[n.level]!=null?LEVEL_NAMES[n.level]:'层级'+n.level}</div>`;
+      tt.style.display = 'block';
+      const sx = (n.x-view.x)*view.k + W/2, sy = (n.y-view.y)*view.k + H/2;
+      tt.style.left = Math.min(sx + n.r*view.k + 14, W-180) + 'px';
+      tt.style.top  = Math.max(sy - 14, 8) + 'px';
+    }else tt.style.display = 'none';
+  });
+
+  const endPointer = e=>{
+    pointers.delete(e.pointerId);
+    if(pointers.size < 2) pinch = null;
+    cv.classList.remove('grabbing');
+    if(!dragState) return;
+    if(dragState.type === 'node' && dragState.moved < 6){
+      selectNode(dragState.node.id);        // 点击节点 → 详情面板
+    }else if(dragState.type === 'node'){
+      dragState.node.fixed = true;           // 拖放后钉住位置（复位视图时解除）
+    }else if(dragState.type === 'pan' && dragState.moved < 6){
+      closePanel();                          // 点击空白 → 收起面板
+    }
+    dragState = null;
+  };
+  cv.addEventListener('pointerup', endPointer);
+  cv.addEventListener('pointercancel', endPointer);
+  cv.addEventListener('pointerleave', ()=>{ hoverId = null; tt.style.display = 'none'; });
+
+  cv.addEventListener('wheel', e=>{
+    e.preventDefault();
+    const p = toWorld(e);
+    zoomAt(p.mx, p.my, Math.exp(-e.deltaY*0.0012));
+  }, {passive:false});
+
+  cv.addEventListener('dblclick', e=>{ e.preventDefault(); resetView(true); });
+
+  $('#zoomIn').addEventListener('click', ()=>zoomAt(W/2, H/2, 1.35));
+  $('#zoomOut').addEventListener('click', ()=>zoomAt(W/2, H/2, 1/1.35));
+  $('#zoomReset').addEventListener('click', ()=>resetView(true));
+  $('#panelClose').addEventListener('click', closePanel);
+
+  const si = $('#searchInput');
+  si.addEventListener('input', ()=>{
+    searchQ = si.value.trim().toLowerCase();
+    const cnt = $('#searchCount');
+    if(searchQ){
+      let c = 0;
+      for(const n of nodes) if(n.visible && n.name.toLowerCase().includes(searchQ)) c++;
+      cnt.textContent = c + ' 个匹配';
+      cnt.style.display = 'block';
+    }else cnt.style.display = 'none';
+  });
+  si.addEventListener('keydown', e=>{
+    if(e.key === 'Enter' && searchQ){
+      const n = nodes.find(n=>n.visible && n.name.toLowerCase().includes(searchQ));
+      if(n) selectNode(n.id);
+    }
+  });
+
+  window.addEventListener('resize', resizeCanvas);
+  if(window.ResizeObserver) new ResizeObserver(resizeCanvas).observe($('#stage'));
+}
+
+/* ==================== 语料检索（化学实体关键词加权） ==================== */
+const SUBMAP = {'₀':'0','₁':'1','₂':'2','₃':'3','₄':'4','₅':'5','₆':'6','₇':'7','₈':'8','₉':'9',
+                '⁰':'0','¹':'1','²':'2','³':'3','⁴':'4','⁵':'5','⁶':'6','⁷':'7','⁸':'8','⁹':'9','⁺':'+','⁻':'-'};
+function norm(s){ return String(s==null?'':s).replace(/[₀₁₂₃₄₅₆₇₈₉⁰¹²³⁴⁵⁶⁷⁸⁹⁺⁻]/g, ch=>SUBMAP[ch]||ch).toLowerCase(); }
+
+// 关键词分级：T3 高特异度化学实体 / T2 领域术语 / T1 通用词
+const KW_T3 = ['三草酸合铁','芬顿','蓝晒','普鲁士蓝','摩尔盐','硫酸亚铁铵','磁化率','羟基自由基','高锰酸钾','kmno4','h2o2','过氧化氢','双氧水','稳定常数','朗伯','比尔','能斯特','晶体场','配体场','lmct','电荷转移','edta','顺反','歧化','光致','感光','螯合','分裂能','杂化','光谱化学序列','草酸铁','热重','xrd','诱导','有效数字','标定','草酸根','铁氰化钾'];
+const KW_T2 = ['草酸','配位','滴定','配合物','光化学','结晶','产率','磁性','热分析','热分解','分光光度','吸光度','异构','八面体','催化','跃迁','摄影','电势','电极','动力学','热力学','废液','重量分析','标准溶液','红外','表征','水合','稳定性','光解','氧化还原','电化学','自由基','络合'];
+const KW_T1 = ['铁','fe','制备','合成','氧化','还原','晶体','光谱','稳定','安全','沉淀','误差','教学','钾','光'];
+const KW_TIER = new Map();
+KW_T3.forEach(k=>KW_TIER.set(norm(k),3));
+KW_T2.forEach(k=>KW_TIER.set(norm(k),2));
+KW_T1.forEach(k=>KW_TIER.set(norm(k),1));
+const KW_ALL = [...KW_TIER.keys()];
+
+function nodeKeywords(n){
+  const text = norm(n.name + ' ' + (n.description||'') + ' ' + (n.connectionToExperiment||''));
+  return KW_ALL.filter(k=>text.includes(k));
+}
+function scoreEntry(e, kws, nameN){
+  const fields = [
+    [norm(e.title), 5], [norm(e.objects), 4], [norm(e.subfield), 3],
+    [norm(e.methods), 2], [norm((e.questions||[]).join(' ')), 2],
+  ];
+  let s = 0; const hits = new Set();
+  for(const k of kws){
+    const w = KW_TIER.get(k) || 1;
+    for(const [f, fw] of fields){
+      if(f && f.includes(k)){ s += w*fw; hits.add(k); }
+    }
+  }
+  if(nameN && norm(e.title).includes(nameN)) s += 15;
+  return {s: s + hits.size*3, hits: hits.size};
+}
+function relatedDocs(n){
+  if(!corpus.length) return {list:[], failed: corpusFailed};
+  const kws = nodeKeywords(n);
+  const nameN = norm(n.name);
+  const scored = [];
+  for(const e of corpus){
+    const r = scoreEntry(e, kws, nameN);
+    if(r.hits >= 2 && r.s >= 15) scored.push({e, s: r.s});
+  }
+  scored.sort((a,b)=>b.s - a.s);
+  return {list: scored.slice(0,5).map(x=>x.e), failed:false};
+}
+
+/* ==================== 节点详情面板 ==================== */
+function selectNode(id){
+  const n = nodeById.get(id);
+  if(!n) return;
+  selectedId = id;
+  openPanel(n);
+  // 让节点落在屏幕中左部，避开右侧详情面板
+  const k = Math.max(view.k, 0.9);
+  const offX = (W > 760 ? 215 : 0) / k;
+  animateView(n.x + offX, n.y, k, 420);
+}
+function closePanel(){
+  selectedId = null;
+  const p = $('#panel');
+  p.classList.remove('open');
+  p.setAttribute('aria-hidden','true');
+}
+function openPanel(n){
+  const meta = catOf(n.category);
+  $('#pName').textContent = n.name;
+  const d = Math.max(0, Math.min(5, n.difficulty||0));
+  $('#pTags').innerHTML =
+    `<span class="tag" style="background:${meta.color}22;color:${meta.color};border-color:${meta.color}55"><i class="dot" style="background:${meta.color}"></i>${esc(meta.name)}</span>` +
+    `<span class="tag tag-lvl">${LEVEL_NAMES[n.level]!=null ? LEVEL_NAMES[n.level] : '层级 '+n.level}</span>` +
+    `<span class="tag tag-diff" title="难度 ${d}/5">${'★'.repeat(d)}${'☆'.repeat(5-d)}</span>`;
+  $('#pDesc').textContent = n.description || '暂无描述';
+  $('#pConn').textContent = n.connectionToExperiment || '暂无说明';
+
+  // 相关节点 chips（可点击跳转选中）
+  const relBox = $('#pRel');
+  relBox.innerHTML = '';
+  const relIds = (n.relatedNodes||[]).filter(id=>nodeById.has(id));
+  if(relIds.length){
+    relIds.forEach(id=>{
+      const rn = nodeById.get(id);
+      const rm = catOf(rn.category);
+      const chip = document.createElement('button');
+      chip.className = 'rel-chip';
+      chip.innerHTML = `<i class="dot" style="background:${rm.color}"></i>${esc(rn.name)}`;
+      chip.title = '点击跳转到该节点';
+      chip.addEventListener('click', ()=>selectNode(id));
+      relBox.appendChild(chip);
+    });
+  }else relBox.innerHTML = '<span style="font-size:12.5px;color:var(--txt3)">暂无相关节点</span>';
+
+  // 关联语料文献 Top5
+  const docsBox = $('#pDocs');
+  const {list, failed} = relatedDocs(n);
+  if(failed){
+    docsBox.innerHTML = '<div class="doc-empty">⚠️ 语料库加载失败<br>仅图谱功能可用，请检查 data/corpus.json</div>';
+  }else if(!list.length){
+    docsBox.innerHTML = '<div class="doc-empty">📭 暂无直接关联文献<br><span style="font-size:11px">可尝试点击「问 AI 助手」深入了解</span></div>';
+  }else{
+    docsBox.innerHTML = list.map(e=>{
+      const qs = (e.questions||[]).slice(0,2);
+      return `<div class="doc-card">
+        <div class="doc-top"><span class="doc-idx">#${esc(e.id)}</span><span class="doc-title">${esc(e.title)}</span></div>
+        <div class="doc-meta">
+          <span class="doc-chip">${esc(e.subfield||'未分类')}</span>
+          ${e.lang ? `<span class="doc-chip">${esc(e.lang)}</span>` : ''}
+          ${e._uploaded ? '<span class="doc-chip up">用户上传</span>' : ''}
+        </div>
+        ${qs.length ? `<ul class="doc-q">${qs.map(q=>`<li>${esc(q)}</li>`).join('')}</ul>` : ''}
+        <div class="doc-path">📄 ${esc(e.path||'（无路径信息）')}</div>
+      </div>`;
+    }).join('');
+  }
+
+  // 问 AI 助手（携带 节点名+核心问题）
+  const coreQ = list.length && (list[0].questions||[])[0]
+    ? list[0].questions[0]
+    : '请讲解「'+n.name+'」的核心概念，以及它在三草酸合铁酸钾制备实验中的作用。';
+  $('#pAskAI').href = 'assistant.html?mode=qa&q=' + encodeURIComponent(n.name + '：' + coreQ);
+
+  const p = $('#panel');
+  p.classList.add('open');
+  p.setAttribute('aria-hidden','false');
+}
+
+/* ==================== 启动 ==================== */
+loadData();
+</script>
+</body>
+</html>

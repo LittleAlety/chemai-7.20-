@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>课前预习 — 三草酸合铁酸钾制备实验 · ChemAI</title>
+<style>
+:root{
+  --bg:#0a0e1a;--bg2:#111827;--card:#1a2235;--card-hover:#243049;
+  --emerald:#10b981;--teal:#2dd4bf;--purple:#a78bfa;--yellow:#fbbf24;--red:#f87171;--blue:#60a5fa;
+  --t1:#f1f5f9;--t2:#94a3b8;--t3:#64748b;
+  --bd:rgba(148,163,184,.08);--bd2:rgba(148,163,184,.15);
+  --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--t1);
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  min-height:100vh;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(800px 400px at 15% -5%,rgba(16,185,129,.07),transparent 60%),
+    radial-gradient(700px 380px at 85% 0%,rgba(167,139,250,.06),transparent 60%),
+    radial-gradient(900px 500px at 50% 110%,rgba(45,212,191,.05),transparent 60%);
+}
+a{text-decoration:none;color:inherit}
+/* ===== 顶部导航 ===== */
+.navbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(10,14,26,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--bd2);
+}
+.nav-inner{
+  max-width:1280px;margin:0 auto;padding:0 24px;height:64px;
+  display:flex;align-items:center;justify-content:space-between;gap:16px;
+}
+.logo{display:flex;align-items:center;gap:12px;flex-shrink:0;cursor:pointer}
+.logo-icon{
+  width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:20px;background:linear-gradient(135deg,rgba(16,185,129,.25),rgba(45,212,191,.12));
+  border:1px solid rgba(16,185,129,.35);
+}
+.logo-text{line-height:1.2}
+.logo-name{font-weight:700;font-size:17px;background:linear-gradient(90deg,var(--emerald),var(--teal));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.logo-sub{font-size:11px;color:var(--t3);letter-spacing:.2px}
+.nav-links{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  padding:8px 13px;border-radius:10px;font-size:14px;color:var(--t2);
+  white-space:nowrap;transition:all .2s;border:1px solid transparent;
+}
+.nav-links a:hover{color:var(--t1);background:var(--card-hover)}
+.nav-links a.active{
+  color:var(--emerald);background:rgba(16,185,129,.12);border-color:rgba(16,185,129,.3);font-weight:600;
+}
+/* ===== 主体 ===== */
+.page{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:36px 24px 64px}
+/* 简介横幅 */
+.banner{
+  border-radius:var(--r);padding:34px 38px;margin-bottom:32px;position:relative;overflow:hidden;
+  background:linear-gradient(120deg,rgba(16,185,129,.16),rgba(45,212,191,.07) 45%,rgba(167,139,250,.10));
+  border:1px solid rgba(16,185,129,.25);
+}
+.banner::after{
+  content:"⚗️";position:absolute;right:26px;top:50%;transform:translateY(-50%);
+  font-size:110px;opacity:.10;pointer-events:none;
+}
+.banner-tag{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--teal);
+  background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.3);
+  padding:4px 12px;border-radius:999px;margin-bottom:14px;font-weight:600;
+}
+.banner h1{font-size:30px;font-weight:700;margin-bottom:10px;letter-spacing:.5px}
+.banner h1 .hl{background:linear-gradient(90deg,var(--emerald),var(--teal));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.banner p{color:var(--t2);font-size:15px;max-width:760px;line-height:1.7}
+.banner-stats{display:flex;gap:26px;margin-top:20px;flex-wrap:wrap}
+.bstat{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--t2)}
+.bstat b{color:var(--t1);font-size:16px}
+.bstat .dot{width:8px;height:8px;border-radius:50%}
+/* 模块网格 */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{
+  background:var(--card);border:1px solid var(--bd);border-radius:var(--r);
+  padding:28px;transition:transform .25s,box-shadow .25s,border-color .25s,background .25s;
+  display:flex;flex-direction:column;position:relative;overflow:hidden;
+}
+.card:hover{transform:translateY(-5px);background:var(--card-hover);border-color:var(--bd2);box-shadow:0 14px 34px rgba(0,0,0,.35)}
+.card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent,var(--emerald));opacity:.85}
+.card-wide{grid-column:1/-1}
+.card-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:14px}
+.card-icon{
+  width:52px;height:52px;border-radius:14px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:26px;
+  background:color-mix(in srgb,var(--accent,var(--emerald)) 14%,transparent);
+  border:1px solid color-mix(in srgb,var(--accent,var(--emerald)) 35%,transparent);
+}
+.card-title{font-size:19px;font-weight:700;margin-bottom:5px}
+.card-desc{color:var(--t2);font-size:13.5px;line-height:1.65}
+.feat{list-style:none;margin:6px 0 20px;display:flex;flex-direction:column;gap:9px;flex:1}
+.feat li{display:flex;gap:9px;font-size:13.5px;color:var(--t2);align-items:flex-start;line-height:1.55}
+.feat li::before{content:"✓";color:var(--accent,var(--emerald));font-weight:700;flex-shrink:0;margin-top:1px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:12px 22px;border-radius:12px;font-size:14.5px;font-weight:600;color:#04101a;
+  background:linear-gradient(120deg,var(--accent,var(--emerald)),var(--accent2,var(--teal)));
+  transition:filter .2s,transform .2s,box-shadow .2s;border:none;cursor:pointer;align-self:flex-start;
+}
+.btn:hover{filter:brightness(1.12);transform:translateY(-1px);box-shadow:0 8px 20px color-mix(in srgb,var(--accent,var(--emerald)) 35%,transparent)}
+.btn .arr{transition:transform .2s}
+.btn:hover .arr{transform:translateX(3px)}
+/* 子卡片（习题检测） */
+.subgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:4px;flex:1}
+.subcard{
+  background:rgba(10,14,26,.45);border:1px solid var(--bd);border-radius:14px;padding:20px;
+  display:flex;flex-direction:column;transition:border-color .2s,background .2s,transform .2s;
+}
+.subcard:hover{border-color:color-mix(in srgb,var(--saccent,var(--blue)) 40%,transparent);background:rgba(10,14,26,.65);transform:translateY(-3px)}
+.subcard-head{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.subcard-icon{width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:19px;
+  background:color-mix(in srgb,var(--saccent,var(--blue)) 14%,transparent);
+  border:1px solid color-mix(in srgb,var(--saccent,var(--blue)) 32%,transparent)}
+.subcard-title{font-size:15.5px;font-weight:700}
+.subcard .feat{margin-bottom:16px}
+.subcard .btn{padding:9px 16px;font-size:13px;border-radius:10px}
+/* 建议流程 */
+.flow{
+  margin-top:30px;background:var(--bg2);border:1px dashed var(--bd2);border-radius:var(--r);
+  padding:18px 24px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.flow-label{font-size:13px;color:var(--t3);font-weight:600;display:flex;align-items:center;gap:6px;flex-shrink:0}
+.flow-steps{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:13px;color:var(--t2)}
+.flow-steps .fs{padding:5px 12px;border-radius:999px;background:var(--card);border:1px solid var(--bd2)}
+.flow-steps .fa{color:var(--t3)}
+footer{margin-top:44px;text-align:center;color:var(--t3);font-size:12.5px;line-height:1.8}
+@media (max-width:900px){.grid{grid-template-columns:1fr}}
+@media (max-width:640px){
+  .banner{padding:26px 22px}.banner h1{font-size:23px}
+  .subgrid{grid-template-columns:1fr}
+  .nav-inner{padding:0 14px}.page{padding:24px 14px 48px}
+  .logo-sub{display:none}
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="index.html">
+      <div class="logo-icon">⚗️</div>
+      <div class="logo-text">
+        <div class="logo-name">ChemAI</div>
+        <div class="logo-sub">K₃[Fe(C₂O₄)₃]·3H₂O 制备实验</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="assistant.html">AI助手</a>
+      <a href="knowledge.html">知识图谱</a>
+      <a href="prep.html" class="active">课前预习</a>
+      <a href="index.html#/videos">视频资源</a>
+      <a href="index.html#/report">实验报告检测评估</a>
+      <a href="index.html#/explore">科普探索</a>
+      <a href="corpus.html">语料库</a>
+    </div>
+  </div>
+</nav>
+
+<div class="page">
+  <!-- 简介横幅 -->
+  <section class="banner">
+    <div class="banner-tag">📚 PRE-CLASS PREPARATION</div>
+    <h1>课前预习 —— <span class="hl">多轮对话测评 + 习题检测</span></h1>
+    <p>在走进实验室之前，通过 AI 多轮对话测评定位知识薄弱点，再结合题库练习与错题本针对性巩固，最后完成预习检测，为「三草酸合铁酸钾的制备」实验做好充分准备。</p>
+    <div class="banner-stats">
+      <div class="bstat"><span class="dot" style="background:var(--emerald)"></span><b>3</b>&nbsp;大预习模块</div>
+      <div class="bstat"><span class="dot" style="background:var(--blue)"></span><b>309</b>&nbsp;道精选习题</div>
+      <div class="bstat"><span class="dot" style="background:var(--purple)"></span><b>7</b>&nbsp;大知识方向</div>
+      <div class="bstat"><span class="dot" style="background:var(--yellow)"></span><b>4</b>&nbsp;种题型模式</div>
+    </div>
+  </section>
+
+  <!-- 三大模块 -->
+  <section class="grid">
+    <!-- 模块 1：多轮对话测评 -->
+    <div class="card" style="--accent:var(--emerald);--accent2:var(--teal)">
+      <div class="card-head">
+        <div class="card-icon">💬</div>
+        <div>
+          <div class="card-title">多轮对话测评</div>
+          <div class="card-desc">通过与 AI 助手多轮对话检测知识掌握水平</div>
+        </div>
+      </div>
+      <ul class="feat">
+        <li>AI 围绕实验原理、操作步骤、注意事项层层追问，动态调整对话轮次</li>
+        <li>根据回答质量智能追问或引导，真实检验理解深度而非死记硬背</li>
+        <li>对话结束后自动生成<strong>掌握度评估报告</strong>，标注优势与薄弱知识点</li>
+      </ul>
+      <a class="btn" href="assistant.html?mode=assess">开始对话测评 <span class="arr">→</span></a>
+    </div>
+
+    <!-- 模块 3：预习检测 -->
+    <div class="card" style="--accent:var(--yellow);--accent2:var(--red)">
+      <div class="card-head">
+        <div class="card-icon">✅</div>
+        <div>
+          <div class="card-title">预习检测</div>
+          <div class="card-desc">课前快速自测，检验预习效果</div>
+        </div>
+      </div>
+      <ul class="feat">
+        <li>聚焦实验核心要点：制备原理、反应方程式、关键操作与常见误区</li>
+        <li>短时间内快速完成，即时反馈得分与解析</li>
+        <li>帮助判断是否可以进入实验室开始操作</li>
+      </ul>
+      <a class="btn" href="index.html#/preview">开始预习检测 <span class="arr">→</span></a>
+    </div>
+
+    <!-- 模块 2：习题检测（含两个子卡片） -->
+    <div class="card card-wide" style="--accent:var(--blue);--accent2:var(--purple)">
+      <div class="card-head">
+        <div class="card-icon">📝</div>
+        <div>
+          <div class="card-title">习题检测</div>
+          <div class="card-desc">题库练习 + 错题本双引擎，系统巩固实验相关的四大化学知识方向</div>
+        </div>
+      </div>
+      <div class="subgrid">
+        <div class="subcard" style="--saccent:var(--blue)">
+          <div class="subcard-head">
+            <div class="subcard-icon">🗂️</div>
+            <div class="subcard-title">题库练习</div>
+          </div>
+          <ul class="feat">
+            <li>精选 <strong>309 道题目</strong>，覆盖 <strong>7 大知识方向</strong></li>
+            <li>4 种题型 · 顺序练习 / 随机抽测 / 模拟考试</li>
+            <li>配位化学、氧化还原、分析化学、物理化学全覆盖</li>
+          </ul>
+          <a class="btn" style="--accent:var(--blue);--accent2:var(--purple)" href="index.html#/quiz">进入题库练习 <span class="arr">→</span></a>
+        </div>
+        <div class="subcard" style="--saccent:var(--purple)">
+          <div class="subcard-head">
+            <div class="subcard-icon">📕</div>
+            <div class="subcard-title">错题本</div>
+          </div>
+          <ul class="feat">
+            <li>自动收集练习与模考中答错的题目</li>
+            <li>按知识点归类，针对性复习薄弱环节</li>
+            <li>支持重做错题，掌握后移出，闭环提分</li>
+          </ul>
+          <a class="btn" style="--accent:var(--purple);--accent2:var(--blue)" href="index.html#/mistakes">打开错题本 <span class="arr">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 预习建议流程 -->
+  <section class="flow">
+    <div class="flow-label">💡 预习建议流程</div>
+    <div class="flow-steps">
+      <span class="fs">多轮对话测评 · 定位薄弱</span><span class="fa">→</span>
+      <span class="fs">题库练习 · 系统巩固</span><span class="fa">→</span>
+      <span class="fs">错题本 · 针对复习</span><span class="fa">→</span>
+      <span class="fs">预习检测 · 达标进实验室</span>
+    </div>
+  </section>
+
+  <footer>
+    ChemAI · 三草酸合铁酸钾（K₃[Fe(C₂O₄)₃]·3H₂O）制备实验智能教学平台<br/>
+    课前预习页 · 建议完成全部模块后再进入实验室
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="dark">
+<title>AI 助手 · ChemAI 三草酸合铁酸钾制备实验</title>
+<style>
+:root{
+  --bg:#0a0e1a; --bg2:#111827; --card:#1a2235; --hover:#243049;
+  --em:#10b981; --teal:#2dd4bf; --purple:#a78bfa; --yellow:#fbbf24; --red:#f87171; --blue:#60a5fa;
+  --t1:#f1f5f9; --t2:#94a3b8; --t3:#64748b;
+  --bd:rgba(148,163,184,.08); --bd2:rgba(148,163,184,.15);
+  --grad:linear-gradient(135deg,#10b981,#2dd4bf,#60a5fa);
+  --shadow:0 8px 28px rgba(2,6,23,.45);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--t1); min-height:100vh;
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:15px; line-height:1.7;
+  background-image:radial-gradient(900px 420px at 85% -10%,rgba(16,185,129,.08),transparent 60%),
+                   radial-gradient(760px 420px at -10% 30%,rgba(96,165,250,.06),transparent 60%);
+}
+a{color:var(--teal);text-decoration:none}
+a:hover{color:var(--em)}
+::selection{background:rgba(16,185,129,.35)}
+::-webkit-scrollbar{width:9px;height:9px}
+::-webkit-scrollbar-thumb{background:#243049;border-radius:8px;border:2px solid var(--bg)}
+::-webkit-scrollbar-track{background:transparent}
+
+/* ===== 顶部导航 ===== */
+.topbar{position:sticky;top:0;z-index:60;background:rgba(10,14,26,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--bd)}
+.topbar-inner{max-width:1360px;margin:0 auto;padding:0 20px;height:62px;display:flex;align-items:center;gap:22px}
+.brand{display:flex;align-items:center;gap:11px;flex-shrink:0}
+.brand-ic{width:38px;height:38px;border-radius:11px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:20px;box-shadow:0 4px 14px rgba(16,185,129,.35)}
+.brand-tx{display:flex;flex-direction:column;line-height:1.25}
+.brand-tx b{font-size:17px;color:var(--t1);letter-spacing:.4px}
+.brand-tx i{font-style:normal;font-size:11px;color:var(--t3)}
+.nav{display:flex;align-items:center;gap:4px;margin-left:auto;flex-wrap:wrap}
+.nav a{position:relative;padding:8px 13px;font-size:13.5px;color:var(--t2);border-radius:9px;transition:.2s}
+.nav a:hover{color:var(--t1);background:var(--hover)}
+.nav a.on{color:var(--em)}
+.nav a.on::after{content:"";position:absolute;left:13px;right:13px;bottom:2px;height:2px;border-radius:2px;background:var(--em)}
+.nav-toggle{display:none;margin-left:auto;background:var(--card);border:1px solid var(--bd2);color:var(--t1);border-radius:9px;padding:7px 12px;font-size:16px;cursor:pointer}
+@media (max-width:960px){
+  .nav{display:none;position:absolute;top:62px;left:0;right:0;background:var(--bg2);border-bottom:1px solid var(--bd2);flex-direction:column;align-items:stretch;padding:10px 16px;gap:2px}
+  .nav.open{display:flex}
+  .nav a{padding:11px 13px}
+  .nav-toggle{display:block}
+}
+
+/* ===== 布局 ===== */
+.wrap{max-width:1360px;margin:0 auto;padding:26px 20px 60px}
+.page-head{margin-bottom:20px;animation:fadeUp .5s ease both}
+.page-head h1{font-size:26px;font-weight:700;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;display:inline-block}
+.page-head .sub{color:var(--t2);font-size:13.5px;margin-top:4px}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:22px;align-items:start}
+@media (max-width:1080px){.grid{grid-template-columns:1fr}}
+
+/* ===== Tab ===== */
+.tabs{display:flex;gap:10px;background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:8px;margin-bottom:16px;box-shadow:var(--shadow)}
+.tab{flex:1;border:1px solid transparent;background:transparent;color:var(--t2);border-radius:12px;padding:12px 14px;cursor:pointer;font-size:15px;font-weight:600;text-align:left;transition:.22s;display:flex;flex-direction:column;gap:2px;font-family:inherit}
+.tab span{font-size:11.5px;font-weight:400;color:var(--t3)}
+.tab:hover{background:var(--hover);color:var(--t1)}
+.tab.on{background:linear-gradient(135deg,rgba(16,185,129,.16),rgba(45,212,191,.1),rgba(96,165,250,.1));border-color:rgba(16,185,129,.4);color:var(--em)}
+.tab.on span{color:rgba(16,185,129,.75)}
+
+/* ===== 面板与聊天 ===== */
+.panel{background:var(--card);border:1px solid var(--bd);border-radius:16px;box-shadow:var(--shadow);overflow:hidden;animation:fadeUp .45s ease both}
+.hidden{display:none!important}
+.panel-bar{display:flex;align-items:center;gap:12px;padding:12px 18px;border-bottom:1px solid var(--bd);background:var(--bg2)}
+.corpus-status{font-size:12.5px;color:var(--t3);display:flex;align-items:center;gap:7px;flex:1;min-width:0}
+.corpus-status .dot{width:8px;height:8px;border-radius:50%;background:var(--yellow);flex-shrink:0}
+.corpus-status.ok .dot{background:var(--em);box-shadow:0 0 8px rgba(16,185,129,.7)}
+.corpus-status.bad .dot{background:var(--red)}
+.chat{padding:20px 18px 10px;overflow-y:auto;min-height:400px;max-height:min(640px,calc(100vh - 360px));scroll-behavior:smooth}
+.msg{display:flex;gap:11px;margin-bottom:18px;animation:fadeUp .35s ease both}
+.msg .avatar{width:34px;height:34px;border-radius:10px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:17px}
+.msg.ai .avatar{background:linear-gradient(135deg,rgba(16,185,129,.25),rgba(96,165,250,.25));border:1px solid rgba(16,185,129,.35)}
+.msg.user{flex-direction:row-reverse}
+.msg.user .avatar{background:var(--hover);border:1px solid var(--bd2)}
+.bubble{max-width:min(86%,720px);padding:12px 15px;border-radius:14px;font-size:14px;word-break:break-word}
+.msg.ai .bubble{background:var(--bg2);border:1px solid var(--bd);border-top-left-radius:4px}
+.msg.user .bubble{background:linear-gradient(135deg,rgba(16,185,129,.85),rgba(45,212,191,.75));color:#04121b;font-weight:500;border-top-right-radius:4px}
+.bubble h4{font-size:14px;color:var(--teal);margin:10px 0 6px}
+.bubble h4:first-child{margin-top:0}
+.bubble p{margin:6px 0}
+.bubble ul,.bubble ol{margin:6px 0 6px 20px}
+.bubble li{margin:3px 0}
+.bubble .muted{color:var(--t3);font-size:12px}
+.bubble code{background:rgba(96,165,250,.12);color:var(--blue);padding:1px 6px;border-radius:6px;font-size:12.5px;font-family:ui-monospace,Consolas,monospace}
+.divider{border:none;border-top:1px dashed var(--bd2);margin:12px 0}
+
+/* 检索流水线 */
+.pipe{display:flex;flex-direction:column;gap:0;margin:2px 0 4px}
+.pipe-step{display:flex;align-items:center;gap:10px;padding:5px 0;color:var(--t3);font-size:13px;transition:.25s}
+.pipe-dot{width:22px;height:22px;border-radius:50%;border:2px solid var(--bd2);display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0;transition:.25s;background:var(--card)}
+.pipe-step.active{color:var(--t1)}
+.pipe-step.active .pipe-dot{border-color:var(--em);animation:pulse 1s infinite}
+.pipe-step.done{color:var(--t2)}
+.pipe-step.done .pipe-dot{border-color:var(--teal);background:rgba(45,212,191,.15);color:var(--teal)}
+.pipe-meta{font-size:12px;color:var(--t3);margin:6px 0 2px;padding-left:32px}
+.pipe-meta b{color:var(--em)}
+
+/* 文献卡片 */
+.doc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:10px;margin-top:10px}
+.doc-card{background:var(--card);border:1px solid var(--bd2);border-radius:12px;padding:11px 13px;transition:.2s;display:block}
+.doc-card:hover{border-color:rgba(16,185,129,.45);background:var(--hover);transform:translateY(-2px)}
+.doc-card .dc-top{display:flex;align-items:center;gap:7px;margin-bottom:5px}
+.doc-card .dc-id{font-size:11px;color:var(--em);background:rgba(16,185,129,.12);border:1px solid rgba(16,185,129,.3);padding:0 7px;border-radius:20px;white-space:nowrap}
+.doc-card .dc-sub{font-size:11px;color:var(--purple);background:rgba(167,139,250,.1);padding:0 7px;border-radius:20px;white-space:nowrap}
+.doc-card .dc-up{font-size:11px;color:var(--yellow);background:rgba(251,191,36,.1);padding:0 7px;border-radius:20px;white-space:nowrap}
+.doc-card .dc-title{font-size:13px;color:var(--t1);font-weight:600;line-height:1.45;margin-bottom:5px;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.doc-card .dc-row{font-size:11.5px;color:var(--t3);line-height:1.55}
+.doc-card .dc-row b{color:var(--t2);font-weight:500}
+.doc-card .dc-q{font-size:11.5px;color:var(--teal);margin-top:4px}
+.doc-card .dc-path{font-size:10.5px;color:var(--t3);margin-top:5px;word-break:break-all;font-family:ui-monospace,Consolas,monospace;opacity:.75}
+.score-bar{height:4px;border-radius:4px;background:var(--hover);margin-top:7px;overflow:hidden}
+.score-bar i{display:block;height:100%;background:var(--grad);border-radius:4px}
+
+/* 联动卡片 */
+.link-card{border:1px solid var(--bd2);border-radius:12px;padding:11px 13px;margin-top:10px;background:linear-gradient(135deg,rgba(16,185,129,.06),rgba(96,165,250,.05))}
+.link-card.warn{border-color:rgba(251,191,36,.35);background:linear-gradient(135deg,rgba(251,191,36,.07),rgba(248,113,113,.05))}
+.link-card.safe{border-color:rgba(248,113,113,.3);background:linear-gradient(135deg,rgba(248,113,113,.06),rgba(251,191,36,.04))}
+.link-card.video{border-color:rgba(96,165,250,.3);background:linear-gradient(135deg,rgba(96,165,250,.07),rgba(167,139,250,.05))}
+.link-card h4{margin:0 0 8px!important;font-size:13.5px!important}
+.link-card .lk{display:inline-flex;align-items:center;gap:6px;background:var(--card);border:1px solid var(--bd2);border-radius:9px;padding:6px 11px;font-size:12.5px;color:var(--t1);margin:3px 6px 3px 0;transition:.18s}
+.link-card .lk:hover{border-color:var(--em);color:var(--em);transform:translateY(-1px)}
+.link-card .lk small{color:var(--t3)}
+.chem-row{display:flex;flex-wrap:wrap;align-items:center;gap:6px;padding:6px 0;border-top:1px dashed var(--bd)}
+.chem-row:first-of-type{border-top:none}
+.chem-row .cn{font-size:13px;font-weight:600;color:var(--yellow);min-width:130px}
+
+/* chips / 快捷 */
+.chips{display:flex;flex-wrap:wrap;gap:8px;padding:0 18px 10px}
+.chip{font-size:12px;color:var(--t2);background:var(--bg2);border:1px solid var(--bd2);border-radius:20px;padding:5px 12px;cursor:pointer;transition:.18s}
+.chip:hover{color:var(--em);border-color:rgba(16,185,129,.45);background:rgba(16,185,129,.08)}
+.composer{display:flex;gap:10px;padding:12px 18px 16px;border-top:1px solid var(--bd);background:var(--bg2);align-items:flex-end}
+.composer textarea{flex:1;resize:none;background:var(--card);border:1px solid var(--bd2);border-radius:12px;color:var(--t1);padding:11px 14px;font-size:14px;font-family:inherit;line-height:1.55;max-height:130px;outline:none;transition:.2s}
+.composer textarea:focus{border-color:rgba(16,185,129,.55);box-shadow:0 0 0 3px rgba(16,185,129,.12)}
+.btn{border:none;border-radius:11px;padding:11px 20px;font-size:14px;font-weight:600;cursor:pointer;transition:.2s;font-family:inherit;white-space:nowrap}
+.btn.primary{background:var(--grad);color:#04121b;box-shadow:0 4px 14px rgba(16,185,129,.3)}
+.btn.primary:hover{filter:brightness(1.1);transform:translateY(-1px)}
+.btn.primary:disabled{opacity:.45;cursor:not-allowed;transform:none}
+.btn.ghost{background:transparent;border:1px solid var(--bd2);color:var(--t2)}
+.btn.ghost:hover{color:var(--t1);border-color:rgba(148,163,184,.4);background:var(--hover)}
+.btn.warn{background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.4);color:var(--yellow)}
+.btn.warn:hover{background:rgba(251,191,36,.2)}
+.btn.sm{padding:6px 13px;font-size:12.5px;border-radius:9px}
+.quick{display:flex;gap:8px;padding:0 18px 10px;flex-wrap:wrap}
+
+/* 测评进度 */
+.assess-progress{flex:1;min-width:0}
+.ap-txt{font-size:12.5px;color:var(--t2);margin-bottom:6px;display:flex;justify-content:space-between;gap:8px}
+.ap-txt b{color:var(--em)}
+.ap-bar{height:7px;border-radius:7px;background:var(--card);overflow:hidden;border:1px solid var(--bd)}
+.ap-bar i{display:block;height:100%;width:0;background:var(--grad);border-radius:7px;transition:width .5s ease}
+
+/* 打字动画 */
+.typing{display:inline-flex;gap:5px;padding:4px 2px}
+.typing i{width:7px;height:7px;border-radius:50%;background:var(--t3);animation:blink 1.2s infinite}
+.typing i:nth-child(2){animation-delay:.2s}
+.typing i:nth-child(3){animation-delay:.4s}
+
+/* 报告 */
+.report{background:var(--bg2);border:1px solid var(--bd2);border-radius:16px;padding:22px;margin:4px 18px 18px;animation:fadeUp .5s ease both}
+.report h2{font-size:19px;margin-bottom:4px;background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.report .rp-sub{font-size:12px;color:var(--t3);margin-bottom:16px}
+.rp-top{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-bottom:18px}
+.ring{position:relative;width:132px;height:132px;flex-shrink:0}
+.ring svg{transform:rotate(-90deg)}
+.ring .ring-txt{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.ring .ring-txt b{font-size:30px;color:var(--t1)}
+.ring .ring-txt span{font-size:11px;color:var(--t3)}
+.rp-grade{font-size:15px}
+.rp-grade .g-tag{display:inline-block;padding:3px 14px;border-radius:20px;font-weight:700;font-size:15px;margin-bottom:8px}
+.g-ex{background:rgba(16,185,129,.15);color:var(--em);border:1px solid rgba(16,185,129,.4)}
+.g-good{background:rgba(45,212,191,.13);color:var(--teal);border:1px solid rgba(45,212,191,.4)}
+.g-mid{background:rgba(96,165,250,.13);color:var(--blue);border:1px solid rgba(96,165,250,.4)}
+.g-pass{background:rgba(251,191,36,.13);color:var(--yellow);border:1px solid rgba(251,191,36,.4)}
+.g-fail{background:rgba(248,113,113,.13);color:var(--red);border:1px solid rgba(248,113,113,.4)}
+.rp-meta{font-size:12.5px;color:var(--t2);line-height:1.8}
+.kp-row{margin:10px 0}
+.kp-row .kp-head{display:flex;justify-content:space-between;font-size:13px;margin-bottom:5px;gap:10px}
+.kp-row .kp-head b{color:var(--t1);font-weight:600}
+.kp-row .kp-head .kp-val{color:var(--t2);white-space:nowrap}
+.kp-bar{height:9px;border-radius:9px;background:var(--card);border:1px solid var(--bd);overflow:hidden}
+.kp-bar i{display:block;height:100%;border-radius:9px;transition:width .8s ease}
+.kp-comment{font-size:12px;color:var(--t3);margin-top:4px}
+.rp-sec{margin-top:18px}
+.rp-sec h3{font-size:14.5px;color:var(--teal);margin-bottom:8px}
+.rp-sec ul{margin-left:18px;font-size:13px;color:var(--t2)}
+.rp-sec li{margin:4px 0}
+.rp-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;padding-top:16px;border-top:1px dashed var(--bd2)}
+
+/* 侧边栏 */
+.col-side{display:flex;flex-direction:column;gap:16px;position:sticky;top:82px}
+.side-card{background:var(--card);border:1px solid var(--bd);border-radius:16px;padding:16px;box-shadow:var(--shadow);animation:fadeUp .5s ease both}
+.side-card h3{font-size:14px;margin-bottom:11px;display:flex;align-items:center;gap:7px}
+.side-card h3::before{content:"";width:4px;height:15px;border-radius:3px;background:var(--grad)}
+.side-link{display:flex;flex-direction:column;gap:1px;padding:9px 11px;border-radius:11px;border:1px solid transparent;transition:.18s;margin-bottom:6px;background:var(--bg2)}
+.side-link:hover{background:var(--hover);border-color:var(--bd2)}
+.side-link b{font-size:13px;color:var(--t1);font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:6px}
+.side-link b::after{content:"↗";color:var(--t3);font-size:11px}
+.side-link span{font-size:11px;color:var(--t3)}
+footer{border-top:1px solid var(--bd);padding:18px 20px;text-align:center;color:var(--t3);font-size:12px}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.45)}50%{box-shadow:0 0 0 6px rgba(16,185,129,0)}}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:translateY(0)}40%{opacity:1;transform:translateY(-3px)}}
+@media (max-width:640px){
+  .bubble{max-width:94%}
+  .page-head h1{font-size:21px}
+  .chat{max-height:none;min-height:320px}
+  .composer{padding:10px 12px 13px}
+}
+</style>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html" title="返回首页">
+      <span class="brand-ic">⚗</span>
+      <span class="brand-tx"><b>ChemAI</b><i>K₃[Fe(C₂O₄)₃]·3H₂O</i></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="菜单">☰</button>
+    <nav class="nav" id="topNav">
+      <a class="on" href="assistant.html">AI助手</a>
+      <a href="knowledge.html">知识图谱</a>
+      <a href="prep.html">课前预习</a>
+      <a href="index.html#/videos">视频资源</a>
+      <a href="index.html#/report">实验报告检测评估</a>
+      <a href="index.html#/explore">科普探索</a>
+      <a href="corpus.html">语料库</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="page-head">
+    <h1>AI 实验助手</h1>
+    <p class="sub">三草酸合铁酸钾 K₃[Fe(C₂O₄)₃]·3H₂O 制备实验 · 半开放语料库检索问答 + 掌握度自适应测评（无 AI 人格，直接选模式使用）</p>
+  </div>
+
+  <div class="grid">
+    <section class="col-main">
+      <div class="tabs" role="tablist">
+        <button class="tab on" data-mode="qa" role="tab">💬 直接问答<span>语料库检索 · 提问 → 检索 → 查找文献 → 回答</span></button>
+        <button class="tab" data-mode="assess" role="tab">📝 掌握度测评<span>多轮自适应对话 · 动态轮次 · 评估报告可导出</span></button>
+      </div>
+
+      <!-- ========== Tab 1 直接问答 ========== -->
+      <section id="panel-qa" class="panel">
+        <div class="panel-bar">
+          <div class="corpus-status" id="corpusStatus"><span class="dot"></span><span id="corpusStatusTxt">正在加载知识清单…</span></div>
+          <button class="btn ghost sm" id="qaClear">🗑 清空对话</button>
+        </div>
+        <div class="chat" id="qaChat"></div>
+        <div class="chips" id="qaChips"></div>
+        <div class="composer">
+          <textarea id="qaInput" rows="1" placeholder="输入你的问题，如：为什么要用 H₂O₂ 作氧化剂？（Enter 发送，Shift+Enter 换行）"></textarea>
+          <button class="btn primary" id="qaSend">发送 ➤</button>
+        </div>
+      </section>
+
+      <!-- ========== Tab 2 掌握度测评 ========== -->
+      <section id="panel-assess" class="panel hidden">
+        <div class="panel-bar">
+          <div class="assess-progress">
+            <div class="ap-txt"><span id="apTxt">知识点 <b>0/8</b> · 第 <b>0</b> 轮</span><span id="apHint">8 个知识点 · 权重满分 100 · 轮次 8~16 动态调整</span></div>
+            <div class="ap-bar"><i id="apBar"></i></div>
+          </div>
+          <button class="btn warn sm" id="asFinish">⏹ 结束并生成报告</button>
+        </div>
+        <div class="chat" id="asChat"></div>
+        <div class="quick" id="asQuick">
+          <button class="btn ghost sm" id="asSkip">⏭ 跳过本题</button>
+          <button class="btn ghost sm" id="asDontKnow">🤔 我不知道</button>
+        </div>
+        <div class="composer" id="asComposer">
+          <textarea id="asInput" rows="1" placeholder="输入你的回答…"></textarea>
+          <button class="btn primary" id="asSend">回答 ➤</button>
+        </div>
+        <div id="reportZone" class="hidden"></div>
+      </section>
+    </section>
+
+    <!-- ========== 常驻外部资源面板 ========== -->
+    <aside class="col-side">
+      <div class="side-card">
+        <h3>MSDS 安全数据库</h3>
+        <a class="side-link" href="https://www.chemicalbook.com/" target="_blank" rel="noopener"><b>ChemicalBook</b><span>化学品安全技术说明书（MSDS）检索</span></a>
+        <a class="side-link" href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener"><b>PubChem</b><span>NIH 化合物性质 / 安全 / 毒理数据</span></a>
+      </div>
+      <div class="side-card">
+        <h3>视频资源</h3>
+        <a class="side-link" href="https://www.bilibili.com/video/BV18f4y1q7gy" target="_blank" rel="noopener"><b>三草酸合铁酸钾的制备</b><span>bilibili · 全流程演示</span></a>
+        <a class="side-link" href="https://www.bilibili.com/video/BV1xe411v7T2" target="_blank" rel="noopener"><b>翠色欲流的碧绿色晶体</b><span>bilibili · 晶体之美</span></a>
+        <a class="side-link" href="https://www.bilibili.com/video/BV1HT4y1w7BD" target="_blank" rel="noopener"><b>制备及组成测定</b><span>bilibili · 制备 + 组成分析</span></a>
+        <a class="side-link" href="https://www.bilibili.com/video/BV1E14y1G76B" target="_blank" rel="noopener"><b>基础原料制备翠绿色晶体</b><span>bilibili · 低成本路线</span></a>
+        <a class="side-link" href="index.html#/videos"><b>站内视频中心</b><span>重点步骤操作视频合集</span></a>
+      </div>
+      <div class="side-card">
+        <h3>学习资源</h3>
+        <a class="side-link" href="knowledge.html"><b>知识图谱</b><span>知识点关联网络 · 查漏补缺</span></a>
+        <a class="side-link" href="corpus.html"><b>语料库</b><span>276 篇文献知识清单 · 支持上传学习</span></a>
+        <a class="side-link" href="prep.html"><b>课前预习</b><span>多轮对话预习 + 习题检测</span></a>
+        <a class="side-link" href="index.html#/explore"><b>科普探索</b><span>蓝晒 · 光化学 · 配合物拓展</span></a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>ChemAI · 三草酸合铁酸钾 K₃[Fe(C₂O₄)₃]·3H₂O 制备实验教学智能体 · AI 助手（语料检索问答 / 掌握度测评）</footer>
+
+<script>
+(function(){
+'use strict';
+/* ================= 工具 ================= */
+const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));
+const esc=s=>String(s==null?'':s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const enc=encodeURIComponent;
+const delay=ms=>new Promise(r=>setTimeout(r,ms));
+const norm=s=>String(s||'').toLowerCase().replace(/\s+/g,'');
+function lsGet(k,def){try{const v=localStorage.getItem(k);return v?JSON.parse(v):def;}catch(e){return def;}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v));return true;}catch(e){return false;}}
+function lsDel(k){try{localStorage.removeItem(k);}catch(e){}}
+
+/* ================= 语料库 ================= */
+const Corpus={entries:[],total:0,subfields:[],loaded:false,uploaded:0};
+async function loadCorpus(){
+  let base=null;
+  try{
+    const res=await fetch('data/corpus.json',{cache:'no-store'});
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    base=await res.json();
+    Corpus.loaded=true;
+  }catch(e){ Corpus.loaded=false; }
+  const up=lsGet('chemai_corpus_uploaded',[]);
+  const list=(base&&Array.isArray(base.entries))?base.entries.slice():[];
+  Corpus.subfields=(base&&base.subfields)||[];
+  if(Array.isArray(up)) up.forEach(u=>{ if(u&&u.title) list.push(u); });
+  Corpus.entries=list;
+  Corpus.total=base&&base.total?base.total:(base?list.length:0);
+  Corpus.uploaded=Array.isArray(up)?up.filter(u=>u&&u.title).length:0;
+  const st=$('#corpusStatus'),tx=$('#corpusStatusTxt');
+  if(Corpus.loaded){
+    st.className='corpus-status ok';
+    tx.textContent='知识清单已就绪 · 内置 '+Corpus.total+' 篇文献'+(Corpus.uploaded?(' + 上传语料 '+Corpus.uploaded+' 篇'):'')+' · 半开放检索模式';
+  }else{
+    st.className='corpus-status bad';
+    tx.textContent='语料库加载失败（file:// 直开时浏览器会拦截 fetch，请用 http 服务访问）；已降级为内置知识库'+(Corpus.uploaded?(' + 上传语料 '+Corpus.uploaded+' 篇'):'')+'。';
+  }
+}
+
+/* ================= 检索：词典 / 实体识别 ================= */
+const DOMAIN_TERMS=['三草酸合铁酸钾','三草酸合铁','草酸铁钾','草酸亚铁','莫尔盐','摩尔盐','硫酸亚铁铵','硫酸亚铁','过氧化氢','双氧水','草酸','乙二酸','草酸根','乙醇','硫酸','高锰酸钾','铁氰化钾','黄血盐','配位','配合物','络合物','配体','配离子','中心离子','结晶','重结晶','结晶水','抽滤','减压过滤','过滤','洗涤','沉淀','氧化','还原','氧化还原','滴定','配位滴定','产率','理论产量','误差','水浴','加热','温度','避光','见光','光解','光化学','感光','蓝晒','晒蓝','磁化率','磁性','稳定性','分解','热重','热分析','红外','光谱','表征','xrd','废液','安全','腐蚀','防护','仪器','装置','步骤','操作','制备','合成','方程式','纯度','组成测定','含量测定','终点','催化剂','晒图','柠檬酸铁铵','感光剂','剂量计','化学发光','单晶','翠绿色','绿色晶体','ph','氢氧化铁','氧化铁'];
+const STOP_TERMS=['什么','怎么','如何','为什么','为何','哪些','多少','请问','一下','实验','的','了','吗','呢','吧','我们','你们','这个','那个','一个','需要','进行','通过','以及','因此','所以','时候','过程','注意','事项','介绍','简述','说明','讲讲','告诉','能否','可以','课件','教材','老师','同学','内容','知识','问题','解答','回答','帮助','谢谢','啥','怎麼','吗？','？','?'];
+const CHEM_DB=[
+ {name:'三草酸合铁酸钾',alias:['三草酸合铁酸钾','三草酸合铁','草酸铁钾','k3[fe(c2o4)3]','ferrioxalate','铁草酸钾'],pubchem:'potassium ferrioxalate'},
+ {name:'草酸',alias:['草酸','乙二酸','h2c2o4','oxalic'],pubchem:'oxalic acid'},
+ {name:'过氧化氢',alias:['过氧化氢','双氧水','h2o2','hydrogen peroxide'],pubchem:'hydrogen peroxide'},
+ {name:'硫酸亚铁铵(莫尔盐)',alias:['莫尔盐','摩尔盐','硫酸亚铁铵','mohr'],pubchem:'ammonium iron(II) sulfate'},
+ {name:'乙醇',alias:['乙醇','酒精','c2h5oh','ethanol'],pubchem:'ethanol'},
+ {name:'硫酸',alias:['硫酸','h2so4','sulfuric'],pubchem:'sulfuric acid'},
+ {name:'硫酸亚铁',alias:['硫酸亚铁','feso4','绿矾'],pubchem:'ferrous sulfate'},
+ {name:'高锰酸钾',alias:['高锰酸钾','kmno4'],pubchem:'potassium permanganate'},
+ {name:'铁氰化钾',alias:['铁氰化钾','k3[fe(cn)6]','赤血盐'],pubchem:'potassium ferricyanide'},
+ {name:'一水合硫酸亚铁铵（氧化产物）',alias:['氢氧化铁','fe(oh)3'],pubchem:'iron(III) hydroxide'}
+];
+const OP_TERMS=['制备','合成','过滤','抽滤','减压过滤','结晶','重结晶','洗涤','氧化','滴定','产率','蓝晒','操作','步骤','蒸发','加热','水浴','称量','溶解','干燥','装片','磁化率','测定','纯化','沉淀'];
+const VIDEO_BV=[
+ {t:'三草酸合铁酸钾的制备',u:'https://www.bilibili.com/video/BV18f4y1q7gy'},
+ {t:'翠色欲流的碧绿色晶体·三草酸合铁酸钾的制备',u:'https://www.bilibili.com/video/BV1xe411v7T2'},
+ {t:'三草酸合铁(Ⅲ)酸钾的制备及组成测定',u:'https://www.bilibili.com/video/BV1HT4y1w7BD'},
+ {t:'用基础的原料制备美丽的翠绿色晶体',u:'https://www.bilibili.com/video/BV1E14y1G76B'}
+];
+
+const SYN_GROUPS=[['抽滤','减压过滤','吸滤','布氏漏斗'],['蓝晒','晒蓝','晒图','cyanotype'],['磁化率','磁性','磁天平'],['产率','理论产量','百分产率'],['结晶','析晶','晶体析出'],['莫尔盐','摩尔盐','硫酸亚铁铵'],['过氧化氢','双氧水','h2o2','hydrogen peroxide'],['草酸','乙二酸','h2c2o4'],['三草酸合铁酸钾','草酸铁钾','k3[fe(c2o4)3]','ferrioxalate'],['滴定','高锰酸钾滴定','氧化还原滴定'],['避光','见光','光解','光化学','感光'],['配合物','络合物','配位化合物']];
+function extractTerms(q){
+  const nq=norm(q),terms=new Set(),strong=new Set();
+  const addS=t=>{t=norm(t);if(t&&t.length>=2){terms.add(t);strong.add(t);}};
+  DOMAIN_TERMS.forEach(t=>{if(nq.includes(norm(t)))addS(t);});
+  // 化学实体/同义词扩展：命中一个别名 ⇒ 同组全部别名都作为检索词
+  CHEM_DB.forEach(c=>{if(c.alias.some(a=>nq.includes(norm(a))))c.alias.forEach(a=>addS(a));});
+  SYN_GROUPS.forEach(g=>{if(g.some(a=>nq.includes(norm(a))))g.forEach(a=>addS(a));});
+  (q.toLowerCase().match(/[a-z0-9\[\]\(\)\+\-\.]{2,}/g)||[]).forEach(w=>{if(!STOP_TERMS.includes(w)){terms.add(w);if(/[a-z]/.test(w))strong.add(w);}});
+  (q.match(/[\u4e00-\u9fa5]{2,}/g)||[]).forEach(run=>{
+    if(run.length<=4 && !STOP_TERMS.includes(run)){terms.add(run);if(run.length>=3)strong.add(run);}
+    for(let i=0;i<run.length-1;i++){const g=run.slice(i,i+2);if(!STOP_TERMS.includes(g))terms.add(g);}
+    for(let i=0;i<run.length-2;i++){const g=run.slice(i,i+3);if(!STOP_TERMS.includes(g)){terms.add(g);strong.add(g);}}
+  });
+  const filt=a=>a.filter(t=>t&&t.length>=2&&!STOP_TERMS.includes(t));
+  return {all:filt(Array.from(terms)),strong:new Set(filt(Array.from(strong)))};
+}
+function detectChems(q){const nq=norm(q);return CHEM_DB.filter(c=>c.alias.some(a=>nq.includes(norm(a))));}
+function detectOps(q){const nq=norm(q);return OP_TERMS.filter(o=>nq.includes(norm(o)));}
+
+function searchCorpus(q,topN){
+  const {all,strong}=extractTerms(q);
+  if(!all.length||!Corpus.entries.length) return {terms:all,results:[]};
+  const nq=norm(q);
+  const boosts=CONCEPT_BOOST.filter(b=>b.keys.some(k=>nq.includes(norm(k))));
+  const out=[];
+  for(const e of Corpus.entries){
+    const f={
+      title:norm(e.title),subfield:norm(e.subfield),objects:norm(e.objects),methods:norm(e.methods),
+      questions:norm((e.questions||[]).join('|')),content:norm(e.content||'')
+    };
+    let s=0,sh=false;const hit=new Set();
+    for(const t of all){
+      let w=0;
+      if(f.questions.includes(t))w=Math.max(w,10);
+      if(f.title.includes(t))w=Math.max(w,6);
+      if(f.content&&f.content.includes(t))w=Math.max(w,6);
+      if(f.objects.includes(t)||f.methods.includes(t))w=Math.max(w,4);
+      if(f.subfield.includes(t))w=Math.max(w,3);
+      if(w>0){s+=w;hit.add(t);if(strong.has(t))sh=true;}
+    }
+    for(const b of boosts){ if(f.subfield===norm(b.sub)){ s+=b.bonus; sh=true; hit.add('领域:'+b.sub);} }
+    if(s>0) out.push({e,score:s,hit:Array.from(hit),strongHit:sh});
+  }
+  out.sort((a,b)=>b.score-a.score);
+  return {terms:all,results:out.slice(0,topN||6)};
+}
+const HIT_THRESHOLD=6;
+/* 概念→子领域加权：通用概念词难直接命中文献标题，映射到对应子领域 */
+const CONCEPT_BOOST=[
+ {keys:['原理','方程式','制备','合成','反应','步骤','流程','怎么做','操作'],sub:'合成制备',bonus:8},
+ {keys:['产率','测定','含量','纯度','组成','滴定'],sub:'分析测定',bonus:8},
+ {keys:['蓝晒','晒图','感光','cyanotype'],sub:'蓝晒工艺',bonus:8},
+ {keys:['光化学','光解','光致还原','见光','避光'],sub:'光化学应用',bonus:8},
+ {keys:['磁化率','磁性','磁天平'],sub:'磁性研究',bonus:8},
+ {keys:['莫尔盐','摩尔盐','硫酸亚铁铵'],sub:'摩尔盐相关',bonus:8},
+ {keys:['热分解','热重','热分析','差热'],sub:'热化学分析',bonus:8}
+];
+
+/* ================= 内置问答知识库（常见问题 20 条） ================= */
+const FAQ=[
+ {keys:['原理','反应方程式','三步反应','制备原理','反应过程','方程式'],title:'实验原理（沉淀→氧化→配位三步反应）',
+  answer:'<h4>本实验的三步核心反应</h4><p><b>① 沉淀反应</b>：莫尔盐与草酸反应生成黄色草酸亚铁沉淀<br><code>(NH₄)₂Fe(SO₄)₂·6H₂O + H₂C₂O₄ → FeC₂O₄·2H₂O↓(黄) + (NH₄)₂SO₄ + H₂SO₄ + 4H₂O</code></p><p><b>② 氧化反应</b>：H₂O₂ 将 Fe(Ⅱ) 氧化为 Fe(Ⅲ)<br><code>2FeC₂O₄·2H₂O + H₂O₂ + 3K₂C₂O₄ + H₂C₂O₄ → 2K₃[Fe(C₂O₄)₃] + 6H₂O</code>（若氧化不完全会生成褐色 Fe(OH)₃，可滴加少量草酸溶解）</p><p><b>③ 配位反应</b>：Fe³⁺ 与 3 个双齿配体 C₂O₄²⁻ 形成稳定的六配位螯合配离子 <code>[Fe(C₂O₄)₃]³⁻</code>，K⁺ 为外界，冷却结晶得翠绿色晶体 K₃[Fe(C₂O₄)₃]·3H₂O。</p>'},
+ {keys:['过氧化氢','双氧水','h2o2','氧化剂'],title:'为什么选用 H₂O₂ 作氧化剂',
+  answer:'<h4>H₂O₂ 是"绿色氧化剂"</h4><p>本实验需把 Fe(Ⅱ) 氧化为 Fe(Ⅲ)。选 H₂O₂ 的原因：① 氧化能力足够（酸性介质中 φ°(H₂O₂/H₂O)=+1.77V），可把 Fe²⁺ 定量氧化；② <b>还原产物是 H₂O，不引入任何杂质离子</b>（若用 KMnO₄、HNO₃ 会引入 Mn²⁺、NO₃⁻ 等）；③ 过量 H₂O₂ 可加热分解除去：<code>2H₂O₂ → 2H₂O + O₂↑</code>。</p><p>注意：H₂O₂ 应在 40℃ 左右水浴中<b>逐滴加入并搅拌</b>，防止剧烈放热飞溅；氧化完全后需加热煮沸除去过量 H₂O₂。</p>'},
+ {keys:['逐滴','滴加','慢慢加入'],title:'为什么要逐滴加入试剂（草酸 / H₂O₂）',
+  answer:'<h4>逐滴加入的目的</h4><p>① <b>控制反应速率、防止局部过浓</b>：滴加 H₂O₂ 时反应剧烈放热并放出气体，一次加入易暴沸飞溅，且局部过量 H₂O₂ 会催化分解降低利用率；② <b>保证配位完全</b>：草酸/草酸钾滴加过快会使局部 C₂O₄²⁻ 浓度骤升，可能析出草酸钾晶体或包裹未反应的 FeC₂O₄，影响转化率与纯度；③ 边滴边搅拌可让沉淀充分转化，得到颗粒均匀、纯度高的翠绿色晶体。</p>'},
+ {keys:['产率','理论产量','基准','计算'],title:'产率计算与基准试剂',
+  answer:'<h4>产率 = 实际产量 / 理论产量 × 100%</h4><p>本实验以<b>莫尔盐 (NH₄)₂Fe(SO₄)₂·6H₂O</b> 为基准试剂（限量试剂）：反应中 Fe 原子守恒，1 mol 莫尔盐理论上生成 1 mol K₃[Fe(C₂O₄)₃]·3H₂O。M(莫尔盐)=392.14 g/mol，M(产物)=491.24 g/mol，故 <code>理论产量 = m(莫尔盐) × 491.24 / 392.14</code>。其余试剂（草酸、K₂C₂O₄、H₂O₂）均过量，故不作基准。称量产物需完全干燥至恒重后再计算。</p>'},
+ {keys:['结晶','析出','晶体怎么','怎么结晶'],title:'结晶方法：为什么加乙醇 + 冷却 + 避光',
+  answer:'<h4>结晶操作要点</h4><p>K₃[Fe(C₂O₄)₃]·3H₂O 易溶于水、<b>难溶于乙醇</b>，故向翠绿色滤液中加入适量无水乙醇可显著降低产物溶解度；再置于暗处（或包黑纸）<b>冷却/冰水浴静置</b>，即可析出翠绿色晶体。不能用蒸发浓缩至干的方式结晶——产物<b>受热、见光均易分解</b>。析晶后抽滤，用少量乙醇洗涤，室温避光晾干（或低温干燥）。</p>'},
+ {keys:['乙醇','酒精'],title:'乙醇在实验中的作用',
+  answer:'<h4>乙醇的两个作用</h4><p>① <b>降低溶解度、促进结晶</b>：产物在水中溶解度较大，加入乙醇改变溶剂极性使晶体析出，提高产率；② <b>洗涤除杂</b>：用少量乙醇（或乙醇-丙酮）洗涤晶体，可洗去表面吸附的草酸盐、硫酸盐等可溶性杂质，而产物本身在乙醇中溶解度小、损失少。注意乙醇用量不宜过大，且洗涤要"少量多次"。</p>'},
+ {keys:['洗涤','洗沉淀','除杂','杂质'],title:'沉淀/晶体的洗涤与除杂',
+  answer:'<h4>洗涤操作</h4><p>草酸亚铁沉淀阶段：用<b>热蒸馏水</b>倾析/抽滤洗涤 2~3 次，洗去 SO₄²⁻、NH₄⁺ 等可溶性离子；产物晶体阶段：用<b>少量无水乙醇（或 1:1 乙醇-丙酮）少量多次洗涤</b>，洗去母液中的草酸盐杂质并减少产物溶解损失。洗涤液用量过大是产率偏低的常见原因。</p>'},
+ {keys:['安全','注意事项','危险','防护','护目'],title:'安全注意事项',
+  answer:'<h4>安全须知</h4><p>① <b>H₂O₂（30%）有强氧化性和腐蚀性</b>：戴护目镜与手套操作，沾到皮肤立即用大量水冲洗；② <b>草酸及其盐有毒</b>：避免入口与皮肤长期接触，称量后洗手；③ 加热/水浴时防烫伤，滴加 H₂O₂ 时防暴沸飞溅；④ 乙醇易燃，远离明火；⑤ 实验在通风处进行，废液分类回收（详见废液处理问答，也可查右侧 MSDS 数据库）。</p>'},
+ {keys:['废液','废渣','排放','回收','环保'],title:'废液处理',
+  answer:'<h4>废液分类处理</h4><p>① 含 Fe³⁺/Fe²⁺ 与草酸盐的母液、洗液：<b>倒入指定重金属废液回收桶</b>，可加碱中和沉淀铁后按无机废液处理，不得直接排入下水道；② 残余 H₂O₂：大量水稀释后排放；③ 含乙醇的洗涤液：有机废液桶回收；④ 固体残渣（滤纸、废晶体）入固废收集。遵守实验室"分类收集、标签清晰"原则。</p>'},
+ {keys:['稳定性','稳定','容易分解','影响因素'],title:'配合物稳定性的影响因素',
+  answer:'<h4>影响 [Fe(C₂O₄)₃]³⁻ 稳定性的因素</h4><p>① <b>光</b>：见光发生光化学还原（Fe³⁺→Fe²⁺，C₂O₄²⁻ 被氧化为 CO₂），是最主要因素——故全程避光、棕色瓶保存；② <b>温度</b>：受热分解、失去结晶水，应低温干燥、室温保存；③ <b>pH</b>：强酸使草酸根质子化、配离子解离，强碱则生成 Fe(OH)₃ 沉淀；④ 杂质与湿度也会影响晶体稳定性。利用其光敏性可用于蓝晒与光化学剂量计。</p>'},
+ {keys:['避光','见光','光解','感光','棕色瓶','保存'],title:'为什么要避光保存',
+  answer:'<h4>光化学还原</h4><p>[Fe(C₂O₄)₃]³⁻ 对光敏感，光照下发生分子内氧化还原：<code>2[Fe(C₂O₄)₃]³⁻ + hν → 2Fe²⁺ + 5C₂O₄²⁻ + 2CO₂↑</code>。翠绿色晶体见光会逐渐变黄、分解失效，因此制备时避免强光直射，产品用<b>棕色瓶（或黑纸包裹）避光、低温保存</b>。这一性质正是蓝晒工艺与光化学剂量计的原理基础。</p>'},
+ {keys:['莫尔盐','摩尔盐','硫酸亚铁铵'],title:'莫尔盐是什么？为什么用它而不用 FeSO₄',
+  answer:'<h4>莫尔盐 (NH₄)₂Fe(SO₄)₂·6H₂O</h4><p>莫尔盐是硫酸亚铁与硫酸铵形成的复盐，常用作稳定的 Fe(Ⅱ) 源。相比 FeSO₄·7H₂O，它在空气中<b>更不易被氧化、不易风化</b>，组成确定、易于准确定量，故本实验以它为起始原料兼作产率计算基准。使用时仍需现配现用，溶解时加少量稀硫酸抑制 Fe²⁺ 水解。</p>'},
+ {keys:['产率低','偏低','误差','失败','原因分析'],title:'产率偏低的原因分析',
+  answer:'<h4>常见误差来源</h4><p>① 转移、过滤时沉淀/晶体损失；② 洗涤用水或乙醇过多，产物溶解流失；③ H₂O₂ 不足或滴加过快分解，Fe(Ⅱ) <b>氧化不完全</b>；④ 加乙醇不足、冷却时间不够导致<b>结晶不完全</b>；⑤ 见光或受热分解；⑥ 干燥不充分使称量偏重（产率"虚高"，属另一方向误差）。分析误差要对应到具体操作环节。</p>'},
+ {keys:['用途','应用','蓝晒','光化学剂量','化学发光','晒图'],title:'三草酸合铁酸钾的应用（蓝晒等）',
+  answer:'<h4>主要应用</h4><p>① <b>蓝晒法（Cyanotype）</b>：与铁氰化钾组成感光液，光照下 Fe³⁺ 被还原为 Fe²⁺，再与 [Fe(CN)₆]³⁻ 生成普鲁士蓝影像——本实验配套的科普拓展；② <b>光化学剂量计（Actinometer）</b>：利用光还原量子产率稳定测定光强；③ <b>磁化率测定</b>：Fe³⁺ 为 d⁵ 高自旋，常作磁天平测磁化率的样品；④ 配位化学与光化学教学经典案例。</p>'},
+ {keys:['测定','纯度','组成','高锰酸钾','kmno4','含量','检验'],title:'产品组成与纯度测定',
+  answer:'<h4>组成测定思路</h4><p>① <b>草酸根含量</b>：酸性介质中用 KMnO₄ 标准溶液滴定（加热 75~85℃）：<code>5C₂O₄²⁻ + 2MnO₄⁻ + 16H⁺ → 10CO₂↑ + 2Mn²⁺ + 8H₂O</code>；② <b>铁含量</b>：先将 Fe³⁺ 还原（如 Zn 粉/ SnCl₂）再用 KMnO₄ 或 K₂Cr₂O₇ 滴定 Fe²⁺，或用邻菲啰啉分光光度法；③ <b>结晶水</b>：热重分析（TGA）测定。由 n(Fe):n(C₂O₄):n(K):n(H₂O) 之比可验证化学式 K₃[Fe(C₂O₄)₃]·3H₂O。</p>'},
+ {keys:['仪器','装置','设备','玻璃器皿'],title:'实验仪器清单',
+  answer:'<h4>主要仪器</h4><p>电子天平、烧杯（100/250 mL）、量筒、玻璃棒、胶头滴管、恒温水浴锅、布氏漏斗 + 吸滤瓶（<b>抽滤装置</b>）、循环水真空泵、表面皿、滤纸、棕色试剂瓶、烘箱（低温档）。要点：抽滤前润湿滤纸、先拔管后关泵；产物避光存放于棕色瓶。</p>'},
+ {keys:['温度','水浴','加热','40','控温'],title:'温度控制要点',
+  answer:'<h4>为什么要控温约 40℃</h4><p>氧化与配位阶段宜在 <b>40℃ 左右水浴</b>中进行：温度过低反应慢、FeC₂O₄ 转化不完全；温度过高则 ① H₂O₂ 快速分解失效，② 配合物受热分解、颜色变深。滴加 H₂O₂ 时若反应剧烈可暂停并离水浴降温。氧化完成后可稍加热煮沸除去过量 H₂O₂，但时间不宜长。</p>'},
+ {keys:['步骤','流程','怎么做','过程','制备过程'],title:'操作流程总览',
+  answer:'<h4>标准操作流程</h4><ol><li>称取莫尔盐，加蒸馏水与少量稀硫酸溶解；</li><li>加入饱和草酸溶液，水浴加热得黄色 FeC₂O₄·2H₂O 沉淀，静置后倾析/抽滤、热水洗涤；</li><li>沉淀转入含饱和 K₂C₂O₄ 溶液的烧杯，40℃ 水浴下<b>逐滴加入 H₂O₂</b> 并搅拌至氧化完全（褐色消失），加热除尽过量 H₂O₂；</li><li>滴加饱和草酸溶液调节至沉淀溶解，得翠绿色清液；</li><li>加入无水乙醇，暗处冷却结晶，抽滤，乙醇洗涤 2~3 次；</li><li>避光晾干、称量、计算产率，棕色瓶保存。</li></ol>'},
+ {keys:['现象','颜色','黄色','褐色','翠绿色','终点'],title:'实验现象与终点判断',
+  answer:'<h4>各阶段现象</h4><p>① 加草酸：生成<b>黄色</b> FeC₂O₄·2H₂O 沉淀；② 滴加 H₂O₂：沉淀逐渐转为<b>红褐色</b>（Fe(OH)₃ 特征色），伴随放热与气泡；③ 加草酸后：褐色溶解，溶液变为<b>翠绿色</b>——即 [Fe(C₂O₄)₃]³⁻ 的颜色，氧化/配位完全的标志；④ 加乙醇冷却：析出翠绿色针状/片状晶体。若褐色久不消失，说明草酸不足或氧化过度，应补加少量饱和草酸。</p>'},
+ {keys:['抽滤','减压过滤','布氏漏斗','吸滤','真空泵'],title:'抽滤（减压过滤）操作要点',
+  answer:'<h4>抽滤操作</h4><p>① 滤纸略小于布氏漏斗内径，先用少量溶剂润湿贴紧；② 先开真空泵再倒入悬浊液，晶体尽量转移完全（可用少量母液/乙醇荡洗烧杯）；③ 抽干后<b>先拔掉吸滤瓶上的橡皮管、再关真空泵</b>，防止倒吸；④ 用少量冷乙醇淋洗晶体 2~3 次可提高纯度；⑤ 母液倒入指定废液桶。抽滤比普通过滤快得多，适合晶体收集。</p>'}
+];
+function matchFAQ(q){
+  const nq=norm(q);let best=null,bestN=0;
+  for(const f of FAQ){
+    let n=0;for(const k of f.keys){if(nq.includes(norm(k)))n++;}
+    if(n>bestN){bestN=n;best=f;}
+  }
+  return bestN>0?best:null;
+}
+
+/* ================= 问答 Tab ================= */
+const QA_KEY='chemai_qa_history';
+const qaChat=$('#qaChat'),qaInput=$('#qaInput'),qaSend=$('#qaSend');
+let qaBusy=false;
+
+function scrollChat(el){el.scrollTop=el.scrollHeight;}
+function addMsg(chatEl,role,html,save){
+  const wrap=document.createElement('div');wrap.className='msg '+role;
+  const av=document.createElement('div');av.className='avatar';av.textContent=role==='ai'?'⚗':'🧑‍🎓';
+  const bub=document.createElement('div');bub.className='bubble';bub.innerHTML=html;
+  wrap.appendChild(av);wrap.appendChild(bub);chatEl.appendChild(wrap);
+  scrollChat(chatEl);
+  if(save&&chatEl===qaChat){
+    const h=lsGet(QA_KEY,[]);h.push({role,html:role==='user'?esc(html):html});
+    lsSet(QA_KEY,h.slice(-60));
+  }
+  return bub;
+}
+function saveAIBubble(bub){
+  const h=lsGet(QA_KEY,[]);h.push({role:'ai',html:bub.innerHTML});lsSet(QA_KEY,h.slice(-60));
+}
+function renderQAHistory(){
+  const h=lsGet(QA_KEY,[]);
+  if(!h.length){
+    addMsg(qaChat,'ai','<p>你好！我是本实验的 <b>AI 实验助手</b>（直接问答模式）。</p><p>你提问后，我会依次 <b>检索知识清单 → 匹配文献 → 生成回答</b>；若知识清单未命中，将自动接入网络浏览外链。涉及化学试剂时会附 MSDS 安全数据链接，涉及实验操作时会附相关视频。</p><p class="muted">试试下方示例问题，或直接输入。</p>',false);
+    return;
+  }
+  h.forEach(m=>{addMsg(qaChat,m.role,m.role==='user'?esc(m.html):m.html,false);});
+}
+
+function pipelineHTML(){
+  return '<div class="pipe">'
+    +'<div class="pipe-step" data-s="1"><span class="pipe-dot"></span>检索知识清单（'+(Corpus.total||276)+' 篇文献'+(Corpus.uploaded?(' + '+Corpus.uploaded+' 篇上传语料'):'')+'）</div>'
+    +'<div class="pipe-step" data-s="2"><span class="pipe-dot"></span>匹配文献（关键词打分 · 化学实体识别）</div>'
+    +'<div class="pipe-step" data-s="3"><span class="pipe-dot"></span>生成回答</div>'
+    +'</div><div class="pipe-meta"></div>';
+}
+async function animatePipe(bub,stepCount){
+  const steps=bub.querySelectorAll('.pipe-step');
+  for(let i=0;i<stepCount&&i<steps.length;i++){
+    steps[i].classList.add('active');
+    await delay(360+Math.random()*320);
+    steps[i].classList.remove('active');steps[i].classList.add('done');
+    steps[i].querySelector('.pipe-dot').textContent='✓';
+    scrollChat(qaChat);
+  }
+}
+function docCardHTML(r){
+  const e=r.e;
+  const qs=(e.questions||[]).slice(0,2).map(x=>'<div class="dc-q">❓ '+esc(x)+'</div>').join('');
+  const up=(e.id>=1000||e.content)?'<span class="dc-up">上传语料</span>':'';
+  const w=Math.min(100,Math.round(r.score/60*100));
+  return '<div class="doc-card">'
+    +'<div class="dc-top"><span class="dc-id">#'+esc(e.id)+'</span><span class="dc-sub">'+esc(e.subfield||'未分类')+'</span>'+up+'</div>'
+    +'<div class="dc-title">'+esc(e.title)+'</div>'
+    +(e.methods?'<div class="dc-row"><b>关键方法：</b>'+esc(e.methods)+'</div>':'')
+    +(e.objects?'<div class="dc-row"><b>研究对象：</b>'+esc(e.objects)+'</div>':'')
+    +qs
+    +(e.path?'<div class="dc-path">📄 '+esc(e.path)+'</div>':'')
+    +'<div class="score-bar" title="相关度评分 '+r.score+'"><i style="width:'+w+'%"></i></div>'
+    +'</div>';
+}
+function citationHTML(r){
+  const e=r.e;let s='<li><b>[#'+esc(e.id)+']</b> '+esc(e.title)+' <span class="muted">（'+esc(e.subfield||'')+(e.methods?(' · '+esc(e.methods)):'')+'）</span>';
+  if(e.questions&&e.questions.length) s+='<br><span class="muted">可回答：'+esc(e.questions.slice(0,3).join('；'))+'</span>';
+  if(e.content){
+    const cn=norm(e.content);let pos=-1,term='';
+    for(const t of (r.hit||[])){const p=cn.indexOf(t);if(p>=0&&(pos<0||p<pos)){pos=p;term=t;}}
+    const raw=e.content;let snip=raw.slice(0,160);
+    if(pos>=0){
+      const ratio=raw.length/Math.max(1,cn.length);
+      const st=Math.max(0,Math.floor(pos*ratio)-40),ed=Math.min(raw.length,st+180);
+      snip=(st>0?'…':'')+raw.slice(st,ed)+(ed<raw.length?'…':'');
+    }
+    s+='<br><span style="color:#fbbf24;font-size:12px">📎 正文片段：“'+esc(snip)+'”</span>';
+  }
+  return s+'</li>';
+}
+function webFallbackHTML(q){
+  const links=[
+    ['Bing','https://www.bing.com/search?q='+enc(q)],
+    ['Google','https://www.google.com/search?q='+enc(q)],
+    ['中国知网 CNKI','https://kns.cnki.net/kns8s/defaultresult/index?kw='+enc(q)],
+    ['ScienceDirect','https://www.sciencedirect.com/search?qs='+enc(q)]
+  ].map(l=>'<a class="lk" href="'+l[1]+'" target="_blank" rel="noopener">🌐 '+l[0]+' <small>↗</small></a>').join('');
+  return '<div class="link-card warn"><h4>📡 知识清单未命中 · 已接入网络浏览</h4>'
+    +'<div class="muted" style="margin-bottom:7px">本地 '+(Corpus.total||276)+' 篇文献知识清单中未找到与该问题足够相关的条目，已为你生成即点即用的网络检索链接（问题已自动填入）：</div>'+links+'</div>';
+}
+function msdsCardHTML(chems){
+  const rows=chems.slice(0,4).map(c=>
+    '<div class="chem-row"><span class="cn">⚠ '+esc(c.name)+'</span>'
+    +'<a class="lk" href="https://www.chemicalbook.com/Search.aspx?keyword='+enc(c.name)+'" target="_blank" rel="noopener">ChemicalBook MSDS ↗</a>'
+    +'<a class="lk" href="https://pubchem.ncbi.nlm.nih.gov/#query='+enc(c.pubchem)+'" target="_blank" rel="noopener">PubChem ↗</a></div>'
+  ).join('');
+  return '<div class="link-card safe"><h4>🧯 MSDS 安全数据（检测到化学试剂）</h4>'+rows
+    +'<div class="muted" style="margin-top:5px">实验前请查阅安全技术说明书，佩戴护目镜与手套，废液分类回收。</div></div>';
+}
+function videoCardHTML(ops,q){
+  let kw='三草酸合铁酸钾制备';
+  if(ops.includes('抽滤')) kw='抽滤操作';
+  else if(ops.includes('减压过滤')) kw='减压过滤';
+  else if(ops.includes('重结晶')||ops.includes('结晶')) kw='重结晶';
+  else if(ops.includes('滴定')) kw='滴定操作';
+  else if(ops.includes('过滤')) kw='减压过滤';
+  const vids=VIDEO_BV.map(v=>'<a class="lk" href="'+v.u+'" target="_blank" rel="noopener">🎬 '+esc(v.t)+' <small>↗</small></a>').join('');
+  return '<div class="link-card video"><h4>🎥 相关视频（检测到实验操作关键词：'+esc(ops.slice(0,4).join('、'))+'）</h4>'
+    +vids
+    +'<a class="lk" href="https://search.bilibili.com/all?keyword='+enc(kw)+'" target="_blank" rel="noopener">🔍 B站搜索「'+esc(kw)+'」↗</a>'
+    +'<a class="lk" href="index.html#/videos">📺 站内视频中心</a></div>';
+}
+
+async function handleQA(q){
+  addMsg(qaChat,'user',esc(q),true);
+  qaBusy=true;qaSend.disabled=true;
+  const bub=addMsg(qaChat,'ai',pipelineHTML(),false);
+  // 步骤1：检索知识清单
+  await animatePipe(bub,1);
+  const {terms,results}=searchCorpus(q,6);
+  // 步骤2：匹配文献
+  await animatePipe(bub,2);
+  // 领域相关性判定：与本实验/化学无关的问题直接进入网络回退
+  const DOMAIN_RE=/实验|化学|配合物|配位|沉淀|晶体|光化学|光致|方程式|磁化|摩尔|产率|结晶|滴定|蓝晒|试剂|过滤|抽滤|水浴|加热|误差|废液|避光|洗涤|蒸干|称量|溶解|浓度|制备|合成|络合|螯合|烧杯|漏斗|滤纸|天平|滴加|步骤|操作/;
+  const GENERIC_RE=/原理|目的|计算|思考题|结论|步骤/;
+  const domain=DOMAIN_RE.test(q)||detectChems(q).length>0||detectOps(q).length>0||(q.length<=8&&GENERIC_RE.test(q));
+  const hits=domain?results.filter(r=>r.score>=HIT_THRESHOLD&&(r.strongHit||r.e.content)):[];
+  const faq=domain?matchFAQ(q):null;
+  const chems=detectChems(q),ops=detectOps(q);
+  // 组装回答
+  let html='';
+  if(faq) html+=faq.answer;
+  if(hits.length){
+    if(faq) html+='<hr class="divider">';
+    html+='<h4>📚 依据文献（知识清单命中 '+hits.length+' 篇）</h4>';
+    if(!faq){
+      const top=hits[0].e;
+      html+='<p>根据知识清单中《'+esc(top.title)+'》等 '+hits.length+' 篇文献的著录信息，该问题属于「'+esc(top.subfield||'相关')+'」方向，可结合下列文献的研究对象、方法与预设问题作答：</p>';
+    }
+    html+='<ol style="margin-left:18px">'+hits.map(citationHTML).join('')+'</ol>';
+    html+='<div class="doc-grid">'+hits.map(docCardHTML).join('')+'</div>';
+  }else{
+    html+=webFallbackHTML(q);
+  }
+  if(chems.length) html+=msdsCardHTML(chems);
+  if(ops.length) html+=videoCardHTML(ops,q);
+  // 步骤3：生成回答
+  await animatePipe(bub,3);
+  const meta=bub.querySelector('.pipe-meta');
+  meta.innerHTML='✅ 检索完成 · 命中关键词 '+terms.length+' 个 · '+(hits.length?('命中文献 <b>'+hits.length+'</b> 篇'):'知识清单未命中 → 网络浏览')+(faq?' · 内置知识库命中「'+esc(faq.title)+'」':'');
+  const ans=document.createElement('div');ans.innerHTML=html;bub.appendChild(ans);
+  scrollChat(qaChat);saveAIBubble(bub);
+  qaBusy=false;qaSend.disabled=false;
+}
+
+function qaSubmit(){
+  const q=(qaInput.value||'').trim();
+  if(!q||qaBusy) return;
+  qaInput.value='';qaInput.style.height='auto';
+  handleQA(q).catch(err=>{
+    qaBusy=false;qaSend.disabled=false;
+    addMsg(qaChat,'ai','<p style="color:#f87171">处理出错：'+esc(err&&err.message||err)+'</p>',true);
+  });
+}
+qaSend.addEventListener('click',qaSubmit);
+qaInput.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();qaSubmit();}});
+qaInput.addEventListener('input',()=>{qaInput.style.height='auto';qaInput.style.height=Math.min(130,qaInput.scrollHeight)+'px';});
+$('#qaClear').addEventListener('click',()=>{
+  lsDel(QA_KEY);qaChat.innerHTML='';renderQAHistory();
+});
+const CHIPS=['本实验的原理是什么？三步反应方程式','为什么要用 H₂O₂ 作氧化剂？','产率如何计算？以哪种试剂为基准？','抽滤操作要注意什么？','三草酸合铁酸钾为什么要避光保存？','蓝晒的原理是什么？'];
+CHIPS.forEach(c=>{
+  const b=document.createElement('button');b.className='chip';b.textContent=c;
+  b.addEventListener('click',()=>{if(qaBusy)return;qaInput.value=c;qaSubmit();});
+  $('#qaChips').appendChild(b);
+});
+
+/* ================= 掌握度测评 Tab ================= */
+const KP=[
+ {name:'实验目的与产物认知',weight:10,subfield:'实验教学',knode:'产物结构与配位组成',videos:[0],
+  main:'我们先从基础开始：本实验要制备的<b>目标产物</b>是什么？请写出它的化学式，并说说它的配位组成（中心离子、配体、外界、配位数）。',
+  follow:'苏格拉底式提示：名称"三草酸合铁(Ⅲ)酸钾"里藏着答案——"三草酸合铁"说明配体有几个？中心离子是几价铁？外界又是什么离子呢？',
+  hint:'提示：产物的内界是 [Fe(C₂O₄)₃]³⁻ 配离子，想一想它由什么中心离子和几个什么配体组成，外界是什么阳离子。',
+  groups:[['三草酸合铁酸钾','草酸铁钾','k3[fe(c2o4)3]'],['化学式','分子式','c2o4','草酸根'],['fe3+','三价铁','fe(ⅲ)','fe(iii)','铁离子'],['配体','配位','双齿','螯合'],['钾','k+','k⁺','外界'],['翠绿色','绿色','晶体','配合物','络合物']],
+  explain:'<b>直接讲解：</b>目标产物是<b>三草酸合铁酸钾 K₃[Fe(C₂O₄)₃]·3H₂O</b>，翠绿色晶体，属配位化合物（配合物）：中心离子 <b>Fe³⁺</b>，配体为 3 个双齿的<b>草酸根 C₂O₄²⁻</b>，配位数 6，内界 [Fe(C₂O₄)₃]³⁻，外界 3 个 K⁺，另含 3 分子结晶水。建议到知识图谱查看"产物结构与配位组成"节点。'},
+ {name:'实验原理（沉淀/氧化/配位反应）',weight:20,subfield:'合成制备',knode:'三步反应原理',videos:[0,2],
+  main:'请描述本实验的<b>反应原理</b>：以莫尔盐为原料制备三草酸合铁酸钾，主要经历哪几步反应？能写出（或描述）各步的反应方程式吗？',
+  follow:'提示：想想 Fe 元素的价态变化路线——莫尔盐里 Fe 是 +2 价，产物里是 +3 价。中间先形成了什么沉淀？是谁把 Fe(Ⅱ) 变成了 Fe(Ⅲ)？最后谁和 Fe³⁺ 配位？',
+  hint:'提示：路线是"先生成 FeC₂O₄ 沉淀 → 用某氧化剂氧化 → 再与草酸根配位"。试着说出每一步的反应物与生成物。',
+  groups:[['fec2o4','草酸亚铁','黄色沉淀','沉淀'],['过氧化氢','h2o2','双氧水','氧化剂'],['氧化','fe2+','二价铁','fe(ⅱ)'],['fe3+','三价铁','fe(ⅲ)'],['配位','配合','草酸根','c2o4','k2c2o4'],['方程式','反应式','k3[fe(c2o4)3]']],
+  explain:'<b>直接讲解：</b>三步反应——①<b>沉淀</b>：(NH₄)₂Fe(SO₄)₂+H₂C₂O₄ → FeC₂O₄·2H₂O↓(黄色)；②<b>氧化</b>：H₂O₂ 把 Fe(Ⅱ) 氧化为 Fe(Ⅲ)；③<b>配位</b>：Fe³⁺ 与 C₂O₄²⁻ 形成 [Fe(C₂O₄)₃]³⁻。总反应：2FeC₂O₄·2H₂O + H₂O₂ + 3K₂C₂O₄ + H₂C₂O₄ → 2K₃[Fe(C₂O₄)₃] + 6H₂O。这是本实验最核心的知识点（权重 20），务必理解"先沉淀、再氧化、后配位"的设计逻辑。'},
+ {name:'试剂与仪器认知',weight:10,subfield:'实验教学',knode:'试剂作用与仪器清单',videos:[2],
+  main:'说说本实验用到的<b>主要试剂与仪器</b>：莫尔盐、草酸、H₂O₂、乙醇分别起什么作用？抽滤需要哪些仪器？',
+  follow:'提示：从"每种试剂解决了什么问题"去想——谁提供 Fe²⁺？谁提供 C₂O₄²⁻？谁负责氧化？乙醇加进去后晶体为什么容易析出？',
+  hint:'提示：四种试剂对应"铁源 / 沉淀与配位剂 / 氧化剂 / 降低溶解度促结晶"四个角色，试着对号入座。',
+  groups:[['莫尔盐','硫酸亚铁铵','铁源'],['草酸','乙二酸','配位','沉淀剂'],['过氧化氢','双氧水','h2o2','氧化'],['乙醇','酒精','降低溶解度','洗涤'],['布氏漏斗','吸滤瓶','抽滤','真空泵'],['水浴','烧杯','玻璃棒','天平','量筒']],
+  explain:'<b>直接讲解：</b>莫尔盐（硫酸亚铁铵）= 稳定的 Fe(Ⅱ) 铁源兼产率基准；草酸 = 沉淀剂（生成 FeC₂O₄）兼配位剂；H₂O₂ = 绿色氧化剂（Fe²⁺→Fe³⁺）；乙醇 = 降低产物溶解度促结晶并用于洗涤。抽滤装置：布氏漏斗 + 吸滤瓶 + 真空泵，另需水浴锅、烧杯、玻璃棒、天平等。'},
+ {name:'操作流程与关键参数',weight:20,subfield:'合成制备',knode:'操作流程与关键参数',videos:[0,3],
+  main:'请按顺序描述本实验的<b>操作流程</b>，并指出关键操作参数（温度、加料方式、洗涤与结晶条件、避光要求等）。',
+  follow:'提示：回忆"称量 → 溶解 → 沉淀 → 氧化 → 配位 → 结晶 → 抽滤洗涤 → 干燥称量"这条主线，每一步的温度和加料方式你有印象吗？比如 H₂O₂ 是快速倒入还是逐滴加入？',
+  hint:'提示：关键参数包括——40℃ 左右水浴、H₂O₂ 逐滴加入并搅拌、热水洗沉淀、加乙醇后暗处冷却结晶、乙醇洗涤、避光干燥。',
+  groups:[['溶解','稀硫酸','加水'],['水浴','40','加热','控温'],['逐滴','滴加','搅拌'],['洗涤','热水','洗沉淀'],['乙醇','酒精','冷却','结晶'],['抽滤','过滤','避光','暗处','干燥']],
+  explain:'<b>直接讲解：</b>流程：莫尔盐溶解（加少量稀硫酸防水解）→ 加饱和草酸、水浴加热得黄色 FeC₂O₄ 沉淀 → 热水洗涤 → 转入 K₂C₂O₄ 溶液，<b>40℃ 水浴下逐滴加 H₂O₂</b> 氧化 → 煮沸除尽过量 H₂O₂ → 滴加饱和草酸至沉淀溶解得翠绿色清液 → 加无水乙醇、<b>暗处冷却结晶</b> → 抽滤、乙醇洗涤 2~3 次 → 避光干燥称量。关键参数：温度 40℃、逐滴加料、避光、乙醇促晶。'},
+ {name:'产率计算与数据处理',weight:15,subfield:'分析测定',knode:'产率计算与基准试剂',videos:[2],
+  main:'<b>产率如何计算？</b>本实验应以哪种试剂为基准计算理论产量？为什么选它？',
+  follow:'提示：想想"Fe 原子守恒"——1 mol 起始铁源理论上生成几 mol 产物？哪种试剂的量决定了理论产量的上限（限量试剂）？',
+  hint:'提示：基准试剂是"限量且组成确定"的那种，其余试剂都过量。产物与它的摩尔比是 1:1（按 Fe 守恒）。',
+  groups:[['产率','百分产率'],['理论产量','实际产量'],['莫尔盐','硫酸亚铁铵','基准','限量'],['100%','百分比','除以'],['摩尔','物质的量','n(','1:1','计量比'],['491','392','摩尔质量','相对分子质量']],
+  explain:'<b>直接讲解：</b>产率 = 实际产量 ÷ 理论产量 × 100%。基准试剂为<b>莫尔盐 (NH₄)₂Fe(SO₄)₂·6H₂O</b>（M=392.14）：它是限量试剂且 Fe 守恒，1 mol 莫尔盐 → 1 mol K₃[Fe(C₂O₄)₃]·3H₂O（M=491.24），理论产量 = m(莫尔盐) × 491.24/392.14。产物需干燥至恒重后称量。'},
+ {name:'误差分析',weight:10,subfield:'综合研究',knode:'误差来源与产率异常',videos:[3],
+  main:'如果测得的<b>产率明显偏低（或超过 100%）</b>，可能有哪些原因？请从操作角度做误差分析。',
+  follow:'提示：沿着流程找"损失点"——沉淀转移、洗涤、过滤、结晶、干燥，哪一步会让产物变少？反过来，什么情况会让称量值"虚高"？',
+  hint:'提示：偏低——转移损失、洗涤液过多、氧化不完全、结晶不完全、见光分解；偏高——未干燥恒重、杂质共沉淀。',
+  groups:[['损失','转移','洒落','残留'],['洗涤','溶解','过多','过量'],['结晶不完全','未析出','析晶'],['氧化','不完全','h2o2'],['分解','见光','受热','光解'],['干燥','恒重','杂质','水分','未干']],
+  explain:'<b>直接讲解：</b>产率偏低：① 转移/过滤时沉淀晶体损失；② 洗涤用水或乙醇过多导致溶解流失；③ H₂O₂ 不足或分解导致氧化不完全；④ 乙醇量不足、冷却时间不够导致结晶不完全；⑤ 见光/受热分解。产率偏高（>100%）：产物未干燥至恒重（含溶剂/水）、杂质共沉淀。误差分析要对应到具体步骤并提出改进。'},
+ {name:'安全与废液处理',weight:5,subfield:'实验教学',knode:'安全规范与废液分类',videos:[],
+  main:'说说本实验的<b>安全注意事项</b>，以及实验结束后的<b>废液应如何处理</b>？',
+  follow:'提示：想一想本实验"最危险"的两种试剂——有腐蚀性强氧化性的是谁？有毒的是谁？含铁和草酸盐的废液能直接倒下水道吗？',
+  hint:'提示：H₂O₂（腐蚀/强氧化）与草酸（有毒）是防护重点；含 Fe 与草酸盐的废液属重金属废液，需回收处理。',
+  groups:[['过氧化氢','双氧水','h2o2','腐蚀','氧化性'],['草酸','毒','有毒'],['护目镜','手套','防护','通风'],['废液','回收','分类'],['重金属','中和','沉淀','排放'],['加热','烫伤','明火','乙醇','易燃']],
+  explain:'<b>直接讲解：</b>安全：H₂O₂ 具强氧化腐蚀性、草酸有毒，须戴护目镜手套、通风操作；加热防烫伤、乙醇远离明火。废液：含 Fe/草酸盐废液属<b>重金属废液</b>，须倒入专用回收桶（可加碱中和沉淀铁后处理），残余 H₂O₂ 稀释排放，有机洗涤液入有机废液桶，固废分类收集。'},
+ {name:'配合物稳定性与课后思考',weight:10,subfield:'光化学应用',knode:'光化学性质与蓝晒拓展',videos:[1],
+  main:'最后一题：<b>[Fe(C₂O₄)₃]³⁻ 的稳定性受哪些因素影响？</b>为什么要避光保存？它还有哪些有趣的应用（比如蓝晒）？',
+  follow:'提示：蓝晒工艺就是利用这种配合物"怕光"的性质——光照下 Fe³⁺ 会发生什么变化？除光以外，温度和酸碱度会有什么影响？',
+  hint:'提示：从光、热、pH 三方面考虑；光照下 Fe³⁺ 被还原为 Fe²⁺，草酸根被氧化为 CO₂。',
+  groups:[['光','光照','见光','光化学'],['还原','fe2+','二价铁','光还原'],['分解','co2','二氧化碳','光解'],['温度','热','受热'],['ph','酸','碱','酸碱'],['蓝晒','感光','晒图','剂量计','磁化率','应用']],
+  explain:'<b>直接讲解：</b>稳定性影响因素：①<b>光</b>——光化学还原 2[Fe(C₂O₄)₃]³⁻+hν→2Fe²⁺+5C₂O₄²⁻+2CO₂↑，故棕色瓶避光保存；②<b>热</b>——受热分解失结晶水；③<b>pH</b>——强酸使配离子解离、强碱生成 Fe(OH)₃。应用：蓝晒感光剂、光化学剂量计、磁化率测定样品。可去"科普探索"体验蓝晒实验。'}
+];
+const MAX_ROUND=16,MIN_ROUND=8;
+const A={
+  started:false,finished:false,idx:0,round:0,
+  stage:'main', // main | retry | follow | retest
+  retestQueue:[],inRetest:false,
+  results:KP.map(()=>({mastery:null,note:''}))
+};
+const asChat=$('#asChat'),asInput=$('#asInput'),asSend=$('#asSend');
+let asBusy=false;
+
+function coverageOf(text,groups){
+  const nt=norm(text);let hit=0;const got=[];
+  groups.forEach(g=>{if(g.some(k=>nt.includes(norm(k)))){hit++;got.push(g[0]);}});
+  return {cov:groups.length?hit/groups.length:0,hit:got};
+}
+const DK_RE=/^(不知道|不会|不懂|不清楚|不了解|忘了|忘记了|没学|没学过|跳过|过|不造|\?|？)[!。．.~]*$/;
+const DK_SUB=['不知道','不清楚','不了解','不太懂','不会','没学过','没学','忘了','不懂'];
+function isDontKnow(t){
+  const s=String(t||'').replace(/\s+/g,'');
+  if(s.length<=6&&DK_RE.test(s.toLowerCase()))return true;
+  return s.length<=14&&DK_SUB.some(k=>s.includes(k));
+}
+function updateProgress(){
+  const done=A.results.filter(r=>r.mastery!==null).length;
+  const shown=Math.min(8,Math.max(done,A.idx+(A.finished?0:0)));
+  $('#apTxt').innerHTML='知识点 <b>'+Math.min(8,shown)+'/8</b> · 第 <b>'+A.round+'</b> 轮'+(A.inRetest?' · 薄弱点复测中':'');
+  $('#apBar').style.width=Math.round(done/8*100)+'%';
+}
+function aiSay(html,cb){
+  asBusy=true;asSend.disabled=true;
+  const bub=addMsg(asChat,'ai','<span class="typing"><i></i><i></i><i></i></span>',false);
+  const wait=Math.min(1500,420+html.length*4);
+  setTimeout(()=>{bub.innerHTML=html;scrollChat(asChat);asBusy=false;asSend.disabled=false;if(cb)cb();},wait);
+}
+function userSay(text){addMsg(asChat,'user',esc(text),false);}
+function nextQuestion(){
+  updateProgress();
+  if(A.round>=MAX_ROUND){finishAssess('已达到最大轮次 '+MAX_ROUND+'，测评自动结束。');return;}
+  // 找下一个未完成知识点
+  if(!A.inRetest){
+    while(A.idx<KP.length&&A.results[A.idx].mastery!==null)A.idx++;
+    if(A.idx>=KP.length){
+      A.retestQueue=KP.map((p,i)=>i).filter(i=>A.results[i].mastery!==null&&A.results[i].mastery<0.6);
+      if(A.retestQueue.length&&A.round<MAX_ROUND){
+        A.inRetest=true;
+        aiSay('8 个知识点已测完一轮 🎉。你中有 '+A.retestQueue.length+' 个知识点掌握度偏低，我们换个问法<b>复测</b>一下（不影响已得成绩，只可能加分）：',()=>setTimeout(askCurrent,650));
+        return;
+      }
+      finishAssess();return;
+    }
+  }
+  askCurrent();
+}
+function askCurrent(){
+  if(A.round>=MAX_ROUND){finishAssess('已达到最大轮次 '+MAX_ROUND+'，测评自动结束。');return;}
+  A.round++;
+  const i=A.inRetest?A.retestQueue[0]:A.idx;
+  const kp=KP[i];
+  A.stage=A.inRetest?'retest':'main';
+  const tag=A.inRetest?('🔄 复测 · 知识点 '+(i+1)+'/8（'+kp.name+'，权重 '+kp.weight+'）'):('📌 知识点 '+(i+1)+'/8：'+kp.name+'（权重 '+kp.weight+' 分）');
+  const q=A.inRetest?kp.follow.replace('提示：','')||kp.main:kp.main;
+  aiSay('<div class="muted" style="margin-bottom:5px">'+tag+' · 第 '+A.round+' 轮</div>'+(A.inRetest?retestText(i):kp.main),()=>{});
+  updateProgress();
+}
+function retestText(i){
+  const alt=[
+   '换个角度：'+KP[i].name+'——请用你自己的话再概述一下核心内容。',
+   '复测：关于「'+KP[i].name+'」，如果让你给同学讲 1 分钟，你会讲哪几个要点？'
+  ];
+  return alt[A.round%alt.length];
+}
+function handleAnswer(text){
+  if(A.finished||asBusy)return;
+  if(!A.started){startAssess();return;}
+  userSay(text);
+  const i=A.inRetest?A.retestQueue[0]:A.idx;
+  const kp=KP[i],res=A.results[i];
+  const dk=isDontKnow(text);
+  const {cov,hit}=coverageOf(text,kp.groups);
+  const pct=Math.round(cov*100);
+  if(A.stage==='retest'){
+    let nm=cov>=0.6?0.85:(cov>=0.3?0.6:0.3);
+    const old=res.mastery||0;
+    res.mastery=Math.max(old,nm);
+    res.note=(res.note?res.note+'；':'')+'复测覆盖 '+pct+'%'+(nm>old?'，掌握度提升':'');
+    A.retestQueue.shift();
+    if(!A.retestQueue.length)A.inRetest=false;
+    aiSay(nm>old?('👍 复测有进步！该知识点掌握度更新为 <b>'+Math.round(res.mastery*100)+'%</b>。'):('好的，该知识点掌握度维持 <b>'+Math.round(res.mastery*100)+'%</b>。建议课后按报告中的建议重点复习。'),
+      ()=>setTimeout(nextQuestion,650));
+    return;
+  }
+  if(A.stage==='main'){
+    if(dk||cov<0.3){
+      A.stage='retry';
+      aiSay('没关系 🤝 先给你一个提示，请<b>再试答一次</b>：<br>'+kp.hint+'<div class="muted" style="margin-top:6px">（仍答不出我会直接讲解；也可以点"跳过本题"）</div>');
+      return;
+    }
+    if(cov<0.6){
+      res.mastery=0.5;res.note='主问题覆盖 '+pct+'%（部分掌握），追加引导式追问';
+      A.stage='follow';
+      aiSay('你答到了要点（'+esc(hit.slice(0,3).join('、'))+'），但还不够完整（覆盖 '+pct+'%）。我们深入一步：<br>'+kp.follow);
+      return;
+    }
+    res.mastery=Math.min(1,0.85+((cov-0.6)/0.4)*0.15);
+    res.note='主问题覆盖 '+pct+'%，掌握良好';
+    aiSay(praise()+' 覆盖度 '+pct+'%，该知识点掌握度记 <b>'+Math.round(res.mastery*100)+'%</b> ✅',()=>setTimeout(()=>{A.idx++;nextQuestion();},650));
+    return;
+  }
+  if(A.stage==='retry'){
+    if(dk||cov<0.3){
+      res.mastery=0.3;res.note='提示后仍无法作答，已直接讲解，掌握度记 30%';
+      aiSay('好的，那我直接为你讲解这一知识点 📖：<br>'+kp.explain+'<div class="muted" style="margin-top:6px">掌握度暂记 30%，后面会复测。我们继续下一题。</div>',()=>setTimeout(()=>{A.idx++;nextQuestion();},900));
+      return;
+    }
+    if(cov<0.6){
+      res.mastery=0.5;res.note='提示后覆盖 '+pct+'%（部分掌握），追加引导式追问';
+      A.stage='follow';
+      aiSay('有进步！再追问一步：<br>'+kp.follow);
+      return;
+    }
+    res.mastery=0.75;res.note='提示后覆盖 '+pct+'%，掌握较好';
+    aiSay('答得不错 👏 提示后覆盖 '+pct+'%，掌握度记 <b>75%</b>。',()=>setTimeout(()=>{A.idx++;nextQuestion();},650));
+    return;
+  }
+  if(A.stage==='follow'){
+    res.mastery=Math.min(0.8,Math.max(0.6,0.6+cov*0.2));
+    res.note=(res.note?res.note+'；':'')+'追问覆盖 '+pct+'%';
+    aiSay((cov>=0.5?'很好，追问后理解更到位了 👏':'明白了，这一部分先记录到这里。')+' 该知识点掌握度记 <b>'+Math.round(res.mastery*100)+'%</b>。',()=>setTimeout(()=>{A.idx++;nextQuestion();},650));
+    return;
+  }
+}
+function praise(){const p=['回答得很好！👏','非常棒，要点齐全！🎉','很好，理解到位！✅','不错不错，基本功扎实！💪'];return p[Math.floor(Math.random()*p.length)];}
+
+function startAssess(){
+  if(A.started)return;
+  A.started=true;
+  aiSay('<p>你好！我是 <b>掌握度测评助手</b> 📝。接下来通过<b>多轮对话</b>检测你对「三草酸合铁酸钾制备实验」的掌握水平：</p><ul style="margin-left:18px"><li>共 <b>8 个知识点</b>（权重合计 100 分），每个知识点 1 道主问题；</li><li>回答得好 → 直接过关；答得不全 → <b>引导式追问</b>；答不出 → 先给提示，仍不会则<b>直接讲解</b>；</li><li>薄弱知识点最后会<b>换问法复测</b>，轮次 8~16 动态调整；</li><li>可随时点「结束并生成报告」，报告支持导出 Word / TXT。</li></ul><p style="margin-top:6px">准备好了吗？我们开始第一题 👇</p>',
+    ()=>setTimeout(nextQuestion,900));
+}
+function kpComment(m){
+  if(m===null)return '未测评';
+  if(m>=0.85)return '掌握扎实，要点完整 👍';
+  if(m>=0.6)return '基本掌握，细节可再巩固';
+  if(m>=0.5)return '部分掌握，建议复习核心要点';
+  return '较为薄弱，需重点补强 ⚠';
+}
+function gradeOf(total){
+  if(total>=90)return['优秀','g-ex'];if(total>=80)return['良好','g-good'];
+  if(total>=70)return['中等','g-mid'];if(total>=60)return['及格','g-pass'];
+  return['不及格','g-fail'];
+}
+function buildReportData(){
+  let total=0;KP.forEach((kp,i)=>{total+=kp.weight*(A.results[i].mastery||0);});
+  total=Math.round(total*10)/10;
+  const items=KP.map((kp,i)=>({name:kp.name,weight:kp.weight,m:A.results[i].mastery,note:A.results[i].note,kp}));
+  const assessed=items.filter(x=>x.m!==null);
+  const strengths=assessed.filter(x=>x.m>=0.8).sort((a,b)=>b.m-a.m);
+  const weakness=assessed.filter(x=>x.m<0.6).sort((a,b)=>a.m-b.m);
+  const unassessed=items.filter(x=>x.m===null);
+  return{total,items,strengths,weakness,unassessed,rounds:A.round,date:new Date()};
+}
+function suggestHTML(w){
+  const kp=w.kp;
+  let s='<li><b>'+esc(w.name)+'</b>（掌握度 '+Math.round(w.m*100)+'%）：'
+    +'建议到 <a href="knowledge.html" target="_blank">知识图谱</a> 复习「'+esc(kp.knode)+'」节点；'
+    +'在 <a href="corpus.html" target="_blank">语料库</a> 检索「'+esc(kp.subfield)+'」子领域文献；';
+  if(kp.videos&&kp.videos.length){
+    s+='观看视频 '+kp.videos.map(vi=>'<a href="'+VIDEO_BV[vi].u+'" target="_blank" rel="noopener">《'+esc(VIDEO_BV[vi].t)+'》</a>').join('、')+'；';
+  }
+  return s+'完成后可回到本页重新测评检验提升效果。</li>';
+}
+function ringSVG(total){
+  const r=54,c=2*Math.PI*r,off=c*(1-Math.min(100,total)/100);
+  const col=total>=90?'#10b981':total>=80?'#2dd4bf':total>=70?'#60a5fa':total>=60?'#fbbf24':'#f87171';
+  return '<svg width="132" height="132"><circle cx="66" cy="66" r="'+r+'" fill="none" stroke="#243049" stroke-width="10"/>'
+   +'<circle cx="66" cy="66" r="'+r+'" fill="none" stroke="'+col+'" stroke-width="10" stroke-linecap="round" stroke-dasharray="'+c.toFixed(1)+'" stroke-dashoffset="'+off.toFixed(1)+'"/></svg>';
+}
+function finishAssess(reason){
+  if(A.finished)return;
+  A.finished=true;updateProgress();
+  $('#asComposer').classList.add('hidden');
+  $('#asQuick').classList.add('hidden');
+  const d=buildReportData();
+  const[gname,gcls]=gradeOf(d.total);
+  const dateStr=d.date.getFullYear()+'-'+String(d.date.getMonth()+1).padStart(2,'0')+'-'+String(d.date.getDate()).padStart(2,'0');
+  let html='<div class="report" id="reportCard">'
+   +'<h2>📋 实验知识掌握度评估报告</h2>'
+   +'<div class="rp-sub">三草酸合铁酸钾 K₃[Fe(C₂O₄)₃]·3H₂O 制备实验 · 测评时间 '+dateStr+' · 共 '+d.rounds+' 轮对话'+(reason?(' · '+esc(reason)):'')+'</div>'
+   +'<div class="rp-top"><div class="ring">'+ringSVG(d.total)+'<div class="ring-txt"><b>'+d.total+'</b><span>总分 / 100</span></div></div>'
+   +'<div class="rp-grade"><span class="g-tag '+gcls+'">'+gname+'</span>'
+   +'<div class="rp-meta">已测知识点 '+d.items.filter(x=>x.m!==null).length+'/8 · 优势项 '+d.strengths.length+' 个 · 薄弱项 '+d.weakness.length+' 个'
+   +(d.unassessed.length?('<br><span style="color:#fbbf24">⚠ 提前结束：'+d.unassessed.length+' 个知识点未测评，按 0 计入总分</span>'):'')
+   +'</div></div></div>'
+   +'<div class="rp-sec"><h3>📊 各知识点掌握度（权重 × 掌握度 = 得分）</h3>';
+  d.items.forEach(x=>{
+    const m=x.m||0,pct=Math.round(m*100);
+    const col=m>=0.85?'#10b981':m>=0.6?'#2dd4bf':m>=0.5?'#fbbf24':'#f87171';
+    html+='<div class="kp-row"><div class="kp-head"><b>'+esc(x.name)+' <span class="muted">(权重 '+x.weight+')</span></b>'
+      +'<span class="kp-val">'+(x.m===null?'未测评':(pct+'% · 得分 '+(Math.round(x.weight*m*10)/10)))+'</span></div>'
+      +'<div class="kp-bar"><i style="width:'+pct+'%;background:'+col+'"></i></div>'
+      +'<div class="kp-comment">'+kpComment(x.m)+(x.note?' · '+esc(x.note):'')+'</div></div>';
+  });
+  html+='</div>';
+  if(d.strengths.length) html+='<div class="rp-sec"><h3>💪 优势项</h3><ul>'+d.strengths.map(x=>'<li>'+esc(x.name)+'（'+Math.round(x.m*100)+'%）</li>').join('')+'</ul></div>';
+  if(d.weakness.length){
+    html+='<div class="rp-sec"><h3>⚠ 薄弱项</h3><ul>'+d.weakness.map(x=>'<li>'+esc(x.name)+'（'+Math.round(x.m*100)+'%）'+(x.note?'：'+esc(x.note):'')+'</li>').join('')+'</ul></div>';
+    html+='<div class="rp-sec"><h3>🎯 针对性学习建议</h3><ul>'+d.weakness.map(suggestHTML).join('')+'</ul></div>';
+  }else{
+    html+='<div class="rp-sec"><h3>🎯 学习建议</h3><ul><li>各知识点掌握良好！可到 <a href="knowledge.html">知识图谱</a> 与 <a href="corpus.html">语料库</a> 拓展蓝晒、光化学、磁化率等进阶内容。</li></ul></div>';
+  }
+  html+='<div class="rp-actions"><button class="btn primary sm" id="expDoc">📄 导出 Word（.doc）</button><button class="btn ghost sm" id="expTxt">📃 导出 TXT（.txt）</button><button class="btn ghost sm" id="reAssess">🔄 重新测评</button></div></div>';
+  const zone=$('#reportZone');zone.innerHTML=html;zone.classList.remove('hidden');
+  aiSay('测评结束，你的《实验知识掌握度评估报告》已生成 👇 总分 <b>'+d.total+'</b>（'+gname+'），详情见下方报告卡片，可导出存档。',()=>{
+    setTimeout(()=>{zone.scrollIntoView({behavior:'smooth',block:'start'});},300);
+  });
+  $('#expDoc').addEventListener('click',()=>exportDoc(d));
+  $('#expTxt').addEventListener('click',()=>exportTxt(d));
+  $('#reAssess').addEventListener('click',()=>location.reload());
+}
+function reportPlain(d){
+  const[gname]=gradeOf(d.total);
+  const lines=[];
+  lines.push('《实验知识掌握度评估报告》');
+  lines.push('实验：三草酸合铁酸钾 K3[Fe(C2O4)3]·3H2O 制备实验');
+  lines.push('测评时间：'+d.date.toLocaleString('zh-CN')+' · 对话轮次：'+d.rounds);
+  lines.push('总分：'+d.total+' / 100 · 等级：'+gname);
+  lines.push(''.padEnd(46,'-'));
+  d.items.forEach(x=>{
+    const m=x.m||0;
+    lines.push('【'+x.name+'】权重 '+x.weight+' 分 · 掌握度 '+(x.m===null?'未测评':Math.round(m*100)+'%')+' · 得分 '+(Math.round(x.weight*m*10)/10));
+    lines.push('  评语：'+kpComment(x.m)+(x.note?'；'+x.note:''));
+  });
+  lines.push(''.padEnd(46,'-'));
+  if(d.strengths.length){lines.push('优势项：');d.strengths.forEach(x=>lines.push('  · '+x.name+'（'+Math.round(x.m*100)+'%）'));}
+  if(d.weakness.length){
+    lines.push('薄弱项：');d.weakness.forEach(x=>lines.push('  · '+x.name+'（'+Math.round(x.m*100)+'%）'));
+    lines.push('针对性学习建议：');
+    d.weakness.forEach(w=>{
+      lines.push('  · '+w.name+'：复习知识图谱「'+w.kp.knode+'」节点；检索语料库「'+w.kp.subfield+'」子领域文献'+(w.kp.videos&&w.kp.videos.length?'；观看视频 '+w.kp.videos.map(vi=>VIDEO_BV[vi].t+' '+VIDEO_BV[vi].u).join('、'):''));
+    });
+  }
+  lines.push('—— ChemAI 实验教学智能体 · AI 助手（掌握度测评）');
+  return lines.join('\r\n');
+}
+function stamp(){const d=new Date();return d.getFullYear()+String(d.getMonth()+1).padStart(2,'0')+String(d.getDate()).padStart(2,'0');}
+function downloadBlob(content,mime,filename){
+  const blob=new Blob(['\ufeff',content],{type:mime});
+  const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=filename;
+  document.body.appendChild(a);a.click();
+  setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove();},400);
+}
+function exportDoc(d){
+  const[gname,gcls]=gradeOf(d.total);
+  let rows=d.items.map(x=>{
+    const m=x.m||0;
+    return '<tr><td>'+esc(x.name)+'</td><td style="text-align:center">'+x.weight+'</td><td style="text-align:center">'+(x.m===null?'未测评':Math.round(m*100)+'%')+'</td><td style="text-align:center">'+(Math.round(x.weight*m*10)/10)+'</td><td>'+esc(kpComment(x.m))+(x.note?('；'+esc(x.note)):'')+'</td></tr>';
+  }).join('');
+  const sugg=d.weakness.length
+    ? '<h3>针对性学习建议</h3><ol>'+d.weakness.map(w=>'<li><b>'+esc(w.name)+'</b>：复习知识图谱「'+esc(w.kp.knode)+'」节点；检索语料库「'+esc(w.kp.subfield)+'」子领域文献'+(w.kp.videos&&w.kp.videos.length?'；观看视频 '+w.kp.videos.map(vi=>esc(VIDEO_BV[vi].t)+'（'+VIDEO_BV[vi].u+'）').join('、'):'')+'</li>').join('')+'</ol>'
+    : '<p>各知识点掌握良好，可拓展蓝晒、光化学等进阶内容。</p>';
+  const doc='<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word"><head><meta charset="utf-8"><title>实验知识掌握度评估报告</title>'
+   +'<style>body{font-family:"Microsoft YaHei",SimSun,sans-serif;font-size:12pt;line-height:1.7}h1{font-size:18pt;color:#0f766e}h3{color:#0f766e}table{border-collapse:collapse;width:100%}td,th{border:1px solid #999;padding:6px 8px;font-size:10.5pt}th{background:#e6f4f1}</style></head><body>'
+   +'<h1>实验知识掌握度评估报告</h1>'
+   +'<p><b>实验：</b>三草酸合铁酸钾 K₃[Fe(C₂O₄)₃]·3H₂O 制备实验<br><b>测评时间：</b>'+d.date.toLocaleString('zh-CN')+'　<b>对话轮次：</b>'+d.rounds+'</p>'
+   +'<p style="font-size:15pt"><b>总分：'+d.total+' / 100　等级：'+gname+'</b></p>'
+   +'<h3>各知识点掌握度</h3><table><tr><th>知识点</th><th>权重</th><th>掌握度</th><th>得分</th><th>评语</th></tr>'+rows+'</table>'
+   +(d.strengths.length?('<h3>优势项</h3><ul>'+d.strengths.map(x=>'<li>'+esc(x.name)+'（'+Math.round(x.m*100)+'%）</li>').join('')+'</ul>'):'')
+   +(d.weakness.length?('<h3>薄弱项</h3><ul>'+d.weakness.map(x=>'<li>'+esc(x.name)+'（'+Math.round(x.m*100)+'%）</li>').join('')+'</ul>'):'')
+   +sugg
+   +'<p style="color:#888;font-size:9pt">—— ChemAI 实验教学智能体 · AI 助手（掌握度测评）生成</p></body></html>';
+  downloadBlob(doc,'application/msword','实验知识掌握度评估报告_'+stamp()+'.doc');
+}
+function exportTxt(d){
+  downloadBlob(reportPlain(d),'text/plain;charset=utf-8','实验知识掌握度评估报告_'+stamp()+'.txt');
+}
+/* 测评交互 */
+asSend.addEventListener('click',()=>{const t=(asInput.value||'').trim();if(!t||asBusy)return;asInput.value='';asInput.style.height='auto';handleAnswer(t);});
+asInput.addEventListener('keydown',e=>{if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();asSend.click();}});
+asInput.addEventListener('input',()=>{asInput.style.height='auto';asInput.style.height=Math.min(130,asInput.scrollHeight)+'px';});
+$('#asSkip').addEventListener('click',()=>{
+  if(A.finished||asBusy||!A.started)return;
+  const i=A.inRetest?A.retestQueue[0]:A.idx;
+  userSay('（跳过本题）');
+  if(A.inRetest){A.retestQueue.shift();if(!A.retestQueue.length)A.inRetest=false;setTimeout(nextQuestion,300);return;}
+  A.results[i].mastery=0.3;A.results[i].note='学生选择跳过，掌握度记 30%';
+  aiSay('好的，已跳过 ⏭ 「'+esc(KP[i].name)+'」，该知识点暂记 30%，后续会安排复测。',()=>setTimeout(()=>{A.idx++;nextQuestion();},600));
+});
+$('#asDontKnow').addEventListener('click',()=>{if(A.finished||asBusy||!A.started)return;handleAnswer('我不知道');});
+$('#asFinish').addEventListener('click',()=>{
+  if(A.finished)return;
+  if(!A.started){startAssess();return;}
+  finishAssess(A.round<MIN_ROUND?'手动提前结束（未满 '+MIN_ROUND+' 轮，未测评知识点按 0 计）':'手动结束测评');
+});
+
+/* ================= Tab 切换与初始化 ================= */
+function switchTab(mode,push){
+  const qa=mode!=='assess';
+  $('#panel-qa').classList.toggle('hidden',!qa);
+  $('#panel-assess').classList.toggle('hidden',qa);
+  $$('.tab').forEach(t=>t.classList.toggle('on',(t.dataset.mode==='assess')!==qa));
+  if(qa){setTimeout(()=>{scrollChat(qaChat);qaInput.focus();},50);}
+  else{
+    setTimeout(()=>{scrollChat(asChat);asInput.focus();},50);
+    startAssess();
+  }
+  if(push!==false){
+    try{history.replaceState(null,'','assistant.html?mode='+(qa?'qa':'assess'));}catch(e){}
+  }
+}
+$$('.tab').forEach(t=>t.addEventListener('click',()=>switchTab(t.dataset.mode)));
+$('#navToggle').addEventListener('click',()=>$('#topNav').classList.toggle('open'));
+/* 调试/外部联动句柄 */
+window.ChemAIQA={searchCorpus,extractTerms,matchFAQ,corpus:Corpus};
+
+(async function init(){
+  renderQAHistory();
+  await loadCorpus();
+  let mode='qa';
+  try{mode=new URLSearchParams(location.search).get('mode')==='assess'?'assess':'qa';}catch(e){}
+  switchTab(mode,false);
+})();
+})();
+</script>
+</body>
+</html>
