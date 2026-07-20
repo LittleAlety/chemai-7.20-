@@ -45,7 +45,7 @@ button{font-family:inherit}
 .banner h1 .hl{background:linear-gradient(90deg,var(--teal),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 .banner p{color:var(--t2);font-size:14.5px;max-width:780px;line-height:1.7}
 /* 统计卡 */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-bottom:22px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:22px}
 .stat{background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:20px 22px;display:flex;align-items:center;gap:15px;transition:transform .2s,border-color .2s,background .2s}
 .stat:hover{transform:translateY(-3px);background:var(--card-hover);border-color:var(--bd2)}
 .stat-icon{width:46px;height:46px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;flex-shrink:0}
@@ -95,6 +95,18 @@ td .t-title{color:var(--t1);font-weight:600;max-width:320px}
 .q-toggle:hover{text-decoration:underline}
 tr.expanded .q-item{display:block}
 .path-cell{max-width:220px;word-break:break-all;color:var(--t3);font-size:12px}
+/* 文献信息（journal/doi/abstract/source_url） */
+.bib-journal{font-size:11.5px;color:var(--t3);margin-top:5px;line-height:1.55}
+.bib-links{display:flex;gap:8px;margin-top:6px;flex-wrap:wrap}
+.bib-link{font-size:11px;color:var(--blue);background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.3);padding:2px 9px;border-radius:999px;white-space:nowrap;transition:background .15s}
+.bib-link:hover{background:rgba(96,165,250,.22)}
+.bib-link.src{color:var(--teal);border-color:rgba(45,212,191,.3);background:rgba(45,212,191,.08)}
+.bib-link.src:hover{background:rgba(45,212,191,.18)}
+.bib-abs{margin-top:6px;font-size:12px;color:var(--t2);line-height:1.6}
+.bib-abs .abs-text{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+tr.abs-open .bib-abs .abs-text{display:block;-webkit-line-clamp:unset}
+.abs-toggle{color:var(--blue);cursor:pointer;font-size:11.5px;user-select:none;white-space:nowrap;display:inline-block;margin-top:3px}
+.abs-toggle:hover{text-decoration:underline}
 .empty-tip{text-align:center;padding:44px 20px;color:var(--t3)}
 /* 分页 */
 .pager{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:14px;flex-wrap:wrap}
@@ -156,6 +168,58 @@ tr.expanded .q-item{display:block}
 /* 提示条 */
 .notice{display:none;align-items:flex-start;gap:10px;background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);color:var(--yellow);border-radius:12px;padding:12px 16px;font-size:13px;margin-bottom:18px;line-height:1.6}
 .notice.show{display:flex}
+/* ===== 自学习中心 ===== */
+.report-hero{background:linear-gradient(120deg,rgba(167,139,250,.13),rgba(96,165,250,.06));border:1px solid rgba(167,139,250,.3);border-radius:14px;padding:18px 22px;margin-bottom:18px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.report-hero .rh-gen{font-size:24px;font-weight:800;background:linear-gradient(90deg,var(--purple),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;white-space:nowrap}
+.report-hero .rh-meta{font-size:12.5px;color:var(--t2);line-height:1.6}
+.report-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.rg-box{background:rgba(10,14,26,.45);border:1px solid var(--bd);border-radius:12px;padding:14px 16px}
+.rg-title{font-size:12.5px;color:var(--t3);font-weight:600;margin-bottom:9px;display:flex;align-items:center;gap:6px}
+.rg-big{font-size:22px;font-weight:700;color:var(--t1)}
+.kw-chips{display:flex;flex-wrap:wrap;gap:6px}
+.kw-chip{font-size:12px;padding:3px 11px;border-radius:999px;background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.3);color:var(--teal)}
+.kw-chip b{font-weight:700;margin-left:4px;color:var(--t1)}
+.node-chip{font-size:12px;padding:3px 11px;border-radius:999px;background:rgba(96,165,250,.1);border:1px solid rgba(96,165,250,.3);color:var(--blue)}
+.delta-chip{font-size:12px;padding:3px 11px;border-radius:999px;background:rgba(251,191,36,.09);border:1px solid rgba(251,191,36,.3);color:var(--yellow)}
+.delta-chip b{color:var(--emerald);margin-left:4px}
+/* 推荐 */
+.reco-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.reco-item{background:rgba(10,14,26,.45);border:1px solid var(--bd);border-radius:12px;padding:14px 16px;border-left:3px solid var(--emerald);transition:transform .2s,border-color .2s}
+.reco-item:hover{transform:translateY(-2px);border-color:rgba(16,185,129,.4)}
+.reco-item .rc-title{font-size:13.5px;font-weight:700;color:var(--t1);margin-bottom:6px}
+.reco-item .rc-reason{font-size:12px;color:var(--t2);line-height:1.6}
+/* 学习历史 */
+.log-list{display:flex;flex-direction:column;gap:10px;margin-top:6px}
+.log-item{background:rgba(10,14,26,.45);border:1px solid var(--bd);border-radius:12px;padding:12px 16px;font-size:12.5px}
+.log-head{display:flex;align-items:center;gap:10px;flex-wrap:wrap;cursor:pointer;user-select:none}
+.log-head .lg-gen{font-weight:700;color:var(--purple);white-space:nowrap}
+.log-head .lg-time{color:var(--t3)}
+.log-head .lg-sum{color:var(--t2);flex:1}
+.log-head .lg-arrow{color:var(--t3);transition:transform .2s}
+.log-item.open .lg-arrow{transform:rotate(90deg)}
+.log-detail{display:none;margin-top:10px;padding-top:10px;border-top:1px dashed var(--bd2)}
+.log-item.open .log-detail{display:block}
+/* ===== 云端同步 ===== */
+.cloud-row{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.cloud-row .ep{flex:1;min-width:260px;position:relative}
+.cloud-row input.ep-input{width:100%;background:var(--bg2);border:1px solid var(--bd2);border-radius:12px;padding:11px 14px 11px 38px;color:var(--t1);font-size:13.5px;outline:none;transition:border-color .2s;font-family:ui-monospace,Consolas,monospace}
+.cloud-row input.ep-input:focus{border-color:var(--blue)}
+.cloud-row .ep::before{content:"☁️";position:absolute;left:12px;top:50%;transform:translateY(-50%);font-size:14px;opacity:.7}
+.switch-wrap{display:flex;align-items:center;gap:9px;font-size:13px;color:var(--t2);cursor:pointer;user-select:none;white-space:nowrap}
+.switch{position:relative;width:42px;height:23px;flex-shrink:0}
+.switch input{opacity:0;width:0;height:0;position:absolute}
+.switch .track{position:absolute;inset:0;border-radius:999px;background:var(--card-hover);border:1px solid var(--bd2);transition:all .25s;cursor:pointer}
+.switch .track::after{content:"";position:absolute;top:2px;left:2px;width:17px;height:17px;border-radius:50%;background:var(--t3);transition:all .25s}
+.switch input:checked+.track{background:rgba(16,185,129,.3);border-color:rgba(16,185,129,.5)}
+.switch input:checked+.track::after{left:21px;background:var(--emerald)}
+.sync-list{margin-top:14px;display:flex;flex-direction:column;gap:8px}
+.sync-item{display:flex;align-items:flex-start;gap:10px;font-size:12.5px;background:rgba(10,14,26,.45);border:1px solid var(--bd);border-radius:10px;padding:9px 14px;line-height:1.55}
+.sync-item .sy-time{color:var(--t3);white-space:nowrap;flex-shrink:0}
+.sync-item.ok{border-color:rgba(16,185,129,.35)}.sync-item.ok .sy-msg{color:var(--emerald)}
+.sync-item.err{border-color:rgba(248,113,113,.35)}.sync-item.err .sy-msg{color:var(--red)}
+.sync-item.pending .sy-msg{color:var(--yellow)}
+.cloud-note{margin-top:14px;font-size:12px;color:var(--t3);background:rgba(96,165,250,.06);border:1px dashed rgba(96,165,250,.3);border-radius:10px;padding:10px 14px;line-height:1.7}
+.cloud-note code{color:var(--blue);background:rgba(96,165,250,.12);padding:1px 7px;border-radius:6px;font-family:ui-monospace,Consolas,monospace;font-size:11.5px}
 /* toast */
 #toast{position:fixed;bottom:28px;left:50%;transform:translateX(-50%) translateY(20px);z-index:300;background:var(--card-hover);border:1px solid var(--bd2);color:var(--t1);padding:12px 22px;border-radius:12px;font-size:13.5px;opacity:0;pointer-events:none;transition:all .3s;box-shadow:0 10px 30px rgba(0,0,0,.5);max-width:88vw}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -167,6 +231,7 @@ footer{text-align:center;color:var(--t3);font-size:12.5px;line-height:1.8;margin
   .stats{grid-template-columns:1fr 1fr;gap:10px}.stat{padding:15px}
   .nav-inner{padding:0 14px}.page{padding:22px 14px 48px}.logo-sub{display:none}
   .modal{padding:26px 20px}.bar-row{grid-template-columns:88px 1fr 44px}
+  .report-grid{grid-template-columns:1fr}
   /* 移动端精简表格列：隐藏 文献类型/关键方法/文件路径 */
   #listBody td:nth-child(5),#listBody td:nth-child(6),#listBody td:nth-child(8),
   .table-wrap:not(.rec-table) thead th:nth-child(5),
@@ -228,6 +293,10 @@ footer{text-align:center;color:var(--t3);font-size:12.5px;line-height:1.8;margin
       <div class="stat">
         <div class="stat-icon" style="background:rgba(167,139,250,.12);border:1px solid rgba(167,139,250,.3)">🧬</div>
         <div><div class="stat-num" id="statGen">1</div><div class="stat-label">知识库代数</div><div class="stat-sub">深度学习迭代次数</div></div>
+      </div>
+      <div class="stat">
+        <div class="stat-icon" style="background:rgba(251,191,36,.12);border:1px solid rgba(251,191,36,.3)">🔑</div>
+        <div><div class="stat-num" id="statTerms">—</div><div class="stat-label">索引词条数</div><div class="stat-sub">关键词倒排索引规模</div></div>
       </div>
     </div>
     <div class="card">
@@ -300,9 +369,62 @@ footer{text-align:center;color:var(--t3);font-size:12.5px;line-height:1.8;margin
     </div>
   </section>
 
+  <!-- D. 自学习中心 -->
+  <section class="section">
+    <div class="section-title"><div class="st-icon">🧠</div>自学习中心<span class="st-sub">学习报告 · 智能推荐 · 历代学习记录</span></div>
+
+    <!-- 最新学习报告 -->
+    <div class="card" style="margin-bottom:16px">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px">
+        <div style="font-size:15px;font-weight:700">📈 最新学习报告</div>
+        <div style="font-size:12px;color:var(--t3)" id="reportTime"></div>
+      </div>
+      <div id="reportBody">
+        <div class="empty-tip">🌱 暂无学习报告 — 上传文献触发「深度学习与迭代」后，将在此生成学习报告</div>
+      </div>
+    </div>
+
+    <!-- 智能推荐 -->
+    <div class="card" style="margin-bottom:16px">
+      <div style="font-size:15px;font-weight:700;margin-bottom:6px">🎯 智能推荐 · 值得补充学习的方向</div>
+      <div style="font-size:12.5px;color:var(--t3);margin-bottom:14px">基于最新学习结果与知识清单覆盖情况自动分析</div>
+      <div class="reco-list" id="recoList"></div>
+    </div>
+
+    <!-- 学习历史 -->
+    <div class="card">
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:6px">
+        <div style="font-size:15px;font-weight:700">🗂️ 学习历史</div>
+        <div style="font-size:12px;color:var(--t3)" id="logCount"></div>
+      </div>
+      <div class="log-list" id="logList"></div>
+      <div class="empty-tip" id="logEmpty">📭 暂无学习记录</div>
+    </div>
+  </section>
+
+  <!-- E. 云端同步 -->
+  <section class="section">
+    <div class="section-title"><div class="st-icon">☁️</div>云端同步<span class="st-sub">将上传的语料推送至云服务器</span></div>
+    <div class="card">
+      <div class="cloud-row">
+        <div class="ep"><input class="ep-input" id="cloudEndpoint" type="text" placeholder="云端接口地址，如 http://your-server:8765/api/corpus" spellcheck="false"/></div>
+        <label class="switch-wrap" title="上传语料解析入库后自动 POST 到云端">
+          <span class="switch"><input type="checkbox" id="autoSync"/><span class="track"></span></span>
+          上传后自动同步
+        </label>
+        <button class="btn btn-primary" id="syncBtn">⇪ 上传到云端</button>
+      </div>
+      <div class="sync-list" id="syncList"></div>
+      <div class="cloud-note">
+        💡 同步方式：以 <code>POST</code> 请求发送 <code>{"entries":[...]}</code>（Content-Type: application/json）到上述地址；手动同步推送全部已上传语料，自动同步推送当批新增语料。<br/>
+        云端接收端参考实现见部署包 <code>scripts/corpus-server.py</code>（Python 标准库实现，自带 CORS 支持，<code>python3 scripts/corpus-server.py 8765</code> 即可启动）。同步失败不会影响本地已保存的语料。
+      </div>
+    </div>
+  </section>
+
   <footer>
     ChemAI · 三草酸合铁酸钾（K₃[Fe(C₂O₄)₃]·3H₂O）制备实验智能教学平台<br/>
-    语料库管理页 · 上传的语料与学习代数保存在浏览器 localStorage 中
+    语料库管理页 · 上传的语料、关键词索引与学习记录保存在浏览器 localStorage 中
   </footer>
 </div>
 
@@ -347,7 +469,9 @@ function fmtTime(iso){try{const d=new Date(iso);const p=n=>String(n).padStart(2,
 async function init(){
   uploadedEntries=loadUploaded();
   await loadCorpus();
+  ensureIndex();
   bindEvents();
+  initCloudPanel();
   refreshAll();
 }
 async function loadCorpus(){
@@ -373,6 +497,7 @@ function refreshStats(){
   document.getElementById('statSubfields').textContent=new Set(m.map(e=>e.subfield||'其他')).size;
   document.getElementById('statUploaded').textContent=uploadedEntries.length;
   document.getElementById('statGen').textContent=getGen();
+  document.getElementById('statTerms').textContent=getTermCount().toLocaleString()||'—';
 }
 function refreshBarChart(){
   const counts={};
@@ -389,6 +514,24 @@ function refreshBarChart(){
 }
 
 /* ================= 渲染：清单 ================= */
+/* 文献信息块：期刊 / 年卷期页 / DOI(可点) / 摘要(可展开) / 来源外链 */
+function biblioHtml(e){
+  if(!(e.journal||e.year||e.volume||e.pages||e.doi||e.abstract||e.source_url))return'';
+  let h='';
+  if(e.journal||e.year||e.volume||e.pages){
+    const bits=[];
+    if(e.year)bits.push(esc(e.year));
+    if(e.volume)bits.push('Vol. '+esc(e.volume)+(e.issue?'('+esc(e.issue)+')':''));
+    if(e.pages)bits.push('pp. '+esc(e.pages));
+    h+='<div class="bib-journal">📖 '+(e.journal?esc(e.journal):'')+(bits.length?' · '+bits.join(' · '):'')+'</div>';
+  }
+  const links=[];
+  if(e.doi)links.push('<a class="bib-link" href="https://doi.org/'+esc(e.doi)+'" target="_blank" rel="noopener" title="跳转 DOI 解析页">DOI: '+esc(e.doi)+'</a>');
+  if(e.source_url)links.push('<a class="bib-link src" href="'+esc(e.source_url)+'" target="_blank" rel="noopener" title="出版方页面">🔗 来源</a>');
+  if(links.length)h+='<div class="bib-links">'+links.join('')+'</div>';
+  if(e.abstract)h+='<div class="bib-abs"><span class="abs-text">'+esc(e.abstract)+'</span><span class="abs-toggle">展开摘要 ▾</span></div>';
+  return h;
+}
 function refreshSubfieldOptions(){
   const sel=document.getElementById('subfieldSel');
   const cur=sel.value;
@@ -424,7 +567,7 @@ function refreshList(){
       :'<span style="color:var(--t3)">—</span>';
     return '<tr>'+
       '<td>'+esc(e.id)+'</td>'+
-      '<td><div class="t-title">'+esc(e.title)+'</div>'+(e.uploaded?'<span class="badge badge-up" style="margin-top:5px">上传</span>':'')+'</td>'+
+      '<td><div class="t-title">'+esc(e.title)+'</div>'+(e.uploaded?'<span class="badge badge-up" style="margin-top:5px">上传</span>':'')+biblioHtml(e)+'</td>'+
       '<td><span class="badge badge-lang">'+esc(e.lang||'未知')+'</span></td>'+
       '<td><span class="badge badge-sub">'+esc(e.subfield||'其他')+'</span></td>'+
       '<td><span class="badge badge-doc">'+esc(e.doctype||'—')+'</span></td>'+
@@ -469,7 +612,7 @@ function refreshRecords(){
   document.getElementById('recEmpty').style.display=recs.length?'none':'block';
   document.getElementById('recCount').textContent=recs.length?('共 '+recs.length+' 条，删除将同步移除知识清单中的对应条目'):'';
 }
-function refreshAll(){refreshStats();refreshBarChart();refreshSubfieldOptions();refreshList();refreshRecords()}
+function refreshAll(){refreshStats();refreshBarChart();refreshSubfieldOptions();refreshList();refreshRecords();renderLearningCenter()}
 
 /* ================= 导出 ================= */
 function download(name,content,mime){
@@ -598,11 +741,12 @@ async function loadKG(){
   }catch(e){kgNodes=[]}
   return kgNodes;
 }
-function matchKGCount(entries,nodes){
-  if(!nodes.length||!entries.length)return 0;
+function matchKGNames(entries,nodes){
+  if(!nodes.length||!entries.length)return[];
   const hay=entries.map(e=>[e.title,e.subfield,e.methods,e.content].join(' ')).join(' ');
-  return nodes.filter(n=>n.name&&n.name.length>=2&&hay.includes(n.name)).length;
+  return nodes.filter(n=>n.name&&n.name.length>=2&&hay.includes(n.name)).map(n=>n.name);
 }
+function matchKGCount(entries,nodes){return matchKGNames(entries,nodes).length}
 
 /* ================= 上传流程 ================= */
 function addParseItem(file){
@@ -643,8 +787,12 @@ async function handleFiles(fileList){
       item.querySelector('.pi-status').textContent='解析失败：'+(err&&err.message?err.message:'未知错误')+'（已跳过，继续处理其它文件）';
     }
   }
+  if(newly.length){addToIndex(newly)}
   refreshAll();
-  if(newly.length){await runIteration(newly)}
+  if(newly.length){
+    if(getAutoSync()){syncToCloud(newly,'auto')}
+    await runIteration(newly);
+  }
   else{toast('没有文件解析成功','error')}
 }
 
@@ -668,15 +816,15 @@ async function runIteration(newEntries){
     '<div><div class="it-label">'+(i+1)+'. '+s.label+'</div><div class="it-desc" id="itdesc'+i+'">'+s.desc+'</div></div>'+
     '<div class="it-state"><div class="spinner"></div><span class="check">✔</span></div></div>').join('');
   modal.classList.add('show');
+  const nodes=await loadKG();
+  const kgNames=matchKGNames(newEntries,nodes);
   for(let i=0;i<steps.length;i++){
     const el=document.getElementById('itstep'+i);
     el.classList.add('active');
     if(i===2){
-      const nodes=await loadKG();
       await sleep(650);
-      const n=matchKGCount(newEntries,nodes);
-      document.getElementById('itdesc2').textContent=n>0
-        ?'匹配知识图谱节点关键词，关联到 '+n+' 个图谱节点'
+      document.getElementById('itdesc2').textContent=kgNames.length>0
+        ?'匹配知识图谱节点关键词，关联到 '+kgNames.length+' 个图谱节点'
         :'匹配知识图谱节点关键词，未匹配到节点（已建立基础关联）';
     }else if(i===4){
       await sleep(600);
@@ -686,10 +834,196 @@ async function runIteration(newEntries){
     el.classList.remove('active');el.classList.add('done');
   }
   const gen=getGen()+1;setGen(gen);
+  appendLog(buildReport(newEntries,gen,kgNames));
   document.getElementById('genNum').textContent='第 '+gen+' 代';
   document.getElementById('genText').textContent='已完成第 '+gen+' 代学习迭代，知识库已更新（新增 '+newEntries.length+' 篇语料）';
   genResult.classList.add('show');closeBtn.classList.add('show');
   refreshAll();
+}
+
+/* ================= 自学习：关键词倒排索引 ================= */
+const LS_INDEX='chemai_corpus_index', LS_LOG='chemai_learning_log';
+const LS_CLOUD='chemai_cloud_endpoint', LS_AUTOSYNC='chemai_cloud_autosync';
+const DEFAULT_ENDPOINT='http://your-server:8765/api/corpus';
+const STOP_ZH=new Set(('的,了,和,与,在,是,为,及,其,等,对,中,由,向,从,或,并,将,被,该,此,之,也,都,而,上,下,不,有,无,于,以,后,前,'+
+  '通过,进行,研究,实验,基于,一种,方法,以及,采用,有关,对于,分析,结果,表明,具有,其中,之间,可以,主要,本文,反应,溶液,加入,得到,因此,同时').split(','));
+const STOP_EN=new Set(['the','and','for','with','from','that','this','are','was','were','has','have','had','not','but','all','can','its','our','their','using','use','used','via','between','into','than','then','when','which','while','also','such','these','those','there','after','before','over','per','new','one','two','experiment','experiments','study','studies','analysis','method','methods','results','pdf']);
+let corpusIndex=null;
+function indexableText(e){return[e.title,e.subfield,e.methods,e.objects,(e.questions||[]).join(' '),e.content||''].join(' ')}
+function extractTerms(text){
+  const freq=Object.create(null);
+  const en=String(text).match(/[A-Za-z][A-Za-z0-9-]{2,}/g)||[];
+  for(const w0 of en){const w=w0.toLowerCase();if(!STOP_EN.has(w))freq[w]=(freq[w]||0)+1}
+  const runs=String(text).match(/[\u4e00-\u9fa5]{2,}/g)||[];
+  for(const run of runs){
+    for(let n=2;n<=3;n++){
+      for(let i=0;i+n<=run.length;i++){
+        const g=run.substr(i,n);
+        if(STOP_ZH.has(g)||STOP_ZH.has(g[0])||STOP_ZH.has(g[g.length-1]))continue;
+        freq[g]=(freq[g]||0)+1;
+      }
+    }
+  }
+  return freq;
+}
+function loadIndexStore(){try{const v=JSON.parse(localStorage.getItem(LS_INDEX));return v&&v.index?v:null}catch(e){return null}}
+function saveIndexStore(){try{localStorage.setItem(LS_INDEX,JSON.stringify(corpusIndex))}catch(e){console.warn('索引保存失败',e)}}
+function buildIndex(entries){
+  const index=Object.create(null);
+  entries.forEach(e=>{
+    const f=extractTerms(indexableText(e));
+    for(const t in f){(index[t]||(index[t]=[])).push(e.id)}
+  });
+  return{builtAt:new Date().toISOString(),docCount:entries.length,termCount:Object.keys(index).length,index};
+}
+function ensureIndex(){
+  corpusIndex=loadIndexStore();
+  if(!corpusIndex||corpusIndex.docCount!==mergedEntries().length){
+    corpusIndex=buildIndex(mergedEntries());saveIndexStore();
+  }
+}
+function addToIndex(newEntries){
+  if(!corpusIndex)corpusIndex=loadIndexStore()||{index:Object.create(null),docCount:0};
+  newEntries.forEach(e=>{
+    const f=extractTerms(indexableText(e));
+    for(const t in f){const arr=corpusIndex.index[t]||(corpusIndex.index[t]=[]);if(arr[arr.length-1]!==e.id&&!arr.includes(e.id))arr.push(e.id)}
+  });
+  corpusIndex.docCount=mergedEntries().length;
+  corpusIndex.termCount=Object.keys(corpusIndex.index).length;
+  corpusIndex.builtAt=new Date().toISOString();
+  saveIndexStore();
+}
+function getTermCount(){return corpusIndex?corpusIndex.termCount:(loadIndexStore()||{}).termCount||0}
+
+/* ================= 自学习：学习报告与历史 ================= */
+function loadLog(){try{const v=JSON.parse(localStorage.getItem(LS_LOG));return Array.isArray(v)?v:[]}catch(e){return[]}}
+function appendLog(r){const log=loadLog();log.unshift(r);if(log.length>50)log.length=50;try{localStorage.setItem(LS_LOG,JSON.stringify(log))}catch(e){}}
+function buildReport(newEntries,gen,kgNames){
+  const freq=Object.create(null);
+  newEntries.forEach(e=>{const f=extractTerms(indexableText(e));for(const t in f)freq[t]=(freq[t]||0)+f[t]});
+  const top=Object.entries(freq).sort((a,b)=>b[1]-a[1]).slice(0,10).map(([term,count])=>({term,count}));
+  const delta={};
+  newEntries.forEach(e=>{const k=e.subfield||'其他';delta[k]=(delta[k]||0)+1});
+  return{time:new Date().toISOString(),generation:gen,newCount:newEntries.length,
+    topKeywords:top,kgNodes:kgNames,subfieldDelta:delta,
+    newQuestions:newEntries.reduce((s,e)=>s+(e.questions||[]).length,0),
+    entryTitles:newEntries.map(e=>e.title)};
+}
+function reportBoxesHtml(r){
+  const totals={};mergedEntries().forEach(e=>{const k=e.subfield||'其他';totals[k]=(totals[k]||0)+1});
+  return '<div class="report-grid">'+
+   '<div class="rg-box"><div class="rg-title">🔑 提取关键词 Top 10</div><div class="kw-chips">'+
+     (r.topKeywords.map(k=>'<span class="kw-chip">'+esc(k.term)+'<b>'+k.count+'</b></span>').join('')||'<span style="color:var(--t3)">—</span>')+'</div></div>'+
+   '<div class="rg-box"><div class="rg-title">🕸️ 匹配到的知识图谱节点（'+r.kgNodes.length+'）</div><div class="kw-chips">'+
+     (r.kgNodes.length?r.kgNodes.slice(0,12).map(n=>'<span class="node-chip">'+esc(n)+'</span>').join('')+(r.kgNodes.length>12?'<span style="color:var(--t3);font-size:12px">等 '+r.kgNodes.length+' 个</span>':''):'<span style="color:var(--t3)">未匹配到节点</span>')+'</div></div>'+
+   '<div class="rg-box"><div class="rg-title">🧭 子领域分布变化</div><div class="kw-chips">'+
+     Object.entries(r.subfieldDelta).map(([k,v])=>'<span class="delta-chip">'+esc(k)+' <b>+'+v+'</b>（'+Math.max(0,(totals[k]||0)-v)+' → '+(totals[k]||0)+'）</span>').join('')+'</div></div>'+
+   '<div class="rg-box"><div class="rg-title">❓ 新增可回答问题</div><div class="rg-big">'+r.newQuestions+' 个</div>'+
+     '<div style="font-size:12px;color:var(--t3);margin-top:6px">来自 '+r.newCount+' 篇新语料的自动生成问答</div></div>'+
+  '</div>';
+}
+function renderReport(){
+  const log=loadLog();
+  const body=document.getElementById('reportBody');
+  if(!log.length){
+    body.innerHTML='<div class="empty-tip">🌱 暂无学习报告 — 上传文献触发「深度学习与迭代」后，将在此生成学习报告</div>';
+    document.getElementById('reportTime').textContent='';return;
+  }
+  const r=log[0];
+  document.getElementById('reportTime').textContent='生成于 '+fmtTime(r.time);
+  body.innerHTML='<div class="report-hero"><div class="rh-gen">第 '+r.generation+' 代学习报告</div>'+
+    '<div class="rh-meta">新增文献 <b>'+r.newCount+'</b> 篇 · 新增可回答问题 <b>'+r.newQuestions+'</b> 个 · 匹配知识图谱节点 <b>'+r.kgNodes.length+'</b> 个</div></div>'+
+    reportBoxesHtml(r);
+}
+function renderLog(){
+  const log=loadLog();
+  document.getElementById('logCount').textContent=log.length?('共 '+log.length+' 代学习记录'):'';
+  document.getElementById('logEmpty').style.display=log.length?'none':'block';
+  document.getElementById('logList').innerHTML=log.map((r,i)=>
+   '<div class="log-item'+(i===0?' open':'')+'" data-log="'+i+'">'+
+   '<div class="log-head"><span class="lg-gen">第 '+r.generation+' 代</span>'+
+   '<span class="lg-time">'+fmtTime(r.time)+'</span>'+
+   '<span class="lg-sum">+'+r.newCount+' 篇 · '+(r.topKeywords.slice(0,3).map(k=>esc(k.term)).join(' / ')||'—')+' · 图谱节点 '+r.kgNodes.length+' 个</span>'+
+   '<span class="lg-arrow">▶</span></div>'+
+   '<div class="log-detail">'+reportBoxesHtml(r)+'</div></div>').join('');
+}
+/* ================= 自学习：智能推荐 ================= */
+function buildRecommendations(){
+  const recos=[];
+  const log=loadLog();
+  const baseCounts={};baseEntries.forEach(e=>{const k=e.subfield||'其他';baseCounts[k]=(baseCounts[k]||0)+1});
+  const upCounts={};uploadedEntries.forEach(e=>{const k=e.subfield||'其他';upCounts[k]=(upCounts[k]||0)+1});
+  Object.entries(upCounts).sort((a,b)=>b[1]-a[1]).forEach(([sf,n])=>{
+    const base=baseCounts[sf]||0;
+    if(recos.length<5&&n>=1&&base<=10)
+      recos.push({title:'补充「'+sf+'」方向文献',reason:'已上传 '+n+' 篇该方向语料，而知识清单基础覆盖仅 '+base+' 篇，建议继续扩充以形成系统知识。'});
+  });
+  if(log.length&&recos.length<5){
+    const baseText=baseEntries.map(indexableText).join(' ');
+    for(const k of log[0].topKeywords){
+      if(recos.length>=5)break;
+      const hits=baseText.split(k.term).length-1;
+      if(hits<=3)recos.push({title:'围绕关键词「'+k.term+'」扩充语料',reason:'该关键词在本批新语料中出现 '+k.count+' 次，但基础知识清单中仅出现 '+hits+' 次，覆盖明显不足。'});
+    }
+  }
+  Object.entries(baseCounts).sort((a,b)=>a[1]-b[1]).forEach(([sf,n])=>{
+    if(recos.length>=5||n>3)return;
+    if(!recos.some(r=>r.title.indexOf('「'+sf+'」')>=0))
+      recos.push({title:'「'+sf+'」方向文献稀缺',reason:'知识清单中该方向仅 '+n+' 篇，建议上传相关文献以均衡知识分布。'});
+  });
+  if(!recos.length)recos.push({title:'上传首批文献开始自学习',reason:'当前暂无上传语料，上传 PDF / PPTX / DOCX 文献后系统将自动分析并给出更精准的学习建议。'});
+  return recos.slice(0,5);
+}
+function renderReco(){
+  document.getElementById('recoList').innerHTML=buildRecommendations().map(r=>
+   '<div class="reco-item"><div class="rc-title">'+esc(r.title)+'</div><div class="rc-reason">'+esc(r.reason)+'</div></div>').join('');
+}
+function renderLearningCenter(){renderReport();renderLog();renderReco()}
+
+/* ================= 云端同步 ================= */
+function getEndpoint(){try{return localStorage.getItem(LS_CLOUD)||DEFAULT_ENDPOINT}catch(e){return DEFAULT_ENDPOINT}}
+function setEndpoint(v){try{localStorage.setItem(LS_CLOUD,v)}catch(e){}}
+function getAutoSync(){try{return localStorage.getItem(LS_AUTOSYNC)==='1'}catch(e){return false}}
+function setAutoSync(on){try{localStorage.setItem(LS_AUTOSYNC,on?'1':'0')}catch(e){}}
+function nowTime(){const d=new Date();const p=n=>String(n).padStart(2,'0');return p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds())}
+function addSyncStatus(type,msg){
+  const list=document.getElementById('syncList');
+  const item=document.createElement('div');
+  item.className='sync-item '+type;
+  item.innerHTML='<span class="sy-time">'+nowTime()+'</span><span class="sy-icon">'+(type==='ok'?'✅':type==='err'?'❌':'⏳')+'</span><span class="sy-msg">'+esc(msg)+'</span>';
+  list.prepend(item);
+  while(list.children.length>6)list.lastChild.remove();
+  return item;
+}
+async function syncToCloud(entries,source){
+  const url=(getEndpoint()||'').trim();
+  if(!entries||!entries.length){addSyncStatus('err','没有可同步的上传语料');return false}
+  if(!url||!/^https?:\/\//i.test(url)){addSyncStatus('err','云端接口地址无效，请先填写 http(s) 地址');return false}
+  const pending=addSyncStatus('pending','正在'+(source==='auto'?'自动':'手动')+'同步 '+entries.length+' 条语料到 '+url+' …');
+  try{
+    const ctrl=new AbortController();const tm=setTimeout(()=>ctrl.abort(),12000);
+    const r=await fetch(url,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({entries:entries}),signal:ctrl.signal});
+    clearTimeout(tm);
+    if(!r.ok)throw new Error('服务器返回 HTTP '+r.status);
+    pending.className='sync-item ok';
+    pending.querySelector('.sy-icon').textContent='✅';
+    pending.querySelector('.sy-msg').textContent=(source==='auto'?'自动':'手动')+'同步成功：'+entries.length+' 条语料已推送至 '+url;
+    return true;
+  }catch(e){
+    pending.className='sync-item err';
+    pending.querySelector('.sy-icon').textContent='❌';
+    pending.querySelector('.sy-msg').textContent='同步失败：'+(e.name==='AbortError'?'请求超时（12s）':(e.message||'网络错误'))+'（本地已保存，不受影响）';
+    return false;
+  }
+}
+function initCloudPanel(){
+  const ep=document.getElementById('cloudEndpoint');
+  ep.value=getEndpoint();
+  ep.addEventListener('change',()=>{setEndpoint(ep.value.trim());toast('云端接口地址已保存')});
+  const as=document.getElementById('autoSync');
+  as.checked=getAutoSync();
+  as.addEventListener('change',()=>{setAutoSync(as.checked);toast(as.checked?'已开启「上传后自动同步」':'已关闭自动同步')});
+  document.getElementById('syncBtn').addEventListener('click',()=>syncToCloud(uploadedEntries,'manual'));
 }
 
 /* ================= 事件绑定 ================= */
@@ -721,6 +1055,12 @@ function bindEvents(){
     refreshList();
   });
   document.getElementById('listBody').addEventListener('click',e=>{
+    const at=e.target.closest('.abs-toggle');
+    if(at){
+      const tr=at.closest('tr');tr.classList.toggle('abs-open');
+      at.textContent=tr.classList.contains('abs-open')?'收起摘要 ▴':'展开摘要 ▾';
+      return;
+    }
     const t=e.target.closest('.q-toggle');if(!t)return;
     const tr=t.closest('tr');tr.classList.toggle('expanded');
     t.textContent=tr.classList.contains('expanded')?'收起':'展开全部 ('+tr.querySelectorAll('.q-item').length+')';
@@ -729,8 +1069,14 @@ function bindEvents(){
     const b=e.target.closest('[data-del]');if(!b)return;
     const id=parseInt(b.dataset.del);
     uploadedEntries=uploadedEntries.filter(x=>x.id!==id);
-    saveUploaded();refreshAll();
+    saveUploaded();
+    corpusIndex=buildIndex(mergedEntries());saveIndexStore();
+    refreshAll();
     toast('已删除该上传语料');
+  });
+  document.getElementById('logList').addEventListener('click',e=>{
+    const item=e.target.closest('.log-item');if(!item)return;
+    item.classList.toggle('open');
   });
   document.getElementById('iterClose').addEventListener('click',()=>document.getElementById('iterModal').classList.remove('show'));
 }

@@ -89,6 +89,45 @@ button{font-family:inherit;cursor:pointer}
 .badge.b-teal b{color:var(--teal)}
 .badge.b-purple b{color:var(--purple)}
 .legend-note{font-size:11px;color:var(--txt3)}
+/* 可点击图例 */
+.leg-item{
+  display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--txt2);
+  padding:3px 9px;border-radius:999px;border:1px solid transparent;cursor:pointer;
+  user-select:none;transition:all .15s;
+}
+.leg-item i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.leg-item:hover{background:var(--hover);border-color:rgba(148,163,184,.25)}
+.leg-item:not(.on){opacity:.35}
+/* 层级展开/收起 分段控件 */
+.seg{display:flex;background:var(--card);border:1px solid var(--border2);border-radius:11px;padding:2px;gap:2px}
+.seg button{
+  border:none;background:transparent;color:var(--txt3);font-size:12px;
+  padding:4px 11px;border-radius:9px;transition:all .15s;white-space:nowrap;
+}
+.seg button:hover{color:var(--txt2);background:var(--hover)}
+.seg button.on{background:rgba(16,185,129,.15);color:#6ee7b7;box-shadow:inset 0 0 0 1px rgba(16,185,129,.35)}
+/* 结构统计条 */
+.statsbar{
+  display:flex;align-items:center;flex-wrap:wrap;gap:5px 14px;
+  padding:6px 16px;background:rgba(17,24,39,.72);border-bottom:1px solid var(--border);
+  font-size:12px;color:var(--txt2);z-index:39;position:relative;
+}
+.statsbar .st-group{display:inline-flex;align-items:center;gap:9px;flex-wrap:wrap}
+.statsbar .st-item{display:inline-flex;align-items:center;gap:5px;white-space:nowrap}
+.statsbar .st-item b{color:var(--txt);font-weight:700}
+.statsbar .st-item i{width:8px;height:8px;border-radius:50%;display:inline-block}
+.statsbar .st-sep{color:var(--txt3);opacity:.6}
+/* 知识路径 */
+.path-chips{display:flex;flex-wrap:wrap;align-items:center;gap:5px}
+.path-chip{
+  padding:4px 11px;border-radius:999px;font-size:12px;color:var(--txt2);
+  background:var(--bg2);border:1px solid var(--border2);cursor:pointer;transition:all .15s;
+  display:inline-flex;align-items:center;gap:5px;
+}
+.path-chip i{width:7px;height:7px;border-radius:50%;display:inline-block}
+.path-chip:hover{background:var(--hover);color:var(--txt);border-color:rgba(148,163,184,.35)}
+.path-chip.cur{background:rgba(16,185,129,.14);color:#6ee7b7;border-color:rgba(16,185,129,.4);font-weight:600}
+.path-arrow{color:var(--txt3);font-size:10px;opacity:.8}
 
 /* ============ 图谱舞台 ============ */
 .stage{position:relative;flex:1;overflow:hidden;
@@ -291,6 +330,14 @@ button{font-family:inherit;cursor:pointer}
       <span class="tb-label">层级</span>
       <!-- 层级复选 chips 由 JS 生成 -->
     </div>
+    <div class="tb-group">
+      <span class="tb-label">展开</span>
+      <div class="seg" id="lvlSeg">
+        <button data-max="1" type="button">到方向层</button>
+        <button data-max="2" type="button">到知识点层</button>
+        <button data-max="3" type="button" class="on">全部层级</button>
+      </div>
+    </div>
     <div class="tb-sep"></div>
     <div class="tb-group">
       <span class="badge">知识点总数 <b id="statNodes">–</b></span>
@@ -299,10 +346,13 @@ button{font-family:inherit;cursor:pointer}
     </div>
     <div class="tb-group" style="margin-left:auto">
       <span class="tb-label">图例</span>
-      <span id="legendBox" style="display:flex;align-items:center;gap:7px;flex-wrap:wrap"></span>
-      <span class="legend-note">节点大小∝重要度 · 边色=知识方向</span>
+      <span id="legendBox" style="display:flex;align-items:center;gap:3px;flex-wrap:wrap"></span>
+      <span class="legend-note">节点大小∝重要度 · 边色=知识方向 · 点击图例可筛选</span>
     </div>
   </div>
+
+  <!-- ============ 结构统计条 ============ -->
+  <div class="statsbar" id="statsBar"></div>
 
   <!-- ============ 图谱舞台 ============ -->
   <div class="stage" id="stage">
@@ -323,6 +373,10 @@ button{font-family:inherit;cursor:pointer}
         <div class="panel-tags" id="pTags"></div>
       </div>
       <div class="panel-body">
+        <div class="p-sec">
+          <div class="p-sec-title">知识路径（中心 → 当前节点）</div>
+          <div class="path-chips" id="pPath"></div>
+        </div>
         <div class="p-sec">
           <div class="p-sec-title">知识点描述</div>
           <div class="p-text" id="pDesc">–</div>
@@ -382,8 +436,13 @@ const CATS = {
 };
 const CAT_FALLBACK = ['#60a5fa','#f87171','#fbbf24','#a78bfa','#34d399','#fb923c'];
 const LEVEL_NAMES = {0:'中心节点', 1:'方向节点', 2:'知识点', 3:'细分点'};
-const RING_R = {0:0, 1:280, 2:560, 3:810};   // 各层级的目标径向距离
-const IDEAL = 130;                            // FR 理想边长
+const LAYER_R = {1:215, 2:470, 3:725};        // 分层环形布局半径
+const CAT_ORDER = ['coordination','redox','analytical','physical'];  // 扇区排布顺序
+
+// 知识树（由 kg 节点的 parent 字段构建，缺失时回退推导）
+const parentOf = new Map();     // id -> parentId
+const childrenOf = new Map();   // id -> [childId,...]
+let centerId = null;
 
 let nodes = [], links = [], nodeById = new Map(), adj = new Map();
 let corpus = [], corpusFailed = false;
@@ -467,8 +526,6 @@ function showError(err){
 
 /* ==================== 图谱初始化 ==================== */
 function initGraph(kg){
-  const rand = (a,b)=>a+Math.random()*(b-a);
-  const byLevel = {1:[],2:[],3:[]};
   (kg.nodes||[]).forEach(nd=>{
     const n = Object.assign({}, nd);
     n.r = 5 + (n.symbolSize||30)*0.17;
@@ -477,17 +534,7 @@ function initGraph(kg){
     n.visible = true;
     catOf(n.category);
     visibleCat.add(n.category);
-    if(n.level>0) byLevel[n.level] ? byLevel[n.level].push(n) : (byLevel[3].push(n));
     nodes.push(n); nodeById.set(n.id, n);
-  });
-  // 初始位置：按层级同心环分布
-  [1,2,3].forEach(lv=>{
-    const arr = byLevel[lv]||[];
-    arr.forEach((n,i)=>{
-      const ang = (i/arr.length)*Math.PI*2 + rand(-0.25,0.25);
-      const rr  = (RING_R[lv]||900) + rand(-60,60);
-      n.x = Math.cos(ang)*rr; n.y = Math.sin(ang)*rr;
-    });
   });
   links = (kg.links||[]).map(l=>({
     s: nodeById.get(l.source), t: nodeById.get(l.target),
@@ -501,6 +548,16 @@ function initGraph(kg){
     adj.get(l.s.id).add(l.t.id); adj.get(l.t.id).add(l.s.id);
   });
 
+  buildTree();      // 基于 parent 字段构建知识树
+  assignLayout();   // 分层环形 + 类目扇区布局（计算目标位置）
+  // 初始位置 = 目标位置 + 微抖动（中心节点严格居中）→ 默认即呈现清晰层次
+  nodes.forEach(n=>{
+    if(n.level === 0){ n.x = 0; n.y = 0; return; }
+    n.x = n.tx + (Math.random()-0.5)*14;
+    n.y = n.ty + (Math.random()-0.5)*14;
+  });
+  temp = 6;         // 仅保留轻微力导向微调（碰撞避免）
+
   buildToolbar();
   updateStats();
   applyFilters(false);
@@ -509,12 +566,112 @@ function initGraph(kg){
   bindEvents();
   requestAnimationFrame(frame);
   // 调试/测试句柄（只读用途）
-  window.__kg = {nodes, links, view, nodeById};
+  window.__kg = {nodes, links, view, nodeById, chainSet, pathOf, setMaxLevel, parentOf};
 }
+
+/* ==================== 知识树构建（parent 字段优先，回退推导） ==================== */
+function buildTree(){
+  const center = nodes.find(n=>n.level===0) || nodes[0];
+  centerId = center.id;
+  nodes.forEach(n=>childrenOf.set(n.id, []));
+  for(const n of nodes){
+    if(n.id === centerId) continue;
+    let p = (n.parent && nodeById.has(n.parent)) ? n.parent : null;
+    if(!p){  // 回退：邻接或相关节点中 level 更小者
+      const cands = [...(adj.get(n.id)||[])].filter(id=>{
+        const m = nodeById.get(id); return m && m.level < n.level;
+      });
+      p = cands[0] || (n.relatedNodes||[]).find(id=>{
+        const m = nodeById.get(id); return m && m.level < n.level;
+      }) || centerId;
+    }
+    parentOf.set(n.id, p);
+    childrenOf.get(p).push(n.id);
+  }
+  links.forEach(l=>{
+    l.isTree = (parentOf.get(l.s.id) === l.t.id) || (parentOf.get(l.t.id) === l.s.id);
+  });
+}
+function subtreeSize(id){
+  let s = 1;
+  for(const c of childrenOf.get(id)||[]) s += subtreeSize(c);
+  return s;
+}
+/* ==================== 分层环形布局：按 level 分环、按 category 聚类扇区 ==================== */
+function assignLayout(){
+  const catIdx = c => { const i = CAT_ORDER.indexOf(c); return i < 0 ? CAT_ORDER.length : i; };
+  const cmpKid = (a,b)=> (catIdx(a.category)-catIdx(b.category))
+      || (subtreeSize(b.id)-subtreeSize(a.id))
+      || a.name.localeCompare(b.name,'zh');
+  // 第一环：方向枢纽按（类目顺序 + 名称）排序，扇区跨度∝分支规模，同类相邻
+  const hubs = (childrenOf.get(centerId)||[]).map(id=>nodeById.get(id)).sort(cmpKid);
+  const GAP = 8*Math.PI/180;
+  const totalW = hubs.reduce((s,h)=>s+subtreeSize(h.id),0) || 1;
+  let ang = -Math.PI/2;   // 从正上方开始
+  const layoutBranch = (pnode, a0, a1)=>{
+    const kids = (childrenOf.get(pnode.id)||[]).map(id=>nodeById.get(id)).sort(cmpKid);
+    if(!kids.length) return;
+    const tw = kids.reduce((s,k)=>s+subtreeSize(k.id),0) || 1;
+    let a = a0;
+    for(const k of kids){
+      const span = (a1-a0) * subtreeSize(k.id)/tw;
+      k.tAngle = a + span/2;
+      const rr = LAYER_R[k.level] || LAYER_R[3];
+      k.tx = Math.cos(k.tAngle)*rr;
+      k.ty = Math.sin(k.tAngle)*rr;
+      layoutBranch(k, a, a+span);
+      a += span;
+    }
+  };
+  for(const h of hubs){
+    const span = (Math.PI*2 - GAP*hubs.length) * subtreeSize(h.id)/totalW;
+    h.tAngle = ang + span/2;
+    h.tx = Math.cos(h.tAngle)*LAYER_R[1];
+    h.ty = Math.sin(h.tAngle)*LAYER_R[1];
+    layoutBranch(h, ang+0.05, ang+span-0.05);
+    ang += span + GAP;
+  }
+  const c = nodeById.get(centerId);
+  c.tx = 0; c.ty = 0; c.tAngle = 0;
+}
+/* 祖先链 + 全部子孙（点击高亮用） */
+function chainSet(id){
+  const s = new Set([id]);
+  let p = parentOf.get(id);
+  while(p){ s.add(p); p = parentOf.get(p); }
+  const stack = [id];
+  while(stack.length){
+    for(const c of childrenOf.get(stack.pop())||[]){
+      if(!s.has(c)){ s.add(c); stack.push(c); }
+    }
+  }
+  return s;
+}
+/* 中心 → 当前节点 的知识路径 */
+function pathOf(id){
+  const ids = [id];
+  let p = parentOf.get(id);
+  while(p){ ids.unshift(p); p = parentOf.get(p); }
+  return ids;
+}
+
 function updateStats(){
   $('#statNodes').textContent = nodes.length;
   $('#statLinks').textContent = links.length;
   $('#statDocs').textContent  = corpus.length;
+  // 结构统计条：各层节点数 + 各类目节点数
+  const lvlC = {};
+  const catC = {};
+  nodes.forEach(n=>{ lvlC[n.level]=(lvlC[n.level]||0)+1; catC[n.category]=(catC[n.category]||0)+1; });
+  const lvlHtml = [0,1,2,3].map(lv=>
+    `<span class="st-item">${LEVEL_NAMES[lv].replace('节点','')} <b>${lvlC[lv]||0}</b></span>`).join('<span class="st-sep">·</span>');
+  const catHtml = Object.keys(catC).map(c=>{
+    const m = catOf(c);
+    return `<span class="st-item"><i style="background:${m.color}"></i>${esc(m.name)} <b>${catC[c]}</b></span>`;
+  }).join('<span class="st-sep">·</span>');
+  $('#statsBar').innerHTML =
+    `<span class="tb-label">结构统计</span><span class="st-group">${lvlHtml}</span>` +
+    `<span class="st-sep">｜</span><span class="st-group">${catHtml}</span>`;
 }
 
 /* ==================== 工具栏构建 ==================== */
@@ -522,78 +679,108 @@ function buildToolbar(){
   const catBox = $('#catFilter'), lvlBox = $('#lvlFilter'), legBox = $('#legendBox');
   Object.keys(CATS).forEach(c=>{
     const meta = CATS[c];
+    // 分类筛选 chip
     const lab = document.createElement('label');
     lab.className = 'fchip on';
+    lab.dataset.cat = c;
     lab.innerHTML = `<input type="checkbox" checked><i class="dot" style="background:${meta.color};color:${meta.color}"></i>${esc(meta.name)}`;
-    lab.querySelector('input').addEventListener('change', ev=>{
-      ev.target.checked ? visibleCat.add(c) : visibleCat.delete(c);
-      lab.classList.toggle('on', ev.target.checked);
-      applyFilters(true);
-    });
+    lab.querySelector('input').addEventListener('change', ev=>setCat(c, ev.target.checked));
     catBox.appendChild(lab);
+    // 可点击图例（与筛选 chip 联动）
     const lg = document.createElement('span');
-    lg.style.cssText = 'display:inline-flex;align-items:center;gap:4px;font-size:11px;color:var(--txt2)';
-    lg.innerHTML = `<i style="width:8px;height:8px;border-radius:50%;background:${meta.color};display:inline-block"></i>${esc(meta.name)}`;
+    lg.className = 'leg-item on';
+    lg.dataset.cat = c;
+    lg.title = '点击筛选 ' + meta.name;
+    lg.innerHTML = `<i style="background:${meta.color}"></i>${esc(meta.name)}`;
+    lg.addEventListener('click', ()=>setCat(c, !visibleCat.has(c)));
     legBox.appendChild(lg);
   });
   [0,1,2,3].forEach(lv=>{
     const lab = document.createElement('label');
     lab.className = 'fchip on';
+    lab.dataset.lvl = lv;
     lab.innerHTML = `<input type="checkbox" checked>${LEVEL_NAMES[lv]}`;
     lab.querySelector('input').addEventListener('change', ev=>{
       ev.target.checked ? visibleLvl.add(lv) : visibleLvl.delete(lv);
       lab.classList.toggle('on', ev.target.checked);
+      syncSeg();
       applyFilters(true);
     });
     lvlBox.appendChild(lab);
   });
+  // 按层级展开/收起
+  $('#lvlSeg').querySelectorAll('button').forEach(btn=>{
+    btn.addEventListener('click', ()=>setMaxLevel(+btn.dataset.max));
+  });
+}
+/* 分类筛选统一入口（chip 与图例联动） */
+function setCat(c, on){
+  on ? visibleCat.add(c) : visibleCat.delete(c);
+  document.querySelectorAll(`[data-cat="${c}"]`).forEach(el=>{
+    el.classList.toggle('on', on);
+    const inp = el.querySelector('input');
+    if(inp) inp.checked = on;
+  });
+  applyFilters(true);
+}
+/* 按层级展开/收起：同步层级 chips 并重新取景 */
+function setMaxLevel(max){
+  visibleLvl.clear();
+  for(let i=0;i<=max;i++) visibleLvl.add(i);
+  document.querySelectorAll('#lvlFilter .fchip').forEach(lab=>{
+    const on = (+lab.dataset.lvl) <= max;
+    lab.classList.toggle('on', on);
+    lab.querySelector('input').checked = on;
+  });
+  document.querySelectorAll('#lvlSeg button').forEach(b=>
+    b.classList.toggle('on', +b.dataset.max === max));
+  applyFilters(true);
+  const t = fitTarget();
+  animateView(t.x, t.y, t.k, 520);
+}
+/* 手动勾选层级 chip 后同步分段控件高亮 */
+function syncSeg(){
+  let max = 0;
+  for(let i=0;i<=3;i++) if(visibleLvl.has(i)) max = i;
+  const contiguous = [0,1,2,3].every(i=> visibleLvl.has(i) === (i<=max));
+  document.querySelectorAll('#lvlSeg button').forEach(b=>
+    b.classList.toggle('on', contiguous && +b.dataset.max === max));
 }
 function applyFilters(reheatLayout){
   nodes.forEach(n=>{ n.visible = visibleCat.has(n.category) && visibleLvl.has(n.level); });
   if(hoverId && !(nodeById.get(hoverId)||{}).visible) hoverId = null;
-  if(reheatLayout) reheat(18);
+  if(selectedId && !(nodeById.get(selectedId)||{}).visible) closePanel();
+  if(reheatLayout) reheat(6);
 }
 
-/* ==================== 力导向布局（Fruchterman-Reingold） ==================== */
+/* ==================== 布局微调（目标弹簧 + 碰撞避免） ==================== */
 function iterate(){
   const ns = [];
   for(const n of nodes){ if(n.visible){ n.dx=0; n.dy=0; ns.push(n); } }
-  const k = IDEAL;
-  // 斥力（所有节点对）
+  // 目标弹簧：将节点拉回其分层环形目标位置
+  for(const n of ns){
+    n.dx += (n.tx - n.x) * 0.06;
+    n.dy += (n.ty - n.y) * 0.06;
+  }
+  // 碰撞避免：仅推开过近的节点对
   for(let i=0;i<ns.length;i++){
     const a = ns[i];
     for(let j=i+1;j<ns.length;j++){
       const b = ns[j];
-      let dx = a.x-b.x, dy = a.y-b.y;
-      let d2 = dx*dx + dy*dy;
-      if(d2 < 0.01){ dx = Math.random()-0.5; dy = Math.random()-0.5; d2 = dx*dx+dy*dy+0.01; }
-      if(d2 > 2400*2400) continue;
-      const d = Math.sqrt(d2);
-      const f = (k*k/d)/d;
-      dx *= f; dy *= f;
-      a.dx += dx; a.dy += dy; b.dx -= dx; b.dy -= dy;
+      const minD = a.r + b.r + 14;
+      let dx = b.x-a.x, dy = b.y-a.y;
+      const d2 = dx*dx + dy*dy;
+      if(d2 >= minD*minD) continue;
+      const d = Math.sqrt(d2) || 0.01;
+      const push = (minD - d) * 0.42 / d;
+      dx *= push; dy *= push;
+      a.dx -= dx; a.dy -= dy;
+      b.dx += dx; b.dy += dy;
     }
   }
-  // 引力（沿边）
-  for(const l of links){
-    const s = l.s, t = l.t;
-    if(!s.visible || !t.visible) continue;
-    let dx = s.x-t.x, dy = s.y-t.y;
-    const d = Math.sqrt(dx*dx+dy*dy) || 0.01;
-    const f = (d*d/k)/d;
-    dx *= f; dy *= f;
-    s.dx -= dx; s.dy -= dy; t.dx += dx; t.dy += dy;
-  }
-  // 径向分层引力（保持 中心→方向→知识→细分 的同心结构）
+  // 温度限幅，平滑收敛
   for(const n of ns){
-    const r = Math.sqrt(n.x*n.x + n.y*n.y) || 0.01;
-    const tr = RING_R[n.level] != null ? RING_R[n.level] : 930;
-    const pull = (r - tr) * 0.012;
-    n.dx += -n.x/r*pull; n.dy += -n.y/r*pull;
-  }
-  // 以温度限制位移上限，逐步降温收敛
-  for(const n of ns){
-    if(n.fixed){ continue; }
+    if(n.fixed) continue;
     const d = Math.sqrt(n.dx*n.dx + n.dy*n.dy) || 0.01;
     const m = Math.min(d, temp);
     n.x += n.dx/d*m; n.y += n.dy/d*m;
@@ -679,11 +866,14 @@ function draw(){
   ctx.save();
   ctx.translate(W/2, H/2); ctx.scale(view.k, view.k); ctx.translate(-view.x, -view.y);
 
-  const focusId = hoverId || selectedId;
-  let focusSet = null;
-  if(focusId){
-    focusSet = new Set([focusId]);
-    const nb = adj.get(focusId);
+  // 焦点集合：选中节点 → 祖先链+子孙（链路模式）；否则悬停 → 邻居高亮
+  let focusSet = null, chainMode = false;
+  if(selectedId){
+    focusSet = chainSet(selectedId);
+    chainMode = true;
+  }else if(hoverId){
+    focusSet = new Set([hoverId]);
+    const nb = adj.get(hoverId);
     if(nb) nb.forEach(x=>focusSet.add(x));
   }
   const q = searchQ;
@@ -696,11 +886,14 @@ function draw(){
   // ---- 边 ----
   for(const l of links){
     if(!l.s.visible || !l.t.visible) continue;
-    let alpha = 0.5, w = l.w;
+    let alpha = 0.42, w = l.w;
     if(focusSet){
-      const inf = focusSet.has(l.s.id) && focusSet.has(l.t.id);
-      alpha = inf ? 0.95 : 0.05;
-      w = inf ? l.w*1.6 : l.w*0.8;
+      // 链路模式只高亮祖先/子孙路径上的树边；悬停模式高亮所有关联边
+      const inf = chainMode
+        ? (l.isTree && focusSet.has(l.s.id) && focusSet.has(l.t.id))
+        : (focusSet.has(l.s.id) && focusSet.has(l.t.id));
+      alpha = inf ? 0.95 : 0.04;
+      w = inf ? l.w*1.8 : l.w*0.7;
     }
     if(matchSet && !(matchSet.has(l.s.id) && matchSet.has(l.t.id))) alpha *= 0.3;
     ctx.globalAlpha = alpha;
@@ -719,6 +912,18 @@ function draw(){
     const meta = catOf(n.category);
     const isSel = n.id === selectedId, isHov = n.id === hoverId;
     const isMatch = matchSet && matchSet.has(n.id);
+
+    // 中心节点：脉冲光圈
+    if(n.level === 0){
+      const tt = performance.now()/1000;
+      for(let i=0;i<2;i++){
+        const ph = (tt*0.65 + i*0.5) % 1;
+        ctx.globalAlpha = (1-ph)*0.42*alpha;
+        ctx.strokeStyle = meta.color;
+        ctx.lineWidth = 2.4*(1-ph)+0.5;
+        ctx.beginPath(); ctx.arc(n.x, n.y, n.r + 5 + ph*34, 0, Math.PI*2); ctx.stroke();
+      }
+    }
 
     ctx.globalAlpha = alpha;
     if(n.level === 0 || isSel || isMatch){
@@ -744,9 +949,9 @@ function draw(){
       ctx.beginPath(); ctx.arc(n.x, n.y, n.r+4.5, 0, Math.PI*2); ctx.stroke();
     }
 
-    // ---- 标签（中心/一级常显，小节点缩放后显示；字号按屏幕像素恒定） ----
+    // ---- 标签（中心/一级常显，小节点缩放后显示；径向外侧放置避免遮挡） ----
     let show = false, fs = 12;   // fs = 期望的屏幕字号
-    if(n.level === 0){ show = true; fs = 17; }
+    if(n.level === 0){ show = true; fs = 16; }
     else if(n.level === 1){ show = true; fs = 13.5; }
     else if(n.level === 2){ show = view.k > 0.5; fs = 11.5; }
     else { show = view.k > 0.9; fs = 10.5; }
@@ -757,9 +962,36 @@ function draw(){
       ctx.globalAlpha = Math.max(alpha, 0.6);
       ctx.font = (n.level<=1 ? '700 ' : '500 ') + wf + 'px "PingFang SC","Microsoft YaHei",sans-serif';
       ctx.lineWidth = wf*0.28; ctx.strokeStyle = 'rgba(10,14,26,.92)';
-      ctx.strokeText(n.name, n.x, n.y + n.r + wf*0.35);
-      ctx.fillStyle = n.level === 0 ? '#ffffff' : '#dbe4f0';
-      ctx.fillText(n.name, n.x, n.y + n.r + wf*0.35);
+      let lx, ly;
+      if(n.level === 0){
+        // 中心节点：标签置于正上方（扇区间隙方向），过长时断为两行
+        ctx.textBaseline = 'top';
+        let lines = [n.name];
+        if(n.name.length > 8){
+          const idx = n.name.indexOf('制备实验');
+          const cut = idx > 0 ? idx : Math.ceil(n.name.length/2);
+          lines = [n.name.slice(0,cut), n.name.slice(cut)];
+        }
+        ctx.fillStyle = '#ffffff';
+        const lh = wf*1.18;
+        lines.forEach((s, li)=>{
+          const yy = n.y - n.r - wf*0.5 - (lines.length-li)*lh;
+          ctx.strokeText(s, n.x, yy);
+          ctx.fillText(s, n.x, yy);
+        });
+        ctx.textBaseline = 'top';
+      }else{
+        // 径向外侧放置（沿当前节点相对圆心的方向）
+        const ang = (n.x||n.y) ? Math.atan2(n.y, n.x) : (n.tAngle||0);
+        const off = n.r + wf*0.72;
+        lx = n.x + Math.cos(ang)*off;
+        ly = n.y + Math.sin(ang)*off;
+        ctx.textBaseline = 'middle';
+        ctx.strokeText(n.name, lx, ly);
+        ctx.fillStyle = '#dbe4f0';
+        ctx.fillText(n.name, lx, ly);
+        ctx.textBaseline = 'top';
+      }
     }
   }
   ctx.restore();
@@ -946,10 +1178,19 @@ function selectNode(id){
   if(!n) return;
   selectedId = id;
   openPanel(n);
-  // 让节点落在屏幕中左部，避开右侧详情面板
-  const k = Math.max(view.k, 0.9);
-  const offX = (W > 760 ? 215 : 0) / k;
-  animateView(n.x + offX, n.y, k, 420);
+  // 视野覆盖整条祖先链（含子孙方向），并避开右侧详情面板
+  const cs = chainSet(id);
+  let x0=Infinity, y0=Infinity, x1=-Infinity, y1=-Infinity;
+  cs.forEach(cid=>{
+    const m = nodeById.get(cid);
+    x0=Math.min(x0,m.x); x1=Math.max(x1,m.x);
+    y0=Math.min(y0,m.y); y1=Math.max(y1,m.y);
+  });
+  const availW = Math.max(W - (W>760 ? 430 : 60) - 140, 220);
+  const availH = Math.max(H - 180, 220);
+  const k = Math.min(Math.max(Math.min(availW/Math.max(x1-x0,170), availH/Math.max(y1-y0,170)), 0.3), 1.15);
+  const cx = (x0+x1)/2 + (W > 760 ? 215/k : 0);
+  animateView(cx, (y0+y1)/2, k, 460);
 }
 function closePanel(){
   selectedId = null;
@@ -967,6 +1208,25 @@ function openPanel(n){
     `<span class="tag tag-diff" title="难度 ${d}/5">${'★'.repeat(d)}${'☆'.repeat(5-d)}</span>`;
   $('#pDesc').textContent = n.description || '暂无描述';
   $('#pConn').textContent = n.connectionToExperiment || '暂无说明';
+
+  // 知识路径（中心 → … → 当前节点，可点击跳转）
+  const pathBox = $('#pPath');
+  pathBox.innerHTML = '';
+  pathOf(n.id).forEach((pid, i, arr)=>{
+    if(i > 0){
+      const ar = document.createElement('span');
+      ar.className = 'path-arrow'; ar.textContent = '▶';
+      pathBox.appendChild(ar);
+    }
+    const pn = nodeById.get(pid);
+    const pm = catOf(pn.category);
+    const chip = document.createElement('button');
+    chip.className = 'path-chip' + (pid === n.id ? ' cur' : '');
+    chip.innerHTML = `<i style="background:${pm.color}"></i>${esc(pn.name)}`;
+    chip.title = LEVEL_NAMES[pn.level] || '';
+    chip.addEventListener('click', ()=>selectNode(pid));
+    pathBox.appendChild(chip);
+  });
 
   // 相关节点 chips（可点击跳转选中）
   const relBox = $('#pRel');

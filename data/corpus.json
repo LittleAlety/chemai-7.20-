@@ -1,7 +1,7 @@
 {
  "name": "三草酸合铁酸钾语料库知识清单",
- "version": "v2",
- "total": 276,
+ "version": "v3",
+ "total": 291,
  "subfields": [
   "蓝晒工艺",
   "合成制备",
@@ -33,7 +33,14 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "环境科学研究",
+   "abstract": "研究Fe3+-草酸盐络合物/H2O2/日光体系处理垃圾渗滤液：利用草酸铁(Ⅲ)络合物的光化学活性产生强氧化性物种降解有机物，考察了pH、H2O2投加量、光照时间等因素对渗滤液COD去除率的影响，确定优化工艺条件。",
+   "volume": "18",
+   "issue": "3",
+   "pages": "29-32",
+   "source_url": "https://www.cnki.com.cn/",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 2,
@@ -67,7 +74,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed500809n",
+   "abstract": "An integrated experiment that joins inorganic synthesis, photochemistry and photography: students prepare tris(oxalato)ferrate(III), coat paper with it, and produce cyanotype (blueprint) images, since photoreduced Fe(II) reacts with ferricyanide to form Prussian blue; connects coordination chemistry, redox photochemistry and the history of photography. (Parent article of SI files ed500809n_si_*.)",
+   "volume": "92",
+   "issue": "10",
+   "pages": "1721-1724",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed500809n",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 4,
@@ -85,7 +100,12 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.5c01101",
+   "abstract": "A laboratory activity for first-year undergraduates that bridges chemistry and creativity through cyanotype photography: students make cyanotype prints, explore chemical toning of the Prussian blue image, and test the UV-shielding properties of the prints, learning redox photochemistry, coordination chemistry and light–matter interactions. Published online as an ACS ASAP article; volume/issue/pages not yet assigned. (Parent article of SI file ed5c01101_si_002.)",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.5c01101",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 5,
@@ -102,7 +122,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "The Journal of Physical Chemistry",
+   "doi": "10.1021/j100607a005",
+   "abstract": "Flash photolysis study of aqueous potassium tris(oxalato)cobaltate(III), identifying transient oxalate-radical and Co(II) species formed by ligand-to-metal charge-transfer excitation; kinetics of the primary photoredox step and subsequent radical reactions are reported.",
+   "volume": "78",
+   "issue": "13",
+   "pages": "1361",
+   "source_url": "https://pubs.acs.org/doi/10.1021/j100607a005",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 6,
@@ -120,7 +148,15 @@
    "questions": [
     "\"introducing-the-human-element-in-chemistry-by-synthesizing-blue-pigments-and-creating-cyanotypes-in-a-first\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed5000229",
+   "abstract": "A first-year chemistry course activity in which students synthesize blue pigments (Prussian blue) and create cyanotype images, introducing the 'human element' of chemistry by linking inorganic synthesis and redox/photochemistry with the historical and artistic dimensions of early photographic printing.",
+   "volume": "92",
+   "issue": "1",
+   "pages": "74-78",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed5000229",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 7,
@@ -156,7 +192,13 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "实验室科学",
+   "abstract": "综述了适合低年级学生的综合化学实验三草酸根合铁(Ⅲ)酸钾合成及组成测定中常用的合成路线及改进方法，考察了加乙醇直接结晶和蒸发浓缩两种结晶方法对产品性质的影响：加乙醇结晶所需时间较短，而蒸发浓缩所得晶体颜色更接近翠绿色、产品组成相对稳定；温度、浓度和试剂用量等均影响产品性质、产率和实验现象；通过简单实验可验证产品具有光致还原性。",
+   "issue": "3",
+   "pages": "33-36",
+   "source_url": "https://kns.cnki.net/kcms/detail/detail.aspx?FileName=YSKT201503011",
+   "abstract_type": "publisher"
   },
   {
    "id": 9,
@@ -244,7 +286,15 @@
    "questions": [
     "\"molecular-charge-transfer-salt-of-bedt-ttf-bis(ethylenedithio)tetrathiafulvalene-with-the-oxalate-bridged-dimeric\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Inorganic Chemistry",
+   "doi": "10.1021/ic991409w",
+   "abstract": "Synthesis and crystal structure of a molecular charge-transfer salt of BEDT-TTF [bis(ethylenedithio)tetrathiafulvalene] containing the oxalate-bridged dimeric anion [Fe2(C2O4)5]4-; a hybrid organic-inorganic material combining a conducting organic donor network with magnetic iron-oxalate anions.",
+   "volume": "39",
+   "issue": "11",
+   "pages": "2426-2428",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ic991409w",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 14,
@@ -280,7 +330,15 @@
    "questions": [
     "\"1970-convenient-procedure-for-the-preparation-of-potassium-trioxalatoferrate(iii)\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed047p702",
+   "abstract": "Describes a convenient, reliable undergraduate procedure for preparing potassium trioxalatoferrate(III), K3[Fe(C2O4)3]·3H2O, from iron(II) ammonium sulfate via oxidation with H2O2 in the presence of oxalate, giving good yields of well-formed green crystals suitable for further analysis experiments.",
+   "volume": "47",
+   "issue": "10",
+   "pages": "702",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed047p702",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 16,
@@ -299,7 +357,15 @@
    "questions": [
     "\"1984-preparation-and-analysis-of-potassium-tris(oxalato)ferrate(iii)trihydrate-a-general-chemistry\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed061p1098",
+   "abstract": "A general chemistry experiment in which students prepare potassium tris(oxalato)ferrate(III) trihydrate and then analyze it for oxalate (permanganate titration), iron (spectrophotometry) and water of hydration, thereby determining its empirical formula; combines synthesis, redox titration and spectrophotometric analysis in one laboratory sequence.",
+   "volume": "61",
+   "issue": "12",
+   "pages": "1098-1099",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed061p1098",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 17,
@@ -318,7 +384,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed072p936",
+   "abstract": "Students synthesize potassium tris(oxalato)ferrate(III) trihydrate and characterize it by determining iron content spectrophotometrically; the experiment demonstrates complex stoichiometry, the ligand-to-metal charge-transfer absorption of the ferrioxalate ion, and a spectrophotometric method of iron analysis suitable for the undergraduate laboratory.",
+   "volume": "72",
+   "issue": "10",
+   "pages": "936",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed072p936",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 18,
@@ -494,7 +568,8 @@
    "questions": [
     "如何测定配合物的磁化率？",
     "该配合物的未成对电子数是多少？"
-   ]
+   ],
+   "source_url": "https://www.benchchem.com/"
   },
   {
    "id": 28,
@@ -512,7 +587,15 @@
    "questions": [
     "\"ed051p129-Preparation and properties of potassium trioxalatoferrate(III)\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed051p129",
+   "abstract": "Presents the preparation of potassium trioxalatoferrate(III) trihydrate and a study of its properties, including its composition, behaviour on heating, and its characteristic photoreduction (photochemical decomposition to iron(II) and CO2 on exposure to light), illustrating the photochemistry that underlies its use as a chemical actinometer.",
+   "volume": "51",
+   "issue": "2",
+   "pages": "129",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed051p129",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 29,
@@ -530,7 +613,15 @@
    "questions": [
     "\"ed061p1098-Preparation and analysis of potassium tris(oxalato)ferrate(III)trihydrate A general chemistry\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed061p1098",
+   "abstract": "A general chemistry experiment in which students prepare potassium tris(oxalato)ferrate(III) trihydrate and then analyze it for oxalate (permanganate titration), iron (spectrophotometry) and water of hydration, thereby determining its empirical formula; combines synthesis, redox titration and spectrophotometric analysis in one laboratory sequence.",
+   "volume": "61",
+   "issue": "12",
+   "pages": "1098-1099",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed061p1098",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 30,
@@ -548,7 +639,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed072p936",
+   "abstract": "Students synthesize potassium tris(oxalato)ferrate(III) trihydrate and characterize it by determining iron content spectrophotometrically; the experiment demonstrates complex stoichiometry, the ligand-to-metal charge-transfer absorption of the ferrioxalate ion, and a spectrophotometric method of iron analysis suitable for the undergraduate laboratory.",
+   "volume": "72",
+   "issue": "10",
+   "pages": "936",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed072p936",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 31,
@@ -566,7 +665,15 @@
    "questions": [
     "\"morphology-controllable-synthesis-of-microporous-prussian-blue-analogue-zn3-co(cn)6-2-xh2o\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Langmuir",
+   "doi": "10.1021/la900004v",
+   "abstract": "Morphology-controllable synthesis of microporous Prussian blue analogue Zn3[Co(CN)6]2·xH2O microstructures (cubes, spheres and other shapes) via controlled precipitation with structure-directing additives; the porous crystals show shape-dependent adsorption properties.",
+   "volume": "25",
+   "issue": "12",
+   "pages": "7057-7062",
+   "source_url": "https://pubs.acs.org/doi/10.1021/la900004v",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 32,
@@ -584,7 +691,15 @@
    "questions": [
     "\"preparation-analysis-and-characterization-of-some-transition-metal-complexes-a-holistic\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed082p1667",
+   "abstract": "A holistic upper-level inorganic laboratory program in which students prepare transition-metal complexes (including tris(oxalato)ferrate(III)) and then analyze and characterize them by a suite of techniques — titrimetry, UV-Vis and IR spectroscopy, magnetic susceptibility and conductivity — connecting synthetic, analytical and structural aspects of coordination chemistry.",
+   "volume": "82",
+   "issue": "11",
+   "pages": "1667",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed082p1667",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 33,
@@ -602,7 +717,15 @@
    "questions": [
     "\"preparation-and-characterization-of-intercalation-compounds-of-layered-double-hydroxides-with-metallic-oxalato\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Chemistry of Materials",
+   "doi": "10.1021/cm0311067",
+   "abstract": "Intercalation compounds of layered double hydroxides MII1-xMIIIx(OH)2 (MII = Zn, Cu; MIII = Al, Cr, Ga) with oxalato complexes of Al, Ga, Cr, Cu and Be were prepared by anion exchange; powder XRD shows successful intercalation with expanded interlayer spacings, and the orientation/packing of the oxalato complexes in the interlayer is discussed.",
+   "volume": "16",
+   "issue": "5",
+   "pages": "935-945",
+   "source_url": "https://pubs.acs.org/doi/10.1021/cm0311067",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 34,
@@ -620,7 +743,15 @@
    "questions": [
     "\"recovery-of-iron-resources-from-wet-process-phosphoric-acid-and-the-preparation-of-high-purity-ferrous-oxalate\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "ACS Sustainable Chemistry & Engineering",
+   "doi": "10.1021/acssuschemeng.3c05944",
+   "abstract": "Recovery of iron resources from wet-process phosphoric acid and preparation of high-purity ferrous oxalate: iron is extracted by solvent extraction and then converted photochemically (using the photoreduction of Fe(III)-oxalate species) to battery-grade FeC2O4, coupling resource recovery with the photochemistry of iron-oxalate complexes.",
+   "volume": "12",
+   "issue": "13",
+   "pages": "5061-5074",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acssuschemeng.3c05944",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 35,
@@ -725,7 +856,15 @@
     "该合成方法的优缺点有哪些？",
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "安庆师范学院学报(自然科学版)",
+   "doi": "10.3969/j.issn.1007-4260.2001.04.005",
+   "abstract": "介绍了以氯化亚铁、碳酸氢铵、草酸、草酸钾和过氧化氢等为原料合成三草酸合铁(Ⅲ)酸钾的方法，并运用化学分析手段对其组成与结构进行了测定，为无机化学实验教学提供了可行的制备与组成测定方案。",
+   "volume": "7",
+   "issue": "4",
+   "pages": "13-16",
+   "source_url": "https://doi.org/10.3969/j.issn.1007-4260.2001.04.005",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 41,
@@ -780,7 +919,12 @@
     "该合成方法的优缺点有哪些？",
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "分子科学学报",
+   "abstract": "以草酸钾和氯化铁为原料，通过室温固相(固-固)反应合成三草酸合铁(Ⅲ)酸钾，用元素分析、ICP、X射线单晶衍射、红外光谱和热分析等方法进行表征；晶体结构属单斜晶系P2(1)/n空间群。方法简便、产率较高。(页码未能核实)",
+   "issue": "1",
+   "source_url": "https://kns.cnki.net/kcms/detail/detail.aspx?FileName=FZKX201701",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 44,
@@ -800,7 +944,14 @@
     "该合成方法的优缺点有哪些？",
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "实验技术与管理",
+   "abstract": "以硫酸亚铁铵、草酸钾为原料、过氧化氢为氧化剂，采用改进的绿色合成路线制备三草酸合铁(Ⅲ)酸钾，产品经元素分析、红外光谱、X射线粉末衍射和热重分析表征，晶体属单斜晶系。该合成方法条件温和、产率高、污染小，适合高校实验教学。",
+   "volume": "33",
+   "issue": "9",
+   "pages": "34-37",
+   "source_url": "https://www.cnki.com.cn/Article/CJFDTotal-SYJL201609010.htm",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 45,
@@ -817,7 +968,8 @@
    "questions": [
     "\"三草酸合铁酸碱的制备及测定\"的实验步骤是什么？",
     "该合成方法的优缺点有哪些？"
-   ]
+   ],
+   "source_url": "https://wf.pub/"
   },
   {
    "id": 46,
@@ -837,7 +989,15 @@
     "该合成方法的优缺点有哪些？",
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "广州化工",
+   "doi": "10.3969/j.issn.1001-9677.2023.07.049",
+   "abstract": "针对三草酸合铁酸钾传统制备实验中产率偏低、晶体细小等问题，对制备条件(反应温度、结晶方式、乙醇用量等)进行改进，提高了产品产率与晶体质量，并设计简单实验探究了产物的光致还原性，适合基础化学实验教学。",
+   "volume": "51",
+   "issue": "7",
+   "pages": "166-168",
+   "source_url": "https://doi.org/10.3969/j.issn.1001-9677.2023.07.049",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 47,
@@ -925,7 +1085,8 @@
     "该合成方法的优缺点有哪些？",
     "如何测定配合物的磁化率？",
     "该配合物的未成对电子数是多少？"
-   ]
+   ],
+   "source_url": "https://kns.cnki.net/"
   },
   {
    "id": 52,
@@ -1013,7 +1174,14 @@
     "该合成方法的优缺点有哪些？",
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "河南师范大学学报(自然科学版)",
+   "abstract": "以乙酸铜和草酸钾为原料，通过室温固相反应合成二草酸合铜(Ⅱ)酸钾K2[Cu(C2O4)2]·2H2O，用元素分析、红外光谱、X射线单晶衍射等手段表征其晶体结构，并研究了热分解行为。(据文章编号1000-2537(2017)06-0049-06确定为2017年第6期49-54页)",
+   "volume": "45",
+   "issue": "6",
+   "pages": "49-54",
+   "source_url": "http://doc.taixueshu.com/journal/20170068hnsfdx-zr.html",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 57,
@@ -1140,7 +1308,14 @@
     "该合成方法的优缺点有哪些？",
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "化学教育(中英文)",
+   "abstract": "大学化学综合实验：制备三草酸合铁(Ⅲ)酸钾，通过氧化还原滴定等化学分析确定其组成，结合红外光谱、X射线衍射等手段进行结构表征，并考察其光化学性质，训练学生综合运用合成、分析与表征技术的能力。",
+   "volume": "42",
+   "issue": "4",
+   "pages": "56-61",
+   "source_url": "https://www.hxjy.chemsoc.org.cn/",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 64,
@@ -1228,7 +1403,15 @@
    "questions": [
     "\"废铁屑制备三草酸合铁酸钾虚实结合的综合化学实验设计\"的实验步骤是什么？",
     "该合成方法的优缺点有哪些？"
-   ]
+   ],
+   "journal": "大学化学",
+   "doi": "10.3866/PKU.DXHX202303090",
+   "abstract": "以废铁屑为原料制备三草酸合铁酸钾，将虚拟仿真实验与线下实际操作虚实结合，设计涵盖制备、组成测定与结构表征的综合化学实验，实现废弃物资源化利用，融入绿色化学与课程思政元素。",
+   "volume": "38",
+   "issue": "11",
+   "pages": "187-194",
+   "source_url": "https://doi.org/10.3866/PKU.DXHX202303090",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 69,
@@ -1334,7 +1517,8 @@
    "questions": [
     "\"综合化学实验：三草酸合铁(Ⅲ)酸钾的合成研究及其配阴离子电荷数的测定\"的实验步骤是什么？",
     "该合成方法的优缺点有哪些？"
-   ]
+   ],
+   "source_url": "https://www.baidu.com/"
   },
   {
    "id": 75,
@@ -1388,7 +1572,15 @@
    "questions": [
     "\"1973-an-experiment-sequence-involving-potassium-trioxalatoferrate(iii)\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed050p218",
+   "abstract": "An experiment sequence built around potassium trioxalatoferrate(III) trihydrate: students prepare the complex and then use it for a series of analyses and property studies (determination of oxalate and iron, hydration water, and photochemical behaviour), integrating synthesis, analysis and photochemistry in a coordinated laboratory sequence.",
+   "volume": "50",
+   "issue": "3",
+   "pages": "218",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed050p218",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 78,
@@ -1424,7 +1616,15 @@
    "questions": [
     "\"ed062p445-Tris(oxalato) teaching\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed062p445",
+   "abstract": "Short 'teaching aids' note on tris(oxalato)metal complexes for coordination-chemistry instruction (J. Chem. Educ. 1985, 62(5), 445). Publisher provides no abstract; item is a brief didactic aid concerning tris(oxalato) complexes such as [Fe(C2O4)3]3-.",
+   "volume": "62",
+   "issue": "5",
+   "pages": "445",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed062p445",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 80,
@@ -1442,7 +1642,15 @@
    "questions": [
     "\"ed073p984-A Student-Designed Potentiometric Titration Quantitative Determination of Iron(II) by Caro's Acid\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed073p984",
+   "abstract": "A student-designed potentiometric titration experiment: the feasibility of using Caro's acid (peroxomonosulfuric acid, H2SO5) as a titrant for the quantitative determination of iron(II) is investigated, with potentiometric endpoint detection; introduces students to experimental design, redox titrimetry and evaluation of nonstandard titrants.",
+   "volume": "73",
+   "issue": "10",
+   "pages": "984",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed073p984",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 81,
@@ -2263,7 +2471,12 @@
    "questions": [
     "热分解过程分为几个阶段？",
     "脱水反应的活化能是多少？"
-   ]
+   ],
+   "journal": "西北大学学报(自然科学版)",
+   "abstract": "用热重-差热(TG-DTA)等热分析手段系统研究了Cr(Ⅲ)、Fe(Ⅲ)、Al(Ⅲ)、Cu(Ⅱ)草酸配合物的热分解过程，比较不同金属草酸配合物的热稳定性，分析其分解步骤与机理。(卷期页码据西北大学期刊网记录为2004年第2期，页码未核实)",
+   "issue": "2",
+   "source_url": "https://qkzx.nwu.edu.cn/",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 129,
@@ -2280,7 +2493,14 @@
    "questions": [
     "热分解过程分为几个阶段？",
     "脱水反应的活化能是多少？"
-   ]
+   ],
+   "journal": "武汉科技学院学报",
+   "abstract": "用热重-差热(TG-DTA)方法研究复盐K3Fe(C2O4)3·3H2O在程序升温过程中的热分解行为，确定其脱水及草酸根分解各步骤的温度区间，并讨论其热分解机理。",
+   "volume": "16",
+   "issue": "5",
+   "pages": "73-76",
+   "source_url": "https://www.cnki.com.cn/",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 130,
@@ -2298,7 +2518,15 @@
    "questions": [
     "如何测定配合物的磁化率？",
     "该配合物的未成对电子数是多少？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed079p1002",
+   "abstract": "Describes a simple method for measuring magnetic susceptibility with a small permanent magnet and a top-loading electronic balance (a simplified Gouy-type setup), allowing undergraduates to estimate magnetic moments of paramagnetic complexes such as K3[Fe(C2O4)3]·3H2O without a dedicated magnetic balance.",
+   "volume": "79",
+   "issue": "8",
+   "pages": "1002-1004",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed079p1002",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 131,
@@ -2316,7 +2544,15 @@
    "questions": [
     "\"molecular-based-magnetism-in-bimetallic-two-dimensional-oxalate-bridged-networks-an-x-ray-and-neutron-diffraction\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Inorganic Chemistry",
+   "doi": "10.1021/ic960838g",
+   "abstract": "X-ray and neutron diffraction study of bimetallic two-dimensional oxalate-bridged networks [M(II)M'(III)(ox)3]-, elucidating the layered honeycomb structures that host molecule-based (ferri)magnetism; correlates structure with the magnetic ordering of these oxalate network magnets.",
+   "volume": "36",
+   "issue": "11",
+   "pages": "2301-2308",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ic960838g",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 132,
@@ -2334,7 +2570,15 @@
    "questions": [
     "如何测定配合物的磁化率？",
     "该配合物的未成对电子数是多少？"
-   ]
+   ],
+   "journal": "Inorganic Chemistry",
+   "doi": "10.1021/ic061494p",
+   "abstract": "Synthesis, crystal structures and physical properties of radical salts of the organic donor bis(ethylenediseleno)tetrathiafulvalene (BETS) with paramagnetic tris(oxalato)metalate anions [M(C2O4)3]3- (M = Fe, Cr); hybrid materials combining electrical conductivity with localized magnetic moments. (Parent article of SI file ic061494p_si.)",
+   "volume": "45",
+   "issue": "26",
+   "pages": "10815-10824",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ic061494p",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 133,
@@ -2369,7 +2613,15 @@
    "questions": [
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.1c00776",
+   "abstract": "Describes how large, display-quality crystals of potassium tris(oxalato)ferrate(III) trihydrate can be grown from recycled material (e.g., recovered from undergraduate actinometry/ferrioxalate waste), combining recrystallization technique, sustainability/green chemistry and discussion of the compound's photochemistry; includes crystal structure context. (Parent article of SI files ed1c00776_si_*.)",
+   "volume": "98",
+   "issue": "10",
+   "pages": "3400-3404",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.1c00776",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 135,
@@ -2387,7 +2639,15 @@
    "questions": [
     "\"“我”——“三草酸合铁(Ⅲ)酸钾晶体”的生长及影响因素\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "大学化学",
+   "doi": "10.3866/PKU.DXHX201903019",
+   "abstract": "以第一人称'我'(三草酸合铁(Ⅲ)酸钾晶体)的拟人化视角，介绍晶体的生长过程及影响晶体生长的因素(浓度、温度、结晶方式、光照等)，兼具知识性与趣味性的化学教学短文。",
+   "volume": "34",
+   "issue": "8",
+   "pages": "137-141",
+   "source_url": "https://doi.org/10.3866/PKU.DXHX201903019",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 136,
@@ -2404,7 +2664,14 @@
    "questions": [
     "该配合物的晶体结构是什么？",
     "配位数和配位构型如何？"
-   ]
+   ],
+   "journal": "西北师范大学学报(自然科学版)",
+   "abstract": "采用MP2、B3LYP和HF方法在6-311++G**水平上对草酸(乙二酸)分子进行构型优化，得到8种稳定构型和5种过渡态，分析各构型的相对能量与相互转化途径，并用自然键轨道(NBO)方法讨论其电子结构与性质。(英文题名: Quantum study on configurations and characteristics of oxalic acid)",
+   "volume": "41",
+   "issue": "3",
+   "pages": "58-62",
+   "source_url": "https://www.cnki.com.cn/",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 137,
@@ -2423,7 +2690,15 @@
    "questions": [
     "\"2008-prussian-blue-artists-pigment-and-chemists\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed085p612",
+   "abstract": "Review of the chemistry of Prussian blue: its discovery and use as an artists' pigment, its formation in the cyanotype photographic process, its electronic structure and intervalence charge-transfer color, and its ability to act as a 'chemical sponge' for sequestering cations (e.g., Cs+, Tl+), with historical and practical notes.",
+   "volume": "85",
+   "issue": "5",
+   "pages": "612-621",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed085p612",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 138,
@@ -2510,7 +2785,12 @@
    "questions": [
     "\"cm3c00063_si_001\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Chemistry of Materials",
+   "doi": "10.1021/acs.chemmater.3c00063",
+   "abstract": "Supporting information (cm3c00063_si_001) for 'K2Fe(C2O4)2: An Oxalate Cathode for Li/Na-Ion Batteries Exhibiting a Combination of Multielectron Cation and Anion Redox', Chem. Mater. 2023, 35(6), 2600-2611.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.chemmater.3c00063",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 143,
@@ -2527,7 +2807,15 @@
    "questions": [
     "\"ed047p702\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed047p702",
+   "abstract": "Describes a convenient, reliable undergraduate procedure for preparing potassium trioxalatoferrate(III), K3[Fe(C2O4)3]·3H2O, from iron(II) ammonium sulfate via oxidation with H2O2 in the presence of oxalate, giving good yields of well-formed green crystals suitable for further analysis experiments.",
+   "volume": "47",
+   "issue": "10",
+   "pages": "702",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed047p702",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 144,
@@ -2544,7 +2832,15 @@
    "questions": [
     "\"ed050p218\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed050p218",
+   "abstract": "An experiment sequence built around potassium trioxalatoferrate(III) trihydrate: students prepare the complex and then use it for a series of analyses and property studies (determination of oxalate and iron, hydration water, and photochemical behaviour), integrating synthesis, analysis and photochemistry in a coordinated laboratory sequence.",
+   "volume": "50",
+   "issue": "3",
+   "pages": "218",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed050p218",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 145,
@@ -2562,7 +2858,15 @@
    "questions": [
     "\"ed064p955-Mohr's salt as a wide coverage testing material for analytical chemistry\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed064p955",
+   "abstract": "Proposes Mohr's salt, (NH4)2Fe(SO4)2·6H2O, as a wide-coverage testing material for analytical chemistry courses: a single stable, inexpensive compound that can serve as a sample for gravimetric, titrimetric (redox), and instrumental determinations of iron, sulfate, ammonia and water across the analytical curriculum.",
+   "volume": "64",
+   "issue": "11",
+   "pages": "955",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed064p955",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 146,
@@ -2579,7 +2883,15 @@
    "questions": [
     "\"ed065p918\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed065p918",
+   "abstract": "An experiment that offers an interesting introductory exercise well within the capability of students with no Schlenk-line technique: the convenient Schlenk-line synthesis of the chromium(II) acetate dimer Cr2(OAc)4·2H2O, a classic quadruply metal-metal-bonded coordination compound.",
+   "volume": "65",
+   "issue": "10",
+   "pages": "918-919",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed065p918",
+   "abstract_type": "publisher"
   },
   {
    "id": 147,
@@ -2597,7 +2909,15 @@
    "questions": [
     "\"ed075p98-The Ligand Field Spectra of Copper(II)\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed075p98",
+   "abstract": "A laboratory exercise on the ligand field (d–d) electronic spectra of copper(II) complexes: students record and compare the visible spectra of Cu(II) with different ligands (including oxalate/amine ligands), relating band position to ligand field strength and the spectrochemical series.",
+   "volume": "75",
+   "issue": "1",
+   "pages": "98",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed075p98",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 148,
@@ -2615,7 +2935,15 @@
    "questions": [
     "\"ed081p1193-Potassium Tris(oxalato)ferrate(III) A Versatile\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed081p1193",
+   "abstract": "Uses potassium tris(oxalato)ferrate(III) as a versatile example to illustrate principles of chemical equilibria: the stepwise dissociation/speciation of the ferrioxalate complex is followed spectrophotometrically, allowing students to observe ligand exchange, estimate equilibrium constants and connect solution equilibria with coordination chemistry concepts.",
+   "volume": "81",
+   "issue": "8",
+   "pages": "1193-1195",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed081p1193",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 149,
@@ -2632,7 +2960,12 @@
    "questions": [
     "\"ed1c00776_si_001\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.1c00776",
+   "abstract": "Supporting information (ed1c00776_si) for 'Growing a Display Crystal of Recycled Potassium Tris(oxalato)ferrate(III) Trihydrate', J. Chem. Educ. 2021, 98(10), 3400-3404.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.1c00776",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 150,
@@ -2649,7 +2982,12 @@
    "questions": [
     "\"ed1c00776_si_002\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.1c00776",
+   "abstract": "Supporting information (ed1c00776_si) for 'Growing a Display Crystal of Recycled Potassium Tris(oxalato)ferrate(III) Trihydrate', J. Chem. Educ. 2021, 98(10), 3400-3404.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.1c00776",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 151,
@@ -2666,7 +3004,12 @@
    "questions": [
     "\"ed500809n_si_001\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed500809n",
+   "abstract": "Supporting information (ed500809n_si_001) for 'A New Approach toward Cyanotype Photography Using Tris-(oxalato)ferrate(III): An Integrated Experiment', J. Chem. Educ. 2015, 92(10), 1721-1724.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed500809n",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 152,
@@ -2683,7 +3026,12 @@
    "questions": [
     "\"ed500809n_si_002\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed500809n",
+   "abstract": "Supporting information (ed500809n_si_001) for 'A New Approach toward Cyanotype Photography Using Tris-(oxalato)ferrate(III): An Integrated Experiment', J. Chem. Educ. 2015, 92(10), 1721-1724.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed500809n",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 153,
@@ -2700,7 +3048,12 @@
    "questions": [
     "\"ed5c01101_si_002\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.5c01101",
+   "abstract": "Supporting information (ed5c01101_si_002) for 'Bridging Chemistry and Creativity: A Cyanotype Photography, Toning and UV Shielding for First-Year Undergraduate Students', J. Chem. Educ. (ASAP, 2026).",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.5c01101",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 154,
@@ -2736,7 +3089,12 @@
    "questions": [
     "\"ic061494psi20060808_022446\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Inorganic Chemistry",
+   "doi": "10.1021/ic061494p",
+   "abstract": "Supporting information (ic061494p_si) for 'Radical Salts of Bis(ethylenediseleno)tetrathiafulvalene with Paramagnetic Tris(oxalato)metalate Anions', Inorg. Chem. 2006, 45(26), 10815-10824.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ic061494p",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 156,
@@ -2771,7 +3129,15 @@
    "questions": [
     "\"influence-of-electronic-spin-and-spin-orbit-coupling-on-decoherence-in-mononuclear-transition-metal\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/ja5037397",
+   "abstract": "Pulsed EPR study showing how electronic spin (S) and spin-orbit coupling govern quantum decoherence in mononuclear transition-metal complexes, including the S = 5/2 [Fe(C2O4)3]3- anion; demonstrates that low-spin, low-spin-orbit systems give longer coherence times — design principles for molecular spin qubits. (Parent article of SI file ja5037397_si_003.)",
+   "volume": "136",
+   "issue": "21",
+   "pages": "7623-7626",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ja5037397",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 158,
@@ -2789,7 +3155,15 @@
    "questions": [
     "\"intercalation-of-cr(c2o4)3-3-complex-in-mg-al-layered-double\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Inorganic Chemistry",
+   "doi": "10.1021/ic034034u",
+   "abstract": "Intercalation of the [Cr(C2O4)3]3- complex into Mg,Al layered double hydroxides by anion exchange; the pillared materials were characterized by XRD, IR and thermal analysis, showing how the tris(oxalato)chromate anion is accommodated and oriented in the LDH interlayer.",
+   "volume": "42",
+   "issue": "13",
+   "pages": "4232-4240",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ic034034u",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 159,
@@ -2806,7 +3180,12 @@
    "questions": [
     "\"ja5037397_si_003\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/ja5037397",
+   "abstract": "Supporting information (ja5037397_si_003) for 'Influence of Electronic Spin and Spin-Orbit Coupling on Decoherence in Mononuclear Transition Metal Complexes', J. Am. Chem. Soc. 2014, 136(21), 7623-7626.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ja5037397",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 160,
@@ -2861,7 +3240,15 @@
    "questions": [
     "\"jce2004p1193w-Potassium Tris(oxalato)ferrate(III) A Versatile Compound To Illustrate the Principles of Chemical\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed081p1193",
+   "abstract": "Uses potassium tris(oxalato)ferrate(III) as a versatile example to illustrate principles of chemical equilibria: the stepwise dissociation/speciation of the ferrioxalate complex is followed spectrophotometrically, allowing students to observe ligand exchange, estimate equilibrium constants and connect solution equilibria with coordination chemistry concepts.",
+   "volume": "81",
+   "issue": "8",
+   "pages": "1193-1195",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed081p1193",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 163,
@@ -2879,7 +3266,15 @@
    "questions": [
     "\"jce2005p1667w\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed082p1667",
+   "abstract": "A holistic upper-level inorganic laboratory program in which students prepare transition-metal complexes (including tris(oxalato)ferrate(III)) and then analyze and characterize them by a suite of techniques — titrimetry, UV-Vis and IR spectroscopy, magnetic susceptibility and conductivity — connecting synthetic, analytical and structural aspects of coordination chemistry.",
+   "volume": "82",
+   "issue": "11",
+   "pages": "1667",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed082p1667",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 164,
@@ -2897,7 +3292,15 @@
    "questions": [
     "\"k2fe(c2o4)2-an-oxalate-cathode-for-li-na-ion-batteries-exhibiting-a-combination-of-multielectron-cation-and-anion\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Chemistry of Materials",
+   "doi": "10.1021/acs.chemmater.3c00063",
+   "abstract": "Reports K2Fe(C2O4)2 as an oxalate-based cathode for Li- and Na-ion batteries, exhibiting a combination of multielectron cation (Fe2+/Fe3+) and anion (oxalate) redox; structural characterization and electrochemistry show how organic anion redox boosts capacity in sustainable, low-cost iron-based electrodes. (Parent article of SI file cm3c00063_si_001.)",
+   "volume": "35",
+   "issue": "6",
+   "pages": "2600-2611",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.chemmater.3c00063",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 165,
@@ -2914,7 +3317,15 @@
    "questions": [
     "\"potassium-tris(oxalato)ferrate(iii)-a-versatile-compound-to-illustrate-the-principles-of-chemical-equilibria (1)\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed081p1193",
+   "abstract": "Uses potassium tris(oxalato)ferrate(III) as a versatile example to illustrate principles of chemical equilibria: the stepwise dissociation/speciation of the ferrioxalate complex is followed spectrophotometrically, allowing students to observe ligand exchange, estimate equilibrium constants and connect solution equilibria with coordination chemistry concepts.",
+   "volume": "81",
+   "issue": "8",
+   "pages": "1193-1195",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed081p1193",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 166,
@@ -2932,7 +3343,15 @@
    "questions": [
     "\"rspa.1956.0102\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Proceedings of the Royal Society of London A: Mathematical and Physical Sciences",
+   "doi": "10.1098/rspa.1956.0102",
+   "abstract": "A detailed study of the photolysis of acidified potassium ferrioxalate solutions recommended for chemical actinometry. Quantum efficiencies were determined at 12 wavelengths between 254 and 578 nm, and the effects of temperature, light intensity and photolyte composition investigated; calibrated against uranyl oxalate and a thermopile. Ferrioxalate is recommended as a general-purpose actinometer for its high sensitivity (~1000x uranyl oxalate), precision, long wavelength range, stability and simplicity of use; full working details are provided.",
+   "volume": "235",
+   "issue": "1203",
+   "pages": "518-536",
+   "source_url": "https://doi.org/10.1098/rspa.1956.0102",
+   "abstract_type": "publisher"
   },
   {
    "id": 167,
@@ -2967,7 +3386,15 @@
    "questions": [
     "\"the-chemistry-of-the-metal-oxalato\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Chemical Reviews",
+   "doi": "10.1021/cr60211a001",
+   "abstract": "Comprehensive review (456 references) of the occurrence, preparation and properties of oxalic acid and simple oxalates; the classification, structure, stability, reactions and reaction kinetics of metal oxalato complexes; and the analytical and industrial applications of oxalates. A standard reference on metal oxalato-complex chemistry.",
+   "volume": "61",
+   "issue": "3",
+   "pages": "213-246",
+   "source_url": "https://pubs.acs.org/doi/10.1021/cr60211a001",
+   "abstract_type": "publisher"
   },
   {
    "id": 169,
@@ -2985,7 +3412,15 @@
    "questions": [
     "\"the-mechanism-of-the-permanganate-oxalate\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/ja01613a002",
+   "abstract": "Classic kinetic study of the permanganate–oxalate reaction in aqueous solution, establishing its autocatalytic character: Mn(II) product catalyzes the reaction via soluble Mn(III)–oxalate intermediates; a foundational paper for the mechanism of this standard analytical titration reaction.",
+   "volume": "77",
+   "issue": "8",
+   "pages": "2036-2042",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ja01613a002",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 170,
@@ -3122,7 +3557,14 @@
    "questions": [
     "\"复盐草酸合Fe_Cu_酸钾标准生成焓的测定\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "武汉理工大学学报",
+   "abstract": "用溶解-反应量热法测定复盐草酸合Fe(Ⅲ)、Cu(Ⅱ)酸钾的标准生成焓：设计热化学循环，测定相关物质的溶解焓，由Hess定律计算该草酸复盐的标准摩尔生成焓，为草酸复盐体系的热化学研究提供基础数据。",
+   "volume": "26",
+   "issue": "5",
+   "pages": "38-41",
+   "source_url": "https://www.cnki.com.cn/",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 178,
@@ -3402,7 +3844,15 @@
    "questions": [
     "\"acs.jchemed.8b00399\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.8b00399",
+   "abstract": "An advanced inorganic laboratory experiment using NMR spectroscopy for structural analysis of diamagnetic and paramagnetic Ni(II) Schiff-base complexes; students see how paramagnetism shifts and broadens NMR signals and use the spectra to infer coordination geometry and electronic structure.",
+   "volume": "96",
+   "issue": "3",
+   "pages": "577-581",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.8b00399",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 194,
@@ -3420,7 +3870,15 @@
    "questions": [
     "\"controlled-synthesis-of-two-copper-oxalate-hydrate-complexes-kinetic-versus-thermodynamic-factors-a-laboratory\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed086p598",
+   "abstract": "Undergraduate laboratory experiment on the controlled synthesis of two copper oxalate hydrate complexes, CuC2O4·xH2O and K2[Cu(C2O4)2]·2H2O: by varying reactant ratio, temperature and precipitation conditions students obtain either the neutral oxalate or the bis(oxalato)cuprate(II) complex, illustrating kinetic versus thermodynamic control in coordination-compound synthesis.",
+   "volume": "86",
+   "issue": "5",
+   "pages": "598-599",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed086p598",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 195,
@@ -3437,7 +3895,15 @@
    "questions": [
     "\"ed082p1667\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed082p1667",
+   "abstract": "A holistic upper-level inorganic laboratory program in which students prepare transition-metal complexes (including tris(oxalato)ferrate(III)) and then analyze and characterize them by a suite of techniques — titrimetry, UV-Vis and IR spectroscopy, magnetic susceptibility and conductivity — connecting synthetic, analytical and structural aspects of coordination chemistry.",
+   "volume": "82",
+   "issue": "11",
+   "pages": "1667",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed082p1667",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 196,
@@ -3455,7 +3921,15 @@
    "questions": [
     "\"j100607a005\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "The Journal of Physical Chemistry",
+   "doi": "10.1021/j100607a005",
+   "abstract": "Flash photolysis study of aqueous potassium tris(oxalato)cobaltate(III), identifying transient oxalate-radical and Co(II) species formed by ligand-to-metal charge-transfer excitation; kinetics of the primary photoredox step and subsequent radical reactions are reported.",
+   "volume": "78",
+   "issue": "13",
+   "pages": "1361",
+   "source_url": "https://pubs.acs.org/doi/10.1021/j100607a005",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 197,
@@ -3491,7 +3965,15 @@
    "questions": [
     "\"ja01613a002\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of the American Chemical Society",
+   "doi": "10.1021/ja01613a002",
+   "abstract": "Classic kinetic study of the permanganate–oxalate reaction in aqueous solution, establishing its autocatalytic character: Mn(II) product catalyzes the reaction via soluble Mn(III)–oxalate intermediates; a foundational paper for the mechanism of this standard analytical titration reaction.",
+   "volume": "77",
+   "issue": "8",
+   "pages": "2036-2042",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ja01613a002",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 199,
@@ -3509,7 +3991,15 @@
    "questions": [
     "\"jp312603m\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "The Journal of Physical Chemistry A",
+   "doi": "10.1021/jp312603m",
+   "abstract": "Autocatalytic chemiluminescence sheds new light on the classic permanganate–oxalate reaction: spectroscopic and kinetic study showing that the characteristic emission arises from an excited manganese(II) species generated during the autocatalytic Mn(III/II) redox cycling of the reaction.",
+   "volume": "117",
+   "issue": "19",
+   "pages": "3918-3924",
+   "source_url": "https://pubs.acs.org/doi/10.1021/jp312603m",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 200,
@@ -3720,7 +4210,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed078p311.2",
+   "abstract": "Letter explaining the photochemical basis of cyanotype photography: near-UV light photoreduces Fe(III) in the ammonium iron(III) citrate sensitizer to Fe(II), which then reduces ferricyanide to precipitate Prussian blue in the exposed areas; clarifies the light-driven redox chemistry behind the blueprint process for teaching contexts.",
+   "volume": "78",
+   "issue": "3",
+   "pages": "311",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed078p311.2",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 212,
@@ -3739,7 +4237,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed018p122",
+   "abstract": "Classroom demonstrations involving photography: simple photographic and blueprint (ferrioxalate/ferricyanide-based) sensitometry experiments that illustrate the photochemistry of iron salts and the formation of Prussian blue images for lecture demonstration.",
+   "volume": "18",
+   "issue": "3",
+   "pages": "122",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed018p122",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 213,
@@ -3758,7 +4264,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed044p349",
+   "abstract": "A physical chemistry experiment on the flash-photolysis/photochemical oxidation of aqueous iodide solutions that demonstrates the competitive reactions of the hydrated electron; introduces students to fast-reaction techniques and radiation/photochemistry of aqueous systems.",
+   "volume": "44",
+   "issue": "6",
+   "pages": "349",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed044p349",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 214,
@@ -3777,7 +4291,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed057p314",
+   "abstract": "A first-year chemistry experiment on the photochemical reactions of tris(oxalato)iron(III): students photolyze ferrioxalate solutions and quantify the Fe(II) produced, demonstrating ligand-to-metal charge-transfer photochemistry and the basis of the ferrioxalate chemical actinometer.",
+   "volume": "57",
+   "issue": "4",
+   "pages": "314-315",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed057p314",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 215,
@@ -3796,7 +4318,15 @@
    "questions": [
     "\"balzani-et-al-1983-electron-transfer-reactions-involving\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed060p447",
+   "abstract": "Discusses electron-transfer reactions involving light — photoinduced electron transfer and excited-state redox processes of coordination compounds — connecting photochemistry, redox potentials and quenching kinetics for the teaching of inorganic photochemistry (including oxalato-complex systems).",
+   "volume": "60",
+   "issue": "6",
+   "pages": "447",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed060p447",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 216,
@@ -3815,7 +4345,15 @@
    "questions": [
     "\"dean-2011-the-oxalate-dianion-c2o42-planar-or\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed200202r",
+   "abstract": "Discusses whether the free oxalate dianion C2O4^2- is planar (D2h) or nonplanar/twisted (D2d), reviewing the experimental and computational evidence that the isolated ion favors a twisted geometry while crystal packing and coordination enforce planarity in salts and complexes; useful counterpoint when teaching oxalate coordination chemistry.",
+   "volume": "89",
+   "issue": "3",
+   "pages": "417-418",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed200202r",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 217,
@@ -3900,7 +4438,12 @@
    "questions": [
     "\"ed1c00776_si_001 (1)\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.1c00776",
+   "abstract": "Supporting information (ed1c00776_si) for 'Growing a Display Crystal of Recycled Potassium Tris(oxalato)ferrate(III) Trihydrate', J. Chem. Educ. 2021, 98(10), 3400-3404.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.1c00776",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 222,
@@ -3934,7 +4477,12 @@
    "questions": [
     "\"ed2c01089_si_001\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.2c01089",
+   "abstract": "Supporting information (ed2c01089_si) for 'The Cyanotype Process and Its Potential in Chemistry Education', J. Chem. Educ. 2023, 100(6), 2367-2372. All ed2c01089_si_* files (corpus ids 223-232) belong to this parent article.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.2c01089",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 224,
@@ -4417,7 +4965,15 @@
    "questions": [
     "\"kmet-et-al-2023-the-cyanotype-process-and-its-potential-in-chemistry\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/acs.jchemed.2c01089",
+   "abstract": "Presents the cyanotype process and its potential in chemistry education: the history and photochemistry of blueprinting (ferrioxalate/ferric citrate sensitizers forming Prussian blue), with ready-to-use classroom activities linking redox photochemistry, coordination chemistry and photographic science. (Parent article of SI files ed2c01089_si_*, corpus ids 223-232.)",
+   "volume": "100",
+   "issue": "6",
+   "pages": "2367-2372",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.jchemed.2c01089",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 252,
@@ -4436,7 +4992,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed076p1216",
+   "abstract": "Blueprint photography by the cyanotype process: a simple, safe classroom activity in which paper sensitized with ferric ammonium citrate and potassium ferricyanide is exposed to (sun)light; photoreduction of Fe(III) to Fe(II) followed by formation of Prussian blue produces the image, demonstrating photochemistry and redox chemistry.",
+   "volume": "76",
+   "issue": "9",
+   "pages": "1216A",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed076p1216A",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 253,
@@ -4455,7 +5019,15 @@
    "questions": [
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "doi": "10.1021/ed076p1199",
+   "abstract": "UV catalysis, cyanotype photography, and sunscreens: classroom activities/demonstrations connecting ultraviolet photochemistry with the cyanotype process and the testing of UV-absorbing (sunscreen) materials, showing how UV light drives the iron-based photochemistry of blueprint imaging.",
+   "volume": "76",
+   "issue": "9",
+   "pages": "1199-1200",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ed076p1199",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 254,
@@ -4774,7 +5346,14 @@
    "questions": [
     "\"vitz-1981-the-ferrioxalate-actinometer-a-lecture\"的主要研究内容是什么？",
     "该文献的实验方法有哪些？"
-   ]
+   ],
+   "journal": "Journal of Chemical Education",
+   "abstract": "The ferrioxalate actinometer as a lecture demonstration: photolysis of potassium ferrioxalate with colorimetric (phenanthroline) determination of the Fe(II) formed, used to demonstrate quantum yields and chemical actinometry in the lecture hall.",
+   "volume": "58",
+   "issue": "8",
+   "pages": "655",
+   "source_url": "https://hal.science/hal-02376233v1/document",
+   "abstract_type": "editor_summary"
   },
   {
    "id": 271,
@@ -4886,6 +5465,320 @@
     "该配合物的光化学性质如何？",
     "光致还原反应的机理是什么？"
    ]
+  },
+  {
+   "id": 277,
+   "title": "A new sensitive chemical actinometer. I. Some trials with potassium ferrioxalate",
+   "authors": "C. A. Parker",
+   "year": "1953",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "草酸铁(Ⅲ)酸钾光解为什么可以用作化学光量计(actinometer)？",
+    "Parker 1953年的实验是如何用光度法测定光解生成的Fe(II)的？"
+   ],
+   "path": "https://doi.org/10.1098/rspa.1953.0175",
+   "journal": "Proceedings of the Royal Society of London A: Mathematical and Physical Sciences",
+   "abstract": "The first of the classic two-part actinometry series: preliminary trials showing that photolysis of acidified potassium ferrioxalate, with colorimetric determination of the Fe(II) formed, provides a sensitive, precise liquid-phase chemical actinometer for the near-UV and visible region; lays the groundwork for the Hatchard–Parker standard actinometer (Part II, 1956).",
+   "source_url": "https://doi.org/10.1098/rspa.1953.0175",
+   "doi": "10.1098/rspa.1953.0175"
+  },
+  {
+   "id": 278,
+   "title": "Chemical actinometry (IUPAC Technical Report)",
+   "authors": "H. J. Kuhn, S. E. Braslavsky, R. Schmidt",
+   "year": "2004",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "IUPAC推荐的草酸铁光量计标准操作流程和量子产率数据是什么？",
+    "如何用化学光量计测定光源的光子通量？"
+   ],
+   "path": "https://doi.org/10.1351/pac200476122105",
+   "journal": "Pure and Applied Chemistry",
+   "abstract": "IUPAC技术报告，系统给出化学光量计(以草酸铁(Ⅲ)酸钾ferrioxalate光量计为代表)的推荐操作步骤、不同波长下的量子产率数据表、光通量测定与计算方法，并对多种化学光量体系进行评述，是光化学定量测量的权威参考。",
+   "source_url": "https://www.degruyter.com/document/doi/10.1351/pac200476122105/html",
+   "doi": "10.1351/pac200476122105"
+  },
+  {
+   "id": 279,
+   "title": "Practical Chemical Actinometry—A Review",
+   "authors": "J. Rabani, H. Mamane, I. Pousty, J. R. Bolton",
+   "year": "2021",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "目前常用的化学光量计有哪些，各自适用的波长范围如何？",
+    "草酸铁光量计相比碘化物-碘酸根光量计有何优缺点？"
+   ],
+   "path": "https://doi.org/10.1111/php.13429",
+   "journal": "Photochemistry and Photobiology",
+   "abstract": "Actinometers are physical or chemical systems that can be employed to determine photon fluxes. Chemical actinometers are photochemical systems with known quantum yields that enable calculating photon fluxes from measurable reactant/product changes. This review explores in detail several practical chemical actinometers (ferrioxalate, iodide-iodate, uranyl oxalate, nitrate, uridine, hydrogen peroxide, and several actinometers for the vacuum UV), their quantum yields, practical procedures and limitations.",
+   "source_url": "https://pubmed.ncbi.nlm.nih.gov/33724415/",
+   "doi": "10.1111/php.13429"
+  },
+  {
+   "id": 280,
+   "title": "The ferrioxalate and iodide-iodate actinometers in the UV region",
+   "authors": "S. Goldstein, J. Rabani",
+   "year": "2008",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "在深紫外区草酸铁光量计的量子产率与可见区有何不同？",
+    "使用草酸铁光量计测量UV光源时应注意哪些系统误差？"
+   ],
+   "path": "https://ui.adsabs.harvard.edu/abs/2008JPPA..193...50G/abstract",
+   "journal": "Journal of Photochemistry and Photobiology A: Chemistry",
+   "abstract": "The ferrioxalate and iodide-iodate actinometers were re-examined in the UV region (down to 205 nm); wavelength-dependent quantum yields were redetermined and compared with literature values, and recommendations are given for accurate actinometric measurements in the deep-UV, where ferrioxalate quantum yields differ from the commonly used near-UV/visible values.",
+   "source_url": "https://ui.adsabs.harvard.edu/abs/2008JPPA..193...50G/abstract"
+  },
+  {
+   "id": 281,
+   "title": "Errors in ferrioxalate actinometry",
+   "authors": "A. D. Kirk, C. Namasivayam",
+   "year": "1983",
+   "lang": "英文",
+   "subfield": "分析测定",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "草酸铁光量计的系统误差主要来自哪些因素？",
+    "Kirk和Namasivayam建议如何修正量子产率数据？"
+   ],
+   "path": "https://doi.org/10.1021/ac00264a053",
+   "journal": "Analytical Chemistry",
+   "abstract": "指出草酸铁光量测定中的误差来源：实验表明沿用当时推荐的量子产率值会给光通量测定带来可观的系统误差(可达约7%)，文中给出修正的波长依赖量子产率并讨论减少误差的实验要点。",
+   "source_url": "https://pubs.acs.org/doi/10.1021/ac00264a053",
+   "doi": "10.1021/ac00264a053"
+  },
+  {
+   "id": 282,
+   "title": "Determination of the quantum yield of the ferrioxalate actinometer with electrically calibrated radiometers",
+   "authors": "J. N. Demas, W. D. Bowman, E. F. Zalewski, R. A. Velapoldi",
+   "year": "1981",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "如何用电定标辐射计对草酸铁光量计进行绝对标定？",
+    "Demas等人的标定结果与Hatchard-Parker经典值相差多少？"
+   ],
+   "path": "https://ui.adsabs.harvard.edu/abs/1981JPC....85.2766D/abstract",
+   "journal": "The Journal of Physical Chemistry",
+   "abstract": "The quantum yield of the ferrioxalate actinometer was measured against electrically calibrated radiometers at several wavelengths; results largely confirm the Hatchard–Parker values (agreement within a few percent) while providing an absolute, detector-based recalibration of this standard actinometer.",
+   "source_url": "https://ui.adsabs.harvard.edu/abs/1981JPC....85.2766D/abstract"
+  },
+  {
+   "id": 283,
+   "title": "Determination of the quantum yields of the potassium ferrioxalate and potassium iodide-iodate actinometers and a method for the calibration of radiometer detectors",
+   "authors": "J. R. Bolton, M. I. Stefan, P.-S. Shaw, K. R. Lykke",
+   "year": "2011",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "2011年重新标定的草酸铁光量计量子产率是多少？",
+    "如何用化学光量计校准辐射计探测器？"
+   ],
+   "path": "https://doi.org/10.1016/j.jphotochem.2011.05.017",
+   "journal": "Journal of Photochemistry and Photobiology A: Chemistry",
+   "abstract": "重新测定了草酸铁钾与碘化钾-碘酸钾两种光量计在多个波长下的量子产率，并提出一种用光量计反标辐射计探测器的方法，为UV消毒等光化学工程应用提供更可靠的光通量计量基准。",
+   "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1010603011002209",
+   "doi": "10.1016/j.jphotochem.2011.05.017"
+  },
+  {
+   "id": 284,
+   "title": "Simplification of the potassium ferrioxalate actinometer through carbon dioxide monitoring",
+   "authors": "L. V. Lutkus et al.",
+   "year": "2023",
+   "lang": "英文",
+   "subfield": "实验教学",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "如何用CO2释放量替代Fe(II)显色分析来简化草酸铁光量计？",
+    "这种简化方法对大学光化学实验教学有什么好处？"
+   ],
+   "path": "https://doi.org/10.1139/cjc-2022-0188",
+   "journal": "Canadian Journal of Chemistry",
+   "abstract": "提出一种简化草酸铁光量计的新策略：以在线监测光解过程中释放的CO2代替传统的Fe(II)-邻菲啰啉显色光度分析，使光通量测定更快捷、可连续读数，适用于光化学教学与研究中的常规光量测定。",
+   "source_url": "https://cdnsciencepub.com/doi/10.1139/cjc-2022-0188",
+   "doi": "10.1139/cjc-2022-0188"
+  },
+  {
+   "id": 285,
+   "title": "Practical ferrioxalate actinometry for the determination of photon fluxes in production-oriented photoflow reactors",
+   "authors": "B. Vandekerckhove, T. Noel, et al.",
+   "year": "2022",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "在连续流光化学反应器中如何测定实际光子通量？",
+    "强光条件下如何防止草酸铁光量计过快饱和？"
+   ],
+   "path": "https://doi.org/10.1021/acs.oprd.2c00079",
+   "journal": "Organic Process Research & Development",
+   "abstract": "面向生产型光流反应器，给出实用的草酸铁光量测定方案（包括'调暗光源'、分段测量和时间分辨三种方法），解决强光源下光量计快速饱和、难以测准光子通量的问题，为光化学工艺放大提供计量依据。",
+   "source_url": "https://pubs.acs.org/doi/10.1021/acs.oprd.2c00079",
+   "doi": "10.1021/acs.oprd.2c00079"
+  },
+  {
+   "id": 286,
+   "title": "New insight into photochemistry of ferrioxalate",
+   "authors": "I. P. Pozdnyakov, O. V. Kel, V. F. Plyusnin, V. P. Grivin, N. M. Bazhin",
+   "year": "2008",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "草酸铁光解的初级光化学过程包含哪些瞬态物种？",
+    "闪光光解实验如何解释草酸铁量子产率的波长依赖性？"
+   ],
+   "path": "https://doi.org/10.1021/jp8040583",
+   "journal": "The Journal of Physical Chemistry A",
+   "abstract": "The photochemistry of ferrioxalate was studied by nanosecond laser flash photolysis. The primary photochemical process involves ligand-to-metal charge transfer producing the oxalate radical complex, which decomposes to Fe(II) and CO2/CO2•-; the observed intermediate kinetics clarify the origin of the wavelength-dependent quantum yield of the ferrioxalate actinometer.",
+   "source_url": "https://pubs.acs.org/doi/10.1021/jp8040583",
+   "doi": "10.1021/jp8040583"
+  },
+  {
+   "id": 287,
+   "title": "A chronological review of photochemical reactions of ferrioxalate at the molecular level: New insights into an old story",
+   "authors": "X. Li, M. Hou, Y. Fu, L. Wang, Y. Wang, D. Lin, Q. Li, D. Hu, Z. Wang",
+   "year": "2023",
+   "lang": "英文",
+   "subfield": "综合研究",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "分子水平上草酸铁光解机理研究经历了哪些阶段？",
+    "超快光谱技术给草酸铁光化学带来了哪些新认识？"
+   ],
+   "path": "https://doi.org/10.1016/j.cclet.2022.107752",
+   "journal": "Chinese Chemical Letters",
+   "abstract": "按时间脉络综述分子水平上草酸铁(ferrioxalate)光化学反应研究的进展：从经典的光还原机理、初级自由基过程到飞秒光谱等新技术带来的新认识，梳理这一'老体系'在光化学、光量测定与环境光催化中的持续价值。",
+   "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S1001841722006654",
+   "doi": "10.1016/j.cclet.2022.107752"
+  },
+  {
+   "id": 288,
+   "title": "Synthesis, crystal structure and characterization of chiral, three-dimensional anhydrous potassium tris(oxalato)ferrate(III)",
+   "authors": "A. Saritha, B. Raju, M. Ramachary, P. Raghavaiah, K. A. Hussain",
+   "year": "2012",
+   "lang": "英文",
+   "subfield": "结构表征",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "无水K3[Fe(C2O4)3]与三水合物在晶体结构上有何差异？",
+    "三草酸合铁(Ⅲ)酸盐为何能形成手性三维网络？"
+   ],
+   "path": "https://doi.org/10.1016/j.physb.2012.07.005",
+   "journal": "Physica B: Condensed Matter",
+   "abstract": "合成了无水的三草酸合铁(Ⅲ)酸钾，并由X射线单晶衍射确定其结构：形成手性三维网络结构；结合红外、热分析与磁性等手段进行表征，与常见的三水合物K3[Fe(C2O4)3]·3H2O形成对照。",
+   "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0921452612004295",
+   "doi": "10.1016/j.physb.2012.07.005"
+  },
+  {
+   "id": 289,
+   "title": "Determination of molecular formula of potassium tris(oxalato)ferrate(III) trihydrate",
+   "authors": "R. Ghosh",
+   "year": "2022",
+   "lang": "英文",
+   "subfield": "实验教学",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "如何由组成分析数据推导三草酸合铁(Ⅲ)酸钾的分子式？",
+    "测定该配合物中结晶水含量可采用哪些实验方法？"
+   ],
+   "path": "https://doi.org/10.1007/s12045-022-1333-2",
+   "journal": "Resonance (Journal of Science Education)",
+   "abstract": "面向学生的教学短文，演示如何通过滴定(测定草酸根与铁含量)与热重/灼烧(测定结晶水)等经典分析手段，由实验数据推导出K3[Fe(C2O4)3]·3H2O的分子式，是化学计量学与配合物组成分析的教学范例。",
+   "source_url": "https://link.springer.com/article/10.1007/s12045-022-1333-2",
+   "doi": "10.1007/s12045-022-1333-2"
+  },
+  {
+   "id": 290,
+   "title": "Natural iron oxalates and their analogous synthetic counterparts: A review",
+   "authors": "E. J. Baran",
+   "year": "2016",
+   "lang": "英文",
+   "subfield": "综合研究",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "自然界中存在哪些铁草酸盐矿物，其组成与结构如何？",
+    "天然铁草酸盐与合成铁-草酸配合物有何对应关系？"
+   ],
+   "path": "https://doi.org/10.1016/j.chemer.2016.06.005",
+   "journal": "Geochemistry (Chemie der Erde)",
+   "abstract": "综述天然铁草酸盐矿物(如草酸铁矿humboldtine等)的组成、结构、生成条件与性质，并与人工合成的铁-草酸盐体系(包括三草酸合铁(Ⅲ)酸盐等)对比，讨论地球化学与配位化学的关联。",
+   "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0009281916301155",
+   "doi": "10.1016/j.chemer.2016.06.005"
+  },
+  {
+   "id": 291,
+   "title": "Ultrafast photoelectron spectroscopy of photoexcited aqueous ferrioxalate",
+   "authors": "T. Longetti et al.",
+   "year": "2021",
+   "lang": "英文",
+   "subfield": "光化学应用",
+   "doctype": "期刊论文",
+   "objects": "",
+   "methods": "",
+   "difficulty": "中",
+   "questions": [
+    "超快光电子能谱能揭示草酸铁激发态的哪些动力学信息？",
+    "草酸铁初级光还原过程发生在什么时间尺度？"
+   ],
+   "path": "https://doi.org/10.1039/D1CP02872C",
+   "journal": "Physical Chemistry Chemical Physics",
+   "abstract": "用液相超快光电子能谱研究水溶液中光激发的草酸铁(ferrioxalate)：在飞秒-皮秒时间尺度上直接观测配体-金属电荷转移激发态的演化与初级光还原过程，为这一经典光量计体系的超快机理提供实验证据。",
+   "source_url": "https://pubs.rsc.org/en/content/articlelanding/2021/cp/d1cp02872c",
+   "doi": "10.1039/D1CP02872C"
   }
- ]
+ ],
+ "enriched": 83
 }

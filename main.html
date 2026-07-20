@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>主页 — 三草酸合铁酸钾制备实验 · ChemAI</title>
+<style>
+:root{
+  --bg:#0a0e1a;--bg2:#111827;--card:#1a2235;--card-hover:#243049;
+  --emerald:#10b981;--teal:#2dd4bf;--purple:#a78bfa;--yellow:#fbbf24;--red:#f87171;--blue:#60a5fa;
+  --t1:#f1f5f9;--t2:#94a3b8;--t3:#64748b;
+  --bd:rgba(148,163,184,.08);--bd2:rgba(148,163,184,.15);
+  --r:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);color:var(--t1);
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  min-height:100vh;-webkit-font-smoothing:antialiased;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+  background:
+    radial-gradient(800px 400px at 15% -5%,rgba(16,185,129,.07),transparent 60%),
+    radial-gradient(700px 380px at 85% 0%,rgba(167,139,250,.06),transparent 60%),
+    radial-gradient(900px 500px at 50% 110%,rgba(45,212,191,.05),transparent 60%);
+}
+a{text-decoration:none;color:inherit}
+[hidden]{display:none!important}
+code{font-family:"JetBrains Mono",Consolas,monospace;background:rgba(96,165,250,.12);border:1px solid rgba(96,165,250,.25);padding:1px 7px;border-radius:6px;font-size:.88em;color:var(--blue)}
+/* ===== 顶部导航 ===== */
+.navbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(10,14,26,.82);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--bd2);
+}
+.nav-inner{
+  max-width:1280px;margin:0 auto;padding:0 24px;height:64px;
+  display:flex;align-items:center;gap:14px;
+}
+.logo{display:flex;align-items:center;gap:12px;flex-shrink:0;cursor:pointer}
+.logo-icon{
+  width:38px;height:38px;border-radius:10px;display:flex;align-items:center;justify-content:center;
+  font-size:20px;background:linear-gradient(135deg,rgba(16,185,129,.25),rgba(45,212,191,.12));
+  border:1px solid rgba(16,185,129,.35);
+}
+.logo-text{line-height:1.2}
+.logo-name{font-weight:700;font-size:17px;background:linear-gradient(90deg,var(--emerald),var(--teal));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.logo-sub{font-size:11px;color:var(--t3);letter-spacing:.2px}
+.nav-links{display:flex;align-items:center;gap:4px;overflow-x:auto;scrollbar-width:none;flex:1;min-width:0}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  padding:8px 12px;border-radius:10px;font-size:13.5px;color:var(--t2);
+  white-space:nowrap;transition:all .2s;border:1px solid transparent;flex-shrink:0;
+}
+.nav-links a:hover{color:var(--t1);background:var(--card-hover)}
+.nav-links a.active{
+  color:var(--emerald);background:rgba(16,185,129,.12);border-color:rgba(16,185,129,.3);font-weight:600;
+}
+/* 身份徽章 + 切换 */
+.nav-user{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.role-badge{
+  display:inline-flex;align-items:center;gap:7px;font-size:12.5px;font-weight:600;
+  padding:6px 13px;border-radius:999px;border:1px solid var(--bd2);color:var(--t3);
+  background:var(--card);white-space:nowrap;transition:all .25s;
+}
+.role-badge .rdot{width:8px;height:8px;border-radius:50%;background:var(--t3);flex-shrink:0}
+.switch-btn{
+  font-size:12.5px;font-weight:600;color:var(--teal);background:rgba(45,212,191,.08);
+  border:1px solid rgba(45,212,191,.3);padding:6px 13px;border-radius:999px;cursor:pointer;
+  white-space:nowrap;transition:all .2s;font-family:inherit;
+}
+.switch-btn:hover{background:rgba(45,212,191,.18);transform:translateY(-1px)}
+/* ===== 未选择身份提示条 ===== */
+.notice{
+  position:relative;z-index:1;max-width:1280px;margin:18px auto 0;padding:13px 22px;
+  display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.3);border-radius:14px;
+  color:var(--yellow);font-size:13.5px;line-height:1.6;
+}
+.notice .nlink{
+  color:#04101a;background:linear-gradient(120deg,var(--yellow),#f59e0b);font-weight:700;
+  padding:5px 14px;border-radius:999px;font-size:12.5px;transition:filter .2s;flex-shrink:0;
+}
+.notice .nlink:hover{filter:brightness(1.1)}
+/* ===== 主体 ===== */
+.page{position:relative;z-index:1;max-width:1280px;margin:0 auto;padding:28px 24px 64px}
+/* 欢迎横幅 */
+.banner{
+  border-radius:var(--r);padding:34px 38px;margin-bottom:30px;position:relative;overflow:hidden;
+  background:linear-gradient(120deg,rgba(16,185,129,.16),rgba(45,212,191,.07) 45%,rgba(167,139,250,.10));
+  border:1px solid rgba(16,185,129,.25);
+}
+.banner::after{
+  content:"⚗️";position:absolute;right:26px;top:50%;transform:translateY(-50%);
+  font-size:110px;opacity:.10;pointer-events:none;
+}
+.banner-tag{
+  display:inline-flex;align-items:center;gap:6px;font-size:12.5px;color:var(--teal);
+  background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.3);
+  padding:4px 12px;border-radius:999px;margin-bottom:14px;font-weight:600;
+}
+.banner h1{font-size:29px;font-weight:700;margin-bottom:10px;letter-spacing:.5px}
+.banner h1 .hl{background:linear-gradient(90deg,var(--emerald),var(--teal));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.banner p{color:var(--t2);font-size:15px;max-width:780px;line-height:1.7}
+.banner-role{
+  display:inline-flex;align-items:center;gap:7px;margin-top:14px;font-size:13px;font-weight:600;
+  padding:6px 14px;border-radius:999px;border:1px solid;
+}
+.banner-stats{display:flex;gap:26px;margin-top:20px;flex-wrap:wrap}
+.bstat{display:flex;align-items:center;gap:8px;font-size:13.5px;color:var(--t2)}
+.bstat b{color:var(--t1);font-size:16px}
+.bstat .dot{width:8px;height:8px;border-radius:50%}
+/* ===== 快捷入口 ===== */
+.sec-title{
+  display:flex;align-items:baseline;gap:12px;margin:34px 0 18px;flex-wrap:wrap;
+}
+.sec-title h2{font-size:21px;font-weight:700;letter-spacing:.3px}
+.sec-title .st-sub{font-size:13px;color:var(--t3)}
+.qgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.qcard{
+  background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:22px 24px;
+  display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;
+  transition:transform .25s,box-shadow .25s,border-color .25s,background .25s;
+}
+.qcard:hover{transform:translateY(-5px);background:var(--card-hover);border-color:var(--bd2);box-shadow:0 14px 34px rgba(0,0,0,.35)}
+.qcard::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--accent,var(--emerald));opacity:.85}
+.qcard-head{display:flex;align-items:center;gap:13px}
+.qcard-icon{
+  width:46px;height:46px;border-radius:13px;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:23px;
+  background:color-mix(in srgb,var(--accent,var(--emerald)) 14%,transparent);
+  border:1px solid color-mix(in srgb,var(--accent,var(--emerald)) 35%,transparent);
+}
+.qcard-title{font-size:16.5px;font-weight:700}
+.qcard-desc{color:var(--t2);font-size:13px;line-height:1.65;flex:1}
+.qcard-go{
+  font-size:12.5px;font-weight:700;color:var(--accent,var(--emerald));display:inline-flex;align-items:center;gap:5px;
+}
+.qcard-go .arr{transition:transform .2s}
+.qcard:hover .qcard-go .arr{transform:translateX(3px)}
+.teacher-tag{
+  position:absolute;top:14px;right:14px;font-size:11px;font-weight:700;color:var(--purple);
+  background:rgba(167,139,250,.14);border:1px solid rgba(167,139,250,.4);
+  padding:3px 10px;border-radius:999px;letter-spacing:.3px;
+}
+</style>
+<style>
+/* ===== 实验手册 ===== */
+.manual-head{
+  margin:40px 0 20px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.manual-head h2{font-size:21px;font-weight:700}
+.mh-chip{
+  font-size:12.5px;color:var(--t2);background:var(--card);border:1px solid var(--bd2);
+  padding:5px 13px;border-radius:999px;font-weight:600;
+}
+.mh-chip b{color:var(--emerald)}
+.manual-wrap{display:grid;grid-template-columns:246px minmax(0,1fr);gap:26px;align-items:start}
+/* 左侧目录 */
+.toc{
+  position:sticky;top:84px;max-height:calc(100vh - 108px);overflow-y:auto;
+  background:var(--card);border:1px solid var(--bd);border-radius:var(--r);padding:18px 14px;
+  scrollbar-width:thin;scrollbar-color:var(--card-hover) transparent;
+}
+.toc::-webkit-scrollbar{width:5px}
+.toc::-webkit-scrollbar-thumb{background:var(--card-hover);border-radius:99px}
+.toc-title{
+  font-size:12px;font-weight:700;color:var(--t3);letter-spacing:1.5px;text-transform:uppercase;
+  padding:0 10px 10px;border-bottom:1px solid var(--bd);margin-bottom:10px;
+  display:flex;align-items:center;gap:7px;
+}
+.toc a{
+  display:flex;align-items:center;gap:9px;padding:8px 10px;border-radius:10px;
+  font-size:13px;color:var(--t2);line-height:1.4;transition:all .18s;border-left:2px solid transparent;
+}
+.toc a:hover{color:var(--t1);background:var(--card-hover)}
+.toc a.active{
+  color:var(--emerald);background:rgba(16,185,129,.1);border-left-color:var(--emerald);font-weight:600;
+}
+.toc .tnum{
+  font-size:10.5px;font-weight:700;color:var(--t3);font-family:Consolas,monospace;
+  background:var(--bg2);border:1px solid var(--bd2);border-radius:6px;padding:2px 5px;flex-shrink:0;
+  min-width:26px;text-align:center;transition:all .18s;
+}
+.toc a.active .tnum{color:var(--emerald);border-color:rgba(16,185,129,.4)}
+/* 移动端目录下拉 */
+.toc-mobile{display:none;margin-bottom:18px;position:sticky;top:74px;z-index:60}
+.toc-mobile select{
+  width:100%;padding:12px 16px;border-radius:12px;font-size:14px;font-weight:600;font-family:inherit;
+  background:var(--card);color:var(--t1);border:1px solid var(--bd2);outline:none;cursor:pointer;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%2394a3b8' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 16px center;
+}
+/* 章节 */
+.chapter{
+  background:var(--card);border:1px solid var(--bd);border-radius:var(--r);
+  padding:32px 36px;margin-bottom:26px;scroll-margin-top:84px;
+}
+.ch-head{display:flex;align-items:center;gap:15px;margin-bottom:14px;flex-wrap:wrap}
+.ch-num{
+  font-size:13px;font-weight:700;color:#04101a;letter-spacing:.5px;flex-shrink:0;
+  background:linear-gradient(120deg,var(--emerald),var(--teal));
+  padding:6px 14px;border-radius:999px;
+}
+.ch-head h2{font-size:23px;font-weight:700;letter-spacing:.3px}
+.ch-summary{
+  background:rgba(45,212,191,.06);border-left:3px solid var(--teal);border-radius:0 10px 10px 0;
+  padding:13px 18px;color:var(--t2);font-size:13.5px;line-height:1.7;margin-bottom:8px;
+}
+.ch-summary b{color:var(--teal);font-weight:700;margin-right:6px}
+/* 小节 */
+.sec{padding:22px 0 6px;border-top:1px dashed var(--bd2);margin-top:18px;scroll-margin-top:84px}
+.sec:first-of-type{border-top:none;margin-top:6px}
+.sec-head{display:flex;align-items:center;gap:11px;margin-bottom:12px;flex-wrap:wrap}
+.sec-cat{
+  font-size:11.5px;font-weight:700;color:var(--teal);flex-shrink:0;
+  background:rgba(45,212,191,.1);border:1px solid rgba(45,212,191,.32);
+  padding:3px 11px;border-radius:999px;letter-spacing:.3px;
+}
+.sec-head h3{font-size:17.5px;font-weight:700;line-height:1.5}
+.sec-body{font-size:14.5px;line-height:1.9;color:#cfd8e6}
+.sec-body p{margin:0 0 12px}
+.sec-body p:last-child{margin-bottom:4px}
+.sec-body strong{color:var(--t1);font-weight:700}
+.sec-body ul,.sec-body ol{margin:0 0 13px;padding-left:22px;display:flex;flex-direction:column;gap:7px}
+.sec-body li{line-height:1.8}
+.sec-body li::marker{color:var(--emerald);font-weight:700}
+.fx{
+  font-style:italic;color:#6ee7b7;font-weight:500;
+  font-family:"Cambria Math","Times New Roman",Georgia,serif;letter-spacing:.2px;
+}
+.fx sub,.fx sup{font-style:normal;font-size:.72em}
+.fx-block{
+  display:block;text-align:center;font-size:15.5px;padding:13px 18px;margin:12px 0;
+  background:rgba(16,185,129,.06);border:1px solid rgba(16,185,129,.18);border-radius:12px;
+  overflow-x:auto;white-space:nowrap;
+}
+.tbl-wrap{overflow-x:auto;margin:0 0 14px;border:1px solid var(--bd2);border-radius:12px}
+.sec-body table{width:100%;border-collapse:collapse;font-size:13.5px;min-width:480px}
+.sec-body th{
+  background:rgba(16,185,129,.1);color:var(--t1);font-weight:700;text-align:left;
+  padding:10px 14px;border-bottom:1px solid var(--bd2);white-space:nowrap;
+}
+.sec-body td{padding:9px 14px;border-bottom:1px solid var(--bd);color:#cfd8e6;line-height:1.65;vertical-align:top}
+.sec-body tr:last-child td{border-bottom:none}
+.sec-body tr:hover td{background:rgba(148,163,184,.04)}
+.sec-meta{
+  display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px;
+  font-size:12px;color:var(--t3);line-height:1.6;
+}
+.sec-meta .src{flex:1;min-width:200px}
+.conf{
+  font-size:11px;font-weight:700;padding:2.5px 10px;border-radius:999px;flex-shrink:0;
+  border:1px solid;letter-spacing:.3px;
+}
+/* 加载 / 错误 */
+.loading-box,.error-box{
+  background:var(--card);border:1px solid var(--bd);border-radius:var(--r);
+  padding:44px 36px;text-align:center;
+}
+.loading-box{color:var(--t2);font-size:14.5px}
+.spin{
+  width:34px;height:34px;margin:0 auto 16px;border-radius:50%;
+  border:3px solid var(--bd2);border-top-color:var(--emerald);
+  animation:spin 1s linear infinite;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+.error-box{border-color:rgba(248,113,113,.35);text-align:left}
+.error-box h3{color:var(--red);font-size:17px;margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.error-box p{color:var(--t2);font-size:13.5px;line-height:1.8;margin-bottom:10px}
+/* 页脚 */
+footer{margin-top:44px;text-align:center;color:var(--t3);font-size:12.5px;line-height:1.8}
+/* ===== 响应式 ===== */
+@media (max-width:1080px){
+  .manual-wrap{grid-template-columns:1fr}
+  .toc{display:none}
+  .toc-mobile{display:block}
+  .qgrid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .qgrid{grid-template-columns:1fr}
+  .banner{padding:26px 22px}.banner h1{font-size:22px}
+  .chapter{padding:24px 20px}
+  .ch-head h2{font-size:19px}
+  .nav-inner{padding:0 14px}
+  .page{padding:20px 14px 48px}
+  .logo-sub{display:none}
+  .role-badge .rname{display:none}
+  .switch-btn{padding:6px 10px}
+  .notice{margin:14px 14px 0}
+}
+</style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="logo" href="main.html" title="返回主页">
+      <div class="logo-icon">⚗️</div>
+      <div class="logo-text">
+        <div class="logo-name">ChemAI</div>
+        <div class="logo-sub">K₃[Fe(C₂O₄)₃]·3H₂O 制备实验</div>
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="main.html" class="active">主页</a>
+      <a href="assistant.html">AI助手</a>
+      <a href="knowledge.html">知识图谱</a>
+      <a href="prep.html">课前预习</a>
+      <a href="index.html#/videos">视频资源</a>
+      <a href="index.html#/report">实验报告检测评估</a>
+      <a href="index.html#/explore">科普探索</a>
+      <a href="corpus.html">语料库</a>
+    </div>
+    <div class="nav-user">
+      <span class="role-badge" id="roleBadge"><span class="rdot"></span><span class="rname" id="roleName">未选择身份</span></span>
+      <button class="switch-btn" id="switchBtn" type="button">切换身份</button>
+    </div>
+  </div>
+</nav>
+
+<div class="notice" id="noRoleNotice" hidden>
+  <span>⚠️ 您还未选择学习身份，实验手册将完整展示，但无法提供个性化学习指导。</span>
+  <a class="nlink" href="index.html">去选择身份 →</a>
+</div>
+
+<div class="page">
+  <!-- 欢迎横幅 -->
+  <section class="banner">
+    <div class="banner-tag">📖 EXPERIMENT MANUAL · HOME</div>
+    <h1>三草酸合铁酸钾制备实验 · <span class="hl">实验手册</span></h1>
+    <p id="bannerSub">从实验原理到操作细节的完整手册：12 章 47 节系统讲解三草酸合铁(III)酸钾的制备、性质与应用，全部内容一站式展开阅读。</p>
+    <div><span class="banner-role" id="bannerRole" hidden></span></div>
+    <div class="banner-stats">
+      <div class="bstat"><span class="dot" style="background:var(--emerald)"></span><b id="statCh">12</b>&nbsp;章节</div>
+      <div class="bstat"><span class="dot" style="background:var(--teal)"></span><b id="statSec">47</b>&nbsp;小节</div>
+      <div class="bstat"><span class="dot" style="background:var(--blue)"></span><b>6</b>&nbsp;快捷功能模块</div>
+      <div class="bstat"><span class="dot" style="background:var(--purple)"></span><b>AI</b>&nbsp;智能辅助学习</div>
+    </div>
+  </section>
+
+  <!-- 快捷入口 -->
+  <div class="sec-title">
+    <h2>⚡ 快捷入口</h2>
+    <span class="st-sub">六大功能模块，覆盖课前、课中、课后全流程</span>
+  </div>
+  <section class="qgrid">
+    <a class="qcard" style="--accent:var(--emerald)" href="assistant.html">
+      <div class="qcard-head"><div class="qcard-icon">🤖</div><div class="qcard-title">AI助手</div></div>
+      <div class="qcard-desc">智能问答与多轮对话测评，围绕实验原理、操作与注意事项随时答疑解惑。</div>
+      <span class="qcard-go">进入模块 <span class="arr">→</span></span>
+    </a>
+    <a class="qcard" style="--accent:var(--teal)" href="knowledge.html">
+      <div class="qcard-head"><div class="qcard-icon">🌐</div><div class="qcard-title">知识图谱</div></div>
+      <div class="qcard-desc">可视化探索实验知识点之间的关联，构建系统化知识网络。</div>
+      <span class="qcard-go">进入模块 <span class="arr">→</span></span>
+    </a>
+    <a class="qcard" style="--accent:var(--blue)" href="prep.html">
+      <div class="qcard-head"><div class="qcard-icon">📚</div><div class="qcard-title">课前预习</div></div>
+      <div class="qcard-desc">对话测评 + 习题检测 + 错题本，进实验室前打牢基础。</div>
+      <span class="qcard-go">进入模块 <span class="arr">→</span></span>
+    </a>
+    <a class="qcard" style="--accent:var(--yellow)" href="index.html#/videos">
+      <div class="qcard-head"><div class="qcard-icon">🎬</div><div class="qcard-title">视频资源</div></div>
+      <div class="qcard-desc">实验操作演示与原理讲解视频合集，直观学习每个关键步骤。</div>
+      <span class="qcard-go">进入模块 <span class="arr">→</span></span>
+    </a>
+    <a class="qcard" style="--accent:var(--purple)" href="index.html#/report" id="reportCard">
+      <div class="qcard-head"><div class="qcard-icon">📊</div><div class="qcard-title">实验报告检测评估</div></div>
+      <div class="qcard-desc">上传实验报告，AI 智能检测内容质量并给出评估反馈与改进建议。</div>
+      <span class="qcard-go">进入模块 <span class="arr">→</span></span>
+    </a>
+    <a class="qcard" style="--accent:var(--red)" href="index.html#/explore">
+      <div class="qcard-head"><div class="qcard-icon">🔭</div><div class="qcard-title">科普探索</div></div>
+      <div class="qcard-desc">面向大众的趣味科普内容，发现配合物与光化学之美。</div>
+      <span class="qcard-go">进入模块 <span class="arr">→</span></span>
+    </a>
+  </section>
+
+  <!-- 实验手册 -->
+  <div class="manual-head">
+    <h2>📖 实验手册全文</h2>
+    <span class="mh-chip">共 <b id="mhCh">12</b> 章 · <b id="mhSec">47</b> 节</span>
+    <span class="mh-chip">💡 全部内容已展开，可通过左侧目录快速定位</span>
+  </div>
+
+  <div class="toc-mobile">
+    <select id="tocSelect" aria-label="手册章节目录">
+      <option value="">📑 跳转到章节…</option>
+    </select>
+  </div>
+
+  <div class="manual-wrap">
+    <aside class="toc" id="tocBox">
+      <div class="toc-title">📑 章节目录</div>
+      <nav id="tocNav"></nav>
+    </aside>
+    <div id="manualBox">
+      <div class="loading-box"><div class="spin"></div>正在加载实验手册…</div>
+    </div>
+  </div>
+
+  <footer>
+    ChemAI · 三草酸合铁酸钾（K₃[Fe(C₂O₄)₃]·3H₂O）制备实验智能教学平台<br/>
+    主页 · 实验手册全文
+  </footer>
+</div>
+<script>
+(function(){
+"use strict";
+var $=function(s){return document.querySelector(s);};
+
+/* ================= 身份系统 ================= */
+var ROLES={
+  "non-chemistry":{name:"非化学专业",color:"#60a5fa",sub:"通俗版全程指导 —— 用生活化的语言陪您轻松完成实验"},
+  "chemistry":{name:"化学专业",color:"#10b981",sub:"深度机理与专业分析 —— 配位化学、晶体场理论与定量推导"},
+  "teacher":{name:"教师",color:"#a78bfa",sub:"教学参考与评估工具 —— 教学设计、常见错误与报告评估"}
+};
+function getRole(){
+  try{
+    var raw=localStorage.getItem("chem-user");
+    if(!raw)return null;
+    var obj=JSON.parse(raw);
+    var r=obj&&obj.state?obj.state.role:null;
+    return ROLES[r]?r:null;
+  }catch(e){return null;}
+}
+var role=getRole();
+(function applyIdentity(){
+  var badge=$("#roleBadge"),name=$("#roleName"),br=$("#bannerRole");
+  if(role){
+    var meta=ROLES[role];
+    name.textContent=meta.name;
+    badge.style.color=meta.color;
+    badge.style.borderColor=meta.color+"66";
+    badge.style.background=meta.color+"1a";
+    badge.querySelector(".rdot").style.background=meta.color;
+    $("#bannerSub").textContent=meta.sub;
+    br.hidden=false;
+    br.textContent="当前身份："+meta.name;
+    br.style.color=meta.color;br.style.borderColor=meta.color+"66";br.style.background=meta.color+"14";
+    if(role==="teacher"){
+      var rc=$("#reportCard");
+      if(rc&&!rc.querySelector(".teacher-tag")){
+        var tag=document.createElement("span");
+        tag.className="teacher-tag";tag.textContent="教师专用";
+        rc.appendChild(tag);
+      }
+    }
+  }else{
+    $("#noRoleNotice").hidden=false;
+  }
+})();
+$("#switchBtn").addEventListener("click",function(){location.href="index.html";});
+
+/* ================= 内容渲染 ================= */
+function esc(s){
+  return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");
+}
+/* 将 $...$ 内的类 LaTeX 公式清理为可读文本（含上下标） */
+function renderFormula(tex){
+  var t=String(tex);
+  t=t.replace(/\t(?=imes)/g,"\\t");            // 修复被转义成 TAB 的 \times（TAB+imes）
+  t=t.replace(/\x0b(?=arepsilon)/g,"\\v");  // 修复 \varepsilon（\v 变 VT）
+  t=t.replace(/\x08(?=ullet)/g,"\\b");      // 修复 \bullet（\b 变退格）
+  t=t.replace(/\r(?=ight)/g,"\\r");         // 修复 \right（\r 变回车）
+  t=t.replace(/\\\\/g,"\\");                   // 双反斜杠归一
+  t=t.replace(/\\xrightarrow(?:\[[^\]]*\])?\{([^{}]*)\}/g," ⟶($1) ");
+  t=t.replace(/\\frac\{([^{}]*)\}\{([^{}]*)\}/g,"($1)/($2)");
+  t=t.replace(/\\sqrt\[?([^\]{}]*)\]?\{([^{}]*)\}/g,"√($2)");
+  t=t.replace(/\\bar\{([^{}]*)\}/g,"$1̄");
+  var G={cdot:"·",times:"×",div:"÷",approx:"≈",sim:"∼",neq:"≠",gg:"≫",ll:"≪",geq:"≥",geq:"≥",leq:"≤",pm:"±",mp:"∓",
+    rightarrow:"→",to:"→",longrightarrow:"→",implies:"⇒",rightleftharpoons:"⇌",leftrightarrow:"↔",leftarrow:"←",
+    uparrow:"↑",downarrow:"↓",Delta:"Δ",delta:"δ",alpha:"α",beta:"β",gamma:"γ",lambda:"λ",mu:"μ",nu:"ν",
+    pi:"π",sigma:"σ",theta:"θ",phi:"φ",varphi:"φ",rho:"ρ",omega:"ω",Omega:"Ω",kappa:"κ",eta:"η",
+    varepsilon:"ε",epsilon:"ε",infty:"∞",partial:"∂",nabla:"∇",circ:"°",degree:"°",bullet:"•",ast:"∗",star:"★",
+    lg:"lg",ln:"ln",log:"log",sin:"sin",cos:"cos",tan:"tan",exp:"exp",max:"max",min:"min",lim:"lim",
+    mathrm:"",text:"",mbox:"",quad:" ",qquad:"  ",hspace:" ",":":" ",";":" ",",":" ","!":"",left:"",right:"",Big:"",big:"",displaystyle:""};
+  t=t.replace(/\\([a-zA-Z]+)/g,function(m,n){return Object.prototype.hasOwnProperty.call(G,n)?G[n]:n;});
+  t=t.replace(/\\(.)/g,"$1");                  // \% \' 等
+  t=t.replace(/\\/g,"");
+  /* 修复丢失反斜杠的裸命令词（数据转义残留） */
+  var BARE={qquad:"  ",quad:" ",lambda:"λ",left:"",pm:"±",gg:"≫"};
+  t=t.replace(/\b(qquad|quad|lambda|left|pm|gg)\b/g,function(m,w){return BARE[w];});
+  t=t.replace(/[ \t]{2,}/g," ").trim();
+  t=esc(t);
+  t=t.replace(/_\{([^{}]*)\}/g,"<sub>$1</sub>");
+  t=t.replace(/\^\{([^{}]*)\}/g,"<sup>$1</sup>");
+  t=t.replace(/_([A-Za-z0-9+\-])/g,"<sub>$1</sub>");
+  t=t.replace(/\^([A-Za-z0-9+\-]+)/g,"<sup>$1</sup>");
+  t=t.replace(/[{}]/g,"");
+  return t;
+}
+/* 行内渲染：转义 → **加粗** → $公式$ */
+function inline(s){
+  var blocks=[];
+  s=String(s).replace(/\$\$([\s\S]+?)\$\$/g,function(m,f){blocks.push(f);return "\u0001"+(blocks.length-1)+"\u0002";});
+  s=esc(s);
+  s=s.replace(/\*\*([^*]+)\*\*/g,"<strong>$1</strong>");
+  s=s.replace(/\$([^$]+)\$/g,function(m,f){return '<span class="fx">'+renderFormula(f)+"</span>";});
+  s=s.replace(/\u0001(\d+)\u0002/g,function(m,i){return '<span class="fx fx-block">'+renderFormula(blocks[+i])+"</span>";});
+  return s;
+}
+/* 块级渲染：段落 / 无序列表 / 有序列表 / 表格 */
+function renderMd(md){
+  var lines=String(md).split("\n"),out=[],i=0;
+  function isSep(l){return /^\s*\|?[\s:\-|]+\|?\s*$/.test(l)&&l.indexOf("-")>-1;}
+  function parseRow(l){
+    var t=l.trim();
+    if(t.charAt(0)==="|")t=t.slice(1);
+    if(t.charAt(t.length-1)==="|")t=t.slice(0,-1);
+    return t.split("|").map(function(c){return c.trim();});
+  }
+  var reUL=/^\s*[-•]\s+/,reOL=/^\s*\d{1,2}\s*[.、\)]\s+/;
+  while(i<lines.length){
+    var line=lines[i];
+    if(!line.trim()){i++;continue;}
+    /* 表格：当前行含 | 且下一行是分隔行 */
+    if(line.indexOf("|")>-1&&i+1<lines.length&&isSep(lines[i+1])){
+      var head=parseRow(line);i+=2;var body=[];
+      while(i<lines.length&&lines[i].trim()&&lines[i].indexOf("|")>-1){body.push(parseRow(lines[i]));i++;}
+      var h='<div class="tbl-wrap"><table><thead><tr>'+head.map(function(c){return "<th>"+inline(c)+"</th>";}).join("")+"</tr></thead><tbody>";
+      body.forEach(function(r){h+="<tr>"+r.map(function(c){return "<td>"+inline(c)+"</td>";}).join("")+"</tr>";});
+      out.push(h+"</tbody></table></div>");continue;
+    }
+    /* 无序列表 */
+    if(reUL.test(line)){
+      var h2="<ul>";
+      while(i<lines.length&&reUL.test(lines[i])){h2+="<li>"+inline(lines[i].replace(reUL,""))+"</li>";i++;}
+      out.push(h2+"</ul>");continue;
+    }
+    /* 有序列表 */
+    if(reOL.test(line)){
+      var h3="<ol>";
+      while(i<lines.length&&reOL.test(lines[i])){h3+="<li>"+inline(lines[i].replace(reOL,""))+"</li>";i++;}
+      out.push(h3+"</ol>");continue;
+    }
+    /* 段落：收集到空行或特殊块起始 */
+    var buf=[line];i++;
+    while(i<lines.length&&lines[i].trim()){
+      var l=lines[i];
+      if(reUL.test(l)||reOL.test(l))break;
+      if(l.indexOf("|")>-1&&i+1<lines.length&&isSep(lines[i+1]))break;
+      buf.push(l);i++;
+    }
+    out.push("<p>"+inline(buf.join("\n")).replace(/\n/g,"<br>")+"</p>");
+  }
+  return out.join("");
+}
+var CONF_COLOR={"权威文献":"#10b981","实验讲义":"#60a5fa","理论推导":"#a78bfa","经验总结":"#fbbf24"};
+
+/* ================= 手册渲染 ================= */
+function renderManual(data){
+  var chapters=(data&&data.chapters)||[];
+  if(!chapters.length)throw new Error("手册数据为空");
+  var secTotal=0,tocHtml="",sel=$("#tocSelect"),bodyHtml="";
+  chapters.forEach(function(ch){
+    var secs=ch.sections||[];secTotal+=secs.length;
+    var num=("0"+ch.number).slice(-2);
+    tocHtml+='<a href="#'+esc(ch.id)+'"><span class="tnum">'+num+"</span><span>"+esc(ch.title)+"</span></a>";
+    var op=document.createElement("option");op.value=ch.id;op.textContent="第 "+ch.number+" 章 · "+ch.title;sel.appendChild(op);
+    var h='<section class="chapter" id="'+esc(ch.id)+'">';
+    h+='<div class="ch-head"><span class="ch-num">第 '+ch.number+' 章</span><h2>'+esc(ch.title)+"</h2></div>";
+    if(ch.summary)h+='<div class="ch-summary"><b>本章导读</b>'+esc(ch.summary)+"</div>";
+    secs.forEach(function(s){
+      h+='<div class="sec" id="'+esc(s.id)+'">';
+      h+='<div class="sec-head"><span class="sec-cat">'+esc(s.category)+"</span><h3>"+esc(s.title)+"</h3></div>";
+      h+='<div class="sec-body">'+renderMd(s.content)+"</div>";
+      var cc=CONF_COLOR[s.confidence]||"#94a3b8";
+      h+='<div class="sec-meta"><span class="src">📚 来源：'+esc(s.source)+"</span>"+
+         '<span class="conf" style="color:'+cc+";border-color:"+cc+"55;background:"+cc+'14">'+esc(s.confidence)+"</span></div>";
+      h+="</div>";
+    });
+    bodyHtml+=h+"</section>";
+  });
+  $("#tocNav").innerHTML=tocHtml;
+  $("#manualBox").innerHTML=bodyHtml;
+  $("#statCh").textContent=chapters.length;$("#mhCh").textContent=chapters.length;
+  $("#statSec").textContent=secTotal;$("#mhSec").textContent=secTotal;
+  initSpy();
+}
+/* 目录滚动高亮 */
+function initSpy(){
+  var links=Array.prototype.slice.call(document.querySelectorAll("#tocNav a"));
+  if(!links.length)return;
+  var map={};
+  links.forEach(function(a){map[a.getAttribute("href").slice(1)]=a;});
+  function setActive(id){
+    links.forEach(function(l){l.classList.remove("active");});
+    var a=map[id];
+    if(a){a.classList.add("active");
+      var toc=$("#tocBox");
+      if(toc){var r=a.getBoundingClientRect(),tr=toc.getBoundingClientRect();
+        if(r.top<tr.top+10||r.bottom>tr.bottom-10)a.scrollIntoView({block:"nearest"});}
+    }
+    var sel=$("#tocSelect");if(sel&&sel.value!==id)sel.value=id;
+  }
+  if("IntersectionObserver" in window){
+    var obs=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting)setActive(e.target.id);});
+    },{rootMargin:"-90px 0px -72% 0px",threshold:0});
+    document.querySelectorAll(".chapter").forEach(function(c){obs.observe(c);});
+  }
+  links.forEach(function(a){
+    a.addEventListener("click",function(ev){
+      ev.preventDefault();
+      var id=a.getAttribute("href").slice(1),el=document.getElementById(id);
+      if(el){el.scrollIntoView({behavior:"smooth",block:"start"});setActive(id);
+        if(history.replaceState)history.replaceState(null,"","#"+id);}
+    });
+  });
+}
+/* 移动端目录跳转 */
+$("#tocSelect").addEventListener("change",function(){
+  var id=this.value;if(!id)return;
+  var el=document.getElementById(id);
+  if(el)el.scrollIntoView({behavior:"smooth",block:"start"});
+});
+/* ================= 加载手册 ================= */
+function showError(err){
+  var isFile=location.protocol==="file:";
+  var msg=isFile
+    ?"检测到您正通过 <b>file://</b> 协议直接打开本页面，浏览器安全策略禁止读取本地 <code>data/manual.json</code> 数据文件。"
+    :"无法加载 <code>data/manual.json</code>（"+esc(err&&err.message?err.message:String(err))+"）。";
+  var tip=isFile
+    ?'请在 <code>app</code> 目录下启动本地服务，例如运行 <code>python3 -m http.server 8899</code>，然后访问 <code>http://localhost:8899/main.html</code>。'
+    :"请确认 <code>data/manual.json</code> 文件存在且格式正确，然后刷新页面重试。";
+  $("#manualBox").innerHTML='<div class="error-box"><h3>⚠️ 实验手册加载失败</h3><p>'+msg+"</p><p>"+tip+"</p></div>";
+  $("#tocNav").innerHTML='<div style="padding:10px;font-size:12.5px;color:var(--t3)">手册加载失败，目录不可用</div>';
+}
+fetch("data/manual.json").then(function(r){
+  if(!r.ok)throw new Error("HTTP "+r.status);
+  return r.json();
+}).then(renderManual).catch(showError);
+})();
+</script>
+</body>
+</html>
