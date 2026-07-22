@@ -1,0 +1,766 @@
+#interwiki-completelist {
+	FONT-WEIGHT: bold
+}
+BODY.page-Main_Page #ca-delete {
+	DISPLAY: none! important
+}
+BODY.page-Main_Page #mp-topbanner {
+	CLEAR: both
+}
+#toolbar {
+	MARGIN-BOTTOM: 6px; HEIGHT: 22px
+}
+#content OL {
+	MARGIN-BOTTOM: 0.5em
+}
+#content UL {
+	MARGIN-BOTTOM: 0.5em
+}
+#mw_content OL {
+	MARGIN-BOTTOM: 0.5em
+}
+#mw_content UL {
+	MARGIN-BOTTOM: 0.5em
+}
+.references-small {
+	FONT-SIZE: 90%
+}
+UNKNOWN {
+	BACKGROUND-COLOR: #def
+}
+SUP.reference {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+SPAN.citation {
+	FONT-STYLE: normal; WORD-WRAP: break-word
+}
+CITE {
+	FONT-STYLE: normal; WORD-WRAP: break-word
+}
+
+@media Screen, Handheld    
+{
+SPAN.citation .printonly {
+	DISPLAY: none
+}
+    }
+TABLE.wikitable {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #f9f9f9; MARGIN: 1em 1em 1em 0px; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.prettytable {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #f9f9f9; MARGIN: 1em 1em 1em 0px; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse
+}
+.wikitable TH {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid
+}
+.wikitable TD {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid
+}
+.prettytable TH {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid
+}
+.prettytable TD {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid
+}
+.wikitable TH {
+	BACKGROUND: #f2f2f2; TEXT-ALIGN: center
+}
+.prettytable TH {
+	BACKGROUND: #f2f2f2; TEXT-ALIGN: center
+}
+.wikitable CAPTION {
+	FONT-WEIGHT: bold
+}
+.prettytable CAPTION {
+	FONT-WEIGHT: bold
+}
+TABLE.navbox {
+	CLEAR: both; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 1px; FONT-SIZE: 88%; PADDING-BOTTOM: 1px; MARGIN: auto; BORDER-LEFT: #aaa 1px solid; WIDTH: 100%; PADDING-TOP: 1px; BORDER-BOTTOM: #aaa 1px solid; TEXT-ALIGN: center
+}
+UNKNOWN {
+	MARGIN-TOP: -1px
+}
+.navbox-title {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; TEXT-ALIGN: center
+}
+.navbox-abovebelow {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; TEXT-ALIGN: center
+}
+TABLE.navbox TH {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; TEXT-ALIGN: center
+}
+.navbox-group {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 1em; FONT-WEIGHT: bold; WHITE-SPACE: nowrap; TEXT-ALIGN: right
+}
+.navbox {
+	BACKGROUND: #fdfdfd
+}
+.navbox-subgroup {
+	BACKGROUND: #fdfdfd
+}
+.navbox-list {
+	BORDER-LEFT-COLOR: #fdfdfd; BORDER-BOTTOM-COLOR: #fdfdfd; BORDER-TOP-COLOR: #fdfdfd; BORDER-RIGHT-COLOR: #fdfdfd
+}
+.navbox-title {
+	BACKGROUND: #ccccff
+}
+TABLE.navbox TH {
+	BACKGROUND: #ccccff
+}
+.navbox-abovebelow {
+	BACKGROUND: #ddddff
+}
+.navbox-group {
+	BACKGROUND: #ddddff
+}
+.navbox-subgroup .navbox-title {
+	BACKGROUND: #ddddff
+}
+.navbox-subgroup .navbox-group {
+	BACKGROUND: #e6e6ff
+}
+.navbox-subgroup .navbox-abovebelow {
+	BACKGROUND: #e6e6ff
+}
+.navbox-even {
+	BACKGROUND: #f7f7f7
+}
+.navbox-odd {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.collapseButton {
+	FONT-WEIGHT: normal; FLOAT: right; WIDTH: auto; TEXT-ALIGN: right
+}
+.navbox .collapseButton {
+	WIDTH: 6em
+}
+.infobox {
+	CLEAR: right; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; FLOAT: right; PADDING-BOTTOM: 0.2em; MARGIN: 0.5em 0px 0.5em 1em; BORDER-LEFT: #aaa 1px solid; COLOR: black; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #f9f9f9
+}
+.infobox TD {
+	VERTICAL-ALIGN: top
+}
+.infobox TH {
+	VERTICAL-ALIGN: top
+}
+.infobox CAPTION {
+	FONT-SIZE: larger
+}
+.bordered {
+	BORDER-COLLAPSE: collapse
+}
+.bordered TD {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+.bordered TH {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+.bordered .borderless TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.bordered .borderless TH {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.sisterproject {
+	FONT-SIZE: 90%; WIDTH: 20em
+}
+.standard-talk {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid; BACKGROUND-COLOR: #f8eaba
+}
+.bordered TD {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid
+}
+.bordered TH {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid
+}
+.bordered .mergedtoprow TD {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px
+}
+.bordered .mergedtoprow TH {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px
+}
+.bordered .mergedrow TD {
+	BORDER-TOP-WIDTH: 0px; BORDER-RIGHT: #aaa 1px solid; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px
+}
+.bordered .mergedrow TH {
+	BORDER-TOP-WIDTH: 0px; BORDER-RIGHT: #aaa 1px solid; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px
+}
+.geography {
+	FONT-SIZE: 90%; LINE-HEIGHT: 1.2em; BORDER-COLLAPSE: collapse; TEXT-ALIGN: left
+}
+.geography TD {
+	PADDING-RIGHT: 0.6em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.6em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0.4em
+}
+.geography TH {
+	PADDING-RIGHT: 0.6em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.6em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0.4em
+}
+.geography .mergedtoprow TD {
+	PADDING-RIGHT: 0.6em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.6em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.4em
+}
+.geography .mergedtoprow TH {
+	PADDING-RIGHT: 0.6em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.6em; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.4em
+}
+.geography .mergedrow TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.6em; PADDING-LEFT: 0.6em; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.geography .mergedrow TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.6em; PADDING-LEFT: 0.6em; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.geography .mergedbottomrow TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.6em; PADDING-LEFT: 0.6em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0px; BORDER-BOTTOM: #aaa 1px solid
+}
+.geography .mergedbottomrow TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0.6em; PADDING-LEFT: 0.6em; PADDING-BOTTOM: 0.4em; PADDING-TOP: 0px; BORDER-BOTTOM: #aaa 1px solid
+}
+.geography .maptable TD {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.geography .maptable TH {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.redirect-in-category {
+	FONT-STYLE: italic
+}
+.allpagesredirect {
+	FONT-STYLE: italic
+}
+DIV.listenlist {
+	PADDING-LEFT: 40px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/Gnome-speakernotes.png/30px-Gnome-speakernotes.png)
+}
+DIV.medialist {
+	BACKGROUND-POSITION: left top; MIN-HEIGHT: 50px; MARGIN: 1em; BACKGROUND-REPEAT: no-repeat
+}
+DIV.medialist UL {
+	LIST-STYLE-IMAGE: none; MARGIN: 0px; LIST-STYLE-TYPE: none
+}
+DIV.medialist UL LI {
+	PADDING-BOTTOM: 0.5em
+}
+DIV.medialist UL LI LI {
+	FONT-SIZE: 91%; PADDING-BOTTOM: 0px
+}
+UNKNOWN {
+	PADDING-RIGHT: 16px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif) no-repeat right center
+}
+#content SPAN.PDFlink A {
+	PADDING-RIGHT: 17px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif) no-repeat right center
+}
+#mw_content SPAN.PDFlink A {
+	PADDING-RIGHT: 17px; BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/2/23/Icons-mini-file_acrobat.gif) no-repeat right center
+}
+DIV.columns-2 DIV.column {
+	FLOAT: left; WIDTH: 50%; min-width: 300px
+}
+DIV.columns-3 DIV.column {
+	FLOAT: left; WIDTH: 33.3%; min-width: 200px
+}
+DIV.columns-4 DIV.column {
+	FLOAT: left; WIDTH: 25%; min-width: 150px
+}
+DIV.columns-5 DIV.column {
+	FLOAT: left; WIDTH: 20%; min-width: 120px
+}
+.messagebox {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.2em; MARGIN: 0px auto 1em; BORDER-LEFT: #aaa 1px solid; WIDTH: 80%; PADDING-TOP: 0.2em; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #f9f9f9
+}
+.merge {
+	BORDER-RIGHT: #c0b8cc 1px solid; BORDER-TOP: #c0b8cc 1px solid; BORDER-LEFT: #c0b8cc 1px solid; BORDER-BOTTOM: #c0b8cc 1px solid; BACKGROUND-COLOR: #f0e5ff; TEXT-ALIGN: center
+}
+.cleanup {
+	BORDER-RIGHT: #9f9fff 1px solid; BORDER-TOP: #9f9fff 1px solid; BORDER-LEFT: #9f9fff 1px solid; BORDER-BOTTOM: #9f9fff 1px solid; BACKGROUND-COLOR: #efefff; TEXT-ALIGN: center
+}
+.standard-talk {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; MARGIN: 4px auto; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid; BACKGROUND-COLOR: #f8eaba
+}
+.mbox-inside .standard-talk {
+	BORDER-RIGHT: #c0c090 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #c0c090 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 2px 0px; BORDER-LEFT: #c0c090 1px solid; WIDTH: 100%; PADDING-TOP: 2px; BORDER-BOTTOM: #c0c090 1px solid; BACKGROUND-COLOR: #f8eaba
+}
+.nested-talk {
+	BORDER-RIGHT: #c0c090 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #c0c090 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 2px 0px; BORDER-LEFT: #c0c090 1px solid; WIDTH: 100%; PADDING-TOP: 2px; BORDER-BOTTOM: #c0c090 1px solid; BACKGROUND-COLOR: #f8eaba
+}
+.small {
+	CLEAR: both; FONT-SIZE: 85%; FLOAT: right; MARGIN: 0px 0px 1em 1em; WIDTH: 238px; LINE-HEIGHT: 1.25em
+}
+.small-talk {
+	CLEAR: both; FONT-SIZE: 85%; BACKGROUND: #f8eaba; FLOAT: right; MARGIN: 0px 0px 1em 1em; WIDTH: 238px; LINE-HEIGHT: 1.25em
+}
+TH.mbox-text {
+	PADDING-RIGHT: 0.9em; PADDING-LEFT: 0.9em; PADDING-BOTTOM: 0.25em; WIDTH: 100%; BORDER-TOP-STYLE: none; PADDING-TOP: 0.25em; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TD.mbox-text {
+	PADDING-RIGHT: 0.9em; PADDING-LEFT: 0.9em; PADDING-BOTTOM: 0.25em; WIDTH: 100%; BORDER-TOP-STYLE: none; PADDING-TOP: 0.25em; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TD.mbox-image {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.9em; PADDING-BOTTOM: 2px; BORDER-TOP-STYLE: none; PADDING-TOP: 2px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none
+}
+TD.mbox-imageright {
+	PADDING-RIGHT: 0.9em; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; BORDER-TOP-STYLE: none; PADDING-TOP: 2px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-ALIGN: center; BORDER-BOTTOM-STYLE: none
+}
+TD.mbox-empty-cell {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; WIDTH: 1px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+TABLE.ambox {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #fbfbfb; MARGIN: 0px 10%; BORDER-LEFT: #1e90ff 10px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+UNKNOWN {
+	MARGIN-TOP: -1px
+}
+.ambox TH.mbox-text {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.25em; PADDING-TOP: 0.25em
+}
+.ambox TD.mbox-text {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.25em; PADDING-TOP: 0.25em
+}
+.ambox TD.mbox-image {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.ambox TD.mbox-imageright {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+TABLE.ambox-notice {
+	BORDER-LEFT: #1e90ff 10px solid
+}
+TABLE.ambox-speedy {
+	BACKGROUND: #fee; BORDER-LEFT: #b22222 10px solid
+}
+TABLE.ambox-delete {
+	BORDER-LEFT: #b22222 10px solid
+}
+TABLE.ambox-content {
+	BORDER-LEFT: #f28500 10px solid
+}
+TABLE.ambox-style {
+	BORDER-LEFT: #f4c430 10px solid
+}
+TABLE.ambox-move {
+	BORDER-LEFT: #9932cc 10px solid
+}
+TABLE.ambox-protection {
+	BORDER-LEFT: #bba 10px solid
+}
+TABLE.imbox {
+	BORDER-RIGHT: #1e90ff 3px solid; BORDER-TOP: #1e90ff 3px solid; BACKGROUND: #fbfbfb; MARGIN: 4px 10%; BORDER-LEFT: #1e90ff 3px solid; BORDER-BOTTOM: #1e90ff 3px solid; BORDER-COLLAPSE: collapse
+}
+.imbox .mbox-text .imbox {
+	MARGIN: 0px -0.5em
+}
+.mbox-inside .imbox {
+	MARGIN: 4px
+}
+TABLE.imbox-notice {
+	BORDER-RIGHT: #1e90ff 3px solid; BORDER-TOP: #1e90ff 3px solid; BORDER-LEFT: #1e90ff 3px solid; BORDER-BOTTOM: #1e90ff 3px solid
+}
+TABLE.imbox-speedy {
+	BORDER-RIGHT: #b22222 3px solid; BORDER-TOP: #b22222 3px solid; BACKGROUND: #fee; BORDER-LEFT: #b22222 3px solid; BORDER-BOTTOM: #b22222 3px solid
+}
+TABLE.imbox-delete {
+	BORDER-RIGHT: #b22222 3px solid; BORDER-TOP: #b22222 3px solid; BORDER-LEFT: #b22222 3px solid; BORDER-BOTTOM: #b22222 3px solid
+}
+TABLE.imbox-content {
+	BORDER-RIGHT: #f28500 3px solid; BORDER-TOP: #f28500 3px solid; BORDER-LEFT: #f28500 3px solid; BORDER-BOTTOM: #f28500 3px solid
+}
+TABLE.imbox-style {
+	BORDER-RIGHT: #f4c430 3px solid; BORDER-TOP: #f4c430 3px solid; BORDER-LEFT: #f4c430 3px solid; BORDER-BOTTOM: #f4c430 3px solid
+}
+TABLE.imbox-move {
+	BORDER-RIGHT: #9932cc 3px solid; BORDER-TOP: #9932cc 3px solid; BORDER-LEFT: #9932cc 3px solid; BORDER-BOTTOM: #9932cc 3px solid
+}
+TABLE.imbox-protection {
+	BORDER-RIGHT: #bba 3px solid; BORDER-TOP: #bba 3px solid; BORDER-LEFT: #bba 3px solid; BORDER-BOTTOM: #bba 3px solid
+}
+TABLE.imbox-license {
+	BORDER-RIGHT: #88a 3px solid; BORDER-TOP: #88a 3px solid; BACKGROUND: #f7f8ff; BORDER-LEFT: #88a 3px solid; BORDER-BOTTOM: #88a 3px solid
+}
+TABLE.imbox-featured {
+	BORDER-RIGHT: #cba135 3px solid; BORDER-TOP: #cba135 3px solid; BORDER-LEFT: #cba135 3px solid; BORDER-BOTTOM: #cba135 3px solid
+}
+TABLE.cmbox {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #dfe8ff; MARGIN: 3px 10%; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.cmbox-notice {
+	BACKGROUND: #d8e8ff
+}
+TABLE.cmbox-speedy {
+	BORDER-RIGHT: #b22222 4px solid; BORDER-TOP: #b22222 4px solid; MARGIN-TOP: 4px; BACKGROUND: #ffdbdb; MARGIN-BOTTOM: 4px; BORDER-LEFT: #b22222 4px solid; BORDER-BOTTOM: #b22222 4px solid
+}
+TABLE.cmbox-delete {
+	BACKGROUND: #ffdbdb
+}
+TABLE.cmbox-content {
+	BACKGROUND: #ffe7ce
+}
+TABLE.cmbox-style {
+	BACKGROUND: #fff9db
+}
+TABLE.cmbox-move {
+	BACKGROUND: #e4d8ff
+}
+TABLE.cmbox-protection {
+	BACKGROUND: #efefe1
+}
+TABLE.ombox {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #f9f9f9; MARGIN: 4px 10%; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse
+}
+TABLE.ombox-notice {
+	BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BORDER-LEFT: #aaa 1px solid; BORDER-BOTTOM: #aaa 1px solid
+}
+TABLE.ombox-speedy {
+	BORDER-RIGHT: #b22222 2px solid; BORDER-TOP: #b22222 2px solid; BACKGROUND: #fee; BORDER-LEFT: #b22222 2px solid; BORDER-BOTTOM: #b22222 2px solid
+}
+TABLE.ombox-delete {
+	BORDER-RIGHT: #b22222 2px solid; BORDER-TOP: #b22222 2px solid; BORDER-LEFT: #b22222 2px solid; BORDER-BOTTOM: #b22222 2px solid
+}
+TABLE.ombox-content {
+	BORDER-RIGHT: #f28500 1px solid; BORDER-TOP: #f28500 1px solid; BORDER-LEFT: #f28500 1px solid; BORDER-BOTTOM: #f28500 1px solid
+}
+TABLE.ombox-style {
+	BORDER-RIGHT: #f4c430 1px solid; BORDER-TOP: #f4c430 1px solid; BORDER-LEFT: #f4c430 1px solid; BORDER-BOTTOM: #f4c430 1px solid
+}
+TABLE.ombox-move {
+	BORDER-RIGHT: #9932cc 1px solid; BORDER-TOP: #9932cc 1px solid; BORDER-LEFT: #9932cc 1px solid; BORDER-BOTTOM: #9932cc 1px solid
+}
+TABLE.ombox-protection {
+	BORDER-RIGHT: #bba 2px solid; BORDER-TOP: #bba 2px solid; BORDER-LEFT: #bba 2px solid; BORDER-BOTTOM: #bba 2px solid
+}
+TABLE.tmbox {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BACKGROUND: #f8eaba; MARGIN: 4px 10%; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid; BORDER-COLLAPSE: collapse
+}
+.mediawiki .mbox-inside .tmbox {
+	MARGIN: 2px 0px; WIDTH: 100%
+}
+.mbox-inside .mbox-small {
+	FONT-SIZE: 100%; LINE-HEIGHT: 1.5em
+}
+TABLE.tmbox-speedy {
+	BORDER-RIGHT: #b22222 2px solid; BORDER-TOP: #b22222 2px solid; BACKGROUND: #fee; BORDER-LEFT: #b22222 2px solid; BORDER-BOTTOM: #b22222 2px solid
+}
+TABLE.tmbox-delete {
+	BORDER-RIGHT: #b22222 2px solid; BORDER-TOP: #b22222 2px solid; BORDER-LEFT: #b22222 2px solid; BORDER-BOTTOM: #b22222 2px solid
+}
+TABLE.tmbox-content {
+	BORDER-RIGHT: #f28500 2px solid; BORDER-TOP: #f28500 2px solid; BORDER-LEFT: #f28500 2px solid; BORDER-BOTTOM: #f28500 2px solid
+}
+TABLE.tmbox-style {
+	BORDER-RIGHT: #f4c430 2px solid; BORDER-TOP: #f4c430 2px solid; BORDER-LEFT: #f4c430 2px solid; BORDER-BOTTOM: #f4c430 2px solid
+}
+TABLE.tmbox-move {
+	BORDER-RIGHT: #9932cc 2px solid; BORDER-TOP: #9932cc 2px solid; BORDER-LEFT: #9932cc 2px solid; BORDER-BOTTOM: #9932cc 2px solid
+}
+TABLE.tmbox-protection {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid
+}
+TABLE.tmbox-notice {
+	BORDER-RIGHT: #c0c090 1px solid; BORDER-TOP: #c0c090 1px solid; BORDER-LEFT: #c0c090 1px solid; BORDER-BOTTOM: #c0c090 1px solid
+}
+TABLE.dmbox {
+	CLEAR: both; BORDER-TOP: #ccc 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0.9em 1em; BORDER-BOTTOM: #ccc 1px solid
+}
+TABLE.fmbox {
+	CLEAR: both; BORDER-RIGHT: #aaa 1px solid; BORDER-TOP: #aaa 1px solid; BACKGROUND: #f9f9f9; MARGIN: 0.2em 0px; BORDER-LEFT: #aaa 1px solid; WIDTH: 100%; BORDER-BOTTOM: #aaa 1px solid
+}
+TABLE.fmbox-system {
+	BACKGROUND: #f9f9f9
+}
+TABLE.fmbox-warning {
+	BORDER-RIGHT: #bb7070 1px solid; BORDER-TOP: #bb7070 1px solid; BACKGROUND: #ffdbdb; BORDER-LEFT: #bb7070 1px solid; BORDER-BOTTOM: #bb7070 1px solid
+}
+TABLE.fmbox-editnotice {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+DIV.mw-warning-with-logexcerpt {
+	CLEAR: both; BORDER-RIGHT: #bb7070 1px solid; PADDING-RIGHT: 0.9em; BORDER-TOP: #bb7070 1px solid; PADDING-LEFT: 0.9em; BACKGROUND: #ffdbdb; PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; BORDER-LEFT: #bb7070 1px solid; PADDING-TOP: 0.25em; BORDER-BOTTOM: #bb7070 1px solid
+}
+DIV.mw-lag-warn-high {
+	CLEAR: both; BORDER-RIGHT: #bb7070 1px solid; PADDING-RIGHT: 0.9em; BORDER-TOP: #bb7070 1px solid; PADDING-LEFT: 0.9em; BACKGROUND: #ffdbdb; PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; BORDER-LEFT: #bb7070 1px solid; PADDING-TOP: 0.25em; BORDER-BOTTOM: #bb7070 1px solid
+}
+DIV.mw-cascadeprotectedwarning {
+	CLEAR: both; BORDER-RIGHT: #bb7070 1px solid; PADDING-RIGHT: 0.9em; BORDER-TOP: #bb7070 1px solid; PADDING-LEFT: 0.9em; BACKGROUND: #ffdbdb; PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; BORDER-LEFT: #bb7070 1px solid; PADDING-TOP: 0.25em; BORDER-BOTTOM: #bb7070 1px solid
+}
+DIV#mw-protect-cascadeon {
+	CLEAR: both; BORDER-RIGHT: #bb7070 1px solid; PADDING-RIGHT: 0.9em; BORDER-TOP: #bb7070 1px solid; PADDING-LEFT: 0.9em; BACKGROUND: #ffdbdb; PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; BORDER-LEFT: #bb7070 1px solid; PADDING-TOP: 0.25em; BORDER-BOTTOM: #bb7070 1px solid
+}
+DIV.mw-lag-warn-normal {
+	CLEAR: both; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.9em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.9em; BACKGROUND: #f9f9f9; PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0.25em; BORDER-BOTTOM: #aaa 1px solid
+}
+DIV.fmbox-system {
+	CLEAR: both; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 0.9em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 0.9em; BACKGROUND: #f9f9f9; PADDING-BOTTOM: 0.25em; MARGIN: 0.2em 0px; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 0.25em; BORDER-BOTTOM: #aaa 1px solid
+}
+BODY.mediawiki TABLE.mbox-small {
+	CLEAR: right; FONT-SIZE: 88%; FLOAT: right; MARGIN: 4px 0px 4px 1em; WIDTH: 238px; LINE-HEIGHT: 1.25em
+}
+BODY.mediawiki TABLE.mbox-small-left {
+	FONT-SIZE: 88%; MARGIN: 4px 1em 4px 0px; WIDTH: 238px; LINE-HEIGHT: 1.25em; BORDER-COLLAPSE: collapse
+}
+DIV.noarticletext {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.IPA {
+	FONT-FAMILY: "Charis SIL", "Doulos SIL", Gentium, GentiumAlt,
+                 "DejaVu Sans", Code2000, "TITUS Cyberbit Basic",
+                 "Arial Unicode MS", "Lucida Sans Unicode",
+                 "Chrysanthi Unicode"
+}
+.Unicode {
+	FONT-FAMILY: Code2000, Code2001, "Free Serif", "TITUS Cyberbit Basic",
+                 "Doulos SIL", "Chrysanthi Unicode", "Bitstream Cyberbit",
+                 "Bitstream CyberBase", Thryomanes, Gentium, GentiumAlt,
+                 "Lucida Grande", "Free Sans", "Arial Unicode MS",
+                 "Microsoft Sans Serif", "Lucida Sans Unicode"
+}
+.polytonic {
+	FONT-FAMILY: "Athena Unicode", Gentium, "Palatino Linotype",
+                 "Arial Unicode MS", "Lucida Sans Unicode",
+                 "Lucida Grande", Code2000
+}
+#wpSave {
+	FONT-WEIGHT: bold
+}
+.hiddenStructure {
+	DISPLAY: inline! important; COLOR: #f00; BACKGROUND-COLOR: #0f0
+}
+.check-icon A.new {
+	DISPLAY: none; speak: none
+}
+.nounderlines A {
+	TEXT-DECORATION: none
+}
+.IPA A:link {
+	TEXT-DECORATION: none
+}
+.IPA A:visited {
+	TEXT-DECORATION: none
+}
+DIV.NavFrame {
+	BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 4px; FONT-SIZE: 95%; PADDING-BOTTOM: 4px; MARGIN: 0px; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #aaa 1px solid; BORDER-COLLAPSE: collapse; TEXT-ALIGN: center
+}
+UNKNOWN {
+	
+}
+DIV.NavPic {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 0px; PADDING-TOP: 2px; BACKGROUND-COLOR: #fff
+}
+DIV.NavFrame DIV.NavHead {
+	FONT-WEIGHT: bold; POSITION: relative; HEIGHT: 1.6em; BACKGROUND-COLOR: #ccf
+}
+DIV.NavFrame P {
+	FONT-SIZE: 100%
+}
+DIV.NavFrame DIV.NavContent {
+	FONT-SIZE: 100%
+}
+DIV.NavFrame DIV.NavContent P {
+	FONT-SIZE: 100%
+}
+DIV.NavEnd {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; LINE-HEIGHT: 1px; PADDING-TOP: 0px
+}
+A.NavToggle {
+	FONT-WEIGHT: normal; FONT-SIZE: 90%; RIGHT: 3px; POSITION: absolute; TOP: 0px
+}
+.rellink {
+	PADDING-LEFT: 2em; MARGIN-BOTTOM: 0.5em; FONT-STYLE: italic
+}
+.dablink {
+	PADDING-LEFT: 2em; MARGIN-BOTTOM: 0.5em; FONT-STYLE: italic
+}
+.rellink I {
+	FONT-STYLE: normal
+}
+.dablink I {
+	FONT-STYLE: normal
+}
+.horizontal UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.horizontal LI {
+	BORDER-RIGHT: 1px solid; PADDING-RIGHT: 0.6em; DISPLAY: inline; PADDING-LEFT: 0.4em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.horizontal LI:unknown {
+	PADDING-RIGHT: 0px; BORDER-RIGHT-STYLE: none
+}
+.listify TD {
+	DISPLAY: list-item
+}
+.listify TR {
+	DISPLAY: block
+}
+.listify TABLE {
+	DISPLAY: block
+}
+.geo-default {
+	DISPLAY: inline
+}
+.geo-dms {
+	DISPLAY: inline
+}
+.geo-dec {
+	DISPLAY: inline
+}
+.geo-nondefault {
+	DISPLAY: none
+}
+.geo-multi-punct {
+	DISPLAY: none
+}
+.longitude {
+	WHITE-SPACE: nowrap
+}
+.latitude {
+	WHITE-SPACE: nowrap
+}
+.nonumtoc .tocnumber {
+	DISPLAY: none
+}
+.nonumtoc #toc UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.3em 0px 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.nonumtoc .toc UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.3em 0px 0px; LINE-HEIGHT: 1.5em; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+.nonumtoc #toc UL UL {
+	MARGIN: 0px 0px 0px 2em
+}
+.nonumtoc .toc UL UL {
+	MARGIN: 0px 0px 0px 2em
+}
+.toclimit-2 .toclevel-2 {
+	DISPLAY: none
+}
+.toclimit-3 .toclevel-3 {
+	DISPLAY: none
+}
+.toclimit-4 .toclevel-4 {
+	DISPLAY: none
+}
+.toclimit-5 .toclevel-5 {
+	DISPLAY: none
+}
+.toclimit-6 .toclevel-6 {
+	DISPLAY: none
+}
+.toclimit-7 .toclevel-7 {
+	DISPLAY: none
+}
+BLOCKQUOTE.templatequote {
+	MARGIN-TOP: 0px
+}
+BLOCKQUOTE.templatequote DIV.templatequotecite {
+	MARGIN-TOP: 0px; PADDING-LEFT: 2em; LINE-HEIGHT: 1em; TEXT-ALIGN: left
+}
+BLOCKQUOTE.templatequote DIV.templatequotecite CITE {
+	FONT-SIZE: 85%
+}
+DIV.user-block {
+	BORDER-RIGHT: #a9a9a9 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #a9a9a9 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #a9a9a9 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #a9a9a9 1px solid; BACKGROUND-COLOR: #ffefd5
+}
+.nowraplinks A {
+	WHITE-SPACE: nowrap
+}
+.nowraplinks .selflink {
+	WHITE-SPACE: nowrap
+}
+SPAN.texhtml {
+	WHITE-SPACE: nowrap
+}
+SUP.reference A {
+	WHITE-SPACE: nowrap
+}
+.template-documentation {
+	CLEAR: both; BORDER-RIGHT: #aaa 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #aaa 1px solid; PADDING-LEFT: 1em; PADDING-BOTTOM: 1em; MARGIN: 1em 0px 0px; BORDER-LEFT: #aaa 1px solid; PADDING-TOP: 1em; BORDER-BOTTOM: #aaa 1px solid; BACKGROUND-COLOR: #ecfcf4
+}
+.thumbinner {
+	min-width: 100px
+}
+.imagemap-inline DIV {
+	DISPLAY: inline
+}
+#wpUploadDescription {
+	HEIGHT: 13em
+}
+SUP {
+	LINE-HEIGHT: 1em
+}
+SUB {
+	LINE-HEIGHT: 1em
+}
+DIV.thumb {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.tright {
+	MARGIN: 0.5em 0px 0.8em 1.4em; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.tleft {
+	MARGIN: 0.5em 1.4em 0.8em 0px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.thumb IMG.thumbimage {
+	BACKGROUND-COLOR: #fff
+}
+#content .gallerybox DIV.thumb {
+	BACKGROUND-COLOR: #f9f9f9
+}
+.gallerybox .thumb IMG {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png) white
+}
+#file IMG {
+	BACKGROUND: url(http://upload.wikimedia.org/wikipedia/commons/5/5d/Checker-16x16.png) white
+}
+.ns-0 .gallerybox .thumb IMG {
+	BACKGROUND: white
+}
+.ns-2 .gallerybox .thumb IMG {
+	BACKGROUND: white
+}
+.ns-100 .gallerybox .thumb IMG {
+	BACKGROUND: white
+}
+.nochecker .gallerybox .thumb IMG {
+	BACKGROUND: white
+}
+#mw-subcategories {
+	CLEAR: both
+}
+#mw-pages {
+	CLEAR: both
+}
+#mw-category-media {
+	CLEAR: both
+}
+#filehistory {
+	CLEAR: both
+}
+#wikiPreview {
+	CLEAR: both
+}
+#wikiDiff {
+	CLEAR: both
+}
+.wpb .wpb-header {
+	DISPLAY: none
+}
+.wpbs-inner .wpb .wpb-header {
+	DISPLAY: block
+}
+.wpbs-inner .wpb .wpb-header {
+	
+}
+.wpbs-inner .wpb-outside {
+	DISPLAY: none
+}
+.mw-tag-markers {
+	FONT-SIZE: 90%; FONT-STYLE: italic; FONT-FAMILY: sans-serif
+}
+TT {
+	FONT-FAMILY: monospace, sans-serif
+}
+CODE {
+	FONT-FAMILY: monospace, sans-serif
+}
+PRE {
+	FONT-FAMILY: monospace, sans-serif
+}
+UNKNOWN {
+	LIST-STYLE-TYPE: none
+}
+UL.permissions-errors {
+	MARGIN: 0px
+}

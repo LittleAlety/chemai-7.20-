@@ -1,0 +1,264 @@
+#ygma {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; FONT: small/1.231 verdana,sans-serif; COLOR: #000; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#ygmaheader {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#ygmatop {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; PADDING-LEFT: 0px; FONT-SIZE: 77%; PADDING-BOTTOM: 5px; MARGIN: 0px; BORDER-LEFT: 0px; WIDTH: 100%; PADDING-TOP: 5px; BORDER-BOTTOM: 0px; TEXT-ALIGN: left
+}
+UL#ygmanav {
+	LIST-STYLE: none none outside; DISPLAY: inline; PADDING-LEFT: 1px; FLOAT: left; MARGIN: 0px; WIDTH: 37%
+}
+#ygma #ygmapromo {
+	FLOAT: left; WIDTH: 20%; TEXT-ALIGN: center
+}
+#ygmatop A:link {
+	TEXT-DECORATION: none
+}
+#ygmatop A:visited {
+	TEXT-DECORATION: none
+}
+#ygmatop A:active {
+	TEXT-DECORATION: none
+}
+#ygmatop A:hover {
+	TEXT-DECORATION: underline
+}
+#ygmatop #ygmahelp {
+	DISPLAY: inline; PADDING-LEFT: 0.8em; RIGHT: auto; FLOAT: left; MARGIN: 0px 0.6em 0px 0px; POSITION: static
+}
+#ygmatop .lst {
+	PADDING-RIGHT: 1em; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.45em 0px 0px; PADDING-TOP: 0px; WHITE-SPACE: nowrap; TEXT-DECORATION: none
+}
+#ygmatop UL.menu {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 9999; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; WHITE-SPACE: nowrap; LIST-STYLE-TYPE: none; POSITION: absolute
+}
+#ygmatop UL.menu LI {
+	PADDING-RIGHT: 0.7em; PADDING-LEFT: 0.7em; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.3em
+}
+#ygmatop UL.menu LI A {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#ygmatop UL.menu LI.last-child {
+	MARGIN-TOP: -1px; FLOAT: left; MARGIN-BOTTOM: -1px; POSITION: relative
+}
+ HTML #ygma #ygmasrchfrm {
+	FLOAT: left; POSITION: relative
+}
+#ygmatop UL.menu LI.last-child A {
+	MARGIN-LEFT: -1px
+}
+#ygmatop DIV#ygmauserinfo {
+	PADDING-RIGHT: 0.2em; FLOAT: right; MARGIN: 0px
+}
+#ygmauseroptions LI {
+	PADDING-BOTTOM: 0.5em; WHITE-SPACE: nowrap
+}
+UL#ygmauseroptions A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#ygmabot {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.7em; OVERFLOW: hidden; WIDTH: 100%; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#ygmalogo {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.85em; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0.9em; POSITION: relative
+}
+#ygmalogo IMG {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#ygma .srch {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 10px 10px 0px 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#ygma FORM {
+	PADDING-RIGHT: 0.3em; DISPLAY: block; PADDING-LEFT: 0.4em; FONT-SIZE: 100%; PADDING-BOTTOM: 0.3em; MARGIN: 0px -1px; PADDING-TOP: 0.3em; TEXT-ALIGN: left
+}
+#ygmasrchfrm DIV.fieldset {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 4px; BORDER-TOP: 0px; DISPLAY: block; PADDING-LEFT: 0.3em; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 0px; OVERFLOW: hidden; BORDER-LEFT: 0px; COLOR: #000; PADDING-TOP: 3px; BORDER-BOTTOM: 0px; BACKGROUND-COLOR: #fff
+}
+#ygmasrchfrm .fieldset LABEL {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 1.8em; FONT-SIZE: 77%; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.6em; PADDING-TOP: 0.1em
+}
+#ygmasrchfrm {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#ygma .ygmasrchimg {
+	PADDING-RIGHT: 1.3em; PADDING-LEFT: 0.3em; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 18px; PADDING-TOP: 0px; HEIGHT: 15px
+}
+#ygmasrchbtn {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 1em; BORDER-TOP: medium none; DISPLAY: inline-block; PADDING-LEFT: 1em; FONT-WEIGHT: bold; FONT-SIZE: 0.76em; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: visible; TEXT-TRANSFORM: uppercase; BORDER-LEFT: medium none; CURSOR: pointer; LINE-HEIGHT: 1; PADDING-TOP: 1px; BORDER-BOTTOM: medium none; FONT-FAMILY: verdana,sans-serif; BACKGROUND-COLOR: transparent
+}
+#ygmasrchquery {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 78%; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 0px; VERTICAL-ALIGN: middle; WIDTH: 20.6em; PADDING-TOP: 0px; FONT-FAMILY: verdana,sans-serif
+}
+#ygma .btn {
+	BORDER-RIGHT: #f4ac33 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #f4ac33 1px solid; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 3px; BORDER-LEFT: #f4ac33 0px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #f4ac33 1px solid
+}
+#ygma .btn .first-child {
+	BORDER-RIGHT: #f4ac33 1px solid; BORDER-TOP: #f4ac33 0px solid; DISPLAY: inline-block; LEFT: -1px; MARGIN: 0px -1px; VERTICAL-ALIGN: top; BORDER-LEFT: #f4ac33 1px solid; BORDER-BOTTOM: #f4ac33 0px solid; POSITION: relative
+}
+#ygma .txtdistinct {
+	DISPLAY: block; FONT-WEIGHT: bold
+}
+#ygma .yid {
+	DISPLAY: block; FONT-WEIGHT: bold
+}
+#ygma .offscrn {
+	DISPLAY: block; LEFT: -99999px; POSITION: absolute
+}
+#ygmamyyhp {
+	FONT-WEIGHT: bold; VISIBILITY: visible
+}
+#ygmatoolbar {
+	FONT-WEIGHT: bold; VISIBILITY: visible
+}
+#ygmauserinfo EM {
+	FONT-WEIGHT: bold; FONT-STYLE: normal
+}
+#ygma #ygmausername {
+	COLOR: #666
+}
+#ygma .pseudolink:hover {
+	CURSOR: pointer; TEXT-DECORATION: underline
+}
+#ygma EM UL {
+	FONT-WEIGHT: normal
+}
+#ygma .txtbold UL {
+	FONT-WEIGHT: normal
+}
+#ygma abbr {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px
+}
+#ygma .sprite_bg {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/a/i/us/uh/bt2/sprite_v1.png)
+}
+#ygma .bd {
+	BACKGROUND-POSITION: 0px -793px; WIDTH: 100%; BACKGROUND-REPEAT: repeat-x
+}
+#ygmatop {
+	BACKGROUND-POSITION: 0px -683px; COLOR: #666; BACKGROUND-REPEAT: repeat-x
+}
+#ygmatop A {
+	COLOR: #666
+}
+#ygmanav A {
+	COLOR: #666
+}
+#ygmauserinfo A {
+	COLOR: #666
+}
+#ygma #ygmabot {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#ygma .srch {
+	BACKGROUND-POSITION: 0px -173px; BORDER-TOP: #bdcfd7 1px solid; BORDER-BOTTOM: #bdcfd7 1px solid; BACKGROUND-REPEAT: repeat-x
+}
+#ygma FORM {
+	BORDER-RIGHT: #bdcfd7 1px solid; BORDER-LEFT: #bdcfd7 1px solid
+}
+#ygma .lst {
+	BACKGROUND-POSITION: 100% 4px; BACKGROUND-REPEAT: no-repeat
+}
+#ygma .delim {
+	PADDING-RIGHT: 0.9em; BACKGROUND-POSITION: 100% -53px; DISPLAY: inline; PADDING-LEFT: 0.8em; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BACKGROUND-REPEAT: no-repeat
+}
+#ygmanav LI.last-child {
+	PADDING-RIGHT: 0.9em; DISPLAY: inline; PADDING-LEFT: 0.8em; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#ygmanav LI.last-child UL LI {
+	DISPLAY: block
+}
+#ygmahelp UL LI {
+	DISPLAY: block
+}
+#ygma UL.menu LI {
+	BORDER-RIGHT: #b9b9b9 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#ygma UL.menu {
+	BACKGROUND-POSITION: 0px -383px; COLOR: #000; BACKGROUND-REPEAT: repeat-x
+}
+#ygmatop UL.menu LI.last-child {
+	BORDER-BOTTOM: #b9b9b9 1px solid
+}
+#ygmamyyhp {
+	COLOR: #000
+}
+#ygmatoolbar {
+	COLOR: #000
+}
+#ygma .txtdistinct {
+	COLOR: #000
+}
+#ygma .yid {
+	COLOR: #000
+}
+#ygmasrchfrm DIV.fieldset LABEL {
+	BACKGROUND-POSITION: 0px -110px; BACKGROUND-REPEAT: no-repeat
+}
+#ygma .btn {
+	BACKGROUND-POSITION: 0px -293px; BACKGROUND-REPEAT: repeat-x
+}
+#ygmatop #ygmauseroptions {
+	COLOR: #000
+}
+#ygmatop UL#ygmauseroptions LI {
+	BORDER-RIGHT: #b9b9b9 1px solid; COLOR: #000
+}
+#ygmatop #ygmauseroptions LI.last-child {
+	BORDER-TOP: #d4d4d6 1px dotted; BACKGROUND: #fcfcfc; COLOR: #000; BORDER-BOTTOM: #b9b9b9 1px solid
+}
+#ygmashpd {
+	DISPLAY: block; LEFT: -200px; FONT: x-small verdana,sans-serif; POSITION: relative; TOP: 8px; BACKGROUND-COLOR: #ccc; moz-border-radius: 4px
+}
+#ygmashpd {
+	Z-INDEX: 9998; BACKGROUND: #ccc; POSITION: absolute
+}
+#ygma #ygmashpd .bd {
+	BORDER-RIGHT: #4333bc 1px solid; BORDER-TOP: #4333bc 1px solid; Z-INDEX: 9999; BACKGROUND: #fff; LEFT: -2px; BORDER-LEFT: #4333bc 1px solid; WIDTH: 360px; COLOR: #333; BORDER-BOTTOM: #4333bc 1px solid; POSITION: relative; TOP: -2px; moz-border-radius: 4px
+}
+#ygmashpd .myyhpbg {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/a/i/us/uh/bt2/myyhp_sprite_v1.gif)
+}
+#ygmashpd #pnt {
+	BACKGROUND-POSITION: -29px 0px; FONT-SIZE: 0px; LEFT: 70%; WIDTH: 11px; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: -6px; HEIGHT: 6px
+}
+#ygmashpd .ygmashp {
+	BACKGROUND-POSITION: 0px -16px; DISPLAY: block; FONT-SIZE: 0px; LEFT: 10px; WIDTH: 40px; LINE-HEIGHT: 0; BACKGROUND-REPEAT: no-repeat; POSITION: absolute; TOP: 10px; HEIGHT: 37px
+}
+#ygmashpd .ygmashp STRONG {
+	DISPLAY: none
+}
+#ygmashpd OL#ygmahpinstr {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LIST-STYLE-POSITION: outside; PADDING-BOTTOM: 0px; MARGIN: 9px 9px 9px 60px; PADDING-TOP: 0px; LIST-STYLE-TYPE: decimal
+}
+#ygmashpd .hr {
+	BORDER-LEFT-COLOR: #ccc; BORDER-BOTTOM-COLOR: #ccc; MARGIN: 0px 19px 5px; BORDER-TOP-COLOR: #ccc; BORDER-RIGHT-COLOR: #ccc
+}
+#ygmashpd P {
+	MARGIN: 0px 9px 9px; TEXT-ALIGN: center
+}
+#ygmashpd A#ygmashpdclose {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+#ygmashpd A#ygmashpdetails {
+	COLOR: #000; TEXT-DECORATION: underline
+}
+#ygmatop:unknown {
+	CLEAR: right; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: " "
+}
+#ygmatop UL.menu LI.last-child A {
+	ZOOM: 1
+}
+#ygma .hidden {
+	DISPLAY: none
+}
+#ygma .visible {
+	DISPLAY: block
+}
+#ygmaIframeShim {
+	BORDER-RIGHT: 0px; BORDER-TOP: 0px; BORDER-LEFT: 0px; BORDER-BOTTOM: 0px; POSITION: absolute
+}
+BODY {
+	MARGIN: 0px 4px
+}

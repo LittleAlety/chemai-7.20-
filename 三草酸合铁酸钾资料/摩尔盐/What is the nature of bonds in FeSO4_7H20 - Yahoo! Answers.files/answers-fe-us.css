@@ -1,0 +1,4962 @@
+HTML {
+	BACKGROUND: #fff; COLOR: #000
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+OL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+PRE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+CODE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+LEGEND {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+INPUT {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TEXTAREA {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+BLOCKQUOTE {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TH {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+TABLE {
+	BORDER-COLLAPSE: collapse; border-spacing: 0
+}
+FIELDSET {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+ADDRESS {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CAPTION {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CITE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+CODE {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+DFN {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+EM {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+STRONG {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+TH {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+VAR {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+LI {
+	LIST-STYLE-TYPE: none
+}
+CAPTION {
+	TEXT-ALIGN: left
+}
+TH {
+	TEXT-ALIGN: left
+}
+H1 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%
+}
+H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%
+}
+H3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%
+}
+H4 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%
+}
+H5 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%
+}
+H6 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%
+}
+Q:unknown {
+	content: ''
+}
+Q:unknown {
+	content: ''
+}
+abbr {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; FONT-VARIANT: normal
+}
+ACRONYM {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px; FONT-VARIANT: normal
+}
+SUP {
+	VERTICAL-ALIGN: text-top
+}
+SUB {
+	VERTICAL-ALIGN: text-bottom
+}
+INPUT {
+	FONT-FAMILY: inherit
+}
+TEXTAREA {
+	FONT-FAMILY: inherit
+}
+SELECT {
+	FONT-FAMILY: inherit
+}
+INPUT {
+	FONT-SIZE: 100%
+}
+TEXTAREA {
+	FONT-SIZE: 100%
+}
+SELECT {
+	FONT-SIZE: 100%
+}
+LEGEND {
+	COLOR: #000
+}
+BODY {
+	FONT: small/1.231 arial,helvetica,clean,sans-serif
+}
+TABLE {
+	
+}
+PRE {
+	FONT-SIZE: 108%; LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+CODE {
+	FONT-SIZE: 108%; LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+KBD {
+	FONT-SIZE: 108%; LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+SAMP {
+	FONT-SIZE: 108%; LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+TT {
+	FONT-SIZE: 108%; LINE-HEIGHT: 100%; FONT-FAMILY: monospace
+}
+.yui-overlay {
+	Z-INDEX: 2; VISIBILITY: hidden; POSITION: absolute
+}
+.yui-panel-container {
+	Z-INDEX: 2; VISIBILITY: hidden; POSITION: absolute
+}
+.yui-tt {
+	BORDER-RIGHT: #fcc90d 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #fcc90d 1px solid; PADDING-LEFT: 2px; VISIBILITY: hidden; PADDING-BOTTOM: 2px; FONT: 100% sans-serif; BORDER-LEFT: #fcc90d 1px solid; WIDTH: auto; COLOR: #333; PADDING-TOP: 2px; BORDER-BOTTOM: #fcc90d 1px solid; POSITION: absolute; BACKGROUND-COLOR: #fdffb4
+}
+.yui-tt-shadow {
+	DISPLAY: none
+}
+ HTML BODY.masked SELECT {
+	VISIBILITY: hidden
+}
+ HTML DIV.yui-panel-container SELECT {
+	VISIBILITY: inherit
+}
+ HTML DIV.drag SELECT {
+	VISIBILITY: hidden
+}
+ HTML DIV.hide-select SELECT {
+	VISIBILITY: hidden
+}
+.mask {
+	DISPLAY: none; Z-INDEX: 1; FILTER: alpha(opacity=50); LEFT: 0px; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #ccc; moz-opacity: 0.5; opacity: .50
+}
+.hide-scrollbars {
+	OVERFLOW: hidden
+}
+.hide-scrollbars  {
+	OVERFLOW: hidden
+}
+.hide-scrollbars SELECT {
+	DISPLAY: none
+}
+.show-scrollbars {
+	OVERFLOW: auto
+}
+.show-scrollbars {
+	OVERFLOW: visible
+}
+.show-scrollbars .underlay {
+	OVERFLOW: auto
+}
+.yui-panel-container .underlay {
+	RIGHT: 0px; LEFT: 0px; BOTTOM: 0px; POSITION: absolute; TOP: 0px
+}
+.matte {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px; BACKGROUND-COLOR: #fff
+}
+.shadow .underlay {
+	RIGHT: -3px; FILTER: alpha(opacity=12); LEFT: 3px; BOTTOM: -3px; TOP: 3px; BACKGROUND-COLOR: #000; opacity: .12
+}
+.shadow .yui-force-redraw {
+	PADDING-BOTTOM: 1px
+}
+.yui-effect-fade .underlay {
+	DISPLAY: none
+}
+.yui-panel {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; Z-INDEX: 1; LEFT: 0px; VISIBILITY: hidden; FONT: 1em Arial; OVERFLOW: hidden; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; POSITION: relative; TOP: 0px; BORDER-COLLAPSE: separate; BACKGROUND-COLOR: #fff
+}
+.yui-panel .hd {
+	BORDER-RIGHT: #fff 1px solid; PADDING-RIGHT: 4px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 4px; FONT-WEIGHT: bold; FONT-SIZE: 100%; PADDING-BOTTOM: 4px; BORDER-LEFT: #fff 1px solid; COLOR: #fff; LINE-HEIGHT: 100%; PADDING-TOP: 4px; BORDER-BOTTOM: #000 1px solid; WHITE-SPACE: nowrap; BACKGROUND-COLOR: #3d77cb
+}
+.yui-panel .bd {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; OVERFLOW: hidden; PADDING-TOP: 4px
+}
+.yui-panel .bd P {
+	MARGIN: 0px 0px 1em
+}
+.yui-panel .container-close {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 6; RIGHT: 4px; BACKGROUND: url(close12_1.gif) no-repeat; VISIBILITY: inherit; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 12px; CURSOR: pointer; PADDING-TOP: 0px; POSITION: absolute; TOP: 5px; HEIGHT: 12px
+}
+.yui-panel .ft {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 4px; PADDING-BOTTOM: 4px; OVERFLOW: hidden; PADDING-TOP: 4px
+}
+.yui-simple-dialog .bd .yui-icon {
+	FLOAT: left; WIDTH: 16px; MARGIN-RIGHT: 10px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 16px
+}
+.yui-simple-dialog .bd SPAN.blckicon {
+	BACKGROUND: url(blck16_1.gif) no-repeat
+}
+.yui-simple-dialog .bd SPAN.alrticon {
+	BACKGROUND: url(alrt16_1.gif) no-repeat
+}
+.yui-simple-dialog .bd SPAN.hlpicon {
+	BACKGROUND: url(hlp16_1.gif) no-repeat
+}
+.yui-simple-dialog .bd SPAN.infoicon {
+	BACKGROUND: url(info16_1.gif) no-repeat
+}
+.yui-simple-dialog .bd SPAN.warnicon {
+	BACKGROUND: url(warn16_1.gif) no-repeat
+}
+.yui-simple-dialog .bd SPAN.tipicon {
+	BACKGROUND: url(tip16_1.gif) no-repeat
+}
+.yui-dialog .ft {
+	PADDING-RIGHT: 5px; PADDING-BOTTOM: 5px; TEXT-ALIGN: right
+}
+.yui-simple-dialog .ft {
+	PADDING-RIGHT: 5px; PADDING-BOTTOM: 5px; TEXT-ALIGN: right
+}
+.yui-dialog FORM {
+	MARGIN: 0px
+}
+.yui-simple-dialog FORM {
+	MARGIN: 0px
+}
+.button-group BUTTON {
+	BORDER-RIGHT: #797979 2px solid; PADDING-RIGHT: 2px; BORDER-TOP: #fff 2px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; MARGIN: 2px; FONT: 100 76% verdana; VERTICAL-ALIGN: middle; BORDER-LEFT: #fff 2px solid; CURSOR: hand; COLOR: #333; PADDING-TOP: 2px; BORDER-BOTTOM: #797979 2px solid; BACKGROUND-COLOR: #e4e4e4; TEXT-DECORATION: none
+}
+.button-group BUTTON.default {
+	FONT-WEIGHT: bold
+}
+.button-group BUTTON:hover {
+	BORDER-RIGHT: #90a029 2px solid; BORDER-TOP: #fff 2px solid; BORDER-LEFT: #fff 2px solid; BORDER-BOTTOM: #90a029 2px solid; BACKGROUND-COLOR: #ebf09e
+}
+.button-group BUTTON.hover {
+	BORDER-RIGHT: #90a029 2px solid; BORDER-TOP: #fff 2px solid; BORDER-LEFT: #fff 2px solid; BORDER-BOTTOM: #90a029 2px solid; BACKGROUND-COLOR: #ebf09e
+}
+.button-group BUTTON:active {
+	BORDER-RIGHT: #e4e4e4 2px solid; BORDER-TOP: #333 2px solid; BORDER-LEFT: #333 2px solid; BORDER-BOTTOM: #e4e4e4 2px solid; BACKGROUND-COLOR: #bbb
+}
+.yui-calcontainer {
+	BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #7b9ebd 1px solid; PADDING-LEFT: 5px; FLOAT: left; PADDING-BOTTOM: 5px; OVERFLOW: hidden; BORDER-LEFT: #7b9ebd 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #7b9ebd 1px solid; POSITION: relative; BACKGROUND-COLOR: #f7f9fb
+}
+.yui-calcontainer IFRAME {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; BORDER-TOP-STYLE: none; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: absolute; TOP: 0px; HEIGHT: 100%; BORDER-BOTTOM-STYLE: none
+}
+.yui-calcontainer IFRAME.fixedsize {
+	LEFT: -1px; WIDTH: 50em; TOP: -1px; HEIGHT: 50em
+}
+.multi {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.multi .groupcal {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; Z-INDEX: 1; FLOAT: left; PADDING-BOTTOM: 5px; BORDER-TOP-STYLE: none; PADDING-TOP: 5px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: relative; BACKGROUND-COLOR: transparent; BORDER-BOTTOM-STYLE: none
+}
+.yui-calcontainer .title {
+	Z-INDEX: 1; LEFT: 5px; MARGIN-BOTTOM: 5px; FONT: bold 100% sans-serif; COLOR: #000; POSITION: absolute; TOP: 3px; HEIGHT: 25px
+}
+.yui-calcontainer .close-icon {
+	Z-INDEX: 1; RIGHT: 3px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: absolute; TOP: 3px; BORDER-BOTTOM-STYLE: none
+}
+.yui-calcontainer .calclose {
+	BACKGROUND: url(calx.gif) no-repeat; WIDTH: 17px; CURSOR: pointer; HEIGHT: 13px
+}
+.yui-calendar {
+	FONT: 100% sans-serif; POSITION: relative; BORDER-COLLAPSE: separate; TEXT-ALIGN: center; border-spacing: 0
+}
+.withtitle {
+	PADDING-TOP: 1.5em
+}
+.yui-calendar .calnavleft {
+	Z-INDEX: 1; BACKGROUND: url(callt.gif) no-repeat; LEFT: 2px; WIDTH: 9px; CURSOR: pointer; BOTTOM: 0px; POSITION: absolute; TOP: 2px; HEIGHT: 12px
+}
+.yui-calendar .calnavright {
+	Z-INDEX: 1; RIGHT: 2px; BACKGROUND: url(calrt.gif) no-repeat; WIDTH: 9px; CURSOR: pointer; BOTTOM: 0px; POSITION: absolute; TOP: 2px; HEIGHT: 12px
+}
+.yui-calendar TD.calcell {
+	BORDER-RIGHT: #e0e0e0 1px solid; PADDING-RIGHT: 0.2em; BORDER-TOP: #e0e0e0 1px solid; PADDING-LEFT: 0.2em; PADDING-BOTTOM: 0.1em; BORDER-LEFT: #e0e0e0 1px solid; PADDING-TOP: 0.1em; BORDER-BOTTOM: #e0e0e0 1px solid; TEXT-ALIGN: center
+}
+.yui-calendar TD.calcell A {
+	COLOR: #003db8; TEXT-DECORATION: none
+}
+.yui-calendar TD.today {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid
+}
+.yui-calendar TD.oom {
+	BORDER-RIGHT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px solid; BORDER-LEFT: #e0e0e0 1px solid; CURSOR: default; COLOR: #999; BORDER-BOTTOM: #e0e0e0 1px solid; BACKGROUND-COLOR: #eee
+}
+.yui-calendar TD.selected {
+	BORDER-RIGHT: #f90 1px solid; BORDER-TOP: #f90 1px solid; BORDER-LEFT: #f90 1px solid; COLOR: #003db8; BORDER-BOTTOM: #f90 1px solid; BACKGROUND-COLOR: #fff19f
+}
+.yui-calendar TD.calcellhover {
+	BORDER-RIGHT: #f90 1px solid; BORDER-TOP: #f90 1px solid; BORDER-LEFT: #f90 1px solid; CURSOR: pointer; COLOR: #fff; BORDER-BOTTOM: #f90 1px solid; BACKGROUND-COLOR: #f90
+}
+.yui-calendar TD.calcellhover A {
+	COLOR: #fff
+}
+.yui-calendar TD.restricted {
+	TEXT-DECORATION: line-through
+}
+.yui-calendar TD.previous {
+	COLOR: #ccc
+}
+.yui-calendar TD.highlight1 {
+	BACKGROUND-COLOR: #cf9
+}
+.yui-calendar TD.highlight2 {
+	BACKGROUND-COLOR: #9cf
+}
+.yui-calendar TD.highlight3 {
+	BACKGROUND-COLOR: #fcc
+}
+.yui-calendar TD.highlight4 {
+	BACKGROUND-COLOR: #cf9
+}
+.yui-calendar .calhead {
+	BORDER-RIGHT: #e0e0e0 1px solid; BORDER-TOP: #e0e0e0 1px solid; VERTICAL-ALIGN: middle; BORDER-LEFT: #e0e0e0 1px solid; BORDER-BOTTOM: #e0e0e0 1px solid; BACKGROUND-COLOR: #fff
+}
+.yui-calendar .calheader {
+	WIDTH: 100%; POSITION: relative; TEXT-ALIGN: center
+}
+.yui-calendar .calheader IMG {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+.yui-calendar .calweekdaycell {
+	FONT-WEIGHT: normal; WIDTH: 1.5em; COLOR: #666; TEXT-ALIGN: center
+}
+.yui-calendar .calfoot {
+	BACKGROUND-COLOR: #eee
+}
+.yui-calendar .calrowhead {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; WIDTH: 15px; COLOR: #666; FONT-STYLE: italic
+}
+.yui-calendar .calrowfoot {
+	FONT-WEIGHT: normal; FONT-SIZE: 9px; WIDTH: 15px; COLOR: #666; FONT-STYLE: italic
+}
+.yui-calendar .calrowhead {
+	BORDER-RIGHT-WIDTH: 2px
+}
+.yui-calendar A.calnav {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; COLOR: #000; POSITION: relative; TEXT-DECORATION: none
+}
+.yui-calendar A.calnav:hover {
+	BORDER-RIGHT: #036 1px solid; BORDER-TOP: #036 1px solid; BACKGROUND: url(calgrad.png) repeat-x; BORDER-LEFT: #036 1px solid; CURSOR: pointer; COLOR: #fff; BORDER-BOTTOM: #036 1px solid
+}
+.yui-calcontainer .yui-cal-nav-mask {
+	PADDING-RIGHT: 0px; DISPLAY: none; PADDING-LEFT: 0px; Z-INDEX: 2; FILTER: alpha(opacity=25); LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 0px; PADDING-TOP: 0px; POSITION: absolute; TOP: 0px; HEIGHT: 0px; BACKGROUND-COLOR: #000; opacity: 0.25
+}
+.yui-calcontainer .yui-cal-nav {
+	BORDER-RIGHT: #7b9ebd 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #7b9ebd 1px solid; DISPLAY: none; PADDING-LEFT: 0px; FONT-SIZE: 93%; Z-INDEX: 3; LEFT: 50%; PADDING-BOTTOM: 0px; MARGIN-LEFT: -6em; BORDER-LEFT: #7b9ebd 1px solid; WIDTH: 12em; PADDING-TOP: 0px; BORDER-BOTTOM: #7b9ebd 1px solid; POSITION: absolute; TOP: 1.5em; BACKGROUND-COLOR: #f7f9fb
+}
+.withtitle .yui-cal-nav {
+	TOP: 3.5em
+}
+.yui-calcontainer .yui-cal-nav-y {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.yui-calcontainer .yui-cal-nav-m {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.yui-calcontainer .yui-cal-nav-b {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.yui-calcontainer .yui-cal-nav-b {
+	TEXT-ALIGN: center
+}
+.yui-calcontainer .yui-cal-nav-e {
+	PADDING-RIGHT: 2px; BORDER-TOP: black 1px solid; MARGIN-TOP: 2px; DISPLAY: none; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; BACKGROUND-COLOR: #edf5ff
+}
+.yui-calcontainer .yui-cal-nav LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold
+}
+.yui-calcontainer .yui-cal-nav-mc {
+	WIDTH: auto
+}
+.yui-calcontainer .yui-cal-nav-y INPUT.yui-invalid {
+	BORDER-RIGHT: #000 1px solid; BORDER-TOP: #000 1px solid; BORDER-LEFT: #000 1px solid; BORDER-BOTTOM: #000 1px solid; BACKGROUND-COLOR: #ffee69
+}
+.yui-calcontainer .yui-cal-nav-yc {
+	WIDTH: 3em
+}
+.yui-calcontainer .yui-cal-nav-b BUTTON {
+	BORDER-RIGHT: #036 1px solid; BORDER-TOP: #fff 1px solid; FONT-SIZE: 93%; MARGIN: 1px; BORDER-LEFT: #fff 1px solid; CURSOR: pointer; BORDER-BOTTOM: #036 1px solid; BACKGROUND-COLOR: #79b2ea; TEXT-DECORATION: none
+}
+.yui-calendar .calbody A:hover {
+	
+}
+P#clear {
+	CLEAR: left; PADDING-TOP: 10px
+}
+HTML {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/main-bg.gif) #fff
+}
+BODY {
+	BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #333
+}
+TEXTAREA {
+	FONT-FAMILY: arial,sans-serif
+}
+H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 161.6%; MARGIN: 0.7em 0px; COLOR: #666
+}
+H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 123.1%; MARGIN-BOTTOM: 0.5em; COLOR: #666
+}
+P {
+	MARGIN-BOTTOM: 1.07em
+}
+A {
+	COLOR: #069; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+#yan {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 0px solid; BACKGROUND: #fff; MARGIN: 0px auto 1em; BORDER-LEFT: #ccc 1px solid; WIDTH: 750px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-wrap {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; ZOOM: 1
+}
+.no-breadcrumb #yan-wrap {
+	MARGIN-TOP: 0.5em
+}
+#yan-wrap:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.c-std #yan-content {
+	FLOAT: left; WIDTH: 471px
+}
+.c-std #yan-related {
+	FLOAT: right; WIDTH: 243px
+}
+.reversed #yan-content {
+	FLOAT: right
+}
+.reversed #yan-related {
+	FLOAT: left
+}
+#yan-content {
+	ZOOM: 1; POSITION: relative
+}
+#yan-related {
+	ZOOM: 1; POSITION: relative
+}
+.yan-content {
+	ZOOM: 1; POSITION: relative
+}
+.yan-related {
+	ZOOM: 1; POSITION: relative
+}
+#yan-content:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+#yan-related:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.yan-content:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.yan-related:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.yan-content {
+	FLOAT: left; WIDTH: 471px
+}
+.full-width .yan-content {
+	FLOAT: left; WIDTH: 631px
+}
+.yan-related {
+	FLOAT: right; WIDTH: 243px
+}
+#yan-breadcrumbs {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1
+}
+.c-std #yan-breadcrumbs {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-breadcrumbs LI {
+	DISPLAY: inline; FONT-SIZE: 93%; MARGIN: 0px; COLOR: #666; LINE-HEIGHT: 2.5; LIST-STYLE-TYPE: none
+}
+#yan-related .mod {
+	PADDING-RIGHT: 12px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 12px; FONT-SIZE: 93%; PADDING-BOTTOM: 1em; MARGIN: 0px 0px 1em; PADDING-TOP: 0px; BACKGROUND-COLOR: #f0f8e6
+}
+.yan-related .mod {
+	PADDING-RIGHT: 12px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 12px; FONT-SIZE: 93%; PADDING-BOTTOM: 1em; MARGIN: 0px 0px 1em; PADDING-TOP: 0px; BACKGROUND-COLOR: #f0f8e6
+}
+#yan-related .mod H2 {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 123.1%; MARGIN: 0.7em 0px; COLOR: #666
+}
+.yan-related .mod H2 {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 123.1%; MARGIN: 0.7em 0px; COLOR: #666
+}
+#yan-related .mod H3 #yan-filter LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 123.1%; MARGIN: 0.7em 0px; COLOR: #666
+}
+#yan-relatedlinks H3 {
+	MARGIN-TOP: 1em; FONT-WEIGHT: bold
+}
+.mod#yan-syndication {
+	OVERFLOW: hidden; PADDING-TOP: 1em; ZOOM: 1
+}
+#yan-syndication LI {
+	MARGIN: 0.3em 0px; LINE-HEIGHT: 1
+}
+#yan-syndication A {
+	PADDING-LEFT: 16px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/syndication2.gif) no-repeat; LINE-HEIGHT: 1
+}
+#yan-syndication .myweb A {
+	BACKGROUND-POSITION: -300px 50%
+}
+#yan-syndication .myyahoo A {
+	BACKGROUND-POSITION: -600px 50%
+}
+#yan-syndication .rss A {
+	BACKGROUND-POSITION: -900px 50%
+}
+#yan-syndication .delicious A {
+	BACKGROUND-POSITION: 0px 50%
+}
+#yan-syndication .myyahoo {
+	BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 10px; FLOAT: left; MARGIN-RIGHT: 10px
+}
+#yan-syndication .rss {
+	FLOAT: left
+}
+#yan-persistent-links UL {
+	MARGIN: 0px 0px 0.5em
+}
+#yan-persistent-links UL LI {
+	MARGIN: 0px 0px 0.5em
+}
+#yan-persistent-links UL LI A {
+	PADDING-LEFT: 16px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/bullets.gif) no-repeat -903px 0px
+}
+#yan-persistent-links UL.syndication-links LI A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/syndication2.gif) no-repeat
+}
+#yan-persistent-links UL.syndication-links .myweb A {
+	BACKGROUND-POSITION: -300px 50%
+}
+#yan-persistent-links UL.syndication-links .myyahoo A {
+	BACKGROUND-POSITION: -600px 50%
+}
+#yan-persistent-links UL.syndication-links .rss A {
+	BACKGROUND-POSITION: -900px 50%
+}
+#yan-persistent-links UL.syndication-links .delicious A {
+	BACKGROUND-POSITION: 0px 50%
+}
+#yan-filter H2 {
+	LEFT: -9999px; POSITION: absolute
+}
+.button-group BUTTON {
+	FONT-SIZE: 85%
+}
+.button-group:hover BUTTON {
+	FONT-SIZE: 85%
+}
+.button-group:active BUTTON {
+	FONT-SIZE: 85%
+}
+.button-group BUTTON {
+	BORDER-RIGHT: #a6a6a6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a6a6a6 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/button-gray.gif) #e5e5e5 no-repeat; PADDING-BOTTOM: 1px; BORDER-LEFT: #a6a6a6 1px solid; CURSOR: pointer; COLOR: #404040; PADDING-TOP: 1px; BORDER-BOTTOM: #a6a6a6 1px solid
+}
+.button-group:hover BUTTON {
+	BORDER-RIGHT: #a6a6a6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a6a6a6 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/button-gray.gif) #e5e5e5 no-repeat; PADDING-BOTTOM: 1px; BORDER-LEFT: #a6a6a6 1px solid; CURSOR: pointer; COLOR: #404040; PADDING-TOP: 1px; BORDER-BOTTOM: #a6a6a6 1px solid
+}
+.button-group:active BUTTON {
+	BORDER-RIGHT: #a6a6a6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a6a6a6 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/button-gray.gif) #e5e5e5 no-repeat; PADDING-BOTTOM: 1px; BORDER-LEFT: #a6a6a6 1px solid; CURSOR: pointer; COLOR: #404040; PADDING-TOP: 1px; BORDER-BOTTOM: #a6a6a6 1px solid
+}
+INPUT.alt-button {
+	BORDER-RIGHT: #a6a6a6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a6a6a6 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/button-gray.gif) #e5e5e5 no-repeat; PADDING-BOTTOM: 1px; BORDER-LEFT: #a6a6a6 1px solid; CURSOR: pointer; COLOR: #404040; PADDING-TOP: 1px; BORDER-BOTTOM: #a6a6a6 1px solid
+}
+A.alt-button {
+	BORDER-RIGHT: #a6a6a6 1px solid; PADDING-RIGHT: 2px; BORDER-TOP: #a6a6a6 1px solid; PADDING-LEFT: 2px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/button-gray.gif) #e5e5e5 no-repeat; PADDING-BOTTOM: 1px; BORDER-LEFT: #a6a6a6 1px solid; CURSOR: pointer; COLOR: #404040; PADDING-TOP: 1px; BORDER-BOTTOM: #a6a6a6 1px solid
+}
+.button-group BUTTON.default {
+	BORDER-RIGHT: #1e5fc7 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #1e5fc7 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/button-blue.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #1e5fc7 1px solid; CURSOR: pointer; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #1e5fc7 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #4384f0
+}
+.button-group .default:hover {
+	BORDER-RIGHT: #1e5fc7 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #1e5fc7 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/button-blue.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #1e5fc7 1px solid; CURSOR: pointer; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #1e5fc7 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #4384f0
+}
+.button-group .default:active {
+	BORDER-RIGHT: #1e5fc7 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #1e5fc7 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/button-blue.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #1e5fc7 1px solid; CURSOR: pointer; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #1e5fc7 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #4384f0
+}
+INPUT.button {
+	BORDER-RIGHT: #1e5fc7 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #1e5fc7 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/button-blue.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #1e5fc7 1px solid; CURSOR: pointer; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #1e5fc7 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #4384f0
+}
+A.button {
+	BORDER-RIGHT: #1e5fc7 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #1e5fc7 1px solid; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/button-blue.gif); PADDING-BOTTOM: 1px; BORDER-LEFT: #1e5fc7 1px solid; CURSOR: pointer; COLOR: #fff; PADDING-TOP: 1px; BORDER-BOTTOM: #1e5fc7 1px solid; BACKGROUND-REPEAT: no-repeat; BACKGROUND-COLOR: #4384f0
+}
+A.button {
+	PADDING-RIGHT: 10px; DISPLAY: inline-block; PADDING-LEFT: 10px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+A.alt-button {
+	PADDING-RIGHT: 10px; DISPLAY: inline-block; PADDING-LEFT: 10px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+#yan-content .pagination {
+	FONT-SIZE: 85%; MARGIN: 1.82em 0px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-content .pagination H3 {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-content .pagination UL {
+	FLOAT: left
+}
+#yan-content .pagination LI {
+	FONT-WEIGHT: bold; FLOAT: left; MARGIN-RIGHT: 4px
+}
+#yan-content .pagination A {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 6px; FONT-WEIGHT: normal; FLOAT: left; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid; TEXT-DECORATION: none
+}
+#yan-content .pagination SPAN {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 6px; FONT-WEIGHT: normal; FLOAT: left; PADDING-BOTTOM: 3px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid; TEXT-DECORATION: none
+}
+#yan-content .pagination SPAN.more {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 4px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-content .pagination A:hover {
+	BORDER-LEFT-COLOR: #333; BACKGROUND: #069; BORDER-BOTTOM-COLOR: #333; COLOR: #fff; BORDER-TOP-COLOR: #333; BORDER-RIGHT-COLOR: #333
+}
+#yan-content .pagination .current SPAN {
+	FONT-WEIGHT: bold; BACKGROUND: #f3f3f3; COLOR: #333
+}
+#yan-content .pagination P {
+	PADDING-RIGHT: 7px; PADDING-LEFT: 7px; FLOAT: left; PADDING-BOTTOM: 4px; MARGIN: 0px; COLOR: #666; PADDING-TOP: 4px
+}
+.cta {
+	PADDING-BOTTOM: 3px; OVERFLOW: hidden; ZOOM: 1
+}
+.cta BUTTON {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: #39c; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px; FONT: 100% Arial,helvetica,sans-serif; OVERFLOW: visible; CURSOR: pointer; PADDING-TOP: 0px; WHITE-SPACE: nowrap; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+.cta A {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: #39c; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 5px; FONT: 100% Arial,helvetica,sans-serif; OVERFLOW: visible; CURSOR: pointer; PADDING-TOP: 0px; WHITE-SPACE: nowrap; BORDER-RIGHT-WIDTH: 0px; TEXT-DECORATION: none
+}
+.cta A:hover {
+	ZOOM: 1
+}
+.cta BUTTON {
+	MARGIN-TOP: 3px
+}
+HTML:unknown .cta BUTTON {
+	FLOAT: none
+}
+.cta BUTTON:hover {
+	BACKGROUND: #c5e490; TEXT-DECORATION: none
+}
+.cta A:hover {
+	BACKGROUND: #c5e490; TEXT-DECORATION: none
+}
+UNKNOWN {
+	MARGIN-TOP: 4px; MARGIN-LEFT: 2px
+}
+UNKNOWN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: #39c; PADDING-BOTTOM: 0px; MARGIN: 5px; PADDING-TOP: 0px
+}
+UNKNOWN {
+	BACKGROUND: #c5e490
+}
+.cta BUTTON:hover SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-green.gif); COLOR: #000
+}
+.cta A:hover SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-green.gif); COLOR: #000
+}
+.cta BUTTON.hover SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-green.gif); COLOR: #000
+}
+.cta BUTTON:unknown SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-green.gif); COLOR: #000
+}
+.cta A:unknown SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-green.gif); COLOR: #000
+}
+.cta SPAN {
+	BORDER-TOP-WIDTH: 0px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/cta-blue.gif) no-repeat 100% 100%; LEFT: 5px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; COLOR: #fff; POSITION: relative; TOP: 5px; BORDER-RIGHT-WIDTH: 0px
+}
+.cta SPAN SPAN {
+	BACKGROUND-POSITION: 0px 100%; LEFT: -10px; TOP: 0px
+}
+.cta SPAN SPAN SPAN {
+	BACKGROUND-POSITION: 0px 0px; LEFT: 0px; MARGIN-BOTTOM: -5px; TOP: -10px
+}
+.cta SPAN SPAN SPAN SPAN {
+	PADDING-RIGHT: 23px; BACKGROUND-POSITION: 100% 0px; PADDING-LEFT: 12px; LEFT: 10px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px; TOP: 0px
+}
+.cta BUTTON SPAN SPAN SPAN SPAN {
+	PADDING-RIGHT: 23px; PADDING-LEFT: 12px; PADDING-BOTTOM: 0px; PADDING-TOP: 5px
+}
+P.disabled SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-disabled.png); COLOR: #666
+}
+P.disabled BUTTON:hover SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-disabled.png); COLOR: #666
+}
+P.disabled A:hover SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-disabled.png); COLOR: #666
+}
+P.disabled BUTTON.hover SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-disabled.png); COLOR: #666
+}
+P.disabled BUTTON:unknown SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-disabled.png); COLOR: #666
+}
+P.disabled A:unknown SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-disabled.png); COLOR: #666
+}
+P.secondary SPAN {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/cta-gray.gif); COLOR: #333
+}
+.tab-view {
+	MARGIN: 0.55em 0px
+}
+.tab-view .hd {
+	FONT-SIZE: 93%; LINE-HEIGHT: 1; ZOOM: 1
+}
+.tab-view .hd:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.tab-view .hd LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/tab-view-tabs.png) no-repeat
+}
+.tab-view .hd LI A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/tab-view-tabs.png) no-repeat
+}
+.tab-view .hd LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 9px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 10px 0px 0px; PADDING-TOP: 0px; POSITION: relative
+}
+.tab-view .hd LI A {
+	PADDING-RIGHT: 9px; BACKGROUND-POSITION: 100% 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 5px; COLOR: #666; MARGIN-RIGHT: -5px; PADDING-TOP: 5px; POSITION: relative
+}
+.tab-view .hd LI A:hover {
+	TEXT-DECORATION: none
+}
+.tab-view .hd LI.selected {
+	BACKGROUND-POSITION: 0px -200px; BORDER-LEFT-COLOR: transparent; MARGIN-BOTTOM: -1px; BORDER-BOTTOM-COLOR: transparent; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: transparent; BORDER-RIGHT-COLOR: transparent
+}
+.tab-view .hd LI.selected A {
+	BACKGROUND-POSITION: 100% -200px; MARGIN-BOTTOM: -1px; PADDING-BOTTOM: 6px; COLOR: #333
+}
+.js .tab-view .bd .selected {
+	LEFT: 0px; POSITION: static
+}
+.js .tab-view .bd .not-selected {
+	LEFT: -9999em; POSITION: absolute
+}
+.tab-view .bd {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 7px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 7px; BACKGROUND: #eaf6de; PADDING-BOTTOM: 7px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 7px; BORDER-BOTTOM: #ccc 1px solid
+}
+.tab-view .bd UL {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; FONT-SIZE: 93%; BACKGROUND: #fff; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.tab-view .bd UL LABEL {
+	DISPLAY: inline; FONT-WEIGHT: normal
+}
+#yan-related .marketing-ad {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-related .marketing-ad IMG {
+	DISPLAY: block; MARGIN: 0px auto
+}
+#yan-related .marketing-ad OBJECT {
+	DISPLAY: block; MARGIN: 0px auto
+}
+#yan-related .marketing-ad IFRAME {
+	DISPLAY: block; MARGIN: 0px auto
+}
+#yan-related .marketing-ad EMBED {
+	DISPLAY: block; MARGIN: 0px auto
+}
+#yan-related .marketing-ad TABLE {
+	MARGIN: 0px auto
+}
+.wide #yan {
+	WIDTH: 969px
+}
+.wide #yan-content {
+	WIDTH: 631px
+}
+.wide #yan-related {
+	WIDTH: 311px; POSITION: relative
+}
+.wide #yan-wrap {
+	PADDING-RIGHT: 9px; PADDING-LEFT: 9px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.wide #yan-mystatus {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/profile-311.gif); WIDTH: 291px
+}
+.wide #yan-mystatus .ft {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/profile-311.gif); WIDTH: 291px
+}
+.wide #yan-myincentives {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/profile-311.gif); WIDTH: 291px
+}
+.wide #yan-myincentives .ft {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/profile-311.gif); WIDTH: 291px
+}
+.wide #yan-banner UL LI {
+	WIDTH: 309px
+}
+.wide #yan-header-searchbox {
+	TEXT-ALIGN: center
+}
+.count-chars {
+	CLEAR: right; FONT-SIZE: 85%; FLOAT: left
+}
+.count-chars SPAN {
+	FONT-WEIGHT: bold
+}
+.yui-panel {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.yui-panel .hd {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://l.yimg.com/i/i/eu/se/an/dialo.gif) no-repeat; BORDER-BOTTOM-WIDTH: 0px; WHITE-SPACE: normal; BORDER-RIGHT-WIDTH: 0px
+}
+.yui-panel .hd DIV {
+	PADDING-RIGHT: 24px; PADDING-LEFT: 8px; FONT-WEIGHT: bold; FONT-SIZE: 108%; PADDING-BOTTOM: 8px; COLOR: #666; PADDING-TOP: 16px
+}
+.ico-blank .hd DIV {
+	PADDING-LEFT: 25px
+}
+.ico-starred .hd DIV {
+	PADDING-LEFT: 25px; BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr2/starrated_12x12.gif) no-repeat 7px 18px
+}
+.ico-blue-buddy .hd DIV {
+	PADDING-LEFT: 25px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/bud12_1.gif) no-repeat 7px 18px
+}
+.ico-yield .hd DIV {
+	PADDING-LEFT: 25px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/warn12_1.gif) no-repeat 7px 18px
+}
+.ico-block .hd DIV {
+	PADDING-LEFT: 25px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/blck12_1.gif) no-repeat 7px 18px
+}
+.yui-panel .bd {
+	OVERFLOW: hidden
+}
+.yui-panel .bd {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 29px; FONT-SIZE: 93%; BACKGROUND: url(http://l.yimg.com/i/i/eu/se/an/dialo.gif) #fff 0px -14px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+.yui-panel .bd P {
+	MARGIN: 0px
+}
+.yui-panel .container-close {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; Z-INDEX: 6006; RIGHT: 12px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/alt3/close12_1.gif) no-repeat; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 12px; CURSOR: pointer; PADDING-TOP: 0px; POSITION: absolute; TOP: 14px; HEIGHT: 12px
+}
+.yui-panel .nonsecure {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/a/i/nt/ic/ut/alt3/close12_1.gif)
+}
+.yui-panel .secure {
+	BACKGROUND-IMAGE: url(https://s.yimg.com/lq/i/nt/ic/ut/alt3/close12_1.gif)
+}
+.yui-panel .ft {
+	PADDING-RIGHT: 15px; PADDING-LEFT: 15px; BACKGROUND: url(http://l.yimg.com/i/i/eu/se/an/dialo.gif) no-repeat left bottom; PADDING-BOTTOM: 20px; OVERFLOW: hidden; PADDING-TOP: 15px
+}
+.question-ask H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+.question-categorize H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+.question-preview H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+.question-answer H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+.question-answerpreview H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+.question-askadditional H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+.group-create H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 25px; PADDING-BOTTOM: 0.7em; MARGIN: 0px; PADDING-TOP: 0.7em; POSITION: relative
+}
+H1 SPAN.step {
+	LEFT: -9999px; POSITION: absolute
+}
+.question-ask H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.question-categorize H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.question-preview H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.question-answer H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.question-answerpreview H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.question-askadditional H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.group-create H1 SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+#yan-group-whatsnew SPAN.number {
+	MARGIN-TOP: 0px; DISPLAY: block; FONT-WEIGHT: normal; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/ask-title-bg.gif) no-repeat 0px center; LEFT: -25px; WIDTH: 20px; COLOR: #fff; LINE-HEIGHT: 20px; POSITION: absolute; TOP: 0px; TEXT-ALIGN: center
+}
+.ask-flow {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 14px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top.gif) repeat-x 0px 0px; FLOAT: left; PADDING-BOTTOM: 1.07em; BORDER-LEFT: #ccc 1px solid; WIDTH: 453px; PADDING-TOP: 1.07em; BORDER-BOTTOM: #ccc 1px solid
+}
+.create-group-flow {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 14px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top.gif) repeat-x 0px 0px; FLOAT: left; PADDING-BOTTOM: 1.07em; BORDER-LEFT: #ccc 1px solid; WIDTH: 453px; PADDING-TOP: 1.07em; BORDER-BOTTOM: #ccc 1px solid
+}
+.ask-flow .buttons {
+	OVERFLOW: hidden
+}
+.create-group-flow .buttons {
+	OVERFLOW: hidden
+}
+.ask-flow .buttons .cta {
+	MARGIN: 0px
+}
+.create-group-flow .buttons .cta {
+	MARGIN: 0px
+}
+.ask-flow .has-error {
+	BORDER-RIGHT: #f00 1px solid; BORDER-TOP: #f00 1px solid; BORDER-LEFT: #f00 1px solid; BORDER-BOTTOM: #f00 1px solid
+}
+.create-group-flow .has-error {
+	BORDER-RIGHT: #f00 1px solid; BORDER-TOP: #f00 1px solid; BORDER-LEFT: #f00 1px solid; BORDER-BOTTOM: #f00 1px solid
+}
+.ask-flow .sub-text {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 93%; PADDING-BOTTOM: 0px; PADDING-TOP: 1em
+}
+.ask-flow .sub-text A {
+	FONT-WEIGHT: bold
+}
+.ask-flow .sub-text STRONG {
+	FONT-WEIGHT: bold
+}
+.create-group-flow .sub-text A {
+	FONT-WEIGHT: bold
+}
+.create-group-flow .sub-text STRONG {
+	FONT-WEIGHT: bold
+}
+.ask-flow H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 116%; MARGIN-BOTTOM: 7px
+}
+.create-group-flow H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 116%; MARGIN-BOTTOM: 7px
+}
+.ask-flow .question-details {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 100%; PADDING-BOTTOM: 7px; MARGIN: 0px 0px 7px; OVERFLOW: hidden; PADDING-TOP: 0px; ZOOM: 1
+}
+.ask-flow .answer-details {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 100%; PADDING-BOTTOM: 7px; MARGIN: 0px 0px 7px; OVERFLOW: hidden; PADDING-TOP: 0px; ZOOM: 1
+}
+#yan-answer-preview .question-details {
+	MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 20px
+}
+.ask-flow .answer-details {
+	MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 20px
+}
+.ask-flow .question-details DIV.container {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.ask-flow .answer-details DIV.container {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.ask-flow .question-details H2 {
+	COLOR: #67ce12
+}
+.ask-flow .question-details H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 146.5%; MARGIN: 0px 0px 8px; COLOR: #000; LINE-HEIGHT: 1.1
+}
+.ask-flow .answer-details H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 108%; MARGIN: 0px 0px 0.3em
+}
+.ask-flow .answer-details H3.sources {
+	FONT-SIZE: 100%; MARGIN-BOTTOM: 0px
+}
+.ask-flow .answer-details .content {
+	MARGIN: 0px 0px 0.5em
+}
+.ask-flow .answer-details .last {
+	MARGIN: 0px
+}
+.ask-flow .question-details H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; MARGIN-BOTTOM: 0.1em
+}
+.js #yan-ask-title-l {
+	LEFT: -9999em; POSITION: absolute
+}
+.js #yan-group-title-l {
+	LEFT: -9999em; POSITION: absolute
+}
+#yan-ask-title {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 3px; FONT-SIZE: 131%; MARGIN-BOTTOM: 0.2em; PADDING-BOTTOM: 3px; WIDTH: 422px; PADDING-TOP: 3px
+}
+#yan-group-title {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 3px; FONT-SIZE: 131%; MARGIN-BOTTOM: 0.2em; PADDING-BOTTOM: 3px; WIDTH: 422px; PADDING-TOP: 3px
+}
+INPUT.default {
+	COLOR: #999
+}
+TEXTAREA.default {
+	COLOR: #999
+}
+.ask-flow LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 108%; MARGIN-BOTTOM: 4px; COLOR: #333
+}
+.create-group-flow LABEL {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 108%; MARGIN-BOTTOM: 4px; COLOR: #333
+}
+.acts-as-label {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 108%; MARGIN-BOTTOM: 4px; COLOR: #333
+}
+#yan-ask-details-lbl {
+	COLOR: #666
+}
+#yan-ask-details {
+	DISPLAY: block; WIDTH: 428px
+}
+.group-create #yan-group-details {
+	DISPLAY: block; WIDTH: 428px
+}
+#yan-answer-answer {
+	DISPLAY: block; WIDTH: 428px
+}
+#yan-answer-source {
+	DISPLAY: block; WIDTH: 428px
+}
+.ask-flow LEGEND SPAN {
+	POSITION: absolute; TOP: -9999em
+}
+.create-group-flow LEGEND SPAN {
+	POSITION: absolute; TOP: -9999em
+}
+#yan-answer-search-inline LABEL SPAN {
+	POSITION: absolute; TOP: -9999em
+}
+.ask-flow LABEL STRONG {
+	FONT-WEIGHT: bold; COLOR: #333
+}
+.create-group-flow LABEL STRONG {
+	FONT-WEIGHT: bold; COLOR: #333
+}
+.acts-as-label H3 {
+	FONT-WEIGHT: bold; COLOR: #333
+}
+.ask-flow .count-chars {
+	FONT-SIZE: 85%; COLOR: #666; POSITION: absolute
+}
+.create-group-flow .count-chars {
+	FONT-SIZE: 85%; COLOR: #666; POSITION: absolute
+}
+#yan-ask-choose-categories {
+	PADDING-TOP: 1em
+}
+#yan-group-choose-categories {
+	PADDING-TOP: 1em
+}
+#yan-ask-choose-categories H3 {
+	FONT-WEIGHT: bold
+}
+#yan-group-choose-categories H3 {
+	FONT-WEIGHT: bold
+}
+#yan-ask-choose-categories H3 {
+	MARGIN-BOTTOM: 1.5em
+}
+#yan-confirm-cta {
+	MARGIN-BOTTOM: 1em
+}
+#yan-confirm-cta .bd {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 56px; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid; POSITION: relative
+}
+#yan-confirm-cta .success {
+	BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/confirm28_1.gif) #dbeec0 no-repeat 19px 10px
+}
+#yan-confirm-cta .bd H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 138.5%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0.1em; COLOR: #333; PADDING-TOP: 0px
+}
+#yan-confirm-cta .bd P {
+	MARGIN: 0.5em 0px 0px
+}
+#yan-confirm-cta .bd .first {
+	MARGIN: 0px
+}
+#yan-confirm-cta .bd .first EM {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 138.5%; MARGIN-BOTTOM: 0.1em; COLOR: #333
+}
+#yan-confirm-cta .bd .offpage {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-confirm-cta .ft {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 21px; BORDER-TOP: #ccc 1px; PADDING-LEFT: 21px; PADDING-BOTTOM: 12px; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1
+}
+#yan-confirm-cta .ft .questions {
+	MARGIN: 0px
+}
+#yan-confirm-cta .ft .questions LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-h.gif) repeat-x 0px 100%; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+#yan-confirm-cta .ft .questions LI.last {
+	PADDING-BOTTOM: 0px
+}
+#yan-confirm-cta .ft .questions LI LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#yan-confirm-cta .ft .questions LI.last {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#yan-confirm-cta .ft .questions LI IMG {
+	MARGIN-LEFT: 0px
+}
+#yan-confirm-cta .ft .questions LI LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.spell-trigger {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 20px; FONT-SIZE: 93%; BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr/16_ask_spell_v3.gif) no-repeat 0px 0px; FLOAT: right; PADDING-BOTTOM: 4px; COLOR: #069; PADDING-TOP: 0px
+}
+.spellcheck-container STRONG {
+	FONT-WEIGHT: bold; FONT-SIZE: 93%
+}
+.spellcheck-container {
+	CLEAR: both; BORDER-RIGHT: #d6d6cc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d6d6cc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #d6d6cc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #d6d6cc 1px solid; BACKGROUND-COLOR: #fcfbe5
+}
+.spellcheck-container DIV {
+	PADDING-BOTTOM: 5px; OVERFLOW: hidden; ZOOM: 1
+}
+.spellcheck-container .changeto {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.spellcheck-container .otherwords {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.spellcheck-container BUTTON {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; FONT-SIZE: 85%; BORDER-LEFT-COLOR: #fff; BORDER-BOTTOM-COLOR: #c1c1c1; PADDING-BOTTOM: 3px; BORDER-TOP-COLOR: #fff; MARGIN-RIGHT: 4px; PADDING-TOP: 3px; BACKGROUND-COLOR: #e6e6e6; BORDER-RIGHT-COLOR: #c1c1c1
+}
+.spellcheck-container .spellcheck-buttons {
+	
+}
+.spellcheck-container .change {
+	FLOAT: left
+}
+.spellcheck-container .ignore {
+	FLOAT: left
+}
+.spellcheck-container .done {
+	FLOAT: right; MARGIN: 0px
+}
+.spellcheck-container LABEL {
+	PADDING-RIGHT: 4px; DISPLAY: block; FONT-SIZE: 77%; FLOAT: left; LINE-HEIGHT: 18px; FONT-FAMILY: Verdana,Arial,sans-serif
+}
+.spellcheck-container SELECT {
+	DISPLAY: block; FLOAT: left; WIDTH: 140px; COLOR: #000
+}
+.spellcheck-container INPUT {
+	DISPLAY: block; FLOAT: left; WIDTH: 140px; COLOR: #000
+}
+.ask-flow .spellcheck-container {
+	BORDER-RIGHT: #ddd 0px dotted; BORDER-TOP: #ddd 1px dotted; MARGIN: 2em 0px; BORDER-LEFT: #ddd 0px dotted; BORDER-BOTTOM: #ddd 1px dotted
+}
+.answer-flow .spellcheck-container {
+	BORDER-RIGHT: #ddd 0px dotted; BORDER-TOP: #ddd 1px dotted; MARGIN: 2em 0px; BORDER-LEFT: #ddd 0px dotted; BORDER-BOTTOM: #ddd 1px dotted
+}
+.group-create .spellcheck-container {
+	BORDER-RIGHT: #ddd 0px dotted; BORDER-TOP: #ddd 1px dotted; MARGIN: 2em 0px; BORDER-LEFT: #ddd 0px dotted; BORDER-BOTTOM: #ddd 1px dotted
+}
+#yan-leaderboard .bd UL LI DIV.profile {
+	MARGIN: 0px 10px 0px 6px; WIDTH: auto
+}
+#yan-leaderboard {
+	PADDING-RIGHT: 12px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 12px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px; BACKGROUND-COLOR: #f0f8e6
+}
+#yan-leaderboard .hd H2 SPAN {
+	FONT-WEIGHT: normal
+}
+#yan-leaderboard .bd UL {
+	MARGIN-BOTTOM: 0.6em
+}
+#yan-leaderboard .bd UL LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dotted-line-green.gif) repeat-x left bottom; PADDING-BOTTOM: 0.6em; OVERFLOW: hidden; PADDING-TOP: 0.6em; ZOOM: 1
+}
+#yan-leaderboard .bd UL LI SPAN {
+	FLOAT: left; WIDTH: 14px
+}
+#yan-leaderboard .bd UL LI P {
+	MARGIN: 0px; TEXT-ALIGN: right
+}
+#yan-leaderboard .bd UL LI DIV {
+	FLOAT: left; WIDTH: 165px
+}
+#yan-leaderboard .bd UL LI.first DIV {
+	FONT-SIZE: 116%; FLOAT: none; WIDTH: auto
+}
+#yan-leaderboard .bd UL LI.first DIV DIV {
+	FLOAT: left
+}
+#yan-leaderboard .bd UL LI.first DIV P {
+	TEXT-ALIGN: left
+}
+#yan-leaderboard .bd UL LI P SPAN {
+	FLOAT: none; WIDTH: auto
+}
+#yan-leaderboard .bd UL LI SPAN {
+	FONT-WEIGHT: bold
+}
+#yan-leaderboard .bd UL LI A {
+	FONT-WEIGHT: bold
+}
+.user-listing OL {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.user-listing OL LI {
+	FLOAT: left; MARGIN-BOTTOM: 0.5em; WIDTH: 130px
+}
+.user-listing OL LI.alt {
+	CLEAR: left; MARGIN-RIGHT: 10px
+}
+.user-listing OL LI .profile {
+	WIDTH: 16px; MARGIN-RIGHT: 8px
+}
+.user-listing OL LI A {
+	DISPLAY: block
+}
+#yum  {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#yum-branding  {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#yum {
+	PADDING-RIGHT: 0.5em; DISPLAY: inline-block; PADDING-LEFT: 0.5em; BACKGROUND: #eee; PADDING-BOTTOM: 0px; FONT: 78% verdana,sans-serif; OVERFLOW: hidden; PADDING-TOP: 0px; BORDER-BOTTOM: #ddd 1px solid; WHITE-SPACE: nowrap; TEXT-ALIGN: right
+}
+#yum {
+	DISPLAY: block
+}
+#yum  {
+	VERTICAL-ALIGN: middle; LINE-HEIGHT: 2.2em
+}
+#yum FORM {
+	DISPLAY: inline; FONT-WEIGHT: bold; COLOR: #666
+}
+#yum FORM DIV {
+	DISPLAY: inline
+}
+#yum INPUT {
+	PADDING-RIGHT: 0.1em; PADDING-LEFT: 0.1em; FONT-SIZE: 100%; PADDING-BOTTOM: 0.1em; LINE-HEIGHT: normal; PADDING-TOP: 0.1em
+}
+#yum .btn {
+	PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; BACKGROUND: #ddd; PADDING-BOTTOM: 0px; OVERFLOW: visible; PADDING-TOP: 0px; FONT-FAMILY: verdana,sans-serif
+}
+#yum UL {
+	FLOAT: left; LIST-STYLE-TYPE: none
+}
+#yum LI {
+	DISPLAY: inline; FLOAT: left; MARGIN-RIGHT: 0.7em
+}
+#yum A {
+	COLOR: #666; TEXT-DECORATION: none
+}
+#yum-search {
+	WIDTH: 20em
+}
+#yum-branding {
+	PADDING-RIGHT: 0.5em; BORDER-TOP: #aaa 1px solid; DISPLAY: inline-block; PADDING-LEFT: 0.5em; PADDING-BOTTOM: 0.5em; FONT: 78% verdana,sans-serif; OVERFLOW: hidden; PADDING-TOP: 0.5em; WHITE-SPACE: nowrap; TEXT-ALIGN: right
+}
+#yum-branding {
+	DISPLAY: block
+}
+#yum-branding IMG {
+	DISPLAY: inline; FLOAT: left; MARGIN-RIGHT: 2em
+}
+#yum-branding LI {
+	DISPLAY: inline
+}
+#yum-user {
+	FLOAT: left; TEXT-ALIGN: left
+}
+#yum-user EM {
+	FONT-WEIGHT: bold
+}
+#yum-user .signed-out LI {
+	DISPLAY: block
+}
+#yum-user .sign-in {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 124%
+}
+UNKNOWN {
+	FLOAT: left
+}
+#yan-banner {
+	PADDING-RIGHT: 0px; BORDER-TOP: #54c40a 1px solid; PADDING-LEFT: 9px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/banner-bg.gif) #c5e49d; PADDING-BOTTOM: 9px; PADDING-TOP: 9px; BORDER-BOTTOM: #fff 1px solid
+}
+#yan-banner  {
+	LINE-HEIGHT: 1.2
+}
+#yan-banner UL {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-banner UL LI {
+	BORDER-RIGHT: #add974 1px solid; BORDER-TOP: #add974 1px solid; FLOAT: left; BORDER-LEFT: #add974 1px solid; WIDTH: 236px; MARGIN-RIGHT: 9px; BORDER-BOTTOM: #add974 1px solid; BACKGROUND-COLOR: #fff; TEXT-ALIGN: left
+}
+.home#yan-banner UL LI {
+	MIN-HEIGHT: 170px; HEIGHT: 100%
+}
+#yan-banner #yan-banner-discover {
+	MARGIN: 0px; TEXT-ALIGN: center
+}
+#yan-banner-ask FIELDSET {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; PADDING-BOTTOM: 6px; OVERFLOW: hidden; PADDING-TOP: 6px; ZOOM: 1
+}
+#yan-banner-ask FIELDSET LEGEND {
+	MARGIN-TOP: -999em
+}
+#yan-banner-ask FORM LABEL {
+	DISPLAY: block; FONT-SIZE: 108%
+}
+#yan-banner-ask INPUT {
+	FLOAT: right
+}
+#yan-banner-ask FORM LABEL SPAN {
+	FONT-WEIGHT: bold
+}
+#yan-banner-ask TEXTAREA {
+	MARGIN-TOP: 4px; FONT-SIZE: 100%; MARGIN-BOTTOM: 4px; WIDTH: 210px; HEIGHT: 50px
+}
+#yan-banner LI A {
+	BACKGROUND-POSITION: 0px 0px; DISPLAY: block; OVERFLOW: hidden; TEXT-INDENT: -5000px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 38px
+}
+#yan-banner LI.has-ad .ad A {
+	TEXT-INDENT: 0px; HEIGHT: auto
+}
+#yan-banner #yan-banner-ask A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/us/banner.gif) no-repeat
+}
+#yan-banner #yan-banner-answer A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/us/banner.gif) no-repeat
+}
+#yan-banner #yan-banner-discover A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/us/banner.gif) no-repeat
+}
+#yan-banner #yan-banner-ask A {
+	BACKGROUND-POSITION: 0px -400px
+}
+#yan-banner #yan-banner-answer A {
+	BACKGROUND-POSITION: 0px -800px
+}
+#yan-banner #yan-banner-discover A {
+	BACKGROUND-POSITION: 0px -1200px
+}
+#yan-banner #yan-banner-ask {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/us/banner.gif) #fff no-repeat
+}
+#yan-banner #yan-banner-answer {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/us/banner.gif) #fff no-repeat
+}
+#yan-banner #yan-banner-discover {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/us/banner.gif) #fff no-repeat
+}
+#yan-banner #yan-banner-ask {
+	BACKGROUND-POSITION: 102% -400px
+}
+#yan-banner #yan-banner-answer {
+	BACKGROUND-POSITION: 102% -800px
+}
+#yan-banner #yan-banner-discover {
+	BACKGROUND-POSITION: 102% -1200px
+}
+#yan-banner #yan-banner-answer UL LI {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FLOAT: none; BORDER-BOTTOM-WIDTH: 0px; WIDTH: auto; HEIGHT: auto; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-banner #yan-banner-answer UL A {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px; WIDTH: auto; TEXT-INDENT: 0px; HEIGHT: auto
+}
+#yan-banner #yan-banner-answer UL {
+	BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr2/hpans_image.gif) no-repeat; MARGIN: 5px 0px 5px 10px
+}
+#yan-banner #yan-banner-answer LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 70px; FONT-SIZE: 116%; MIN-HEIGHT: 1px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 2px; PADDING-TOP: 0px
+}
+#yan-banner #yan-banner-answer LI SPAN {
+	FONT-WEIGHT: bold
+}
+#yan-banner #yan-banner-answer LI.sub {
+	PADDING-RIGHT: 0px; MARGIN-TOP: 20px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 85%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-banner #yan-banner-answer .last {
+	MARGIN-TOP: 3px
+}
+#yan-banner .has-ad#yan-banner-discover {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; POSITION: relative; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-banner .has-ad#yan-banner-discover .ad {
+	LEFT: 0px; POSITION: absolute; TOP: 0px
+}
+#yan-header-searchbox {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 11px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: 0px; ZOOM: 1; BACKGROUND-COLOR: #67ce12; TEXT-ALIGN: left
+}
+.wide #yan-header-searchbox {
+	TEXT-ALIGN: center
+}
+#yan-header-searchbox FORM {
+	FLOAT: left; WIDTH: 100%; MARGIN-RIGHT: -90px
+}
+#yan-header-searchbox FORM DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 4px; MARGIN-RIGHT: 90px; PADDING-TOP: 4px
+}
+#yan-header-searchbox LABEL {
+	PADDING-RIGHT: 12px; FONT-WEIGHT: bold; VERTICAL-ALIGN: middle; COLOR: #fff
+}
+#yan-header-searchbox INPUT {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 2px
+}
+#yan-header-searchbox .alt-button {
+	HEIGHT: 1.85em
+}
+#yan-header-searchbox #yan-p {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; WIDTH: 300px; COLOR: #333; PADDING-TOP: 3px
+}
+#yan-header-searchbox FORM A {
+	FONT-WEIGHT: bold; FONT-SIZE: 77%; MARGIN-LEFT: 4px; COLOR: #fff
+}
+#yan-my-link {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0.65em; MARGIN-LEFT: -1px; OVERFLOW: visible; BORDER-LEFT: #fff 1px solid; WIDTH: 90px; PADDING-TOP: 0.65em; TEXT-ALIGN: center
+}
+#yan-my-link A {
+	FONT-WEIGHT: bold; COLOR: #fff
+}
+#ft {
+	CLEAR: both; PADDING-RIGHT: 14px; PADDING-LEFT: 10px; FONT-SIZE: 77%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 50px; PADDING-BOTTOM: 10px; PADDING-TOP: 70px; TEXT-ALIGN: left
+}
+#ft H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 110%; MARGIN: 0px 0.2em 0.8em 0px; COLOR: #333; WHITE-SPACE: nowrap
+}
+.question-index #ft H2 {
+	FLOAT: none; MARGIN: 0px 0px 1em
+}
+#ft P {
+	MARGIN: 10px 0px; COLOR: #666
+}
+#ft .policies {
+	MARGIN-TOP: -10px
+}
+#ft .copyright {
+	COLOR: #333
+}
+#ft .policies LI {
+	DISPLAY: inline
+}
+#ft .tell-us A {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+#ft .policies A {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+#ft .tell-us A:hover {
+	COLOR: #069
+}
+#ft .policies A:hover {
+	COLOR: #069
+}
+#ft #yan-intls {
+	MARGIN: 0px 15px 25px 0px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-intls LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 1.5em 0.4em 0px; PADDING-TOP: 0px
+}
+#yan-intls LI A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 22px; FONT-SIZE: 110%; MIN-HEIGHT: 13px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/intl-flags.gif) no-repeat 0px -60px; FLOAT: left; PADDING-BOTTOM: 0.4em; COLOR: #333; PADDING-TOP: 0px; WHITE-SPACE: nowrap
+}
+#yan-intls .us A {
+	BACKGROUND-POSITION: 0px -1520px
+}
+#yan-intls .e1 A {
+	BACKGROUND-POSITION: 0px -1520px
+}
+#yan-intls .ca A {
+	BACKGROUND-POSITION: 0px -352px
+}
+#yan-intls .qc A {
+	BACKGROUND-POSITION: 0px -1593px
+}
+#yan-intls .cf A {
+	BACKGROUND-POSITION: 0px -498px
+}
+#yan-intls .mx A {
+	BACKGROUND-POSITION: 0px -1009px
+}
+#yan-intls .in A {
+	BACKGROUND-POSITION: 0px -790px
+}
+#yan-intls .uk A {
+	BACKGROUND-POSITION: 0px -1447px
+}
+#yan-intls .de A {
+	BACKGROUND-POSITION: 0px -498px
+}
+#yan-intls .fr A {
+	BACKGROUND-POSITION: 0px -644px
+}
+#yan-intls .it A {
+	BACKGROUND-POSITION: 0px -863px
+}
+#yan-intls .es A {
+	BACKGROUND-POSITION: 0px -571px
+}
+#yan-intls .br A {
+	BACKGROUND-POSITION: 0px -279px
+}
+#yan-intls .ar A {
+	BACKGROUND-POSITION: 0px -133px
+}
+#yan-intls .au A {
+	BACKGROUND-POSITION: 0px -206px
+}
+#yan-intls .nz A {
+	BACKGROUND-POSITION: 0px -1666px
+}
+#yan-intls .sg A {
+	BACKGROUND-POSITION: 0px -1228px
+}
+#yan-intls .my A {
+	BACKGROUND-POSITION: 0px -1082px
+}
+#yan-intls .ph A {
+	BACKGROUND-POSITION: 0px -1155px
+}
+#yan-intls .cn A {
+	BACKGROUND-POSITION: 0px -425px
+}
+#yan-intls .jp A {
+	BACKGROUND-POSITION: 0px -936px
+}
+#yan-intls .kr A {
+	BACKGROUND-POSITION: 0px -1301px
+}
+#yan-intls .tw A {
+	BACKGROUND-POSITION: 0px -1374px
+}
+#yan-intls .hk A {
+	BACKGROUND-POSITION: 0px -717px
+}
+#yan-intls .vn A {
+	BACKGROUND-POSITION: 0px -1885px
+}
+#yan-intls .id A {
+	BACKGROUND-POSITION: 0px -1739px
+}
+#yan-intls .th A {
+	BACKGROUND-POSITION: 0px -1812px
+}
+#yan-categories LI {
+	DISPLAY: inline
+}
+#yan-relatedlinks LI {
+	DISPLAY: inline
+}
+#yan-relatedqs LI {
+	DISPLAY: inline
+}
+#yan-categories LI A {
+	DISPLAY: block; PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/bullets.gif) no-repeat -903px 0px; MARGIN: 5px 0px; ZOOM: 1
+}
+#yan-relatedlinks LI A {
+	DISPLAY: block; PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/bullets.gif) no-repeat -903px 0px; MARGIN: 5px 0px; ZOOM: 1
+}
+#yan-relatedqs LI A {
+	DISPLAY: block; PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/bullets.gif) no-repeat -903px 0px; MARGIN: 5px 0px; ZOOM: 1
+}
+#yan-categories .expanded A {
+	BACKGROUND-POSITION: -604px 0px; FONT-WEIGHT: bold
+}
+#yan-categories .expanded LI A {
+	BACKGROUND-POSITION: -1500px 0.1em; FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 3px 0px
+}
+#yan-relatedqs UL LI A {
+	BACKGROUND-POSITION: -1500px 0.1em; FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN: 3px 0px
+}
+#yan-categories LI A.current {
+	BORDER-RIGHT: #54c40a 0px solid; PADDING-RIGHT: 0px; BACKGROUND-POSITION: -1789px 0.3em; BORDER-TOP: #54c40a 1px solid; PADDING-LEFT: 26px; FONT-WEIGHT: bold; PADDING-BOTTOM: 3px; MARGIN: 0px -12px; BORDER-LEFT: #54c40a 0px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #54c40a 1px solid; BACKGROUND-COLOR: #fff
+}
+#yan-categories LI A {
+	DISPLAY: block; COLOR: #333
+}
+#yan-relatedlinks LI A {
+	DISPLAY: block; COLOR: #333
+}
+#yan-categories LI UL {
+	MARGIN: 5px 0px 0px
+}
+#yan-content #yan-categories {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 20px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 20px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top.gif) repeat-x left top; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 15px; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1; POSITION: relative
+}
+#yan-content #yan-categories H1 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 45px; FONT-SIZE: 18px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/all-category-icons.gif) no-repeat left top; PADDING-BOTTOM: 0px; COLOR: #000; LINE-HEIGHT: 40px; PADDING-TOP: 0px
+}
+#yan-content #yan-categories H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 45px; FONT-SIZE: 18px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/all-category-icons.gif) no-repeat left top; PADDING-BOTTOM: 0px; COLOR: #000; LINE-HEIGHT: 40px; PADDING-TOP: 0px
+}
+#yan-content .cat-best-answer#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -100px
+}
+#yan-content .cat-best-answer#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -100px
+}
+#yan-content .cat-396545012#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -200px
+}
+#yan-content .cat-396545012#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -200px
+}
+#yan-content .cat-396545144#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -300px
+}
+#yan-content .cat-396545144#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -300px
+}
+#yan-content .cat-396545013#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -400px
+}
+#yan-content .cat-396545013#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -400px
+}
+#yan-content .cat-396545311#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -500px
+}
+#yan-content .cat-396545311#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -500px
+}
+#yan-content .cat-396545660#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -600px
+}
+#yan-content .cat-396545660#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -600px
+}
+#yan-content .cat-396545014#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -700px
+}
+#yan-content .cat-396545014#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -700px
+}
+#yan-content .cat-396545327#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -800px
+}
+#yan-content .cat-396545327#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -800px
+}
+#yan-content .cat-396545015#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -900px
+}
+#yan-content .cat-396545015#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -900px
+}
+#yan-content .cat-396545016#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1000px
+}
+#yan-content .cat-396545016#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1000px
+}
+#yan-content .cat-396545451#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1100px
+}
+#yan-content .cat-396545451#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1100px
+}
+#yan-content .cat-396545433#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1200px
+}
+#yan-content .cat-396545433#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1200px
+}
+#yan-content .cat-396545367#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1300px
+}
+#yan-content .cat-396545367#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1300px
+}
+#yan-content .cat-396545019#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1400px
+}
+#yan-content .cat-396545019#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1400px
+}
+#yan-content .cat-396545018#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1500px
+}
+#yan-content .cat-396545018#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1500px
+}
+#yan-content .cat-396545394#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1600px
+}
+#yan-content .cat-396545394#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1600px
+}
+#yan-content .cat-396545401#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1700px
+}
+#yan-content .cat-396545401#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1700px
+}
+#yan-content .cat-396545439#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1800px
+}
+#yan-content .cat-396545439#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1800px
+}
+#yan-content .cat-396545443#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -1900px
+}
+#yan-content .cat-396545443#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -1900px
+}
+#yan-content .cat-396545444#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2000px
+}
+#yan-content .cat-396545444#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2000px
+}
+#yan-content .cat-396546046#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2100px
+}
+#yan-content .cat-396546046#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2100px
+}
+#yan-content .cat-396545122#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2200px
+}
+#yan-content .cat-396545122#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2200px
+}
+#yan-content .cat-396545301#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2300px
+}
+#yan-content .cat-396545301#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2300px
+}
+#yan-content .cat-396545454#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2400px
+}
+#yan-content .cat-396545454#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2400px
+}
+#yan-content .cat-396545213#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2500px
+}
+#yan-content .cat-396545213#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2500px
+}
+#yan-content .cat-396545469#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2600px
+}
+#yan-content .cat-396545469#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2600px
+}
+#yan-content .cat-396546089#yan-categories H1 {
+	BACKGROUND-POSITION: 0px -2700px
+}
+#yan-content .cat-396546089#yan-categories H2 {
+	BACKGROUND-POSITION: 0px -2700px
+}
+#yan-content #yan-categories LI {
+	DISPLAY: block; MARGIN: 5px 0px; ZOOM: 1
+}
+#yan-content #yan-categories LI:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: '.'
+}
+#yan-content #yan-categories UL {
+	FLOAT: left; WIDTH: 132px; MARGIN-RIGHT: 20px
+}
+#yan-content #yan-categories UL.last {
+	MARGIN-RIGHT: 0px
+}
+#yan-content #yan-categories LI A {
+	PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN: 0px; COLOR: #069
+}
+#yan-content #yan-categories A {
+	FONT-SIZE: 93%
+}
+#yan-content #yan-categories LI SPAN {
+	BORDER-RIGHT: #43b607 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #43b607 1px solid; PADDING-LEFT: 5px; FONT-WEIGHT: bold; FONT-SIZE: 93%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top.gif) repeat-x left -50px; FLOAT: left; PADDING-BOTTOM: 1px; MARGIN: -2px 0px -2px -6px; BORDER-LEFT: #43b607 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: #43b607 1px solid
+}
+#yan-content #yan-categories LI LI {
+	WIDTH: 125px; MARGIN-RIGHT: 22px
+}
+#yan-content #yan-categories LI LI A {
+	MARGIN: 3px 0px
+}
+.yan-cat-overview {
+	FONT-WEIGHT: bold; RIGHT: 20px; BOTTOM: 20px; POSITION: absolute
+}
+.question-index #yan-main {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.question-index .simplepage#yan-main {
+	BORDER-TOP-WIDTH: 1px; PADDING-RIGHT: 16px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 16px; PADDING-TOP: 12px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-question {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 12px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top.gif) repeat-x 0px 0px; PADDING-BOTTOM: 20px; PADDING-TOP: 20px; ZOOM: 1
+}
+#yan-question:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: '.'
+}
+.question-index .qa-container {
+	CLEAR: right; BACKGROUND: none transparent scroll repeat 0% 0%; OVERFLOW: hidden; MARGIN-RIGHT: -13px; ZOOM: 1
+}
+#yan-question .cta {
+	CLEAR: both; MARGIN-TOP: 17px
+}
+#yan-question .hd {
+	PADDING-BOTTOM: 4px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-question H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 123.1%; FLOAT: left; PADDING-BOTTOM: 0.6em; MARGIN: 0px; COLOR: #43b607; LINE-HEIGHT: 1
+}
+#show-another {
+	PADDING-RIGHT: 12px; FLOAT: right; WIDTH: 120px; POSITION: relative; TEXT-ALIGN: right
+}
+#show-another SPAN {
+	RIGHT: 0px; POSITION: absolute; TOP: 0px
+}
+#show-another:hover {
+	TEXT-DECORATION: none
+}
+#yan-question .subject {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 146.5%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 8px; COLOR: #000; LINE-HEIGHT: 1.1; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-question .profile {
+	CLEAR: left
+}
+#yan-question H2.additional-details {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; FLOAT: none; PADDING-BOTTOM: 0px; COLOR: #333
+}
+.additional-date {
+	FONT-SIZE: 85%; MARGIN: 0px 0px 7px; COLOR: #666
+}
+.qa-container .content {
+	MARGIN-BOTTOM: 0.2em
+}
+.qa-container DIV.reference {
+	MARGIN-BOTTOM: 0.2em
+}
+.qa-container H3.reference {
+	COLOR: #666
+}
+.qa-container .meta {
+	FONT-SIZE: 85%; MARGIN: 1em 0px 1.2em; COLOR: #666
+}
+.qa-container .meta A {
+	COLOR: #678
+}
+.qa-container .meta LI {
+	DISPLAY: inline
+}
+.qa-container .meta .answergroup A IMG {
+	MARGIN-LEFT: -20px; POSITION: absolute
+}
+#yan-main .best .answer-rating {
+	CLEAR: both
+}
+#yan-main .best .answer-rating DT {
+	FLOAT: left
+}
+#yan-main .best .answer-rating DD {
+	FLOAT: left
+}
+#yan-main .best .answer-rating DD IMG {
+	MARGIN-LEFT: 5px
+}
+#yan-main .best .answer-rating DT {
+	CLEAR: left; FONT-WEIGHT: bold
+}
+#yan-main .best .answer-rating DD.desc {
+	CLEAR: left; FLOAT: none; MARGIN-BOTTOM: 1em; ZOOM: 1
+}
+#yan-main .best .answer-rating DT.desc {
+	LEFT: -9999em; POSITION: absolute
+}
+#yan-main DIV.best {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 13px; PADDING-BOTTOM: 14px; PADDING-TOP: 12px; ZOOM: 1
+}
+#yan-answers .answer {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 13px; PADDING-BOTTOM: 14px; PADDING-TOP: 12px; ZOOM: 1
+}
+#yan-main .best:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+#yan-answers .answer:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+#yan-main .best {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 0px; PADDING-BOTTOM: 14px; PADDING-TOP: 20px
+}
+#yan-main .best H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; MARGIN-BOTTOM: 8px; COLOR: #000
+}
+#yan-main .best H2 SPAN {
+	FONT-WEIGHT: bold; FONT-SIZE: 108%; COLOR: #43b607
+}
+#yan-answers .collapsed {
+	ZOOM: 1; POSITION: relative
+}
+#yan-answers .shown {
+	ZOOM: 1; POSITION: relative
+}
+#yan-answers .collapsed LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) #fff repeat-x 0px 0px; PADDING-TOP: 1px; ZOOM: 1
+}
+#yan-answers .shown LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) #fff repeat-x 0px 0px; PADDING-TOP: 1px; ZOOM: 1
+}
+#yan-answers .collapsed LI LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px; ZOOM: normal
+}
+#yan-answers .shown LI LI {
+	BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-TOP: 0px; ZOOM: normal
+}
+#yan-answers .low-rating {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/low-rating-bg.gif) repeat-x 0px 0px
+}
+#yan-answers .hidden .qa-container {
+	LEFT: -9999px; OVERFLOW: hidden; WIDTH: 0px; ZOOM: 1; POSITION: absolute
+}
+#yan-answers .hidden .profile {
+	WIDTH: auto
+}
+#yan-answers .hidden .profile .user-badge {
+	DISPLAY: none
+}
+#yan-answers .hidden .profile SPAN {
+	DISPLAY: inline; FONT-SIZE: 77%; WIDTH: auto; COLOR: #069; LINE-HEIGHT: 16px; TEXT-ALIGN: left
+}
+#yan-answers .hidden .profile SPAN SPAN {
+	FONT-SIZE: 100%
+}
+#yan-answers .hidden .profile .photo {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 90%; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 5px 0px 10px; VERTICAL-ALIGN: middle; WIDTH: 16px; LINE-HEIGHT: 16px; PADDING-TOP: 0px; HEIGHT: 16px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-answers .low-rating .toggle {
+	FONT-SIZE: 77%; FLOAT: right; MARGIN: 0px 10px 0px 0px; LINE-HEIGHT: 16px
+}
+#yan-question-tools {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN-TOP: -1px; FONT-SIZE: 93%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar-bg.gif) #eaeaea repeat-x 0px 0px; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1
+}
+#yan-question-tools .label {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; COLOR: #666; LINE-HEIGHT: 26px; PADDING-TOP: 0px
+}
+#yan-question-tools:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+#yan-question-tools LI {
+	FLOAT: left; BORDER-LEFT: #ccc 1px dotted
+}
+#yan-question-tools LI.first-child {
+	MARGIN-LEFT: -1px; BORDER-LEFT: #ccc 1px solid
+}
+#yan-question-tools LI LI.first-child {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-question-tools LI A {
+	PADDING-RIGHT: 10px; DISPLAY: block; PADDING-LEFT: 28px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-TOP: 0px; TEXT-DECORATION: none
+}
+#yan-question-tools LI A SPAN {
+	LINE-HEIGHT: 26px
+}
+#yan-comment-link A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar.gif) no-repeat 10px -1090px
+}
+#yan-comment-link A:hover {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar.gif) no-repeat 10px -1185px
+}
+.open#yan-comment-link {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar-bg-on.gif) #fff repeat-x 0px 0px
+}
+#yan-question-tools LI:hover {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar-bg-on.gif) #fff repeat-x 0px 0px
+}
+.open#yan-comment-link {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar-bg-on.gif) #fff repeat-x 0px 0px
+}
+#yan-question-tools LI.hover {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar-bg-on.gif) #fff repeat-x 0px 0px
+}
+BODY.js #yan-question-tools .menu SPAN {
+	PADDING-RIGHT: 12px; DISPLAY: block; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dropdown-arrow.gif) no-repeat right 10px
+}
+BODY.js #yan-question-tools LI UL {
+	DISPLAY: none
+}
+BODY.js #yan-question-tools LI .yui-overlay UL {
+	DISPLAY: block
+}
+#yan-question-tools LI UL {
+	CLEAR: left; BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: #fff; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-question-tools LI UL LI {
+	BORDER-TOP-WIDTH: 0px; DISPLAY: inline; BORDER-LEFT-WIDTH: 0px; FLOAT: none; BORDER-BOTTOM-WIDTH: 0px; WHITE-SPACE: nowrap; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-question-tools LI UL LI A {
+	PADDING-RIGHT: 11px; BORDER-TOP: #ccc 1px dotted; DISPLAY: block; PADDING-LEFT: 11px; FLOAT: none; BACKGROUND-IMAGE: none; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.8; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#yan-question-tools LI UL LI.first-child A {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-question-tools LI UL LI A:hover {
+	BACKGROUND-COLOR: #ecf9dd
+}
+#yan-question-tools LI UL LI A.rss-link {
+	PADDING-LEFT: 26px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/syndication.gif) no-repeat -890px 50%
+}
+#yan-question-tools LI UL LI A.rss-link:hover {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/syndication.gif) #ecf9dd no-repeat -890px 50%
+}
+#yan-save-question A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar.gif) no-repeat 10px -697px
+}
+#yan-save-question A:hover {
+	BACKGROUND-POSITION: 10px -797px
+}
+#yan-edit-question A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar.gif) no-repeat 10px -897px
+}
+#yan-edit-question A:hover {
+	BACKGROUND-POSITION: 10px -997px
+}
+.mail-friend A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar.gif) no-repeat 10px -497px
+}
+.mail-friend A:hover {
+	BACKGROUND-POSITION: 10px -597px
+}
+.rss-link {
+	BACKGROUND-POSITION: -900px 3px; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/syndication.gif); BACKGROUND-REPEAT: no-repeat
+}
+#yan-comments {
+	PADDING-RIGHT: 12px; BORDER-TOP: #fff 1px solid; PADDING-LEFT: 12px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/comments-bg.gif) #f3f9eb repeat-x 0px bottom; PADDING-BOTTOM: 19px; PADDING-TOP: 0px
+}
+BODY.js #yan-comments {
+	DISPLAY: none
+}
+BODY.js .show#yan-comments {
+	DISPLAY: block
+}
+#yan-comments .comment {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px bottom; PADDING-BOTTOM: 20px; OVERFLOW: hidden; PADDING-TOP: 20px; ZOOM: 1
+}
+#yan-comments .none {
+	FONT-WEIGHT: bold; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px bottom; PADDING-BOTTOM: 20px; PADDING-TOP: 20px
+}
+#yan-comments .content {
+	MARGIN-LEFT: 88px
+}
+#yan-comments .content A.report-abuse {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ccc 1px solid; MARGIN-TOP: 4px; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bg.gif) #fff repeat-x 0px 100%; FLOAT: left; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-comments .content A.report-abuse SPAN {
+	PADDING-RIGHT: 3px; DISPLAY: block; PADDING-LEFT: 20px; FONT-SIZE: 85%; MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating.gif) no-repeat 3px -897px; PADDING-BOTTOM: 0px; LINE-HEIGHT: 19px; PADDING-TOP: 0px
+}
+#yan-comments .content A.report-abuse:hover SPAN {
+	BACKGROUND-POSITION: 3px -997px
+}
+#yan-comments .content A.delete-comment {
+	DISPLAY: block; FONT-SIZE: 85%; PADDING-TOP: 2px
+}
+#yan-comments FORM {
+	PADDING-TOP: 17px
+}
+#yan-comments FORM DIV {
+	OVERFLOW: hidden; ZOOM: 1; POSITION: relative
+}
+#yan-comments FORM DIV.count-chars {
+	OVERFLOW: visible; POSITION: static
+}
+#yan-comments FORM H4 {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.4em
+}
+#yan-comments FORM TEXTAREA {
+	CLEAR: both; BORDER-RIGHT: #7f9db9 1px solid; BORDER-TOP: #7f9db9 1px solid; DISPLAY: block; MARGIN-BOTTOM: 0.4em; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 444px; BORDER-BOTTOM: #7f9db9 1px solid; POSITION: relative
+}
+.wide #yan-comments FORM TEXTAREA {
+	WIDTH: 605px
+}
+#yan-comments FORM TEXTAREA.error {
+	BORDER-LEFT-COLOR: #f00; BORDER-BOTTOM-COLOR: #f00; BORDER-TOP-COLOR: #f00; BORDER-RIGHT-COLOR: #f00
+}
+#yan-comments P.signin {
+	PADDING-TOP: 17px
+}
+#yan-comments FORM P.help {
+	FONT-SIZE: 85%; FLOAT: left
+}
+#yan-comments FORM .button {
+	DISPLAY: block; FLOAT: right
+}
+.vote-signin {
+	FONT-SIZE: 93%; MARGIN: 17px 0px
+}
+.vote-signin A {
+	FONT-WEIGHT: bold
+}
+#yan-main .answer-util {
+	CLEAR: right; FLOAT: left
+}
+#yan-answers .answer-util {
+	CLEAR: right; FLOAT: left
+}
+#yan-main .answer-util UL {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bg.gif) #fff repeat-x 0px 100%; FLOAT: left; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-answers .answer-util UL {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bg.gif) #fff repeat-x 0px 100%; FLOAT: left; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-main .answer-util LI {
+	FONT-SIZE: 93%; FLOAT: left
+}
+#yan-answers .answer-util LI {
+	FONT-SIZE: 93%; FLOAT: left
+}
+#yan-main .answer-util LI A {
+	DISPLAY: block; LINE-HEIGHT: 19px
+}
+#yan-main .disabled LI SPAN {
+	DISPLAY: block; LINE-HEIGHT: 19px
+}
+#yan-answers .answer-util LI A {
+	DISPLAY: block; LINE-HEIGHT: 19px
+}
+#yan-answers .disabled LI SPAN {
+	DISPLAY: block; LINE-HEIGHT: 19px
+}
+#yan-main .answer-util LI A:hover {
+	TEXT-DECORATION: none
+}
+#yan-answers .answer-util LI A:hover {
+	TEXT-DECORATION: none
+}
+#yan-main .answer-util LI.rate-down {
+	BORDER-RIGHT: #999 1px solid; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/vert-dot-bg.gif) repeat-y 0px 0px
+}
+#yan-answers .answer-util LI.rate-down {
+	BORDER-RIGHT: #999 1px solid; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/vert-dot-bg.gif) repeat-y 0px 0px
+}
+.qa-container .answer-util LI.rate-up A {
+	PADDING-RIGHT: 17px; DISPLAY: inline; PADDING-LEFT: 7px; FLOAT: left; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/rating.gif); MARGIN-RIGHT: 8px; BACKGROUND-REPEAT: no-repeat
+}
+.qa-container .answer-util LI.rate-down A {
+	PADDING-RIGHT: 17px; DISPLAY: inline; PADDING-LEFT: 7px; FLOAT: left; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/rating.gif); MARGIN-RIGHT: 8px; BACKGROUND-REPEAT: no-repeat
+}
+.qa-container .disabled LI.rate-up SPAN {
+	PADDING-RIGHT: 17px; DISPLAY: inline; PADDING-LEFT: 7px; FLOAT: left; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/rating.gif); MARGIN-RIGHT: 8px; BACKGROUND-REPEAT: no-repeat
+}
+.qa-container .disabled LI.rate-down SPAN {
+	PADDING-RIGHT: 17px; DISPLAY: inline; PADDING-LEFT: 7px; FLOAT: left; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/rating.gif); MARGIN-RIGHT: 8px; BACKGROUND-REPEAT: no-repeat
+}
+.qa-container .answer-util .rate-up A {
+	BACKGROUND-POSITION: 100% -199px
+}
+.qa-container .answer-util .rate-up A:hover {
+	BACKGROUND-POSITION: 100% -299px
+}
+.qa-container .answer-util .rate-down A {
+	BACKGROUND-POSITION: 100% -598px
+}
+.qa-container .answer-util .rate-down A:hover {
+	BACKGROUND-POSITION: 100% -698px
+}
+.qa-container .disabled .rate-up SPAN {
+	BACKGROUND-POSITION: 100% -99px
+}
+.qa-container .disabled .rate-down SPAN {
+	BACKGROUND-POSITION: 100% -498px
+}
+.qa-container .disabled .rate-down SPAN.rated {
+	BACKGROUND-POSITION: 100% -798px
+}
+.qa-container .disabled .rate-up SPAN.rated {
+	BACKGROUND-POSITION: 100% -399px
+}
+.utils-container P {
+	CLEAR: both; FONT-SIZE: 85%; MARGIN: 0px; COLOR: #000; PADDING-TOP: 0.2em
+}
+.qa-container .answer-util .success {
+	COLOR: #090
+}
+.qa-container .answer-util .loading {
+	COLOR: #090
+}
+.qa-container .answer-util .failure {
+	COLOR: #c00
+}
+.qa-container .answer-util .rate-up A SPAN {
+	LEFT: -9999px; POSITION: absolute
+}
+.qa-container .answer-util .rate-down A SPAN {
+	LEFT: -9999px; POSITION: absolute
+}
+.qa-container .answer-util .rate-up SPAN SPAN {
+	LEFT: -9999px; POSITION: absolute
+}
+.qa-container .answer-util .rate-down SPAN SPAN {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-reportthis {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bg.gif) #fff repeat-x 0px 100%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.answer-util .flag-abuse {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bg.gif) #fff repeat-x 0px 100%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-reportthis {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; FONT-SIZE: 85%; FLOAT: left; BORDER-LEFT: #ccc 1px solid; LINE-HEIGHT: 19px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-reportthis A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 20px; MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating.gif) no-repeat 3px -897px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-reportthis SPAN {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 20px; MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating.gif) no-repeat 3px -897px; FLOAT: left; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-reportthis A:hover {
+	TEXT-DECORATION: none
+}
+.qa-container .answer-util .flag-abuse A {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 20px; FONT-SIZE: 92%; MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating.gif) no-repeat 3px -897px; FLOAT: left; PADDING-BOTTOM: 0px; OVERFLOW: hidden; LINE-HEIGHT: 19px; PADDING-TOP: 0px
+}
+.qa-container .answer-util .flag-abuse SPAN {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 20px; FONT-SIZE: 92%; MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating.gif) no-repeat 3px -897px; FLOAT: left; PADDING-BOTTOM: 0px; OVERFLOW: hidden; LINE-HEIGHT: 19px; PADDING-TOP: 0px
+}
+.qa-container .answer-util .flag-abuse SPAN {
+	BACKGROUND-POSITION: 3px -1097px
+}
+#yan-reportthis SPAN {
+	BACKGROUND-POSITION: 3px -1097px
+}
+.qa-container .answer-util .flag-abuse A:hover {
+	BACKGROUND-POSITION: 3px -997px
+}
+#yan-reportthis A:hover {
+	BACKGROUND-POSITION: 3px -997px
+}
+#yan-seo-tools {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/seo-thumbs-bg.gif) no-repeat 0px 0px; PADDING-BOTTOM: 0px; MARGIN: 7px 0px; OVERFLOW: hidden; WIDTH: 360px; PADDING-TOP: 3px; ZOOM: 1
+}
+#yan-seo-tools DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 4px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/seo-thumbs-bg.gif) no-repeat 100% 100%; PADDING-BOTTOM: 3px; OVERFLOW: hidden; PADDING-TOP: 0px; ZOOM: 1
+}
+#yan-seo-tools DIV DIV {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-content #yan-seo-tools .buttons {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 0px -62px 0px 0px; OVERFLOW: hidden; PADDING-TOP: 3px
+}
+#yan-seo-tools .buttons LI {
+	PADDING-RIGHT: 4px; FLOAT: left
+}
+#yan-seo-tools .buttons LI A {
+	DISPLAY: block; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/seo-thumbs.gif); OVERFLOW: hidden; WIDTH: 26px; TEXT-INDENT: -5000px; BACKGROUND-REPEAT: no-repeat; HEIGHT: 26px
+}
+#seo-rate-u {
+	BACKGROUND-POSITION: 0px -40px
+}
+#seo-rate-d {
+	BACKGROUND-POSITION: 0px -172px
+}
+#seo-rate-u:hover {
+	BACKGROUND-POSITION: 0px -106px
+}
+.on#seo-rate-u {
+	BACKGROUND-POSITION: 0px -106px
+}
+#seo-rate-d:hover {
+	BACKGROUND-POSITION: 0px -238px
+}
+.on#seo-rate-d {
+	BACKGROUND-POSITION: 0px -238px
+}
+#yan-seo-tools DIV .container {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 69px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: right; PADDING-BOTTOM: 0px; WIDTH: 279px; PADDING-TOP: 0px
+}
+#yan-seo-tools DIV .container H4 {
+	FONT-WEIGHT: bold; FONT-SIZE: 93%; PADDING-TOP: 8px
+}
+#yan-seo-tools DIV .container H4.on {
+	FONT-WEIGHT: normal
+}
+#yan-seo-tools DIV .container H4.on STRONG {
+	FONT-WEIGHT: bold
+}
+#yan-seo-tools DIV .container FORM {
+	PADDING-BOTTOM: 7px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-seo-tools DIV .container LABEL {
+	DISPLAY: block; FONT-SIZE: 93%; MARGIN-BOTTOM: 7px; LINE-HEIGHT: 1.5
+}
+#yan-seo-tools DIV .container TEXTAREA {
+	DISPLAY: inline; MARGIN-BOTTOM: 7px; WIDTH: 260px
+}
+#yan-seo-tools DIV .container FORM .count-chars {
+	CLEAR: right; FONT-SIZE: 85%; FLOAT: left
+}
+#yan-seo-tools DIV .container FORM .count-chars SPAN {
+	FONT-WEIGHT: bold
+}
+#yan-seo-tools DIV .container FORM .cta {
+	CLEAR: right; FLOAT: right; MARGIN: 0px 3px 0px 0px; POSITION: relative
+}
+#yan-seo-tools DIV .container FORM .cta BUTTON {
+	POSITION: relative
+}
+.qa-container .seo {
+	ZOOM: 1
+}
+.qa-container .seo H4 SPAN {
+	FONT-WEIGHT: normal
+}
+.vote-count {
+	BORDER-RIGHT: #ccc 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 124%; BACKGROUND: #ffffcd; FLOAT: left; PADDING-BOTTOM: 2px; MARGIN: 7px 0px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 2px; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1
+}
+.vote-count  {
+	LINE-HEIGHT: 1
+}
+.vote-count STRONG {
+	DISPLAY: block; BACKGROUND: #fff; MARGIN: -3px 0px -3px -3px; BORDER-LEFT: #ccc 1px solid; POSITION: relative
+}
+.vote-count STRONG.vote-border-kill {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.vote-count STRONG EM {
+	FONT-WEIGHT: bold; MARGIN-LEFT: 5px
+}
+.vote-container {
+	OVERFLOW: hidden; ZOOM: 1; postion: relative
+}
+.status-report {
+	MARGIN: 17px 0px 0px; COLOR: #666
+}
+.status-report EM {
+	FONT-WEIGHT: bold
+}
+.first-child {
+	MARGIN-BOTTOM: -17px
+}
+#yan-answers {
+	MARGIN: 17px 0px 19px
+}
+#yan-answers .hd H3 {
+	FLOAT: left; COLOR: #666
+}
+#yan-answers .hd H3 STRONG {
+	FONT-WEIGHT: bold; FONT-SIZE: 124%; COLOR: #67ce12
+}
+#yan-answers .hd {
+	OVERFLOW: hidden; ZOOM: 1; POSITION: relative
+}
+#yan-answers .hd FORM {
+	FLOAT: right; POSITION: relative
+}
+BODY.js #yan-answers .hd FORM .button {
+	LEFT: -9999em; POSITION: absolute
+}
+#yan-answers .bd {
+	MARGIN-TOP: 12px
+}
+#yan-answers P.bd {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 0px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px
+}
+#yan-answer-sort LABEL {
+	FONT-WEIGHT: bold
+}
+#yan-noanswer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 0px; PADDING-BOTTOM: 0px; OVERFLOW: hidden; PADDING-TOP: 14px; ZOOM: 1
+}
+.yan-noanswer {
+	MARGIN-LEFT: 103px
+}
+#yan-noanswer H4 {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 7px
+}
+.other-questions {
+	PADDING-RIGHT: 12px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 12px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top-small.gif) repeat-x 0px 0px; PADDING-BOTTOM: 11px; PADDING-TOP: 11px
+}
+.other-questions .hd {
+	FONT-SIZE: 116%; COLOR: #67ce12
+}
+.other-questions .hd A {
+	FONT-WEIGHT: bold
+}
+.other-questions .hd SPAN {
+	FONT-WEIGHT: bold
+}
+.question-index .other-questions .bd  {
+	LINE-HEIGHT: 1.2
+}
+.question-index .questions H3 {
+	MARGIN-LEFT: 36px
+}
+.question-index .questions UL {
+	MARGIN-LEFT: 36px
+}
+.questions H3 {
+	FONT-SIZE: 108%
+}
+.other-questions LI {
+	LIST-STYLE-POSITION: outside; FONT-SIZE: 93%; MARGIN: 0px 0px 4px 1em; LIST-STYLE-TYPE: disc
+}
+#yan-interesting .hd A {
+	PADDING-LEFT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/star-large.gif) no-repeat 0px -102px; COLOR: #666
+}
+#yan-interesting .hd SPAN {
+	PADDING-LEFT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/star-large.gif) no-repeat 0px -102px; COLOR: #666
+}
+#yan-interesting .hd SPAN {
+	BACKGROUND-POSITION: 1px -518px
+}
+#yan-interesting .hd A:hover {
+	BACKGROUND-POSITION: 0px -202px; TEXT-DECORATION: none
+}
+#yan-interesting .hd A.starred {
+	BACKGROUND-POSITION: 0px -202px; TEXT-DECORATION: none
+}
+#yan-interesting .hd SPAN.starred {
+	BACKGROUND-POSITION: 0px -202px; TEXT-DECORATION: none
+}
+.js #yan-interesting {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-interesting P.bd {
+	PADDING-RIGHT: 19px; PADDING-LEFT: 19px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-interesting P.bd {
+	COLOR: #666
+}
+#yan-interesting-menu P.bd {
+	COLOR: #666
+}
+#yan-interesting P.bd A {
+	PADDING-LEFT: 17px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/star-large.gif) no-repeat 0px -102px
+}
+#yan-interesting P.bd A:hover {
+	BACKGROUND-POSITION: 0px -202px
+}
+#yan-interesting P.bd A.starred {
+	BACKGROUND-POSITION: 0px -202px
+}
+#yan-interesting .hd A.remove-star {
+	BACKGROUND-POSITION: 0px -302px
+}
+#yan-interesting P.bd A.remove-star {
+	BACKGROUND-POSITION: 0px -302px
+}
+#yan-interesting .hd A.add-star {
+	BACKGROUND-POSITION: 0px -402px
+}
+#yan-interesting P.bd A.add-star {
+	BACKGROUND-POSITION: 0px -402px
+}
+.mod#yan-interesting .bd A {
+	COLOR: #678
+}
+.mod#yan-interesting-menu .bd A {
+	COLOR: #678
+}
+#yan-interesting-menu LI A {
+	DISPLAY: block; FONT-SIZE: 93%; OVERFLOW: hidden; WIDTH: 102px; WHITE-SPACE: nowrap
+}
+#yan-interesting LI IMG {
+	MARGIN-RIGHT: 4px
+}
+#yan-interesting-menu LI IMG {
+	MARGIN-RIGHT: 4px
+}
+#yan-interesting LI.contact A {
+	BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/bud12_1.gif) no-repeat 22px 5px
+}
+#yan-question-tools #yan-interesting-menu LI.contact A {
+	BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/bud12_1.gif) no-repeat 22px 5px
+}
+#yan-interesting LI.blocked A {
+	BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/blck12_1.gif) no-repeat 22px 5px
+}
+#yan-question-tools #yan-interesting-menu LI.blocked A {
+	BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/blck12_1.gif) no-repeat 22px 5px
+}
+#yan-interesting LI.contact IMG {
+	MARGIN-RIGHT: 16px
+}
+#yan-interesting-menu LI.contact IMG {
+	MARGIN-RIGHT: 16px
+}
+#yan-interesting LI.blocked IMG {
+	MARGIN-RIGHT: 16px
+}
+#yan-interesting-menu LI.blocked IMG {
+	MARGIN-RIGHT: 16px
+}
+#yan-interesting LI.you A {
+	FONT-WEIGHT: bold
+}
+#yan-interesting-menu LI.you A {
+	FONT-WEIGHT: bold
+}
+#yan-question-tools #yan-interesting-menu .show-more {
+	DISPLAY: block; MARGIN: -0.5em 0px 1em
+}
+BODY.js #yan-interesting LI {
+	DISPLAY: none
+}
+BODY.js #yan-interesting-menu LI {
+	DISPLAY: none
+}
+BODY.js #yan-interesting .show {
+	DISPLAY: block
+}
+BODY.js #yan-interesting .show LI {
+	DISPLAY: block
+}
+BODY.js #yan-interesting-menu .show {
+	DISPLAY: block
+}
+BODY.js #yan-interesting-menu .show LI {
+	DISPLAY: block
+}
+#yan-related .yan-sponsored {
+	PADDING-RIGHT: 20px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) #fff repeat-x 0px bottom; PADDING-BOTTOM: 30px; PADDING-TOP: 21px
+}
+.yan-sponsored .hd {
+	FONT-SIZE: 85%; MARGIN-BOTTOM: 6px; TEXT-TRANSFORM: uppercase; COLOR: #999; LINE-HEIGHT: 85%; TEXT-ALIGN: left
+}
+.yan-sponsored .bd {
+	PADDING-RIGHT: 16px
+}
+.yan-sponsored DT {
+	FONT-SIZE: 123.1%; LINE-HEIGHT: 123.1%
+}
+.yan-sponsored DT A {
+	COLOR: #069
+}
+.yan-sponsored DT EM {
+	FONT-WEIGHT: bold
+}
+.yan-sponsored DD {
+	MARGIN-BOTTOM: 15px; COLOR: #333; LINE-HEIGHT: 138.5%
+}
+.yan-sponsored DD EM {
+	DISPLAY: block; COLOR: #008000
+}
+.yan-sponsored DD EM A {
+	COLOR: #060
+}
+.yan-sponsored A.ft {
+	DISPLAY: block; COLOR: #069
+}
+#yan-search-results .landscape {
+	CLEAR: both
+}
+.landscape {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #ecf5fa; PADDING-BOTTOM: 5px; MARGIN: 0px 0px 10px; PADDING-TOP: 5px
+}
+.landscape .hd {
+	FONT-SIZE: 77%; FLOAT: right; MARGIN-BOTTOM: 0px; TEXT-ALIGN: right
+}
+.landscape DD.last {
+	MARGIN-BOTTOM: 0px
+}
+.landscape DD EM {
+	DISPLAY: inline
+}
+#yan-related #yan-sponsored {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: #fff; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-related #yan-sponsored  {
+	LINE-HEIGHT: 1.15
+}
+#yan-related #yan-sponsored .hd {
+	FONT-SIZE: 85%; TEXT-TRANSFORM: uppercase; COLOR: #999; TEXT-ALIGN: center
+}
+#yan-related #yan-sponsored .bd {
+	PADDING-RIGHT: 16px
+}
+#yan-sponsored DT {
+	FONT-SIZE: 116%
+}
+#yan-sponsored DT A {
+	COLOR: #069
+}
+#yan-sponsored DT EM {
+	FONT-WEIGHT: bold
+}
+#yan-sponsored DD {
+	MARGIN-BOTTOM: 24px; COLOR: #666
+}
+#yan-sponsored DD EM {
+	DISPLAY: block; COLOR: #008000
+}
+#yan-sponsored DD EM A {
+	COLOR: #060
+}
+#yan-sponsored .ft {
+	DISPLAY: block; COLOR: #069; TEXT-ALIGN: center
+}
+#yan-starthis A:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%; CURSOR: pointer; TEXT-DECORATION: none
+}
+#yan-starthis SPAN {
+	VERTICAL-ALIGN: middle; LINE-HEIGHT: 26px; WHITE-SPACE: nowrap
+}
+#yan-question-tools #yan-starthis A {
+	DISPLAY: block; PADDING-LEFT: 18px; OVERFLOW: hidden
+}
+#yan-question-tools #yan-starthis .cannot-star {
+	DISPLAY: block; PADDING-LEFT: 18px; OVERFLOW: hidden
+}
+.js #yan-question-tools #yan-starthis A {
+	PADDING-RIGHT: 22px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dropdown-arrow.gif) no-repeat 93% 10px
+}
+.js #yan-question-tools #yan-starthis .cannot-star {
+	PADDING-RIGHT: 22px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dropdown-arrow.gif) no-repeat 93% 10px
+}
+.js #yan-question-tools #yan-starthis DIV A {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#yan-starthis .cannot-star {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 31px; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 26px; PADDING-TOP: 0px; TEXT-ALIGN: center; TEXT-DECORATION: none
+}
+#yan-starthis A SPAN {
+	FLOAT: left
+}
+#yan-starthis .cannot-star SPAN {
+	FLOAT: left
+}
+#yan-starthis A .star {
+	MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/star-border.gif) no-repeat 0px -96px; MARGIN: 0px 0.2em; OVERFLOW: hidden; WIDTH: 23px; TEXT-INDENT: -9999px; ZOOM: 1
+}
+#yan-starthis .cannot-star .star {
+	MIN-HEIGHT: 19px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/star-border.gif) no-repeat 0px -96px; MARGIN: 0px 0.2em; OVERFLOW: hidden; WIDTH: 23px; TEXT-INDENT: -9999px; ZOOM: 1
+}
+#yan-starthis .cannot-star .star {
+	BACKGROUND-POSITION: 0px -515px
+}
+#yan-starthis A:hover .star {
+	BACKGROUND-POSITION: 0px -196px
+}
+#yan-starthis A.starred .star {
+	BACKGROUND-POSITION: 0px -196px
+}
+#yan-starthis A.remove-star .star {
+	BACKGROUND-POSITION: 0px -296px
+}
+#yan-starthis A.add-star .star {
+	BACKGROUND-POSITION: 0px -396px
+}
+#yan-starthis A SPAN.star-count {
+	DISPLAY: inline; BACKGROUND-IMAGE: none; OVERFLOW: hidden; WIDTH: auto; TEXT-INDENT: -9999px; ZOOM: 1
+}
+#yan-starthis .cannot-star SPAN.star-count {
+	DISPLAY: inline; BACKGROUND-IMAGE: none; OVERFLOW: hidden; WIDTH: auto; TEXT-INDENT: -9999px; ZOOM: 1
+}
+#yan-starthis A SPAN.has-stars {
+	TEXT-INDENT: 0px
+}
+#yan-starthis .cannot-star SPAN.has-stars {
+	TEXT-INDENT: 0px
+}
+#yan-interesting-menu P {
+	MARGIN-BOTTOM: 1em
+}
+#yan-interesting-menu .star-status EM {
+	FONT-WEIGHT: bold
+}
+#yan-interesting-menu .success EM {
+	COLOR: #090
+}
+SPAN.highlight {
+	FONT-WEIGHT: bold
+}
+#yan-interesting-menu {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1em; BACKGROUND: #fff; PADDING-BOTTOM: 1em; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; WIDTH: 20em; PADDING-TOP: 1em; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-question-tools #yan-interesting-menu SPAN {
+	VERTICAL-ALIGN: baseline; LINE-HEIGHT: 1.3; WHITE-SPACE: normal
+}
+#yan-question-tools #yan-interesting-menu H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 123.1%; MARGIN-BOTTOM: 0.5em; COLOR: #666
+}
+#yan-question-tools #yan-interesting-menu A {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FLOAT: none; PADDING-BOTTOM: 0px; WIDTH: auto; LINE-HEIGHT: 1.3; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#yan-question-tools #yan-interesting-menu LI A {
+	DISPLAY: block; OVERFLOW: hidden; WIDTH: 102px; ZOOM: 1; WHITE-SPACE: nowrap
+}
+#yan-question-tools #yan-interesting-menu LI {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 1em; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0.2em 0px; WIDTH: 9em; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-question-tools LI LI:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#yan-question-tools LI LI.hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+#yan-question-tools #yan-interesting-menu SPAN {
+	FLOAT: none; LINE-HEIGHT: 1.3
+}
+.utils-container {
+	CLEAR: both; MARGIN: 1em 0px; OVERFLOW: hidden; ZOOM: 1
+}
+.js .utils-container .thumb-status {
+	LEFT: -9999px; POSITION: absolute
+}
+.js .show .thumb-status {
+	LEFT: 0px; POSITION: static
+}
+.qa-container .answer-util .loading {
+	BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr2/saving_grnarial.gif) no-repeat 0px 0.2em; TEXT-INDENT: -9999px; TEXT-ALIGN: left
+}
+#yan-askmini DIV {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-askmini FORM {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-askmini H2 {
+	FONT-SIZE: 138.5%; MARGIN-BOTTOM: 0px; COLOR: #666
+}
+#yan-askmini .cta {
+	FLOAT: right; MARGIN-BOTTOM: 0px
+}
+#yan-askmini FORM LABEL SPAN {
+	FONT-WEIGHT: bold
+}
+#yan-askmini TEXTAREA {
+	BORDER-RIGHT: #7f9db9 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #7f9db9 1px solid; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; MARGIN: 4px 0px; OVERFLOW: auto; BORDER-LEFT: #7f9db9 1px solid; WIDTH: 210px; PADDING-TOP: 3px; BORDER-BOTTOM: #7f9db9 1px solid; HEIGHT: 50px
+}
+.wide #yan-askmini TEXTAREA {
+	WIDTH: 279px
+}
+#yan-askmini TEXTAREA.default {
+	COLOR: #666
+}
+#yan-askmini .count-chars {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 93%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-askmini .count-chars SPAN {
+	FONT-WEIGHT: bold
+}
+#yan-group-actions A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/actionbar.gif) no-repeat 10px -1281px
+}
+#yan-question-tools #yan-group-actions-menu {
+	WIDTH: 17.2em
+}
+#yan-question-tools #yan-group-actions .hide-scrollbars UL {
+	OVERFLOW: hidden
+}
+#yan-question-tools #yan-group-actions UL {
+	OVERFLOW: auto; WIDTH: 17em; LIST-STYLE-TYPE: none
+}
+#yan-question-tools #yan-group-actions LI {
+	BORDER-TOP: #ccc 1px dotted; DISPLAY: list-item; BACKGROUND: #fff; OVERFLOW: hidden; LINE-HEIGHT: 1.2; WHITE-SPACE: normal; LIST-STYLE-TYPE: none; TEXT-ALIGN: right
+}
+#yan-question-tools #yan-group-actions LI.first {
+	BORDER-TOP-STYLE: none
+}
+#yan-question-tools #yan-group-actions LI.inactive {
+	COLOR: #666
+}
+#yan-question-tools #yan-group-actions LI A {
+	PADDING-RIGHT: 11px; DISPLAY: block; PADDING-LEFT: 11px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 5px; BORDER-TOP-STYLE: none; LINE-HEIGHT: 1.2; PADDING-TOP: 5px; ZOOM: 1; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; TEXT-ALIGN: left; BORDER-BOTTOM-STYLE: none
+}
+#yan-question-tools #yan-group-actions LI A:hover {
+	BACKGROUND-COLOR: #ecf9dd
+}
+#yan-question-tools #yan-group-actions LI.inactive {
+	PADDING-RIGHT: 11px; PADDING-LEFT: 11px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+#yan-question-tools #yan-group-actions LI.inactive SPAN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 9em; PADDING-TOP: 0px; TEXT-ALIGN: left
+}
+#yan-question-tools #yan-group-actions LI.inactive A {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#yan-question-tools #yan-group-actions LI.inactive A:hover {
+	BACKGROUND-COLOR: transparent; TEXT-DECORATION: underline
+}
+#yan-question-tools #yan-group-event-add {
+	CLEAR: left; BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; BACKGROUND: #fff; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; WIDTH: 17em; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-question-tools #yan-group-event-remove {
+	CLEAR: left; BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; BACKGROUND: #fff; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; WIDTH: 17em; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-group-event-error {
+	CLEAR: left; BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; BACKGROUND: #fff; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; WIDTH: 17em; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-group-actions #yan-group-noadd {
+	CLEAR: left; BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; BACKGROUND: #fff; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; WIDTH: 17em; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid
+}
+#yan-group-actions #yan-group-noadd {
+	MARGIN-BOTTOM: 0px; LINE-HEIGHT: 1.5
+}
+#yan-group-actions P#yan-group-noadd EM {
+	FONT-WEIGHT: bold
+}
+#yan-group-actions P#yan-group-noadd A {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.5; PADDING-TOP: 0px
+}
+#yan-question-tools #yan-group-event-add A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.4; PADDING-TOP: 0px
+}
+#yan-question-tools #yan-group-event-remove A {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1.4; PADDING-TOP: 0px
+}
+#yan-question-tools #yan-group-event-add IMG {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+#yan-question-tools #yan-group-event-remove IMG {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+#yan-group-event-add STRONG {
+	COLOR: #67ce12
+}
+#yan-group-event-remove STRONG {
+	FONT-WEIGHT: bold
+}
+#yan-groups-sidebar .new EM {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; FONT-SIZE: 83%; PADDING-BOTTOM: 1px; MARGIN-LEFT: 3px; VERTICAL-ALIGN: top; COLOR: #000; PADDING-TOP: 1px; BACKGROUND-COLOR: #fc0
+}
+#yan-groups-sidebar LI {
+	MARGIN-BOTTOM: 0.5em; OVERFLOW: hidden
+}
+#yan-groups-sidebar LI IMG {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+#askedInCountry {
+	PADDING-RIGHT: 1em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1em; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/carousel-bg-top.gif) #fff repeat-x; PADDING-BOTTOM: 1em; PADDING-TOP: 1em
+}
+#askedInCountry P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 24px; FONT-SIZE: 85%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/intl-flags.gif) no-repeat 0px -60px; PADDING-BOTTOM: 0px; COLOR: #666; PADDING-TOP: 0px; ZOOM: 1
+}
+#askedInCountry .e1 {
+	BACKGROUND-POSITION: 0px -1520px
+}
+#askedInCountry .us {
+	BACKGROUND-POSITION: 0px -1520px
+}
+#askedInCountry .ca {
+	BACKGROUND-POSITION: 0px -352px
+}
+#askedInCountry .qc {
+	BACKGROUND-POSITION: 0px -1593px
+}
+#askedInCountry .cf {
+	BACKGROUND-POSITION: 0px -498px
+}
+#askedInCountry .mx {
+	BACKGROUND-POSITION: 0px -1009px
+}
+#askedInCountry .in {
+	BACKGROUND-POSITION: 0px -790px
+}
+#askedInCountry .uk {
+	BACKGROUND-POSITION: 0px -1447px
+}
+#askedInCountry .de {
+	BACKGROUND-POSITION: 0px -498px
+}
+#askedInCountry .fr {
+	BACKGROUND-POSITION: 0px -644px
+}
+#askedInCountry .it {
+	BACKGROUND-POSITION: 0px -863px
+}
+#askedInCountry .es {
+	BACKGROUND-POSITION: 0px -571px
+}
+#askedInCountry .br {
+	BACKGROUND-POSITION: 0px -279px
+}
+#askedInCountry .ar {
+	BACKGROUND-POSITION: 0px -133px
+}
+#askedInCountry .au {
+	BACKGROUND-POSITION: 0px -206px
+}
+#askedInCountry .nz {
+	BACKGROUND-POSITION: 0px -1666px
+}
+#askedInCountry .sg {
+	BACKGROUND-POSITION: 0px -1228px
+}
+#askedInCountry .my {
+	BACKGROUND-POSITION: 0px -1082px
+}
+#askedInCountry .ph {
+	BACKGROUND-POSITION: 0px -1155px
+}
+#askedInCountry .cn {
+	BACKGROUND-POSITION: 0px -425px
+}
+#askedInCountry .jp {
+	BACKGROUND-POSITION: 0px -936px
+}
+#askedInCountry .kr {
+	BACKGROUND-POSITION: 0px -1301px
+}
+#askedInCountry .tw {
+	BACKGROUND-POSITION: 0px -1374px
+}
+#askedInCountry .hk {
+	BACKGROUND-POSITION: 0px -717px
+}
+#askedInCountry .vn {
+	BACKGROUND-POSITION: 0px -1885px
+}
+#askedInCountry .id {
+	BACKGROUND-POSITION: 0px -1739px
+}
+#askedInCountry .th {
+	BACKGROUND-POSITION: 0px -1812px
+}
+#askedInCountry P A {
+	COLOR: #678; TEXT-DECORATION: none
+}
+#askedInCountry P A:hover {
+	TEXT-DECORATION: underline
+}
+.questions {
+	MARGIN-BOTTOM: 1.54em
+}
+.questions LI {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; COLOR: #666; PADDING-TOP: 5px; ZOOM: 1; POSITION: relative
+}
+.questions LI LI {
+	POSITION: static
+}
+.questions LI.alt {
+	BACKGROUND: #f8f8f8
+}
+.questions LI.first H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 131%
+}
+.questions LI.second H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 108%
+}
+.questions IMG {
+	FLOAT: left; MARGIN: 3px 0px 0px 5px
+}
+.questions H3 {
+	MARGIN-LEFT: 50px
+}
+.questions UL {
+	MARGIN-LEFT: 50px
+}
+.questions P {
+	MARGIN-LEFT: 50px
+}
+.questions P {
+	MARGIN-TOP: 0px; MARGIN-BOTTOM: 0px; COLOR: #333
+}
+.questions .meta LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; FONT-SIZE: 85%; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.questions .meta LI.stars A {
+	FLOAT: left; MARGIN: 0.1em 5px 0.5em 0px; TEXT-DECORATION: none
+}
+.questions .meta LI.stars .disabled {
+	FLOAT: left; MARGIN: 0.1em 5px 0.5em 0px; TEXT-DECORATION: none
+}
+.questions .meta LI.stars .star {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/star.gif) no-repeat 100% -99px; OVERFLOW: hidden; WIDTH: 14px; TEXT-INDENT: -9999px; ZOOM: 1
+}
+.questions .meta LI.stars .has-stars {
+	TEXT-INDENT: 0px
+}
+.questions .meta LI.stars A:hover .star {
+	BACKGROUND-POSITION: 100% -199px
+}
+.questions .meta LI.stars .starred .star {
+	BACKGROUND-POSITION: 100% -199px
+}
+.questions .meta LI.stars .remove-star .star {
+	BACKGROUND-POSITION: 100% -299px
+}
+.questions .meta LI.stars .remove-star:hover .star {
+	BACKGROUND-POSITION: 100% -299px
+}
+.questions .meta LI.stars .add-star .star {
+	BACKGROUND-POSITION: 100% -399px
+}
+.questions .meta LI.stars .add-star:hover .star {
+	BACKGROUND-POSITION: 100% -399px
+}
+.questions .meta LI.stars .disabled .star {
+	BACKGROUND-POSITION: 100% -499px
+}
+.questions .meta LI.stars SPAN SPAN {
+	FLOAT: left; OVERFLOW: hidden; TEXT-INDENT: -9999px; ZOOM: 1; WHITE-SPACE: nowrap
+}
+.questions .meta LI.stars A SPAN {
+	FLOAT: left; OVERFLOW: hidden; TEXT-INDENT: -9999px; ZOOM: 1; WHITE-SPACE: nowrap
+}
+.questions .meta .contact A {
+	PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/bud12_1.gif) no-repeat 0px 50%
+}
+.questions .meta .contact SPAN {
+	LEFT: -9999px; POSITION: absolute
+}
+.questions .meta A {
+	COLOR: #678
+}
+.questions .remove-question {
+	RIGHT: 0px; BACKGROUND: #ccc; WIDTH: 20px; TEXT-INDENT: -999em; POSITION: absolute; TOP: 10px
+}
+#yan-mystatus {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/profile.gif) #f0f8e6 no-repeat; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 10px; WIDTH: 223px; PADDING-TOP: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-myincentives {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/profile.gif) #f0f8e6 no-repeat; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 10px; WIDTH: 223px; PADDING-TOP: 10px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-mystatus .bd {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-myincentives .bd {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-mystatus .ft {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/profile.gif) #f0f8e6 no-repeat 0px 100%; PADDING-BOTTOM: 0px; MARGIN: 0px -10px -10px; PADDING-TOP: 0px; HEIGHT: 10px
+}
+#yan-myincentives .ft {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/profile.gif) #f0f8e6 no-repeat 0px 100%; PADDING-BOTTOM: 0px; MARGIN: 0px -10px -10px; PADDING-TOP: 0px; HEIGHT: 10px
+}
+#yan-mystatus .photo {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+#yan-mystatus .signedout P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 50px; MIN-HEIGHT: 40px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/login-smiley.gif) no-repeat; PADDING-BOTTOM: 0px; PADDING-TOP: 10px; HEIGHT: 40px; TEXT-ALIGN: center
+}
+#yan-mystatus .signedout A {
+	DISPLAY: block; FONT-WEIGHT: bold; WHITE-SPACE: nowrap
+}
+#yan-mystatus A .fn {
+	DISPLAY: inline; COLOR: #069
+}
+#yan-mystatus .url:hover .fn {
+	TEXT-DECORATION: underline
+}
+#yan-mystatus .hd IMG {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 10px 0px 0px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-mystatus DL {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-mystatus DT {
+	CLEAR: left; FLOAT: left; MARGIN-RIGHT: 0.3em
+}
+#yan-mystatus DT {
+	FONT-WEIGHT: normal
+}
+#yan-mystatus DD {
+	FONT-WEIGHT: normal
+}
+#yan-mystatus .signedout P {
+	FONT-SIZE: 108%
+}
+#yan-related #yan-mystatus {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#yan-related #yan-myincentives {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+#yan-mystatus .fn {
+	FONT-WEIGHT: bold
+}
+#yan-mystatus P {
+	MARGIN-BOTTOM: 0.1em
+}
+#yan-mystatus DT {
+	MARGIN-BOTTOM: 0.1em
+}
+#yan-mystatus DD {
+	MARGIN-BOTTOM: 0.1em
+}
+#yan-myincentives P {
+	MARGIN-BOTTOM: 0.1em
+}
+#yan-myincentives .bd {
+	PADDING-LEFT: 58px; MIN-HEIGHT: 30px; BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr2/medal.gif) no-repeat 10px 50%
+}
+#yan-myincentives STRONG {
+	FONT-WEIGHT: bold; FONT-SIZE: 116%; COLOR: #7bcd42
+}
+#yan-myincentives EM {
+	FONT-WEIGHT: bold; FONT-SIZE: 116%; COLOR: #7bcd42
+}
+BODY.js #yan-related #yan-myincentives {
+	LEFT: -9999px; PADDING-BOTTOM: 0px; POSITION: absolute
+}
+.profile {
+	DISPLAY: inline; FLOAT: left; WIDTH: 74px; MARGIN-RIGHT: 12px; TEXT-ALIGN: center
+}
+.wide .profile {
+	MARGIN-RIGHT: 25px
+}
+.profile DT {
+	FONT-WEIGHT: bold; FONT-SIZE: 90%
+}
+.profile DD {
+	FONT-SIZE: 90%; MARGIN: 0px
+}
+.profile .member {
+	DISPLAY: none
+}
+.profile .photo {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 3px; BACKGROUND: #fff; PADDING-BOTTOM: 3px; OVERFLOW: hidden; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 3px; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1
+}
+.expert .photo {
+	BORDER-LEFT-COLOR: #68cb18; BORDER-BOTTOM-COLOR: #68cb18; BORDER-TOP-COLOR: #68cb18; BORDER-RIGHT-COLOR: #68cb18
+}
+.profile .user {
+	DISPLAY: block; OVERFLOW: hidden; WIDTH: 74px; ZOOM: 1; TEXT-ALIGN: center
+}
+.profile .user .by {
+	DISPLAY: none
+}
+.contact .url .fn {
+	PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/bud12_1.gif) no-repeat 0px 2px
+}
+.blocked .url .fn {
+	PADDING-LEFT: 14px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/blck12_1.gif) no-repeat 0px 2px
+}
+.profile .stats {
+	DISPLAY: none
+}
+.profile .network {
+	DISPLAY: none
+}
+.profile .contributions {
+	DISPLAY: none
+}
+.network A {
+	DISPLAY: block
+}
+.yui-module .network {
+	DISPLAY: block
+}
+.yui-module#yan-user-profile-card {
+	DISPLAY: block
+}
+.yui-module#yan-user-profile-card {
+	BORDER-RIGHT: #999 2px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: #fff; BORDER-LEFT: #ccc 1px solid; WIDTH: 28.5em; COLOR: #666; BORDER-BOTTOM: #999 2px solid; TEXT-ALIGN: left
+}
+.yui-module#yan-user-profile-card .bd {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 93%; MIN-HEIGHT: 104px; PADDING-BOTTOM: 0px; MARGIN: 0px; OVERFLOW: visible; PADDING-TOP: 0px; ZOOM: 1; HEIGHT: 104px
+}
+.yui-module#yan-user-profile-card .ft {
+	PADDING-RIGHT: 0.2em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 0.2em; BACKGROUND: #eee; PADDING-BOTTOM: 0.2em; PADDING-TOP: 0.2em
+}
+.yui-module#yan-user-profile-card .ft UL {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.yui-module#yan-user-profile-card .ft UL LI {
+	PADDING-RIGHT: 4px; FLOAT: left
+}
+.network A.block-user {
+	PADDING-LEFT: 16px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/blck12_1.gif) no-repeat left center
+}
+.network A.add-contact {
+	PADDING-LEFT: 16px; BACKGROUND: url(http://l.yimg.com/a/i/nt/ic/ut/bsc/add12_thn_1.gif) no-repeat 0px 50%
+}
+.yui-module#yan-user-profile-card .contributions {
+	DISPLAY: block; BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr/grey_dot.gif) repeat-x 0px 100%; PADDING-BOTTOM: 5px; MARGIN: 10px 10px -7px 0px; OVERFLOW: hidden; ZOOM: 1
+}
+.yui-module#yan-user-profile-card .contributions DT {
+	LEFT: -5000em; POSITION: absolute
+}
+.yui-module#yan-user-profile-card .stats {
+	DISPLAY: block; MARGIN: 10px 10px 10px 0px; OVERFLOW: hidden; ZOOM: 1
+}
+.yui-module#yan-user-profile-card .stats DD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FONT-SIZE: 100%; MARGIN-BOTTOM: 0.3em; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0px
+}
+.yui-module#yan-user-profile-card .stats DT {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 0px; FONT-SIZE: 100%; MARGIN-BOTTOM: 0.3em; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0px
+}
+.yui-module#yan-user-profile-card .stats DT {
+	PADDING-RIGHT: 4px; FLOAT: left
+}
+.yui-module#yan-user-profile-card .stats DT.last {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.yui-module#yan-user-profile-card .stats DD.last {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.yui-module#yan-user-profile-card .stats DD {
+	BACKGROUND: url(http://l.yimg.com/a/i/us/sch/gr/grey_dot.gif) repeat-x 0px 100%; OVERFLOW: visible
+}
+.yui-module#yan-user-profile-card UL.best {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 10px 10px 10px 0px; PADDING-TOP: 0px; POSITION: relative
+}
+.yui-module#yan-user-profile-card LI.best {
+	PADDING-RIGHT: 2.5em; PADDING-LEFT: 10px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/stats.gif) #68ce12 no-repeat 100% 0px; PADDING-BOTTOM: 0.5em; MARGIN: 0px; COLOR: #fff; PADDING-TOP: 2.5em
+}
+.yui-module#yan-user-profile-card LI.best SPAN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 160%; LEFT: 0px; PADDING-BOTTOM: 1em; COLOR: #fff; PADDING-TOP: 0.5em; POSITION: absolute; TOP: 0px
+}
+.yui-module#yan-user-profile-card LI.total {
+	PADDING-RIGHT: 0.3em; PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/stats.gif) #c1e7a1 no-repeat 100% 100%; PADDING-BOTTOM: 0.3em; COLOR: #390; PADDING-TOP: 0.3em
+}
+.user-badge {
+	DISPLAY: block
+}
+.voter-name {
+	FONT-WEIGHT: bold; FLOAT: left; WIDTH: 85px; COLOR: #000
+}
+.yui-module#yan-user-profile-card .stats DT.website {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/url.gif) no-repeat; WIDTH: 16px; TEXT-INDENT: -9999px; HEIGHT: 16px
+}
+.archive-index #yan-content H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 139%; PADDING-BOTTOM: 0.8em; MARGIN: 0px; COLOR: #666; LINE-HEIGHT: 1.1
+}
+.archive-index #yan-content .header {
+	BORDER-RIGHT: #ccc 0px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; BORDER-LEFT: #ccc 0px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #ccc 1px solid
+}
+.archive-index #yan-content .questions LI LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.archive-index .questions H3 {
+	FONT-SIZE: 100%
+}
+.archive-index #yan-content .questions .meta LI {
+	FONT-SIZE: 93%
+}
+.archive-index #yan-content .header {
+	OVERFLOW: hidden; ZOOM: 1
+}
+.archive-index #yan-content .header H2 {
+	FONT-WEIGHT: normal; FONT-SIZE: 100%; FLOAT: left; MARGIN: 0px; COLOR: #333
+}
+.archive-index #yan-content .header UL {
+	FLOAT: right
+}
+.archive-index #yan-content .header UL LI {
+	BORDER-RIGHT: #333 1px solid; PADDING-RIGHT: 0.5em; PADDING-LEFT: 0.5em; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 0px; LINE-HEIGHT: 1; PADDING-TOP: 0px
+}
+.archive-index #yan-content .header UL LI.last {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.archive-index #yan-content .header UL LI A {
+	LINE-HEIGHT: 1
+}
+.archive-index #yan-content .error {
+	MARGIN: 1em 5px 0px
+}
+.archive-index #yan-content .error UL {
+	MARGIN-TOP: 2em; LIST-STYLE-TYPE: disc
+}
+.archive-index #yan-content .error LI {
+	MARGIN-LEFT: 2em
+}
+#yan-calendar {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-calendar H2 {
+	FLOAT: left
+}
+#yan-calendar .help {
+	FLOAT: right; LINE-HEIGHT: 1.8
+}
+BODY.js #yan-calendar UL {
+	DISPLAY: none
+}
+#yan-calendar #calContainer {
+	CLEAR: both; PADDING-RIGHT: 20px; BORDER-TOP: #c5e49e 1px solid; PADDING-LEFT: 20px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: #e2f2ce; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 15px; MARGIN: 0px -12px -1em; WIDTH: 203px; PADDING-TOP: 15px; BORDER-RIGHT-WIDTH: 0px
+}
+ HTML #calContainer {
+	FLOAT: none
+}
+#yan-calendar TABLE {
+	WIDTH: 100%; BORDER-COLLAPSE: collapse
+}
+#yan-calendar CAPTION {
+	FONT-WEIGHT: bold; MARGIN: 0px auto
+}
+#yan-calendar TH {
+	FONT-WEIGHT: normal; WIDTH: 14%; TEXT-ALIGN: center
+}
+#yan-calendar TD {
+	FONT-WEIGHT: normal; WIDTH: 14%; TEXT-ALIGN: center
+}
+#yan-calendar TD {
+	BORDER-RIGHT: #c4da98 1px solid; BORDER-TOP: #c4da98 1px solid; BACKGROUND: #fff; BORDER-LEFT: #c4da98 1px solid; BORDER-BOTTOM: #c4da98 1px solid
+}
+#yan-calendar TD A {
+	DISPLAY: block
+}
+#yan-calendar .yui-calendar {
+	FONT-FAMILY: inherit
+}
+#yan-calendar .calheader {
+	FONT-WEIGHT: bold
+}
+#yan-calendar .calheader A {
+	MIN-HEIGHT: 12px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/calendar.gif) no-repeat; HEIGHT: auto
+}
+#yan-calendar .calheader .calnavright {
+	BACKGROUND-POSITION: -1000px 50%
+}
+#yan-calendar .calheader .calnavleft {
+	BACKGROUND-POSITION: -500px 50%
+}
+#yan-calendar TD {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px
+}
+#yan-calendar TD.oom {
+	BACKGROUND: #f0f9e6
+}
+#yan-calendar TD A {
+	COLOR: #069
+}
+#yan-calendar TD.selected {
+	BACKGROUND: #69b133
+}
+#yan-calendar TD.calcellhover {
+	BACKGROUND: #69b133
+}
+#yan-calendar TD.selected {
+	COLOR: #fff
+}
+#yan-calendar TD.selected A {
+	COLOR: #fff
+}
+#yan-calendar TD.calcellhover A {
+	COLOR: #fff
+}
+.category-index #yan-content H1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 139%; PADDING-BOTTOM: 0.8em; MARGIN: 0px; COLOR: #666; LINE-HEIGHT: 1.1
+}
+.category-index #yan-content .header {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 4px; PADDING-TOP: 4px; ZOOM: 1
+}
+#yan-sort {
+	FONT-SIZE: 93%; MARGIN: 0.5em 0px; OVERFLOW: hidden; LINE-HEIGHT: 1; ZOOM: 1
+}
+#yan-sort .active A {
+	PADDING-BOTTOM: 0.2em; BORDER-BOTTOM: #43b607 2px solid
+}
+#yan-sort H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.5em; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0.5em 0px 0px; PADDING-TOP: 0px
+}
+#yan-sort UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.5em; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0.5em 0px 0px; PADDING-TOP: 0px
+}
+#yan-sort LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0.5em; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px 0.5em 0px 0px; PADDING-TOP: 0px
+}
+#yan-sort H2 {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 100%; PADDING-BOTTOM: 0px; COLOR: #333; PADDING-TOP: 0px
+}
+#yan-sort LI {
+	BORDER-LEFT: #ccc 1px solid
+}
+#yan-sort LI.first {
+	PADDING-LEFT: 0px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#yan-sort SPAN {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-sort A {
+	FLOAT: left; LINE-HEIGHT: 1
+}
+#yan-sort .ascending A {
+	PADDING-RIGHT: 16px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/sort.gif) no-repeat 100% 0px
+}
+#yan-sort .descending A {
+	PADDING-RIGHT: 16px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/sort.gif) no-repeat 100% 0px
+}
+#yan-sort .ascending A {
+	BACKGROUND-POSITION: 100% -50px
+}
+.no-questions {
+	BORDER-RIGHT: #54c40a 1px solid; PADDING-RIGHT: 0.5em; BORDER-TOP: #54c40a 1px solid; PADDING-LEFT: 0.5em; BACKGROUND: #ffffca; PADDING-BOTTOM: 0.5em; BORDER-LEFT: #54c40a 1px solid; PADDING-TOP: 0.5em; BORDER-BOTTOM: #54c40a 1px solid
+}
+#yan-topanswerer {
+	MARGIN: 0px -5px 1em
+}
+#yan-topanswerer DIV {
+	PADDING-RIGHT: 5px; PADDING-LEFT: 5px; MIN-HEIGHT: 42px; BACKGROUND: #f0f8e6; PADDING-BOTTOM: 3px; OVERFLOW: hidden; PADDING-TOP: 3px; ZOOM: 1; HEIGHT: 42px
+}
+#yan-topanswerer H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 100%; FLOAT: left; COLOR: #666
+}
+#yan-topanswerer IMG {
+	FLOAT: left; MARGIN-RIGHT: 5px
+}
+#yan-topanswerer UL {
+	CLEAR: left; FLOAT: left; WIDTH: 100%
+}
+#yan-topanswerer LI {
+	DISPLAY: inline
+}
+#yan-topanswerer P {
+	MARGIN: 0px; TEXT-ALIGN: right
+}
+#yan-topanswerer P A {
+	WHITE-SPACE: nowrap
+}
+#yan-topanswerer LI.user A {
+	FONT-WEIGHT: bold
+}
+#yan-topanswerer LI.best-answers A {
+	COLOR: #e88a35
+}
+#yan-earn-points {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/earn-points-medal.gif); BACKGROUND-REPEAT: no-repeat
+}
+#yan-earn-points DT {
+	FLOAT: left; MARGIN: 0px 1em 0.5em 0px; WIDTH: 4.2em; TEXT-ALIGN: right
+}
+#yan-earn-points DD {
+	MARGIN: 0px 0px 0.5em; WIDTH: 15em
+}
+#yan-earn-points A {
+	DISPLAY: block; FONT-WEIGHT: bold; TEXT-ALIGN: right
+}
+#yan-earn-points EM {
+	FONT-WEIGHT: bold
+}
+#yan-featured-q {
+	OVERFLOW: hidden; ZOOM: 1
+}
+#yan-related #yan-featured-q #yan-question {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-featured-q .qa-container {
+	FLOAT: left; WIDTH: 75%
+}
+#yan-featured-q .profile {
+	WIDTH: auto; MARGIN-RIGHT: 10px
+}
+#yan-featured-q .avatar IMG {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 5px; PADDING-BOTTOM: 5px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #fff
+}
+#yan-featured-q #yan-question H1 {
+	FONT-SIZE: 100%
+}
+#yan-answers-blog-info .bd {
+	PADDING-LEFT: 105px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/yamster.jpg) no-repeat left top
+}
+#yan-featured-q H3.subject {
+	FONT-SIZE: 109%
+}
+.category-index .questions {
+	BORDER-TOP: #ccc 1px solid
+}
+.category-index .questions H3 {
+	MARGIN-LEFT: 40px
+}
+.category-index .questions UL {
+	MARGIN-LEFT: 40px
+}
+.default-index .questions H3 {
+	MARGIN-LEFT: 40px
+}
+.default-index .questions UL {
+	MARGIN-LEFT: 40px
+}
+.default-index H1 {
+	LEFT: -9999px; POSITION: absolute
+}
+.yan-content-heading {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 10px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 10px; MARGIN-BOTTOM: 0.5em; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 10px; BORDER-BOTTOM: #43b607 4px solid
+}
+.yan-content-heading H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 137%; MARGIN: 0px; COLOR: #000
+}
+.tabbed-content {
+	PADDING-BOTTOM: 2.7em; OVERFLOW: hidden; ZOOM: 1; POSITION: relative
+}
+.tabs {
+	LEFT: 10px; OVERFLOW: hidden; BOTTOM: 0px; LINE-HEIGHT: 1; MARGIN-RIGHT: 1em; ZOOM: 1; POSITION: absolute
+}
+.tabs:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.tabs LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/category-tabs.gif) #f3f9eb no-repeat
+}
+.tabs LI A {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/category-tabs.gif) #f3f9eb no-repeat
+}
+.tabs LI SPAN {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/category-tabs.gif) #f3f9eb no-repeat
+}
+.tabs LI {
+	BACKGROUND-POSITION: 0px -200px; PADDING-LEFT: 1em; FONT-WEIGHT: bold; FLOAT: left; MARGIN-BOTTOM: -1px; MARGIN-RIGHT: 0.5em; POSITION: relative
+}
+.tabs LI A {
+	PADDING-RIGHT: 1em; BACKGROUND-POSITION: 100% -200px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0.6em; COLOR: #666; PADDING-TOP: 0.6em
+}
+.tabs LI SPAN {
+	PADDING-RIGHT: 1em; BACKGROUND-POSITION: 100% -200px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0.6em; COLOR: #666; PADDING-TOP: 0.6em
+}
+.tabs LI.current A {
+	COLOR: #fff
+}
+.tabs LI.current {
+	BACKGROUND-POSITION: 0px 0px; COLOR: #fff; BACKGROUND-COLOR: #43b607
+}
+.tabs LI.current SPAN {
+	BACKGROUND-POSITION: 0px 0px; COLOR: #fff; BACKGROUND-COLOR: #43b607
+}
+.tabs LI.current SPAN {
+	BACKGROUND-POSITION: 100% 0px
+}
+.tabs EM {
+	DISPLAY: block; FONT-WEIGHT: bold; FONT-SIZE: 123.1%
+}
+#yan-network {
+	BORDER-RIGHT: #d9e2e7 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d9e2e7 1px solid; PADDING-LEFT: 5px; BACKGROUND: #e9f6fc; PADDING-BOTTOM: 5px; MARGIN: 10px 0px; BORDER-LEFT: #d9e2e7 1px solid; PADDING-TOP: 5px; BORDER-BOTTOM: #d9e2e7 1px solid
+}
+#yan-network H2 {
+	MARGIN: 0px
+}
+#yan-network P {
+	MARGIN: 0px
+}
+.info-about #yan-content {
+	BORDER-TOP: #ccc 1px solid
+}
+.info-about #yan-content P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 1.08em; PADDING-TOP: 0px
+}
+.info-about #yan-content P.first-child {
+	PADDING-TOP: 0px
+}
+.info-about #yan-content H2 {
+	PADDING-RIGHT: 0px; BORDER-TOP: #43b607 4px solid; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 14px
+}
+.info-about H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 108%
+}
+.info-about H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 108%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dotted-line.gif) repeat-x 0px 0px; PADDING-TOP: 1em
+}
+#yan-related .badges {
+	PADDING-BOTTOM: 20px
+}
+#yan-related .badges H2 {
+	MARGIN: 10px 0px 20px; LINE-HEIGHT: 1
+}
+#yan-related .badges IMG {
+	BORDER-RIGHT: #c0c0c0 1px solid; BORDER-TOP: #c0c0c0 1px solid; MARGIN: 0px 0px 20px; BORDER-LEFT: #c0c0c0 1px solid; BORDER-BOTTOM: #c0c0c0 1px solid
+}
+#yan-related .badges P {
+	MARGIN-BOTTOM: 0px
+}
+#yan-related .badges STRONG {
+	FONT-WEIGHT: bold
+}
+.yan-points TH {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 93%; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.45em; BORDER-BOTTOM: #ccc 1px solid
+}
+.yan-points TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 93%; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.45em; BORDER-BOTTOM: #ccc 1px solid
+}
+.yan-levels TH {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 93%; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.45em; BORDER-BOTTOM: #ccc 1px solid
+}
+.yan-levels TD {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 93%; PADDING-BOTTOM: 0.3em; PADDING-TOP: 0.45em; BORDER-BOTTOM: #ccc 1px solid
+}
+.yan-points {
+	MARGIN: 0px 0px 1em
+}
+.yan-levels {
+	MARGIN: 0px 0px 1em
+}
+.yan-points CAPTION {
+	FONT-WEIGHT: bold; PADDING-BOTTOM: 0.5em
+}
+.yan-points THEAD TH {
+	BORDER-RIGHT: #44b608 0px solid; BORDER-TOP: #44b608 1px solid; FONT-WEIGHT: bold; BACKGROUND: #f0f9e6; BORDER-LEFT: #44b608 0px solid; COLOR: #44b608; BORDER-BOTTOM: #44b608 1px solid
+}
+.yan-levels THEAD TH {
+	BORDER-RIGHT: #44b608 0px solid; BORDER-TOP: #44b608 1px solid; FONT-WEIGHT: bold; BACKGROUND: #f0f9e6; BORDER-LEFT: #44b608 0px solid; COLOR: #44b608; BORDER-BOTTOM: #44b608 1px solid
+}
+.yan-levels TH {
+	TEXT-ALIGN: center
+}
+.yan-levels TD {
+	TEXT-ALIGN: center
+}
+.yan-points {
+	WIDTH: 100%
+}
+.yan-levels {
+	WIDTH: 100%
+}
+.yan-levels THEAD TH {
+	WIDTH: 90px
+}
+.yan-levels THEAD TH.level {
+	WIDTH: auto
+}
+.yan-levels THEAD TH.points {
+	WIDTH: 110px
+}
+.yan-points .even {
+	BORDER-RIGHT: #ccc 0px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: #f5f5f5; BORDER-LEFT: #ccc 0px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.yan-levels .even {
+	BORDER-RIGHT: #ccc 0px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: #f5f5f5; BORDER-LEFT: #ccc 0px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.yan-clarification {
+	FONT-WEIGHT: bold
+}
+.info-help #yan-content OL {
+	PADDING-RIGHT: 1.8em; PADDING-LEFT: 1.8em; MARGIN-BOTTOM: 1.07em; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.info-help #yan-content OL LI {
+	LIST-STYLE-POSITION: outside; LIST-STYLE-TYPE: decimal
+}
+.info-help #yan-content OL UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0.47em; PADDING-TOP: 1em
+}
+.info-help #yan-content OL UL LI {
+	LIST-STYLE-TYPE: disc
+}
+.info-help #yan-content DL {
+	MARGIN: 0px 0px 1.07em 1em; ZOOM: 1
+}
+.info-help #yan-content DD {
+	PADDING-LEFT: 1em; MARGIN-BOTTOM: 0.53em
+}
+.info-help #yan-content DL:unknown {
+	CLEAR: both; DISPLAY: block; VISIBILITY: hidden; HEIGHT: 0px; content: "."
+}
+.info-help #yan-content DL DL {
+	CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0.47em; PADDING-TOP: 1em
+}
+.info-help #yan-content DT {
+	PADDING-LEFT: 1em; FONT-WEIGHT: bold; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/bullets.gif) no-repeat -300px 0px; FLOAT: left; MARGIN-RIGHT: 1ex
+}
+.info-help #yan-content H3 {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 0.53em
+}
+.info-producttour H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 107%; MARGIN-BOTTOM: 0px
+}
+#yan-toursubnav UL {
+	BORDER-RIGHT: #44b608 1px solid; BORDER-TOP: #44b608 1px solid; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/product-tour-subnav.png) repeat-x; MARGIN-BOTTOM: 1.07em; OVERFLOW: hidden; BORDER-LEFT: #44b608 1px solid; WIDTH: 724px; BORDER-BOTTOM: #44b608 1px solid; ZOOM: 1
+}
+#yan-toursubnav LI {
+	PADDING-RIGHT: 61px; PADDING-LEFT: 20px; FONT-WEIGHT: bold; FLOAT: left; PADDING-BOTTOM: 20px; WIDTH: 161px; COLOR: #999; PADDING-TOP: 15px; LIST-STYLE-TYPE: none
+}
+#yan-toursubnav LI H2 {
+	FONT-SIZE: 182%; TEXT-TRANSFORM: lowercase; COLOR: #acd974
+}
+#yan-toursubnav LI P {
+	FONT-SIZE: 93%
+}
+#yan-toursubnav LI.discover-tour {
+	PADDING-RIGHT: 59px
+}
+#yan-toursubnav UL.ask-tour {
+	BACKGROUND-POSITION: -484px 0px
+}
+#yan-toursubnav UL.answer-tour {
+	BACKGROUND-POSITION: -242px 0px
+}
+#yan-toursubnav UL.discover-tour {
+	BACKGROUND-POSITION: 0px 0px
+}
+#yan-toursubnav LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/product-tour-icons.png) no-repeat
+}
+#yan-toursubnav LI.ask-tour {
+	BACKGROUND-POSITION: 170px 15px
+}
+#yan-toursubnav LI.answer-tour {
+	BACKGROUND-POSITION: -430px 15px
+}
+#yan-toursubnav LI.discover-tour {
+	BACKGROUND-POSITION: -1030px 15px
+}
+#yan-toursubnav UL.ask-tour LI.ask-tour {
+	BACKGROUND-POSITION: -130px 15px
+}
+#yan-toursubnav UL.answer-tour LI.answer-tour {
+	BACKGROUND-POSITION: -730px 15px
+}
+#yan-toursubnav UL.discover-tour LI.discover-tour {
+	BACKGROUND-POSITION: -1330px 15px
+}
+#yan-toursubnav LI.current {
+	COLOR: #333
+}
+#yan-toursubnav LI.current H2 {
+	COLOR: #44b608
+}
+.js #yan-toursubnav LI:hover {
+	CURSOR: pointer
+}
+.js #yan-toursubnav LI.hover {
+	CURSOR: pointer
+}
+.js #yan-toursubnav LI.current {
+	CURSOR: default
+}
+.js #yan-toursubnav P {
+	MARGIN: 0px; LINE-HEIGHT: 1.5
+}
+.js #yan-toursubnav LI A {
+	MARGIN-TOP: 1em; DISPLAY: block; LEFT: -9999px; POSITION: absolute
+}
+.js #yan-toursubnav LI A:unknown {
+	MARGIN-TOP: 1em; POSITION: static
+}
+.js #yan-toursubnav LI A:hover {
+	MARGIN-TOP: 1em; POSITION: static
+}
+.js #yan-toursubnav LI.ask-tour:hover {
+	BACKGROUND-POSITION: -130px 15px
+}
+.js #yan-toursubnav LI.ask-tour-hover {
+	BACKGROUND-POSITION: -130px 15px
+}
+.js #yan-toursubnav LI.answer-tour:hover {
+	BACKGROUND-POSITION: -730px 15px
+}
+.js #yan-toursubnav LI.answer-tour-hover {
+	BACKGROUND-POSITION: -730px 15px
+}
+.js #yan-toursubnav LI.discover-tour:hover {
+	BACKGROUND-POSITION: -1330px 15px
+}
+.js #yan-toursubnav LI.discover-tour-hover {
+	BACKGROUND-POSITION: -1330px 15px
+}
+#yan-lifecycletour IMG {
+	BORDER-RIGHT: #44b608 0px solid; PADDING-RIGHT: 0px; BORDER-TOP: #44b608 1px solid; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: #fff; PADDING-BOTTOM: 4px; MARGIN: 0px -12px -1em; BORDER-LEFT: #44b608 0px solid; PADDING-TOP: 4px; BORDER-BOTTOM: #44b608 1px solid
+}
+.information {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/text-bubble-header-background-727.gif) #fff no-repeat left top; MARGIN-BOTTOM: 1em; WIDTH: 726px; COLOR: #000; POSITION: relative
+}
+.information .ft {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/text-bubble-header-background-727.gif) #fff no-repeat 0px 100%; HEIGHT: 10px
+}
+.information H2 {
+	MARGIN-BOTTOM: 0px
+}
+.information P {
+	MARGIN-BOTTOM: 0px
+}
+.information STRONG {
+	FONT-WEIGHT: bold
+}
+.information IMG {
+	LEFT: 8px; POSITION: absolute; TOP: -10px
+}
+.information .bd {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 100px; MIN-HEIGHT: 85px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/com-mod.gif) no-repeat 14px 14px; PADDING-BOTTOM: 0px; PADDING-TOP: 14px; HEIGHT: 85px
+}
+.positive .bd {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/com-mod-75px.gif)
+}
+.positive H2 {
+	COLOR: #390
+}
+.negative .bd {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/com-mod-report.gif)
+}
+.negative H2 {
+	COLOR: #c00
+}
+.info-communityguidelines H3 {
+	FONT-WEIGHT: bold; PADDING-BOTTOM: 14px
+}
+.yan-accordion {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/accordion-border.gif) repeat-x 50% bottom; MARGIN-BOTTOM: 14px; OVERFLOW: hidden; ZOOM: 1
+}
+.yan-accordion LI {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/accordion-bg.gif) #fff repeat-x 50% top; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 100%; PADDING-TOP: 0px
+}
+.yan-accordion H3 {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; FONT-WEIGHT: bold; PADDING-BOTTOM: 14px; PADDING-TOP: 14px; ZOOM: 1
+}
+.yan-accordion H3 A {
+	DISPLAY: block; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/accordion-expand-button.gif) no-repeat right 50%; WIDTH: 100%; COLOR: #247ca8; ZOOM: 1
+}
+.yan-accordion H3.open A {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/accordion-collapse-button.gif); COLOR: #333
+}
+.yan-accordion H3 A:hover {
+	TEXT-DECORATION: underline
+}
+.yan-accordion P {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; PADDING-BOTTOM: 14px; PADDING-TOP: 0px
+}
+.yan-accordion P A {
+	DISPLAY: inline
+}
+.yan-accordion LI.last-child P {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/accordion-border.gif) repeat-x 50% bottom
+}
+.info-communityguidelines .hide {
+	OVERFLOW: hidden; ZOOM: 1; POSITION: absolute; TOP: -20000px
+}
+.info-communityguidelines .parent A {
+	TEXT-DECORATION: none
+}
+.info-communityguidelines .open A {
+	TEXT-DECORATION: none
+}
+#yan-guidelines-dont .bd {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/all/com-mod-report.gif)
+}
+.info-communityguidelines .dont-pullout {
+	MARGIN-LEFT: 1em; MARGIN-RIGHT: 1em
+}
+.info-kudos #yan-content {
+	BORDER-TOP: #ccc 1px solid
+}
+.info-kudos #yan-related .bd {
+	FONT-SIZE: 93%
+}
+.info-kudos #yan-related LI {
+	MARGIN-BOTTOM: 1.4em
+}
+.info-kudos #yan-content LI {
+	MARGIN-BOTTOM: 1.4em
+}
+.info-kudos #yan-content LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dotted-line.gif) repeat-x 50% top; PADDING-TOP: 1.4em
+}
+.info-kudos #kudos-in-the-news LI {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/dotted-line-green.gif) repeat-x 50% bottom; MARGIN-BOTTOM: 1em; PADDING-BOTTOM: 1em
+}
+.info-kudos #kudos-in-the-news LI.last-item {
+	BACKGROUND: none transparent scroll repeat 0% 0%; MARGIN-BOTTOM: 0px; PADDING-BOTTOM: 0px
+}
+.info-kudos #kudos-in-the-news LI H3 {
+	MARGIN: 0px
+}
+.info-kudos #kudos-in-the-news LI P {
+	MARGIN: 0px
+}
+.info-kudos #kudos-submit STRONG {
+	DISPLAY: block; FONT-WEIGHT: bold
+}
+.info-kudos #kudos-submit A {
+	FONT-WEIGHT: bold
+}
+.info-kudos #yan-related LI CITE {
+	FONT-WEIGHT: bold
+}
+.info-kudos H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 107%; MARGIN-BOTTOM: 0.72em
+}
+.info-kudos .author {
+	FONT-SIZE: 85%; OVERFLOW: hidden; ZOOM: 1
+}
+.info-kudos .author IMG {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+.info-kudos .author SPAN {
+	FONT-WEIGHT: bold
+}
+.yan-swag-description {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) #fff repeat-x 50% top; FLOAT: left; WIDTH: 444px; MARGIN-RIGHT: 3px; PADDING-TOP: 15px
+}
+.yan-swag-description OL {
+	MARGIN: 1em 20px
+}
+.yan-swag-description OL LI {
+	FONT-WEIGHT: bold; MARGIN: 10px 20px; COLOR: #999; LIST-STYLE-TYPE: decimal
+}
+.yan-swag-description OL LI P {
+	FONT-WEIGHT: normal; COLOR: #333
+}
+.yan-swag-downloads {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 10px; BORDER-LEFT: #ccc 1px solid; WIDTH: 276px; PADDING-TOP: 10px; BORDER-BOTTOM: #ccc 1px solid; TEXT-ALIGN: center
+}
+.info-knowledgepartners #kp-list {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 0px; PADDING-TOP: 12px
+}
+.info-knowledgepartners #kp-candidates {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 0px; PADDING-TOP: 12px
+}
+.info-knowledgepartners #kp-list {
+	PADDING-BOTTOM: 12px
+}
+.info-knowledgepartners #kp-list UL {
+	PADDING-BOTTOM: 1px; OVERFLOW: hidden; ZOOM: 1
+}
+.info-knowledgepartners #kp-list LI {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; FLOAT: left; MARGIN: 0px 5px 5px 0px; BORDER-LEFT: #ccc 1px solid; WIDTH: 110px; BORDER-BOTTOM: #ccc 1px solid; HEIGHT: 54px
+}
+.info-knowledgepartners #kp-benefits-detail {
+	MARGIN-BOTTOM: 50px
+}
+.info-knowledgepartners .yan-related P {
+	PADDING-BOTTOM: 10px
+}
+.info-knowledgepartners #yks-ce-featured-profile .ce-logo {
+	DISPLAY: block; FLOAT: right
+}
+.info-knowledgepartners #yks-ce-featured-profile P STRONG {
+	FONT-WEIGHT: bold
+}
+#flag-abuse H2 SPAN {
+	FONT-WEIGHT: normal
+}
+#yan-yamster-flag {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/report-header-background-726.gif) #fff no-repeat
+}
+#yan-yamster-flag .ft {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/report-header-background-726.gif) #fff no-repeat
+}
+#yan-yamster-flag {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.77em 0px 1.54em; PADDING-TOP: 0px
+}
+#yan-content #yan-yamster-flag P {
+	MARGIN-BOTTOM: 0.54em
+}
+#yan-yamster-flag .bd {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 100px; MIN-HEIGHT: 80px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/com-mod-report.gif) no-repeat 14px 14px; PADDING-BOTTOM: 4px; PADDING-TOP: 14px; HEIGHT: 80px
+}
+#yan-yamster-flag .ft {
+	BACKGROUND-POSITION: 0px 100%; HEIGHT: 10px
+}
+#yan-community FORM {
+	BACKGROUND: #fff; WIDTH: 726px; BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+#flag-abuse {
+	BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 1.08em; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 1.08em; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/question-bg-top.gif) repeat-x; PADDING-BOTTOM: 1.08em; BORDER-LEFT: #ccc 1px solid; PADDING-TOP: 1.08em; BORDER-BOTTOM: #ccc 1px solid
+}
+#flag-abuse H2 {
+	MARGIN-TOP: 1.43em; FONT-WEIGHT: bold; FONT-SIZE: 108%; COLOR: #333
+}
+#flag-abuse H2.first {
+	MARGIN-TOP: 0px
+}
+.report-answer P {
+	MARGIN-BOTTOM: 0px
+}
+.report-answer A {
+	FONT-WEIGHT: bold
+}
+#yan-community-disclaimer P {
+	FONT-SIZE: 93%
+}
+#yan-community-disclaimer .yan-intellectual-property {
+	FONT-SIZE: 85%; COLOR: #666
+}
+#yan-community-disclaimer STRONG {
+	FONT-WEIGHT: bold
+}
+#yan-community-disclaimer EM {
+	FONT-WEIGHT: bold; COLOR: #c00
+}
+.flag-textarea {
+	MARGIN: 0px 0px 1.16em
+}
+.captcha {
+	MARGIN-BOTTOM: 0.38em
+}
+.captcha  {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 10px
+}
+.captcha A {
+	FONT-SIZE: 85%
+}
+.captcha-word {
+	FONT-SIZE: 123.1%; WIDTH: 5em
+}
+.error .captcha-word {
+	BORDER-RIGHT: #c00 2px solid; BORDER-TOP: #c00 2px solid; BORDER-LEFT: #c00 2px solid; BORDER-BOTTOM: #c00 2px solid
+}
+#yan-yamster-header {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/text-bubble-header-background-727.gif) #fff no-repeat
+}
+#yan-flags-matter {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/text-bubble-header-background-727.gif) #fff no-repeat
+}
+#yan-yamster-header .ft {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/text-bubble-header-background-727.gif) #fff no-repeat 0px 100%; HEIGHT: 10px
+}
+#yan-flags-matter .ft {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/text-bubble-header-background-727.gif) #fff no-repeat 0px 100%; HEIGHT: 10px
+}
+#yan-yamster-header {
+	BACKGROUND-POSITION: left top; MARGIN-BOTTOM: 1.54em; WIDTH: 726px; COLOR: #000; POSITION: relative
+}
+#yan-flags-matter {
+	PADDING-RIGHT: 20px; PADDING-LEFT: 150px; MIN-HEIGHT: 100px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/com-mod.gif) no-repeat 14px 14px; PADDING-BOTTOM: 4px; PADDING-TOP: 14px; HEIGHT: 100px
+}
+#yan-yamster-flag H2 {
+	FONT-SIZE: 100%; MARGIN-BOTTOM: 0.54em; COLOR: #000
+}
+#yan-flags-matter H2 {
+	FONT-SIZE: 100%; MARGIN-BOTTOM: 0.54em; COLOR: #000
+}
+#yan-flags-matter UL {
+	MARGIN: 0px 15px 0.23em 0px; LIST-STYLE-TYPE: disc
+}
+#yan-flags-matter UL {
+	MARGIN-BOTTOM: 0.69em
+}
+#yan-flags-matter UL LI {
+	MARGIN: 0px 0px 0.23em 1.31em; LIST-STYLE-TYPE: disc
+}
+#yan-flags-matter .last {
+	MARGIN-BOTTOM: 0px
+}
+#yan-flags-matter EM {
+	FONT-WEIGHT: bold
+}
+#flag-abuse LABEL {
+	FONT-WEIGHT: bold
+}
+#flag-abuse LABEL SPAN {
+	FONT-WEIGHT: normal
+}
+.flag-textarea LABEL {
+	LEFT: -9999px; POSITION: absolute
+}
+#flag-abuse TEXTAREA {
+	DISPLAY: block; WIDTH: 428px; HEIGHT: 85px
+}
+.flag-textarea TEXTAREA {
+	DISPLAY: block; WIDTH: 428px; HEIGHT: 85px
+}
+#appeals-reminder {
+	FONT-SIZE: 138.5%; COLOR: #333
+}
+#appeal-details {
+	WIDTH: 312px; HEIGHT: 85px
+}
+#yamster-instructions {
+	BACKGROUND: #cfc
+}
+#yan-flagging-accuracy {
+	MARGIN: 0.31em 0px 0px
+}
+#yan-flagging-accuracy UL {
+	MARGIN: 0px 0px 0.77em; LIST-STYLE-TYPE: disc
+}
+#yan-flagging-accuracy UL LI {
+	MARGIN: 0px 0px 0.77em
+}
+#yan-flagging-accuracy UL P {
+	DISPLAY: inline
+}
+#yan-flagging-accuracy H3 {
+	DISPLAY: inline; FONT-WEIGHT: bold
+}
+.declined {
+	COLOR: #c00
+}
+#yan-flagging-accuracy .report-inaccurately {
+	COLOR: #c00
+}
+#yan-content .error {
+	COLOR: #c00
+}
+.accepted {
+	COLOR: #390
+}
+#yan-flagging-accuracy .report-accurately {
+	COLOR: #390
+}
+#yan-flagging-accuracy STRONG {
+	FONT-WEIGHT: bold
+}
+#flag-abuse DIV DIV INPUT {
+	FLOAT: left; MARGIN: 0px 8px 1em 0px
+}
+#yan-content #flag-abuse DIV DIV LABEL {
+	FONT-SIZE: 93%; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-content #flag-abuse DIV DIV P {
+	FONT-SIZE: 93%; OVERFLOW: hidden; ZOOM: 1
+}
+#flag-abuse .flag-textarea LABEL {
+	LEFT: -9999px; POSITION: absolute
+}
+#flag-abuse .accessibility {
+	LEFT: -9999px; POSITION: absolute
+}
+#flag-abuse .accessibility A:unknown {
+	LEFT: 9999px; POSITION: absolute
+}
+#flag-abuse .accessibility A:active {
+	LEFT: 9999px; POSITION: absolute
+}
+#yan-content .accepted-list {
+	MARGIN: 0px 0px 1.31em 2em
+}
+#yan-content .declined-list {
+	MARGIN: 0px 0px 1.31em 2em
+}
+#yan-content .accepted-list LI {
+	LIST-STYLE-TYPE: disc
+}
+#yan-content .declined-list LI {
+	LIST-STYLE-TYPE: disc
+}
+#yan-content .buttons {
+	MARGIN: 1.31em 0px 1.08em; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-content .buttons .cta {
+	FLOAT: left; MARGIN: 0px 0.77em 0px 0px
+}
+#flag-abuse .buttons {
+	MARGIN: 25px 0px 0px
+}
+#yan-content .speech {
+	MARGIN-LEFT: -25px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-content .speech DIV {
+	BORDER-TOP-WIDTH: 0px; MARGIN-TOP: 20px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/speech.gif) no-repeat 100% 100%; LEFT: 20px; FLOAT: left; BORDER-BOTTOM-WIDTH: 0px; POSITION: relative; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-content .speech DIV DIV {
+	BACKGROUND-POSITION: 0px 100%; MARGIN-TOP: 0px; LEFT: -20px
+}
+#yan-content .speech DIV DIV DIV {
+	BACKGROUND-POSITION: 0px 0px; LEFT: 0px; TOP: -20px
+}
+#yan-content .speech DIV DIV DIV DIV {
+	PADDING-RIGHT: 20px; BACKGROUND-POSITION: 100% 0px; PADDING-LEFT: 8px; LEFT: 20px; PADDING-BOTTOM: 0px; PADDING-TOP: 15px; TOP: 0px
+}
+#yan-content .speech H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 123.1%; MARGIN: 0px; COLOR: #666
+}
+#yan-content .speech P {
+	MARGIN: 0px
+}
+.carousel {
+	OVERFLOW: hidden; POSITION: relative
+}
+.carousel DIV.clip {
+	POSITION: relative; TEXT-ALIGN: left
+}
+.carousel DIV.clip UL LI {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; MARGIN: 0px; PADDING-TOP: 10px; LIST-STYLE-TYPE: none; POSITION: absolute
+}
+.js DIV.clip {
+	HEIGHT: 14em
+}
+.vert DIV.clip {
+	HEIGHT: 8em
+}
+.horz DIV.clip UL {
+	WIDTH: 100000px
+}
+.horz DIV.clip UL LI {
+	FLOAT: left
+}
+.carousel UL.pagination {
+	RIGHT: 5px; POSITION: absolute; TOP: 5px
+}
+.carousel UL.pagination LI {
+	FLOAT: left; MARGIN-RIGHT: 3px
+}
+.carousel UL.pagination LI BUTTON {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; BACKGROUND: #fff; BORDER-LEFT: #999 1px solid; WIDTH: 10px; BORDER-BOTTOM: #999 1px solid; POSITION: static; HEIGHT: 10px
+}
+.carousel UL.pagination LI.current BUTTON {
+	BACKGROUND: #ccc; CURSOR: default
+}
+.carousel BUTTON {
+	PADDING-RIGHT: 0px; DISPLAY: block; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/carousel.gif); PADDING-BOTTOM: 0px; WIDTH: 16px; CURSOR: pointer; BORDER-TOP-STYLE: none; BOTTOM: 5px; TEXT-INDENT: -500em; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; POSITION: absolute; HEIGHT: 16px; BORDER-BOTTOM-STYLE: none
+}
+.carousel .btnprev {
+	BACKGROUND-POSITION: 0px -100px; RIGHT: 45px
+}
+.carousel .btnprev:hover {
+	BACKGROUND-POSITION: 0px -200px
+}
+.carousel .btnprevhover {
+	BACKGROUND-POSITION: 0px -200px
+}
+.carousel .btnnext {
+	BACKGROUND-POSITION: 0px -300px; RIGHT: 5px
+}
+.carousel .btnnext:hover {
+	BACKGROUND-POSITION: 0px -400px
+}
+.carousel .btnnexthover {
+	BACKGROUND-POSITION: 0px -400px
+}
+.carousel .btnpause {
+	BACKGROUND-POSITION: 0px -500px; RIGHT: 25px
+}
+.carousel .btnpause:hover {
+	BACKGROUND-POSITION: 0px -600px
+}
+.carousel .btnpausehover {
+	BACKGROUND-POSITION: 0px -600px
+}
+.carousel BUTTON.btnprevdisabled {
+	BACKGROUND-POSITION: 0px -100px
+}
+.carousel BUTTON.btnnextdisabled {
+	BACKGROUND-POSITION: 0px -300px
+}
+.carousel BUTTON.btnpausedisabled {
+	BACKGROUND-POSITION: 0px -700px
+}
+.carousel BUTTON.btnpausedisabled:hover {
+	BACKGROUND-POSITION: 0px -800px
+}
+.carousel BUTTON.btnpausedisabledhover {
+	BACKGROUND-POSITION: 0px -800px
+}
+.btnpause {
+	RIGHT: 22px
+}
+.carousel {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/carousel-bg-top.gif) repeat-x; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.carousel .clip {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/carousel-bg-btm.gif) repeat-x 0px 100%
+}
+#yan-content .carousel .pagination {
+	MARGIN: 0px
+}
+.ask-answer #bd {
+	POSITION: relative
+}
+.js .acts-as-label {
+	CURSOR: default
+}
+#yan-all-cats UL {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 100%; BORDER-BOTTOM-WIDTH: 0px; MARGIN-LEFT: 2em; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-ask-allcats SELECT {
+	FONT-SIZE: 85%; WIDTH: 138px; MARGIN-RIGHT: 4px
+}
+#yan-answer-entertext .content {
+	MARGIN: 7px 0px
+}
+#yan-ask-autocat LABEL {
+	PADDING-LEFT: 12px; FONT-SIZE: 93%; COLOR: #333; LINE-HEIGHT: 15px
+}
+#yan-ask-autocat P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 85%; PADDING-BOTTOM: 12px; MARGIN: 0px; PADDING-TOP: 12px
+}
+#yan-ask-allcats P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 85%; PADDING-BOTTOM: 12px; MARGIN: 0px; PADDING-TOP: 12px
+}
+#yan-ask-autocat LI {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 7px; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+#yan-ask-autocat LI.alt {
+	BACKGROUND: #f5f5f5
+}
+.question-answer .ask-flow LABEL {
+	COLOR: #333
+}
+.question-answer .ask-flow LABEL SPAN {
+	DISPLAY: block; COLOR: #666
+}
+.ask-flow .answergroup IMG {
+	FLOAT: left; MARGIN: 0px 5px 0px 0px
+}
+.ask-flow .answerWithGroupOptions LABEL {
+	DISPLAY: inline
+}
+.ask-flow .answerWithGroupOptions SELECT {
+	WIDTH: 180px
+}
+.ask-flow .answerWithGroupOptions SELECT OPTION.disabled {
+	COLOR: #999
+}
+.ask-flow SELECT OPTION {
+	FONT-SIZE: 95%
+}
+.ask-flow .checkboxes {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 12px
+}
+.ask-flow .checkboxes H3 {
+	FONT-WEIGHT: bold; MARGIN-BOTTOM: 7px
+}
+.checkboxes LABEL {
+	DISPLAY: inline; FONT-WEIGHT: normal; FONT-SIZE: 93%; COLOR: #333
+}
+.checkboxes LI {
+	PADDING-LEFT: 5px; PADDING-BOTTOM: 5px
+}
+.ask-flow LABEL STRONG {
+	FONT-WEIGHT: bold; COLOR: #333
+}
+.acts-as-label H3 {
+	FONT-WEIGHT: bold; COLOR: #333
+}
+.acts-as-label P {
+	FONT-WEIGHT: normal
+}
+#yan-answer-search-inline UL LABEL {
+	DISPLAY: inline; PADDING-LEFT: 21px; FONT-WEIGHT: normal; COLOR: #333
+}
+#yan-answer-search-inline FIELDSET {
+	BACKGROUND: #fff; POSITION: relative
+}
+#yan-answer-search-inline {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; RIGHT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 17px; OVERFLOW: hidden; WIDTH: 230px; BOTTOM: 0px; PADDING-TOP: 17px; POSITION: absolute; BORDER-RIGHT-WIDTH: 0px
+}
+#yan-answer-search-inline UL {
+	MARGIN: 0px 0px 7px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-content #yan-answer-search-inline .buttons {
+	MARGIN: 1em 0px 0px
+}
+#yan-answer-search-inline LI {
+	PADDING-RIGHT: 5px; FLOAT: left
+}
+#yan-answer-search-inline LI LABEL {
+	FONT-WEIGHT: bold; FONT-SIZE: 93%; VERTICAL-ALIGN: middle
+}
+#yan-answer-search-inline LI INPUT {
+	FONT-WEIGHT: bold; FONT-SIZE: 93%; VERTICAL-ALIGN: middle
+}
+#yan-answer-search {
+	PADDING-RIGHT: 3px; PADDING-LEFT: 3px; PADDING-BOTTOM: 3px; WIDTH: 200px; PADDING-TOP: 3px
+}
+#l-yan-ask-s-y {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/y-and-wiki.gif) no-repeat 0px -118px
+}
+#l-yan-ask-s-wk {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/y-and-wiki.gif) no-repeat 0px -50px
+}
+#yan-answer-entertext TEXTAREA {
+	MARGIN-BOTTOM: 14px
+}
+#yan-answer-entertext LABEL {
+	MARGIN-BOTTOM: 5px
+}
+.acts-as-label {
+	MARGIN-BOTTOM: 5px
+}
+#yan-answer-entertext LABEL STRONG {
+	DISPLAY: block
+}
+.acts-as-label STRONG {
+	DISPLAY: block
+}
+#yan-answer-entertext LABEL SPAN {
+	FONT-WEIGHT: normal; FONT-SIZE: 86%
+}
+.acts-as-label P {
+	FONT-WEIGHT: normal; FONT-SIZE: 86%
+}
+#yan-answer-preview DL {
+	FLOAT: left
+}
+#yan-answer-preview DT {
+	FONT-WEIGHT: bold; FONT-SIZE: 107%; MARGIN-BOTTOM: 7px
+}
+#yan-answer-preview DD {
+	MARGIN-BOTTOM: 8px
+}
+.ask-flow .legal {
+	FONT-SIZE: 77%; COLOR: #666
+}
+.ask-flow .buttons {
+	CLEAR: left
+}
+.ask-flow .buttons .cta {
+	FLOAT: left; MARGIN-RIGHT: 5px
+}
+.ask-flow .buttons .right {
+	FLOAT: right; MARGIN-RIGHT: 0px
+}
+.ask-flow #yan-ask-details-lbl {
+	MARGIN-TOP: 2.5em
+}
+.ask-flow .content {
+	MARGIN: 0px 0px 12px
+}
+#yan-additional-preview .question-details {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.question-ask #yan-content {
+	POSITION: relative
+}
+.mod#yan-qt {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-bg.png) #fefceb no-repeat 0px 0px; FLOAT: right; BORDER-BOTTOM-WIDTH: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 244px; PADDING-TOP: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.js .mod#yan-qt {
+	MARGIN-TOP: 45px; Z-INDEX: 1; RIGHT: 0px; FLOAT: none; MARGIN-LEFT: -17px; POSITION: absolute
+}
+.js .closed#yan-qt {
+	DISPLAY: none
+}
+#yan-qt .ft {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-bg.png) no-repeat 0px 100%; BOTTOM: -4px; POSITION: relative; HEIGHT: 10px
+}
+#yan-qt .bd {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; MIN-HEIGHT: 60px; PADDING-BOTTOM: 12px; PADDING-TOP: 12px; HEIGHT: 60px
+}
+.js #yan-qt .bd {
+	PADDING-RIGHT: 17px; PADDING-LEFT: 60px; PADDING-BOTTOM: 0px; PADDING-TOP: 15px
+}
+#yan-qt .bd STRONG {
+	FONT-WEIGHT: bold
+}
+#yan-qt .bd A {
+	FONT-WEIGHT: bold
+}
+#yan-qt .bd P {
+	MARGIN-BOTTOM: 7px
+}
+#yan-qt .bd P.last {
+	MARGIN-BOTTOM: 0px
+}
+#yan-qt .hd {
+	DISPLAY: block; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-globe.png) no-repeat 0px 0px; LEFT: -13px; WIDTH: 66px; POSITION: absolute; TOP: 8px; HEIGHT: 82px
+}
+.qt-error#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-error.gif) no-repeat 0px 0px; HEIGHT: 40px
+}
+.qt-error#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-error.gif) no-repeat 0px 0px; HEIGHT: 40px
+}
+.qt-error#yan-qt .bd {
+	MIN-HEIGHT: 30px; HEIGHT: 30px
+}
+.js .qt-bubble#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-punctuation.gif) no-repeat 0px 0px
+}
+.js .qt-penciltip#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-penciltip.gif) no-repeat 0px 0px
+}
+.js .qt-penciltip-tick#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-penciltip-tick.gif) no-repeat 0px 0px
+}
+.js .qt-eraser#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-eraser.gif) no-repeat 0px 0px
+}
+.js .qt-magnify#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-magnify.gif) no-repeat 0px 0px
+}
+.js .qt-vitality#yan-qt .hd {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-vitality.gif) no-repeat 0px 0px
+}
+.js #yan-qt-close {
+	RIGHT: 8px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-close.gif) no-repeat 0px 0px; OVERFLOW: hidden; WIDTH: 8px; TEXT-INDENT: -5000px; POSITION: absolute; TOP: 8px; HEIGHT: 8px; TEXT-DECORATION: underline
+}
+#yan-similar-questions {
+	MARGIN-TOP: 120px; OVERFLOW: hidden; ZOOM: 1
+}
+#yan-similar-questions H2 {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-similar-questions .questions H3 {
+	MARGIN-LEFT: 40px
+}
+#yan-similar-questions .questions P {
+	MARGIN-LEFT: 40px
+}
+#yan-similar-questions .questions .meta {
+	MARGIN-LEFT: 40px
+}
+#yan-similar-questions .questions .meta {
+	LINE-HEIGHT: 1
+}
+#yan-similar-questions H3 {
+	FONT-SIZE: 116%
+}
+#yan-similar-questions .meta LI {
+	FONT-SIZE: 85%
+}
+#yan-similar-questions P {
+	FONT-SIZE: 85%
+}
+.question-answerbest .count-chars {
+	MARGIN-BOTTOM: 2em; COLOR: #666
+}
+#yan-select-best-answer #answer-rating LABEL {
+	DISPLAY: inline
+}
+#answer-rating-container H3 {
+	FLOAT: left; WIDTH: 74px; MARGIN-RIGHT: 12px
+}
+#answer-rating-container {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/border-x-grey.gif) repeat-x 0px 100%; MARGIN-BOTTOM: 7px; PADDING-BOTTOM: 7px; OVERFLOW: hidden; PADDING-TOP: 1em; ZOOM: 1
+}
+#answer-rating {
+	CLEAR: left
+}
+#answer-rating DIV {
+	MARGIN-BOTTOM: 0.5em
+}
+.js #yan-select-best-answer #yan-qt {
+	MARGIN-TOP: 0px
+}
+#yan-qt {
+	MARGIN-TOP: 45px; Z-INDEX: 1; RIGHT: 0px; FLOAT: none; MARGIN-LEFT: -17px; POSITION: absolute
+}
+#yan-qt .bd {
+	PADDING-RIGHT: 17px; PADDING-LEFT: 60px; PADDING-BOTTOM: 5px; PADDING-TOP: 15px
+}
+#yan-select-best-answer .qt-penciltip#yan-qt .hd {
+	DISPLAY: block; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/qt-penciltip.gif) no-repeat 0px 0px; LEFT: -13px; WIDTH: 66px; POSITION: absolute; TOP: 8px; HEIGHT: 66px
+}
+.ask-flow .sub-text P {
+	MARGIN: 0px
+}
+.ask-flow .sub-text A {
+	FONT-WEIGHT: bold
+}
+.ask-flow .sub-text STRONG {
+	FONT-WEIGHT: bold
+}
+#yan-content .ask-flow .buttons {
+	MARGIN: 1.82em 0px 0px
+}
+.js #answer-rating {
+	CLEAR: none; BORDER-RIGHT: #ccc 1px solid; PADDING-RIGHT: 3px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 3px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bg.gif) #fff repeat-x left top; FLOAT: left; PADDING-BOTTOM: 0px; BORDER-LEFT: #ccc 1px solid; WIDTH: 88px; PADDING-TOP: 0px; BORDER-BOTTOM: #ccc 1px solid; HEIGHT: 19px
+}
+.js #answer-rating DIV {
+	DISPLAY: inline; FLOAT: left; OVERFLOW: hidden; ZOOM: 1; HEIGHT: 19px
+}
+.js #answer-rating INPUT {
+	Z-INDEX: -1; POSITION: absolute
+}
+.js #answer-rating LABEL {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; BACKGROUND: none transparent scroll repeat 0% 0%; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.js #rating-text {
+	PADDING-LEFT: 10px; FONT-WEIGHT: bold; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bubble.gif) #fff no-repeat left top; FLOAT: left; VISIBILITY: hidden; MARGIN: 0px; COLOR: #666; HEIGHT: 25px
+}
+.js #rating-text SPAN {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 5px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/rating-bubble.gif) #fff no-repeat right top; PADDING-BOTTOM: 0px; LINE-HEIGHT: 2; PADDING-TOP: 0px; ZOOM: 1
+}
+.search-index STRONG {
+	FONT-WEIGHT: bold
+}
+.search-index .yan-sponsored {
+	CLEAR: both; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; BACKGROUND: #ecf5fa; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.search-index .portrait {
+	PADDING-RIGHT: 13px; PADDING-LEFT: 13px; BACKGROUND: #fff; PADDING-BOTTOM: 13px; PADDING-TOP: 13px
+}
+.search-index .yan-sponsored H2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 80%; FLOAT: right; TEXT-TRANSFORM: uppercase; COLOR: #909090
+}
+.search-index .portrait H2 {
+	FLOAT: none
+}
+.search-index .yan-sponsored DT {
+	FONT-SIZE: 1.3em
+}
+.search-index .yan-sponsored DD {
+	MARGIN-BOTTOM: 10px
+}
+.search-index .yan-sponsored EM A {
+	COLOR: #3c8000
+}
+.search-index .yan-sponsored DD.last {
+	MARGIN-BOTTOM: 10px
+}
+#yan-results-count {
+	FONT-SIZE: 85%; FLOAT: right; LINE-HEIGHT: 1.8
+}
+.search-index H1 {
+	FONT-WEIGHT: bold; FLOAT: left
+}
+#yan-results-controls {
+	CLEAR: both; PADDING-RIGHT: 5px; BORDER-TOP: #44b608 4px solid; PADDING-LEFT: 5px; FONT-SIZE: 0.85em; MARGIN-BOTTOM: 20px; PADDING-BOTTOM: 5px; OVERFLOW: hidden; LINE-HEIGHT: 1.5; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; ZOOM: 1
+}
+#yan-results-controls P {
+	FLOAT: left
+}
+#yan-results-controls H2 {
+	FLOAT: left
+}
+#yan-results-controls LI {
+	FLOAT: left
+}
+#yan-results-controls P {
+	FLOAT: right
+}
+#yan-results-controls H2 {
+	
+}
+#yan-results-controls LI {
+	BORDER-RIGHT: #555 1px solid; PADDING-RIGHT: 5px; PADDING-LEFT: 5px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-results-controls LI.last {
+	BORDER-RIGHT-STYLE: none
+}
+#yan-results-controls A {
+	PADDING-BOTTOM: 2px
+}
+#yan-results-controls .selected {
+	PADDING-RIGHT: 16px; COLOR: #333; BORDER-BOTTOM: #43b607 2px solid; TEXT-DECORATION: none
+}
+#yan-results-controls A.desc {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/sort.gif) no-repeat right 50%
+}
+#yan-results-controls A.asc {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/sort.gif) no-repeat right 50%
+}
+#yan-results-controls A.desc {
+	BACKGROUND-POSITION: 100% 1px
+}
+#yan-results-controls A.asc {
+	BACKGROUND-POSITION: 100% -49px
+}
+.search-index .questions {
+	CLEAR: both
+}
+.search-index .questions LI {
+	MARGIN-BOTTOM: 20px
+}
+.search-index .questions LI IMG {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN-LEFT: 12px; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.search-index .questions LI H2 {
+	MARGIN-LEFT: 48px
+}
+.search-index .questions LI BLOCKQUOTE {
+	MARGIN-LEFT: 48px
+}
+.search-index .questions LI UL {
+	MARGIN-LEFT: 48px
+}
+.search-index .questions LI H2 {
+	FONT-WEIGHT: normal; MARGIN-BOTTOM: 10px
+}
+.search-index .questions .stars A {
+	COLOR: #069
+}
+.search-index .questions .stars STRONG {
+	FLOAT: left
+}
+.search-index .questions .stars SPAN {
+	FLOAT: left
+}
+#yan-footer-searchbox {
+	PADDING-RIGHT: 12px; BORDER-TOP: #ccc 1px solid; PADDING-LEFT: 12px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/gradient_lhs.gif) repeat-x 50% top; PADDING-BOTTOM: 12px; PADDING-TOP: 12px
+}
+#yan-footer-searchbox LABEL {
+	DISPLAY: none
+}
+#yan-footer-searchbox .textfield {
+	WIDTH: 360px
+}
+#yan-related #yan-cta-advanced {
+	MARGIN-BOTTOM: 0px
+}
+#yan-cta-advanced IMG {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN-BOTTOM: 1em; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.search-index #yan-related .yan-sponsored {
+	BORDER-TOP-STYLE: none
+}
+.search-index #yan-syndication-caption {
+	MARGIN: 0px 12px
+}
+.search-index #yan-syndication-caption {
+	MARGIN-BOTTOM: 0px
+}
+.search-index #yan-syndication {
+	BACKGROUND: #fff; BORDER-TOP-STYLE: none; PADDING-TOP: 0px
+}
+.yui-panel #yan-vitality-setting-container {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px
+}
+.yui-panel #yan-vitality-setting {
+	BORDER-RIGHT: #808080 1px solid; BORDER-TOP: #808080 1px solid; Z-INDEX: 1; LEFT: 0px; BORDER-LEFT: #808080 1px solid; BORDER-BOTTOM: #808080 1px solid; ZOOM: normal; POSITION: relative; TOP: 0px
+}
+.yui-panel #yan-vitality-setting .hd {
+	BORDER-RIGHT: #808080 0px solid; BORDER-TOP: #808080 0px solid; MARGIN: 0px; BORDER-LEFT: #808080 0px solid; BORDER-BOTTOM: #808080 0px solid
+}
+.yui-panel #yan-vitality-setting .bd {
+	BORDER-RIGHT: #808080 0px solid; BORDER-TOP: #808080 0px solid; MARGIN: 0px; BORDER-LEFT: #808080 0px solid; BORDER-BOTTOM: #808080 0px solid
+}
+.yui-panel #yan-vitality-setting .ft {
+	BORDER-RIGHT: #808080 0px solid; BORDER-TOP: #808080 0px solid; MARGIN: 0px; BORDER-LEFT: #808080 0px solid; BORDER-BOTTOM: #808080 0px solid
+}
+.yui-panel #yan-vitality-setting .hd {
+	BORDER-BOTTOM: #ccc 1px solid
+}
+.yui-panel #yan-vitality-setting .bd {
+	BACKGROUND-COLOR: #fff
+}
+.yui-panel #yan-vitality-setting .ft {
+	BACKGROUND-COLOR: #fff
+}
+.yui-panel #yan-vitality-setting .hd {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 93%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/yan-panel-sprite.png) repeat-x 0px -200px; PADDING-BOTTOM: 0px; COLOR: #000; LINE-HEIGHT: 1.9; PADDING-TOP: 0px
+}
+.yui-panel #yan-vitality-setting .bd {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND-IMAGE: none; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.yui-panel #yan-vitality-setting .ft {
+	PADDING-RIGHT: 10px; BORDER-TOP: #808080 1px solid; PADDING-LEFT: 10px; FONT-SIZE: 77%; PADDING-BOTTOM: 5px; PADDING-TOP: 5px
+}
+.yui-panel #yan-vitality-setting .container-close {
+	RIGHT: 6px; BACKGROUND: url(yan-panel-sprite.png) no-repeat 0px -300px; WIDTH: 25px; CURSOR: pointer; POSITION: absolute; TOP: 5px; HEIGHT: 15px
+}
+.yui-panel #yan-vitality-setting-container .underlay {
+	RIGHT: -1px; LEFT: -1px
+}
+.yui-panel .matte#yan-vitality-setting-container {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 9px; PADDING-TOP: 9px; BACKGROUND-COLOR: #fff
+}
+.yui-panel .shadow#yan-vitality-setting-container {
+	PADDING-RIGHT: 4px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 2px
+}
+.yui-panel .shadow#yan-vitality-setting-container .underlay {
+	MARGIN-TOP: 3px; RIGHT: 0px; FILTER: alpha(opacity=12); LEFT: 0px; MARGIN-LEFT: -1px; BOTTOM: 0px; POSITION: absolute; TOP: 0px; BACKGROUND-COLOR: #000; opacity: .12
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 100%; PADDING-BOTTOM: 10px; BORDER-TOP-STYLE: none; PADDING-TOP: 0px
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft .button-group {
+	DISPLAY: block; TEXT-ALIGN: right
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft BUTTON.default {
+	FONT-WEIGHT: bold
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft SPAN.default {
+	BACKGROUND-POSITION: 0px -1400px; BORDER-LEFT-COLOR: #304369; BORDER-BOTTOM-COLOR: #304369; BORDER-TOP-COLOR: #304369; BORDER-RIGHT-COLOR: #304369
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft SPAN.default .first-child {
+	BORDER-LEFT-COLOR: #304369; BORDER-BOTTOM-COLOR: #304369; BORDER-TOP-COLOR: #304369; BORDER-RIGHT-COLOR: #304369
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft SPAN.default BUTTON {
+	COLOR: #fff
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft SPAN.yui-button-disabled {
+	BACKGROUND-POSITION: 0px -1500px; BORDER-LEFT-COLOR: #ccc; BORDER-BOTTOM-COLOR: #ccc; BORDER-TOP-COLOR: #ccc; BORDER-RIGHT-COLOR: #ccc
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft SPAN.yui-button-disabled .first-child {
+	BORDER-LEFT-COLOR: #ccc; BORDER-BOTTOM-COLOR: #ccc; BORDER-TOP-COLOR: #ccc; BORDER-RIGHT-COLOR: #ccc
+}
+.yui-panel #yan-vitality-setting .yui-dialog .ft SPAN.yui-button-disabled BUTTON {
+	COLOR: #a6a6a6
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd .yui-icon {
+	BACKGROUND: url(yan-panel-sprite.png) no-repeat 0px 0px; FLOAT: left; WIDTH: 16px; MARGIN-RIGHT: 10px; HEIGHT: 16px
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd SPAN.blckicon {
+	BACKGROUND-POSITION: 0px -1100px
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd SPAN.alrticon {
+	BACKGROUND-POSITION: 0px -1050px
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd SPAN.hlpicon {
+	BACKGROUND-POSITION: 0px -1150px
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd SPAN.infoicon {
+	BACKGROUND-POSITION: 0px -1200px
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd SPAN.warnicon {
+	BACKGROUND-POSITION: 0px -1900px
+}
+.yui-panel #yan-vitality-setting .yui-simple-dialog .bd SPAN.tipicon {
+	BACKGROUND-POSITION: 0px -1250px
+}
+.yui-panel #yan-vitality-setting .yui-tt .bd {
+	BORDER-RIGHT: #a6982b 1px solid; PADDING-RIGHT: 5px; BORDER-TOP: #d4c237 1px solid; PADDING-LEFT: 5px; Z-INDEX: 1; LEFT: 0px; PADDING-BOTTOM: 2px; BORDER-LEFT: #a6982b 1px solid; COLOR: #000; PADDING-TOP: 2px; BORDER-BOTTOM: #a6982b 1px solid; POSITION: relative; TOP: 0px; BACKGROUND-COLOR: #ffee69
+}
+.yui-panel #yan-vitality-setting .show-scrollbars .bd {
+	OVERFLOW: auto
+}
+.yui-panel #yan-vitality-setting .yui-tt-shadow {
+	RIGHT: -3px; LEFT: -3px; BOTTOM: -3px; TOP: 2px; BACKGROUND-COLOR: #000
+}
+.yui-panel #yan-vitality-setting .yui-tt-shadow-visible {
+	FILTER: alpha(opacity=12); opacity: .12
+}
+#yan-vitality-setting .non-panel {
+	MARGIN-TOP: 1.5em
+}
+#yan-vitality-setting H2 {
+	PADDING-LEFT: 34px; FONT-SIZE: 108%; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/vitality-icon-sprite-v3.gif) no-repeat 0px 0px; TEXT-TRANSFORM: uppercase; COLOR: #333
+}
+#yan-vitality-setting .bd {
+	POSITION: relative
+}
+#yan-vitality-setting .bd H3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 93%; MARGIN-BOTTOM: 0.75em
+}
+H3#yan-vitality-manage A.toggleShow {
+	COLOR: #333
+}
+#yan-vitality-setting .bd P {
+	FONT-SIZE: 93%; MARGIN-BOTTOM: 0px
+}
+#yan-vitality-setting .bd P EM {
+	FONT-WEIGHT: bold
+}
+#yan-vitality-setting LEGEND SPAN {
+	LEFT: -9999em; POSITION: absolute
+}
+#yan-vitality-setting .bd LABEL {
+	DISPLAY: block; FONT-SIZE: 93%
+}
+#yan-vitality-setting .bd LABEL.yan-vitality-answers {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(http://l.yimg.com/h/21951/images/all/vitality-icon-sprite-v3.gif) no-repeat 0px -96px; PADDING-BOTTOM: 4px; PADDING-TOP: 2px
+}
+#yan-vitality-setting .bd LABEL.toggleContentHide {
+	LEFT: -9999px; POSITION: absolute
+}
+#yan-vitality-setting .bd LABEL.toggleContentShow {
+	LEFT: 0px; ZOOM: 1; POSITION: static
+}
+#yan-vitality-setting .bd LABEL.yan-vitality-answers SELECT {
+	FONT-WEIGHT: normal; MARGIN-LEFT: 10px
+}
+#yan-vitality-setting .bd LABEL.yan-vitality-answers .disabled {
+	COLOR: #999
+}
+#yan-vitality-setting .bd INPUT#vitality-do-not-show-again {
+	MARGIN-RIGHT: 6px
+}
+#yan-vitality-setting .vitality-panel {
+	BORDER-RIGHT: #ccc 1px solid; BORDER-TOP: #ccc 1px solid; MARGIN: 1em 0px; BORDER-LEFT: #ccc 1px solid; BORDER-BOTTOM: #ccc 1px solid
+}
+.js #yan-vitality-setting .vitality-panel {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: relative
+}
+#yan-vitality-setting .vitality-panel .hd {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 5px; PADDING-TOP: 5px; BORDER-BOTTOM: #ccc 1px solid; BACKGROUND-COLOR: #f2f2f2
+}
+.js #yan-vitality-setting .vitality-panel .hd {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#yan-vitality-setting .vitality-panel .hd H2 {
+	MARGIN: 0px
+}
+.js #yan-vitality-setting .vitality-panel .hd H2 {
+	BACKGROUND: url(http://l.yimg.com/h/21951/images/all/vitality-icon-sprite-v3.gif) no-repeat 0px 4px; MARGIN: 0px
+}
+#yan-vitality-setting .vitality-panel .bd {
+	PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BACKGROUND-IMAGE: none; PADDING-BOTTOM: 10px; PADDING-TOP: 10px; BACKGROUND-COLOR: #fff
+}
+.js #yan-vitality-setting .vitality-panel .bd H3 {
+	FONT-SIZE: 108%
+}
+.js #yan-vitality-setting .vitality-panel .bd LABEL {
+	FONT-SIZE: 108%
+}
+.js #yan-vitality-setting .vitality-panel .bd P {
+	FONT-SIZE: 108%
+}
+.js #yan-vitality-setting .vitality-panel FIELDSET {
+	WIDTH: 550px; POSITION: relative
+}
+.js #yan-vitality-setting .vitality-panel FIELDSET .buttons {
+	MARGIN-TOP: 1em
+}
+.answer-util .loading {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/a/i/us/sch/gr2/saving_grnarial.gif)
+}
+#yan-banner #yan-banner-ask {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/us/banner.gif)
+}
+#yan-banner #yan-banner-answer {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/us/banner.gif)
+}
+#yan-banner #yan-banner-discover {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/us/banner.gif)
+}
+#yan-banner #yan-banner-ask A {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/us/banner.gif)
+}
+#yan-banner #yan-banner-answer A {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/us/banner.gif)
+}
+#yan-banner #yan-banner-discover A {
+	BACKGROUND-IMAGE: url(http://l.yimg.com/h/21951/images/us/banner.gif)
+}
