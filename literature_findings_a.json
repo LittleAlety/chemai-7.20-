@@ -1,0 +1,447 @@
+{
+  "source_files": [
+    {
+      "filename": "三草酸合铁酸钾 II-30号会议.pptx",
+      "type": "conference_presentation",
+      "size_bytes": 14091575,
+      "slides_extracted": 30,
+      "author": "胡锴 (Hu Kai), 化学与分子科学学院",
+      "title": "三草酸合铁(III)酸钾的制备 再解读 / Synthesis of Potassium Tris(oxalato) Ferrate(III) - further discussion",
+      "encoding_note": "Chinese (UTF-8 XML extraction)"
+    },
+    {
+      "filename": "三草酸合铁酸钾的制备及性质—完整.ppt",
+      "type": "lecture_presentation",
+      "size_bytes": 1317888,
+      "slides_extracted": 15,
+      "author": "胡锴 (Hu Kai), Laboratory Chemistry Education Center",
+      "title": "三草酸合铁(III)酸钾的制备及其性质 / Synthesis and Characterization of Potassium Tris(oxalato) Ferrate(III)"
+    },
+    {
+      "filename": "Oxalate Stoichiometry ed1002702_si_002.doc",
+      "type": "laboratory_manual",
+      "size_bytes": 733455,
+      "title": "Oxalate Stoichiometry - Student Written Instructions / Instructor Notes",
+      "course": "First Term General Chemistry"
+    }
+  ],
+
+  "reaction_equations": {
+    "step1_precipitation": {
+      "equation": "(NH4)2SO4·FeSO4·6H2O + H2C2O4 + 2H2O → FeC2O4·2H2O↓ + (NH4)2SO4 + H2SO4",
+      "notes": "Precipitation of ferrous oxalate dihydrate from Mohr's salt"
+    },
+    "step2_oxidation_reduction_and_coordination_primary": {
+      "equation": "2FeC2O4·2H2O + H2O2 + 3K2C2O4 + H2C2O4 → 2K3[Fe(C2O4)3]·3H2O",
+      "notes": "Ideal balanced equation for the full conversion"
+    },
+    "step2_oxidation_with_side_product": {
+      "equation": "6FeC2O4·2H2O + 3H2O2 + 6K2C2O4 → 4K3[Fe(C2O4)3] + 2Fe(OH)3↓ + 12H2O",
+      "notes": "When H2O2 is excess, Fe(OH)3 precipitates as a brown side-product"
+    },
+    "step2_redissolution_of_hydroxide": {
+      "equation": "2Fe(OH)3 + 3H2C2O4 + 3K2C2O4 → 2K3[Fe(C2O4)3] + 6H2O",
+      "notes": "Subsequent addition of oxalic acid dissolves the Fe(OH)3 precipitate"
+    },
+    "alternative_route1_fe3_direct": {
+      "equation": "FeCl3 (or Fe(NO3)3) + K2C2O4 → K3[Fe(C2O4)3]·3H2O",
+      "notes": "Direct preparation from Fe(III). PROBLEM: Fe3+ can undergo redox side reaction with C2O42- (reduction to Fe2+ + CO2). Route 2 (via Fe2+ → FeC2O4) is preferred."
+    },
+    "alternative_route2_solid_phase": {
+      "equation": "Fe2+ + C2O42- → FeC2O4 → K3[Fe(C2O4)3]·3H2O",
+      "notes": "Can be done by solution method or solid-phase synthesis with controlled conditions"
+    },
+    "doc_fecl2_synthesis": {
+      "equation": "FeCl2·4H2O(aq) + H2C2O4(aq) → FeC2O4·2H2O(s) + 2H2O(l) + 2HCl(aq)",
+      "source": "DOC file (Prelab answer key for desk 1,4,7,...)"
+    },
+    "doc_fe_pyrolysis_a": {
+      "equation": "2FeC2O4·2H2O(s) + O2(g) → 2FeO(s) + 4H2O(g) + 4CO2(g)",
+      "theoretical_yield_from_1g": "0.40 g FeO",
+      "actual_occurrence": false
+    },
+    "doc_fe_pyrolysis_b": {
+      "equation": "4FeC2O4·2H2O(s) + 3O2(g) → 2Fe2O3(s) + 8H2O(g) + 8CO2(g)",
+      "theoretical_yield_from_1g": "0.44 g Fe2O3",
+      "actual_occurrence": true,
+      "product_color": "red-brown / rust colored"
+    },
+    "doc_fe_pyrolysis_c": {
+      "equation": "FeC2O4·2H2O(s) → FeCO3(s) + 2H2O(g) + CO(g)",
+      "theoretical_yield_from_1g": "0.64 g FeCO3",
+      "actual_occurrence": false
+    },
+    "doc_ni_pyrolysis_options": {
+      "A": "2NiC2O4·2H2O(s) + O2(g) → 2NiO(s) + 4H2O(g) + 4CO2(g) [0.41 g from 1.0 g - ACTUALLY OCCURS, black NiO]",
+      "B": "4NiC2O4·2H2O(s) + 3O2(g) → 2Ni2O3(s) + 8H2O(g) + 8CO2(g) [0.45 g from 1.0 g]",
+      "C": "NiC2O4·2H2O(s) → NiCO3(s) + 2H2O(g) + CO(g) [0.65 g from 1.0 g]"
+    },
+    "doc_mn_pyrolysis_options": {
+      "A": "2MnC2O4·3H2O(s) + O2(g) → 2MnO(s) + 6H2O(g) + 4CO2(g) [0.36 g from 1.0 g]",
+      "B": "3MnC2O4·3H2O(s) + 2O2(g) → Mn3O4(s) + 9H2O(g) + 6CO2(g) [0.39 g from 1.0 g - ACTUALLY OCCURS, brown-black Mn3O4]",
+      "C": "MnC2O4·3H2O(s) → MnCO3(s) + 3H2O(g) + CO(g) [0.58 g from 1.0 g]"
+    }
+  },
+
+  "key_numerical_data": {
+    "temperatures": {
+      "feC2O4_2H2O_mp_decomp": {
+        "value_celsius": 160,
+        "description": "FeC2O4·2H2O melting point (decomposition)",
+        "source": "both PPT and PPTX"
+      },
+      "feC2O4_2H2O_vacuum_dehydration": {
+        "value_celsius": 142,
+        "description": "FeC2O4·2H2O loses crystal water under vacuum",
+        "source": "both PPT and PPTX"
+      },
+      "K3FeC2O43_3H2O_dehydration": {
+        "value_celsius": 100,
+        "qualifier": "approximately (~100°C)",
+        "description": "K3[Fe(C2O4)3]·3H2O loses all 3 crystal water molecules",
+        "source": "both PPT and PPTX",
+        "comparison_with_faq": "FAQ states 干燥 110°C. Literature states ~100°C. Slight discrepancy (~10°C)."
+      },
+      "K3FeC2O43_3H2O_decomposition": {
+        "value_celsius": 230,
+        "description": "K3[Fe(C2O4)3]·3H2O thermal decomposition temperature",
+        "source": "both PPT and PPTX",
+        "comparison_with_faq": "FAQ states 分解 230-250°C. Literature states 230°C (onset). Consistent with lower bound."
+      },
+      "water_bath_h2o2_addition": {
+        "value_celsius": 40,
+        "description": "Water bath temperature for dropwise H2O2 addition during oxidation step",
+        "source": "both PPT and PPTX"
+      },
+      "water_bath_oxalic_acid_addition": {
+        "value_celsius": 85,
+        "description": "Water bath temperature for H2C2O4 addition to dissolve Fe(OH)3 and complete coordination",
+        "source": "both PPT and PPTX"
+      },
+      "doc_pyrolysis_initial": {
+        "value_celsius": 400,
+        "description": "Hot plate setting for pyrolysis of metal oxalates (~400°C)",
+        "source": "DOC file"
+      },
+      "doc_pyrolysis_secondary": {
+        "value_celsius": 450,
+        "description": "Increased temperature if constant mass not achieved at 400°C",
+        "source": "DOC file"
+      },
+      "doc_max_hotplate": {
+        "value_celsius": 500,
+        "description": "Maximum hot plate temperature (Fisher Scientific Isotemp)",
+        "source": "DOC file (Instructor Notes)"
+      },
+      "boiling_to_remove_h2o2": {
+        "description": "Solution heated to boiling after H2O2 addition to decompose excess H2O2, then maintained at 85°C water bath",
+        "source": "PPTX slide 19"
+      }
+    },
+
+    "masses_and_quantities": {
+      "ppt_procedure": {
+        "mohr_salt": {
+          "mass_g": 5.0,
+          "substance": "(NH4)2SO4·FeSO4·6H2O",
+          "notes": "Plus a few drops of H2SO4"
+        },
+        "oxalic_acid_step1": {
+          "mass_g": 1.7,
+          "substance": "H2C2O4·2H2O",
+          "notes": "For precipitation of FeC2O4"
+        },
+        "potassium_oxalate": {
+          "mass_g": 3.5,
+          "volume_water_mL": 10,
+          "substance": "K2C2O4",
+          "notes": "Added before H2O2 oxidation"
+        },
+        "hydrogen_peroxide_volume_mL": 8,
+        "hydrogen_peroxide_concentration": "6%",
+        "microboil_duration_min": 4,
+        "notes": "K2C2O4 is added BEFORE H2O2 oxidation, not after"
+      },
+      "doc_procedure": {
+        "metal_salt_range_g": "3.9 - 4.1",
+        "metal_salt_water_mL": 20,
+        "oxalic_acid_solution_volume_mL": 50.0,
+        "oxalic_acid_mass_per_50mL_g": 4.0,
+        "oxalic_acid_concentration_M": 0.888,
+        "oxalic_acid_solution_prep": "112 g H2C2O4·2H2O per 1 L distilled water",
+        "precipitation_wait_time_min": 10,
+        "acetone_wash_volume_mL": "3 × 5-10 mL",
+        "pyrolysis_sample_range_g": "0.990 - 1.010",
+        "pyrolysis_heating_duration_min": 10,
+        "constant_mass_threshold_g": 0.010
+      }
+    },
+
+    "solubility_data": {
+      "oxalic_acid_H2C2O4": {
+        "at_15C": "9.5 g/100mL",
+        "at_25C": "14.3 g/100mL",
+        "at_100C": "120 g/100mL",
+        "miscibility": {
+          "ethanol": "soluble",
+          "water": "soluble",
+          "ether": "slightly soluble",
+          "benzene": "insoluble"
+        }
+      },
+      "FeC2O4_2H2O": {
+        "cold_water": "0.22 g/100g",
+        "hot_water": "0.026 g/100g",
+        "ksp": 3.28e-7,
+        "note": "Sparingly soluble. Hot water solubility is LOWER than cold water."
+      },
+      "K3_Fe_C2O4_3_3H2O": {
+        "water": "soluble",
+        "ethanol": "poorly soluble / 难溶于乙醇",
+        "note": "This solubility difference enables the solvent replacement crystallization method"
+      }
+    },
+
+    "molar_masses": {
+      "FeCl2_4H2O": {
+        "value_g_per_mol": 198.81,
+        "source": "DOC answer key"
+      },
+      "FeC2O4_2H2O": {
+        "value_g_per_mol": 179.90,
+        "source": "DOC answer key"
+      },
+      "FeO": {
+        "value_g_per_mol": 71.85,
+        "source": "DOC answer key"
+      },
+      "Fe2O3": {
+        "value_g_per_mol": 159.69,
+        "source": "DOC answer key"
+      },
+      "FeCO3": {
+        "value_g_per_mol": 115.86,
+        "source": "DOC answer key"
+      },
+      "Ni_NO3_2_6H2O": {
+        "value_g_per_mol": 290.80,
+        "source": "DOC answer key"
+      },
+      "NiC2O4_2H2O": {
+        "value_g_per_mol": 182.76,
+        "source": "DOC answer key"
+      },
+      "MnSO4_H2O": {
+        "value_g_per_mol": 169.02,
+        "source": "DOC answer key"
+      },
+      "MnC2O4_3H2O": {
+        "value_g_per_mol": 197.01,
+        "source": "DOC answer key"
+      }
+    },
+
+    "physical_constants": {
+      "FeC2O4_2H2O": {
+        "color": "pale yellow / 淡黄色",
+        "form": "microcrystalline powder",
+        "relative_density": 2.28,
+        "source": "PPT"
+      },
+      "K3_Fe_C2O4_3_3H2O": {
+        "color": "emerald green / 翠绿色",
+        "crystal_system": "monoclinic / 单斜晶体",
+        "specific_gravity": 2.138,
+        "source": "PPT",
+        "alternative_name": "草酸铁钾 (Potassium Ferric Oxalate)"
+      },
+      "mohr_salt": {
+        "color": "light green / 浅绿色",
+        "solubility": "soluble in water, poorly soluble in ethanol",
+        "solubility_vs_FeSO4": "less soluble in water than FeSO4",
+        "E_Fe2plus_Fe": "-0.44 V",
+        "uses": "reducing agent, primary standard for K2Cr2O7 and KMnO4"
+      },
+      "oxalic_acid": {
+        "pKa1": 1.25,
+        "pKa2": 4.29,
+        "acid_strength_note": "~10,000 times stronger than acetic acid at same concentration",
+        "E_CO2_H2C2O4": "-0.49 V",
+        "ligand_type": "bidentate, intermediate field, strong reducing agent",
+        "decomposition": "thermally unstable, decomposes to CO2 upon heating"
+      }
+    },
+
+    "stoichiometric_factors": {
+      "fe_limiting_reactant_factor": {
+        "theoretical_yield_factor": 0.9048,
+        "description": "For FeCl2·4H2O → FeC2O4·2H2O: multiply mass of metal salt used by 0.9048 to get theoretical yield (4 significant figures)",
+        "metal_salt_is_limiting": true
+      },
+      "ni_limiting_reactant_factor": {
+        "theoretical_yield_factor": 0.6284,
+        "description": "For Ni(NO3)2·6H2O → NiC2O4·2H2O"
+      },
+      "mn_limiting_reactant_factor": {
+        "theoretical_yield_factor": 1.165,
+        "description": "For MnSO4·H2O → MnC2O4·3H2O"
+      }
+    }
+  },
+
+  "experimental_procedure_details": {
+    "step1_FeC2O4_preparation": {
+      "reagents": "5.0 g (NH4)2SO4·FeSO4·6H2O + few drops H2SO4; 1.7 g H2C2O4·2H2O",
+      "method": "Dissolve reactants separately, mix, heat to boiling with anti-bumping measures, microboil 4 min",
+      "washing": "Hot water wash by decantation (倾滗法), test for SO42- absence",
+      "key_questions": [
+        "Why dissolve reactants separately?",
+        "Why add acid to Mohr's salt solution?",
+        "What determines water volume?",
+        "Why does bumping occur and how to prevent it?",
+        "Why wash with hot water?",
+        "Why use SO42- as indicator of washing completeness?"
+      ]
+    },
+    "step2_oxidation_coordination": {
+      "reagents": "3.5 g K2C2O4 + 10 mL H2O; 6% H2O2 8mL; H2C2O4 (until clear emerald green)",
+      "procedure": [
+        "Add K2C2O4 solution to FeC2O4·2H2O precipitate (BEFORE H2O2)",
+        "40°C water bath, add H2O2 dropwise",
+        "Fe(OH)3 brown precipitate forms (side product from excess H2O2)",
+        "Heat to boiling to decompose excess H2O2",
+        "85°C water bath, add H2C2O4 until solution turns clear emerald green (翠绿色)",
+        "Control H2C2O4 amount carefully - stop exactly when transparent green"
+      ],
+      "three_equilibria_involved": [
+        "氧化还原平衡 (Redox equilibrium)",
+        "配位平衡 (Coordination equilibrium)",
+        "沉淀溶解平衡 (Precipitation-dissolution equilibrium)"
+      ],
+      "color_changes_to_record": "Track color through all stages",
+      "why_boil_before_oxalic": "To remove excess H2O2 which would oxidize C2O42-",
+      "why_stop_at_emerald_green": "Excess H2C2O4 causes side reactions; insufficient leaves uncomplexed Fe3+"
+    },
+    "step3_crystallization": {
+      "method": "溶剂替换法 (Solvent replacement method)",
+      "principle": "Exploits solubility difference in different solvents to precipitate target compound",
+      "detail": "Add ethanol to aqueous solution; K3[Fe(C2O4)3]·3H2O is insoluble in ethanol",
+      "cotton_thread": "Provides nucleation/growth attachment point for crystals",
+      "alternative_methods": ["浓缩结晶 (Concentration crystallization)", "冷却结晶 (Cooling crystallization)"],
+      "references": [
+        "燕翔, 制备硫酸亚铁铵单晶的实验研究, 首都师范大学学报, 2015,36(4):49-52",
+        "三草酸合铁酸钾制备条件的优化, 台州学院学报, 2009, 31(3):49-51"
+      ]
+    },
+    "doc_part1_synthesis": {
+      "description": "General oxalate precipitation: 3.9-4.1 g hydrated metal salt + 20 mL water, add to 50.0 mL 0.888 M H2C2O4 (4.0 g H2C2O4), wait 10 min, vacuum filter, wash with acetone (3 × 5-10 mL)",
+      "note": "Metal salt is the limiting reactant for all three metals (Fe, Ni, Mn)"
+    },
+    "doc_part2_pyrolysis": {
+      "description": "Weigh 0.990-1.010 g dry hydrated metal oxalate in aluminum dish, heat on hot plate at ~400°C, cool, reweigh. Repeat 10-min cycles until mass change <0.010 g. Increase to 450°C if needed.",
+      "fe_result": "Reaction B: product is Fe2O3 (red-brown/rust). NOT FeO, NOT FeCO3.",
+      "ni_result": "Reaction A: product is NiO (black). Do NOT stop at yellow intermediate.",
+      "mn_result": "Reaction B: product is Mn3O4 (brown-black), actually mixture with Mn2O3."
+    }
+  },
+
+  "properties_and_applications": {
+    "photochemical_activity": {
+      "description": "K3[Fe(C2O4)3]·3H2O has photochemical activity - absorbs light energy and quantitatively undergoes photochemical reaction",
+      "applications": [
+        "Photosensitive paper (感光纸) for photographic experiments",
+        "Chemical actinometer (化学光量计) for measuring light quantity and photodegradation",
+        "Used in blueprint/cyanotype processes (蓝晒)"
+      ],
+      "mechanism_hint": "Light-triggered reaction, decomposes upon light exposure",
+      "comparison_with_faq": "FAQ mentions LMCT ~530nm. Neither PPT nor PPTX specify the exact wavelength, but both confirm photochemical activity."
+    },
+    "catalytic_applications": [
+      "Main raw material for preparing supported active iron catalysts",
+      "Good catalyst for some organic reactions",
+      "Industrial application value"
+    ],
+    "coordination_chemistry": {
+      "ligand_field": "C2O42- is a bidentate intermediate-field ligand",
+      "stability_comparison": "Fe3+ complexes: compare SCN-, F-, C2O42-, CN-",
+      "acid_effect": "Acidity (HAc, H2SO4) affects coordination equilibrium",
+      "precipitation_effect": "Na2S precipitation affects complex equilibrium",
+      "charge_determination": "Ion exchange method + conductivity method for determining complex ion charge"
+    },
+    "mohr_salt_stability_theories": {
+      "void_theory": "Surface void size determines probability of O2 entry and oxidation",
+      "hydrogen_bond_theory": "NH4+ and SO42- embed in crystal lattice forming more hydrogen bonds, increasing stability",
+      "references": [
+        "贾艳媛等, 同铁不同性: FeSO4·7H2O和(NH4)2Fe(SO4)2·6H2O——硫酸亚铁铵制备的改进实验, 大学化学, 2023, 38(11):155-162",
+        "李俊生等, 硫酸亚铁铵和硫酸亚铁稳定性的对比研究, 化学教育, 2014, 9:69-74"
+      ]
+    },
+    "biological_medical_context": {
+      "kidney_stones": "Calcium oxalate is most common; heaviest recorded 620 g (Pakistan, 2008); pain threshold ~2-3 mm diameter",
+      "oxalate_sources": "spinach, nuts, rhubarb, sesame seeds",
+      "autism_research": "Preliminary: autistic children have high urinary oxalates; low-oxalate diet as treatment",
+      "iron_oxalate": "FeC2O4 (humboldtine) - yellow pigment in paints/glass/plastic; evidence for life on other planets (fungi/lichen product)",
+      "nanoparticle_precursors": "Transition metal oxalates as precursors to metal oxide nanoparticles for catalysis and semiconductors"
+    }
+  },
+
+  "contradictions_and_supplements_vs_faq": {
+    "drying_temperature": {
+      "faq_value": "110°C",
+      "literature_value": "approximately 100°C (~100°C)",
+      "discrepancy": "~10°C. Literature uses ~ as approximation. Both refer to loss of 3H2O crystal water.",
+      "assessment": "Minor discrepancy; literature is approximate. 110°C is a reasonable practical drying temperature to ensure complete dehydration."
+    },
+    "decomposition_temperature": {
+      "faq_value": "230-250°C",
+      "literature_value": "230°C (single onset temperature)",
+      "assessment": "Literature gives onset at 230°C. FAQ range 230-250°C is consistent, implying decomposition proceeds over a range."
+    },
+    "lmct_wavelength": {
+      "faq_value": "~530nm",
+      "literature_value": "NOT specified in any of the three files",
+      "assessment": "The PPT and PPTX mention photochemical activity and use as chemical actinometer but do not specify LMCT wavelength. This wavelength data must come from other sources."
+    },
+    "feC2O4_solubility_anomaly": {
+      "finding": "FeC2O4·2H2O solubility in hot water (0.026g/100g) is LOWER than in cold water (0.22g/100g)",
+      "significance": "This is an important experimental detail - hot water washing actually helps retain the precipitate"
+    },
+    "new_data_not_in_typical_faq": {
+      "molar_masses": "FeC2O4·2H2O = 179.90 g/mol; FeCl2·4H2O = 198.81 g/mol",
+      "pyrolysis_products": "FeC2O4·2H2O pyrolyzes to Fe2O3 (not FeO or FeCO3) in air at ~400°C",
+      "ksp_FeC2O4": "3.28 × 10^-7",
+      "stoichiometric_factor": "For FeCl2·4H2O → FeC2O4·2H2O: theoretical yield = metal salt mass × 0.9048",
+      "potentials": "E(Fe2+/Fe) = -0.44V; E(CO2/H2C2O4) = -0.49V",
+      "specific_gravity": "FeC2O4·2H2O = 2.28; K3[Fe(C2O4)3]·3H2O = 2.138",
+      "K2C2O4_addition_order": "ADD BEFORE H2O2 addition, not after. This is critical for successful synthesis.",
+      "side_reaction_mechanism": "Excess H2O2 produces Fe(OH)3 brown precipitate; this is redissolved by subsequent H2C2O4 addition"
+    }
+  },
+
+  "references_cited_in_documents": {
+    "from_pptx": [
+      "贾艳媛等, 大学化学, 2023, 38(11):155-162 (Mohr's salt stability)",
+      "李俊生等, 化学教育, 2014, 9:69-74 (FeSO4 vs Mohr's salt stability)",
+      "燕翔, 首都师范大学学报, 2015,36(4):49-52 (Solvent replacement crystallization)",
+      "台州学院学报, 2009, 31(3):49-51 (Optimization of K3[Fe(C2O4)3] preparation)",
+      "大学化学, 2013, 28(6):42-45",
+      "教育文化论坛, 2011(1):90-92"
+    ],
+    "from_ppt": [
+      "Same refs as PPTX for Mohr's salt and crystallization"
+    ]
+  },
+
+  "summary_statistics": {
+    "total_slides_analyzed": 45,
+    "total_pages_doc": "~14 pages (student instructions + instructor notes + answer keys)",
+    "unique_reaction_equations": 14,
+    "temperature_data_points": 9,
+    "molar_mass_values": 12,
+    "solubility_data_points": 7,
+    "electrochemical_potentials": 2,
+    "ksp_values": 1,
+    "pKa_values": 2,
+    "density_values": 2
+  }
+}

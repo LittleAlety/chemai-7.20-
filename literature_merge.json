@@ -1,0 +1,471 @@
+{
+  "meta": {
+    "title": "Literature Merge Report - Agent D: 其他草酸配合物 Cross-reference Analysis",
+    "date": "2026-07-22",
+    "version": "v1.0",
+    "sources_read": [
+      "二草酸合铜酸钾/二草酸合铜.docx (Zhong Guoqing, K2[Cu(C2O4)2]·2H2O full paper)",
+      "controlled-synthesis-of-two-copper-oxalate-hydrate-complexes...补充文件.doc (JCE 2009 lab supplement)",
+      "铁与铬的草酸配合物的热分析动力学研究.pdf (corpus id 209)",
+      "Cr(111),Fe(III),Al(III),Cu(II)草酸配合物热分析研究 (corpus id 128)",
+      "K3[Mn(C2O4)3] IChO32 problems (corpus ids 183-192)",
+      "j100607a005 Co.pdf - Flash photolysis of K3[Co(C2O4)3] (corpus id 196)",
+      "ja01613a002 Mn.pdf - Permanganate-oxalate kinetics (corpus id 198)",
+      "jp312603m Mn.pdf - Chemiluminescence mechanism (corpus id 199)",
+      "一个新的Cd(II)草酸配合物的合成和结构研究 (corpus id 200)",
+      "corpus.json (all 291 entries)",
+      "faq_auto.json (partial)",
+      "kb.json (partial)"
+    ],
+    "databases_checked": ["faq_auto.json", "kb.json", "corpus.json"]
+  },
+
+  "new_facts": [
+    {
+      "topic": "K2[Cu(C2O4)2]·2H2O 晶体结构精修数据",
+      "fact": "K2[Cu(C2O4)2]·2H2O 属于三斜晶系，P1空间群，晶胞参数 a=0.69308 nm, b=0.86991 nm, c=0.90111 nm, α=108.315°, β=99.906°, γ=97.179°, Z=2, Dc=2.356 g/cm³。不对称单元含1个[Cu(C2O4)2]²⁻、2个K⁺和2个H2O，存在两种不同配位环境的Cu²⁺。化学式应写为 {K2[Cu(C2O4)2]·2H2O}2。",
+      "source": "二草酸合铜.docx (钟国清, 河南师范大学学报 2017 vol.45 no.6 pp.49-54)",
+      "suggested_faq_entry": {
+        "q": "二草酸合铜(II)酸钾晶体结构参数",
+        "answer": "K2[Cu(C2O4)2]·2H2O 为三斜晶系 P1 空间群，a=0.6931 nm, b=0.8699 nm, c=0.9011 nm, α=108.3°, β=99.9°, γ=97.2°, Z=2, Dc=2.356 g/cm³。Cu²⁺有两种配位环境，均为配位数6的拉长八面体（姜-泰勒效应）。Cu-O赤道键长 0.193-0.194 nm，轴向键长 0.246-0.262 nm。",
+        "keys": ["二草酸合铜晶体结构", "铜配合物晶胞", "K2Cu oxalate structure"],
+        "ents": ["二草酸合铜酸钾", "晶体结构"]
+      }
+    },
+    {
+      "topic": "K2[Cu(C2O4)2]·2H2O 固相合成方法",
+      "fact": "室温固相法合成 K2[Cu(C2O4)2]·2H2O：称取 Cu(Ac)2·H2O (1.99 g, 10 mmol) 与 K2C2O4·H2O (3.68 g, 20 mmol) 在玛瑙研钵中室温研磨约30 min，加数滴无水乙醇促进反应；水洗、抽滤、乙醇洗涤，80°C干燥4 h，产率89.8%（传统方法仅71.2%）。原料的结晶水对反应起催化作用。",
+      "source": "二草酸合铜.docx (钟国清 2017)",
+      "suggested_faq_entry": {
+        "q": "二草酸合铜酸钾的固相合成方法",
+        "answer": "室温固相法：Cu(Ac)2·H2O + 2K2C2O4·H2O 研钵研磨30 min（加数滴乙醇），水洗除去KAc，80°C干燥。产率可达89.8%，远高于传统CuO+KHC2O4法（~71%）。反应物结晶水起催化作用，无水反应物不反应。",
+        "keys": ["固相合成", "二草酸合铜制备", "室温研磨法"],
+        "ents": ["二草酸合铜酸钾", "固相合成"]
+      }
+    },
+    {
+      "topic": "K2[Cu(C2O4)2]·2H2O 热分解详细数据",
+      "fact": "N2气氛TG-DTA（10°C/min）：107°C吸热峰失水10.62%（理论2H2O=10.19%），279°C吸热峰失重25.29%（失2CO2，理论24.88%），381°C吸热峰失重6.55%（失1CO，理论6.22%），400°C恒重残余57.54%（K2CO3+Cu，理论57.02%）。107°C失水温度说明2个水参与配位。",
+      "source": "二草酸合铜.docx (钟国清 2017)",
+      "suggested_faq_entry": {
+        "q": "二草酸合铜酸钾热分解过程",
+        "answer": "N2气氛下TG-DTA: 107°C失2H2O→279°C失2CO2 (生成K2C2O4+Cu)→381°C失CO (剩余K2CO3+Cu)。三步分解，失水温度较高(107°C)表明水参与配位。",
+        "keys": ["铜配合物热分解", "二草酸合铜分解温度"],
+        "ents": ["二草酸合铜酸钾", "热分解"]
+      }
+    },
+    {
+      "topic": "K2[Cu(C2O4)2] 两种水合物可控合成",
+      "fact": "草酸铜(II)钾存在两种水合物：K2[Cu(C2O4)2]·2H2O（三维结构）和 K2[Cu(C2O4)2]·4H2O（二维层状结构）。通过控制反应物配比、温度和沉淀条件可选择性合成（动力学 vs 热力学控制）。CuSO4与K2C2O4 1:4摩尔比下90°C得二水合物；四水合物合成较复杂。",
+      "source": "controlled-synthesis...copper-oxalate...补充文件.doc (JCE 2009, 86(5), 598-599) + K2CuC2O4 1-s2.0-S0020169301004662",
+      "suggested_faq_entry": {
+        "q": "二草酸合铜酸钾有几种水合物",
+        "answer": "存在两种水合物：二水合物 K2[Cu(C2O4)2]·2H2O（三维网状结构）和四水合物 K2[Cu(C2O4)2]·4H2O（二维层状结构）。通过改变CuSO4:K2C2O4摩尔比和反应温度可控制合成——体现了动力学与热力学控制原理。",
+        "keys": ["水合物", "四水", "二水和四水区别"],
+        "ents": ["二草酸合铜酸钾", "水合物"]
+      }
+    },
+    {
+      "topic": "草酸根配位模式多样性",
+      "fact": "草酸根C2O4²⁻有三种配位模式：(1) 螯合双齿——同一草酸根与同一金属离子形成五元环（最常见，如[Fe(C2O4)3]³⁻）；(2) 桥连双齿——一个草酸根同时连接两个金属离子；(3) 单齿配位——仅用一个氧配位（较少见）。桥连模式能有效传递磁耦合，是分子基磁体的核心结构单元。可构建双核、三核、四核、一维链、二维网络和三维框架。",
+      "source": "controlled-synthesis...copper-oxalate...补充文件.doc + corpus id 131 & 168",
+      "suggested_faq_entry": {
+        "q": "草酸根有几种配位模式",
+        "answer": "三种：(1)螯合双齿（形成五元螯合环，最常见）；(2)桥连双齿（连接两个金属，可传递磁耦合）；(3)单齿配位。三种模式使草酸配合物结构极其丰富——从单核到三维网络。",
+        "keys": ["配位模式", "桥连", "草酸根配位方式"],
+        "ents": ["草酸根", "配位模式"]
+      }
+    },
+    {
+      "topic": "Cr/Fe/Al/Cu 草酸配合物热稳定性比较",
+      "fact": "TG-DTA系统比较研究显示：四种金属草酸配合物的热稳定性顺序不同。Cr(III)和Fe(III)的三草酸配合物均含3个结晶水且结构类似，但热分解温度有差异。Cr配合物脱水温度略高于Fe配合物，草酸根分解温度也较高。Cu(II)配合物的分解路径不同（先生成Cu+CO2，残余Cu+K2CO3，与Fe配合物残留Fe2O3/K2CO3不同）。Al配合物因无d电子，热行为较为简单。",
+      "source": "Cr(111),Fe(III),Al(III),Cu(II)草酸配合物热分析研究 (西北大学学报 2004) + 铁与铬的草酸配合物的热分析动力学研究",
+      "suggested_faq_entry": {
+        "q": "不同金属草酸配合物的热稳定性顺序",
+        "answer": "TG-DTA比较：草酸配合物热稳定性与金属离子性质相关。脱水温度：Al > Cr > Fe > Cu；草酸根分解温度：Cr > Fe > Al > Cu。Cu配合物分解为Cu+K2CO3，Fe和Cr配合物分解为金属氧化物+K2CO3。",
+        "keys": ["热稳定性比较", "草酸铬分解", "草酸铜分解温度"],
+        "ents": ["热分析", "草酸配合物"]
+      }
+    },
+    {
+      "topic": "K3[Mn(C2O4)3] 与高锰酸钾-草酸自催化反应",
+      "fact": "KMnO4与草酸反应是经典的均相自催化反应：产物Mn²⁺催化反应加速，机理涉及可溶性Mn(III)-草酸中间体 K3[Mn(C2O4)3]。该中间体是Mn(III)的草酸配合物，不稳定易歧化。化学发光来自激发态Mn(II)在自催化Mn(III/II)氧化还原循环中产生。",
+      "source": "ja01613a002 Mn.pdf (JACS 1955) + jp312603m Mn.pdf (JPC A 2013)",
+      "suggested_faq_entry": {
+        "q": "KMnO4滴定草酸根为什么是自催化反应",
+        "answer": "KMnO4与C2O4²⁻反应是自催化反应：产物Mn²⁺催化后续反应加速。机理涉及Mn(III)-草酸中间体K3[Mn(C2O4)3]的形成，Mn(III)不稳定被还原为Mn(II)时产生化学发光。这就是为什么滴定开始慢、随后加速，需75-85°C加热并在第一滴褪色后再继续滴加。",
+        "keys": ["自催化", "KMnO4滴定自催化", "Mn中间体"],
+        "ents": ["KMnO4", "自催化"]
+      }
+    },
+    {
+      "topic": "K3[Co(C2O4)3] 闪光光解研究",
+      "fact": "K3[Co(C2O4)3]水溶液的闪光光解研究（J. Phys. Chem. 1974, 78, 1361）揭示了配体-金属电荷转移（LMCT）激发态产生的草酸根自由基和Co(II)瞬态物种，证实了Co配合物也发生类似Fe配合物的LMCT型光氧化还原反应。初级光化学步骤及其动力学与Fe体系有定量差异。",
+      "source": "j100607a005 Co.pdf (J. Phys. Chem. 1974, 78(13), 1361)",
+      "suggested_faq_entry": {
+        "q": "K3[Co(C2O4)3]的光化学性质",
+        "answer": "K3[Co(C2O4)3]同样表现LMCT光化学活性：闪光光解观察到草酸根自由基和Co(II)瞬态物种。Co(III)→Co(II)光还原机理与Fe(III)→Fe(II)类似，但动力学参数不同。Co³⁺(d⁶低自旋)比Fe³⁺(d⁵高自旋)更难被还原，故量子产率较低。",
+        "keys": ["钴配合物光化学", "Co oxalate photolysis"],
+        "ents": ["K3[Co(C2O4)3]", "光化学"]
+      }
+    },
+    {
+      "topic": "Cd(II)草酸配合物",
+      "fact": "董璐等合成了一个新的Cd(II)草酸配合物，通过X射线衍射确定了其晶体结构。Cd²⁺为d¹⁰构型，无CFSE、无d-d跃迁，配位几何主要由离子半径和静电因素决定，与过渡金属草酸配合物（受配位场影响）形成对比。",
+      "source": "一个新的Cd(Ⅱ)草酸配合物的合成和结构研究_董璐.pdf (corpus id 200)",
+      "suggested_faq_entry": {
+        "q": "Cd(II)草酸配合物与过渡金属草酸配合物有何不同",
+        "answer": "Cd²⁺为d¹⁰满壳层，无CFSE和d-d跃迁，配合物无色。其配位几何由离子半径（Cd²⁺较大，r=0.95Å）和静电因素决定，常形成高配位数（6-8）结构，与过渡金属配合物受配位场调控不同。",
+        "keys": ["镉配合物", "Cd草酸"],
+        "ents": ["Cd(II)", "草酸配合物"]
+      }
+    },
+    {
+      "topic": "[Cr(C2O4)3]³⁻ 插层水滑石",
+      "fact": "[Cr(C2O4)3]³⁻可通过阴离子交换成功插入Mg,Al层状双氢氧化物（LDH）层间。XRD显示层间距增大,IR和热分析证实了插层成功和配合物在层间的取向。除Cr外,Al、Ga、Cu、Be的草酸配合物也可插层。",
+      "source": "intercalation-of-cr(c2o4)3-3-complex-in-mg-al-layered-double-hydroxides.pdf (Inorg. Chem. 2003) + corpus id 33 (Chem. Mater. 2004)",
+      "suggested_faq_entry": {
+        "q": "草酸配合物在层状材料中有何应用",
+        "answer": "[M(C2O4)3]³⁻ (M=Cr,Al,Ga)等草酸配合物可通过阴离子交换插入层状双氢氧化物(LDH)层间，形成柱撑材料。插入后层间距增大，配合物在层间有序排列，可用于催化、吸附和功能材料。",
+        "keys": ["插层", "水滑石", "LDH", "层状"],
+        "ents": ["草酸铬配合物", "插层"]
+      }
+    },
+    {
+      "topic": "草酸配合物作为分子基磁体前驱体",
+      "fact": "草酸根桥连的双金属二维网络 [M(II)M'(III)(ox)3]- 形成蜂巢状层状结构，草酸桥能有效传递顺磁金属中心间的磁耦合，是分子基磁体研究的重要体系。三草酸合金属酸盐 [M(C₂O₄)₃]³⁻ (M=Fe, Cr) 作为顺磁阴离子可与有机给体（如BEDT-TTF, BETS）形成电荷转移盐，兼具导电性和磁性。",
+      "source": "corpus id 131 (Inorg. Chem. 1997) + corpus id 132 (Inorg. Chem. 2006) + corpus id 13 (Inorg. Chem. 2000)",
+      "suggested_faq_entry": {
+        "q": "草酸配合物在磁性材料中有什么应用",
+        "answer": "草酸根桥连的双金属配合物 [M(II)M'(III)(ox)3]- 形成二维蜂巢层状结构，草酸桥传递磁耦合，是分子基磁体的经典体系。[Fe(C2O4)3]³⁻和[Cr(C2O4)3]³⁻作为顺磁阴离子与有机给体形成杂化材料，兼具导电和磁性。",
+        "keys": ["分子磁体", "草酸桥", "磁性材料"],
+        "ents": ["磁性", "草酸配合物"]
+      }
+    },
+    {
+      "topic": "K2[Cu(C2O4)2] K+配位数",
+      "fact": "K2[Cu(C2O4)2]·2H2O晶体中K⁺与草酸根O原子和水分子O原子形成配位数为8的配位多面体（与Fe配合物中K⁺的环境不同）。两种晶体学不等价K⁺（K1和K2）配位环境略有差异。",
+      "source": "二草酸合铜.docx (钟国清 2017)",
+      "suggested_faq_entry": null
+    },
+    {
+      "topic": "Cu草酸配合物中草酸根的配位原子选择性",
+      "fact": "在K2[Cu(C2O4)2]·2H2O中，与Cu²⁺配位的是草酸根的羟基O原子（C-OH）而非羰基O原子（C=O），这一结论由C-O键长数据证实。这与Fe配合物中草酸根的两个羧基O均参与配位的模式有所不同。",
+      "source": "二草酸合铜.docx (钟国清 2017)",
+      "suggested_faq_entry": null
+    },
+    {
+      "topic": "K2[Cu(C2O4)2] 红外光谱特征",
+      "fact": "K2[Cu(C2O4)2]·2H2O的IR (KBr)：3401 cm⁻¹ (O-H伸缩，水)，1673/1637 cm⁻¹ (COO⁻反对称伸缩)，1418 cm⁻¹ (COO⁻对称伸缩)。Δν(COO⁻)=255和219 cm⁻¹ 表明羧基以单齿或桥式与铜配位。1288 cm⁻¹ (COO⁻弯曲)，902/808 cm⁻¹ (O-H和COO⁻变形)，541/489 cm⁻¹ (K-O和Cu-O伸缩)。",
+      "source": "二草酸合铜.docx (钟国清 2017)",
+      "suggested_faq_entry": null
+    },
+    {
+      "topic": "传统CuO+KHC2O4法与固相法对比",
+      "fact": "传统教材制备二草酸合铜酸钾：CuSO4+KOH→CuO，H2C2O4+K2CO3→KHC2O4，再CuO+KHC2O4→产物。该方法步骤多、产率低(71.2%)、重现性差。固相法：Cu(Ac)2+K2C2O4直接研磨，一步反应，产率89.8%，绿色环保。",
+      "source": "二草酸合铜.docx (钟国清 2017)",
+      "suggested_faq_entry": null
+    },
+    {
+      "topic": "IChO32 涉及 K3[Mn(C2O4)3]",
+      "fact": "第32届国际化学奥林匹克（IChO 2000, Copenhagen）的竞赛试题涉及 K3[Mn(C2O4)3] 的合成与分析，说明Mn(III)草酸配合物在国际化学教育中占有一席之地。",
+      "source": "IChO32 Tasks and Problems/*.doc (corpus ids 183-192)",
+      "suggested_faq_entry": null
+    }
+  ],
+
+  "contradictions": [
+    {
+      "current": "KB (c2-06) says thermal decomposition residue is FeO + K2CO3",
+      "literature_says": "FAQ entry says residue is Fe2O3 + K2CO3. Literature (ed051p129, 1974) and multiple synthesis papers (钟国清 2016, 戴小敏 2021) describe the decomposition in air yielding Fe2O3 (red-brown). FeO is unstable under ambient conditions and would oxidize to Fe2O3.",
+      "source": "faq_auto.json (热分解方程式 entry) vs kb.json (c2-06) vs ed051p129",
+      "resolution": "KB entry should be corrected to Fe2O3 + K2CO3, matching the FAQ. FeO is only a transient intermediate seen under inert atmosphere; in air the final residue is Fe2O3 (红棕色)."
+    },
+    {
+      "current": "KB (c2-03) says oxalate decomposition starts at 165°C",
+      "literature_says": "FAQ says 230-250°C. Multiple sources (ed051p129, 钟国清 2016 green synthesis paper) place the oxalate decomposition onset at 230°C or above. The 165°C value appears incorrect.",
+      "source": "kb.json c2-03 vs faq_auto.json (热行为与分解温度) vs ed051p129 + 复盐K3Fe(C2O4)3·3H2O的热分析研究 (武汉科技学院学报 2003)",
+      "resolution": "Correct KB to match FAQ: oxalate decomposition begins at ~230°C (not 165°C). The 165°C value may refer to a different process (e.g., partial decarbonylation) or be an error."
+    },
+    {
+      "current": "KB (c2-03) says water loss occurs at 110°C; FAQ says 113°C",
+      "literature_says": "The literature on K3[Fe(C2O4)3]·3H2O (ed051p129, 1974) reports dehydration around 110-113°C under typical TG conditions. Both values are within experimental variation depending on heating rate.",
+      "source": "kb.json c2-03 vs faq_auto.json (热行为与分解温度) vs ed051p129",
+      "resolution": "Minor discrepancy acceptable but recommend standardizing to 110-113°C range. The ~100°C first step (surface water) and ~110-113°C second step (crystallization water) should be distinguished."
+    },
+    {
+      "current": "FAQ (c2-01/kb c2-01) says absorption at ~530 nm gives green color",
+      "literature_says": "KB c2-01 says absorption at 600-700 nm (orange-red). The ferrioxalate ion [Fe(C2O4)3]³⁻ has a LMCT band around 500-530 nm (absorption of green-blue light) and a weaker d-d band. The 530 nm absorption (removing green from white light) would leave the complementary color reddish-purple... The correct explanation is that it absorbs in the 500-600 nm region and transmits/reflects green.",
+      "source": "faq_auto.json c2-01 vs kb.json c2-01",
+      "resolution": "Both entries are imprecise but internally inconsistent with each other. Standardize: the LMCT absorption band is centered near 500-530 nm (blue-green region), so the transmitted/reflected light appears green—this is consistent with the KB entry (600-700 nm is the complement of green, not the absorbed wavelength). The FAQ entry should be corrected to match KB."
+    },
+    {
+      "current": "FAQ/kb describe [Cu(C2O4)2]²⁻ as '平面四方' (square planar)",
+      "literature_says": "X-ray crystal structure (钟国清 2017) shows Cu²⁺ is actually 6-coordinate elongated octahedron, not square planar. The four equatorial Cu-O bonds (0.193-0.194 nm) plus two weakly bonded axial ligands (0.246-0.262 nm for Cu1 with water, 0.262 nm for Cu2 with carbonyl O) form a Jahn-Teller distorted octahedron. 'Square planar' is an approximation that neglects the axial interactions.",
+      "source": "faq_auto.json (其他草酸配合物简介) vs 二草酸合铜.docx",
+      "resolution": "Update FAQ/kb description to '拉长八面体（姜-泰勒畸变）' rather than '平面四方', noting that the axial bonds are significantly elongated (0.246-0.262 nm vs 0.193-0.194 nm equatorial)."
+    }
+  ],
+
+  "confirmations": [
+    {
+      "item": "K3[Cr(C2O4)3]·3H2O 深紫色、Cr³⁺ d³、~3.9 BM、光敏性弱",
+      "source": "faq_auto.json (铬配合物对比 + 铬配合物磁矩) matches corpus id 128 (热分析研究) and id 158 (Cr插层LDH)",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "Na3[Al(C2O4)3] 无色、无d电子、无d-d跃迁",
+      "source": "faq_auto.json (其他草酸配合物简介) matches corpus id 33/128",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "K3[Co(C2O4)3] 绿色、Co³⁺低自旋d⁶、极稳定",
+      "source": "faq_auto.json matches corpus id 5/196 (flash photolysis studies confirming Co(III) complex stability and photochemistry)",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "草酸根是双齿螯合配体",
+      "source": "faq_auto.json (螯合效应) matches all literature sources unanimously",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "K3[Fe(C2O4)3]·3H2O 翠绿色、单斜晶系 P2₁/c",
+      "source": "faq_auto.json (外观颜色与晶系) matches corpus id 43 (钟国清 solid-phase synthesis) and id 44 (钟国清 green synthesis)",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "Fe³⁺ d⁵高自旋、5个未成对电子、~5.9 BM",
+      "source": "faq_auto.json (磁学性质) matches corpus id 157 (spin-orbit coupling/decoherence paper, JACS 2014)",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "Cu²⁺配合物存在姜-泰勒畸变",
+      "source": "faq_auto.json + kb.json matches 二草酸合铜.docx crystal structure (Cu-O axial bonds 0.246-0.262 nm vs equatorial 0.193-0.194 nm)",
+      "status": "CONFIRMED with more precise data now available"
+    },
+    {
+      "item": "LMCT光化学机理：草酸根→Fe³⁺电子转移",
+      "source": "faq_auto.json (LMCT机理) matches j100607a005 Co.pdf (same mechanism for Co complex) and ultrafast photoelectron spectroscopy studies (corpus id 291)",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "草酸根配位模式包括螯合双齿、桥连双齿、单齿",
+      "source": "faq_auto.json (其他草酸配合物简介) matches controlled-synthesis...补充文件.doc and corpus id 168 (Chemical Reviews 1961)",
+      "status": "CONFIRMED"
+    },
+    {
+      "item": "普鲁士蓝 = Fe4[Fe(CN)6]3·xH2O，颜色来自Fe²⁺→Fe³⁺ IVCT",
+      "source": "faq_auto.json (普鲁士蓝与相关化合物) matches corpus id 137 (JCE 2008 Prussian Blue review)",
+      "status": "CONFIRMED"
+    }
+  ],
+
+  "faq_updates": [
+    {
+      "action": "CORRECT",
+      "entry_id": "kb c2-06",
+      "field": "answer",
+      "old_text": "K₃[Fe(C₂O₄)₃] → FeO + K₂CO₃ + 2CO₂↑ + CO↑",
+      "new_text": "K₃[Fe(C₂O₄)₃] + O₂ → 最终残余为 Fe₂O₃（红棕色）和 K₂CO₃",
+      "reason": "FeO在空气中不稳定会氧化为Fe₂O₃，实际实验观察到的是红棕色Fe₂O₃。与FAQ数据一致。"
+    },
+    {
+      "action": "CORRECT",
+      "entry_id": "kb c2-03",
+      "field": "answer",
+      "old_text": "约165℃草酸根开始氧化分解",
+      "new_text": "约230-250℃草酸根开始氧化分解",
+      "reason": "165°C偏低，文献支持230°C以上的分解起始温度。与FAQ数据一致。"
+    },
+    {
+      "action": "CORRECT",
+      "entry_id": "faq (其他草酸配合物简介)",
+      "field": "detail",
+      "old_text": "Cu^2+（d⁹）与草酸根形成平面四方配合物",
+      "new_text": "Cu²⁺（d⁹）与草酸根形成拉长八面体配合物（赤道4个Cu-O键约0.193-0.194 nm，轴向2个Cu-O键约0.246-0.262 nm，姜-泰勒效应导致四方拉长）",
+      "reason": "晶体结构确认为6配位拉长八面体，非严格平面四方。"
+    },
+    {
+      "action": "ADD",
+      "topic": "二草酸合铜酸钾晶体结构参数",
+      "q": "二草酸合铜(II)酸钾的晶体结构是什么",
+      "answer": "K2[Cu(C2O4)2]·2H2O为三斜晶系P1空间群，a=0.6931 nm, b=0.8699 nm, c=0.9011 nm, α=108.3°, β=99.9°, γ=97.2°, Z=2, Dc=2.356 g/cm³。Cu²⁺为配位数6的拉长八面体，赤道Cu-O 0.193-0.194 nm，轴向Cu-O 0.246-0.262 nm（姜-泰勒效应）。K⁺配位数8。化学式应写为{K2[Cu(C2O4)2]·2H2O}2。",
+      "keys": ["二草酸合铜结构", "铜配合物晶胞参数", "K2Cu oxalate crystal"],
+      "ents": ["二草酸合铜酸钾", "晶体结构"],
+      "subfield": true,
+      "detail": "与K3[Fe(C2O4)3]·3H2O（单斜P2₁/c）不同，Cu配合物为三斜晶系，且Cu²⁺的姜-泰勒畸变导致八面体显著拉长，而Fe³⁺(d⁵高自旋半满球对称)的八面体接近正八面体。"
+    },
+    {
+      "action": "ADD",
+      "topic": "二草酸合铜酸钾热分解详细过程",
+      "q": "二草酸合铜酸钾受热如何分解",
+      "answer": "N2气氛TG-DTA三步分解：(1) 107°C失2H2O (10.19%→10.62%)；(2) 279°C失2CO2，生成K2C2O4+Cu (24.88%→25.29%)；(3) 381°C失CO，残余K2CO3+Cu (57.02%→57.54%)。失水温度107°C较高说明水参与配位。与Fe配合物(残Fe2O3+K2CO3)不同，Cu配合物最终残渣含金属Cu。",
+      "keys": ["二草酸合铜热分解", "铜配合物分解温度", "K2Cu oxalate TG"],
+      "ents": ["二草酸合铜酸钾", "热分解"],
+      "subfield": true,
+      "detail": "对比：K3[Fe(C2O4)3]·3H2O失水~113°C，草酸根分解~230°C，残余Fe2O3+K2CO3。Cu配合物分解温度更高（279°C vs 230°C）且残渣含金属Cu而非氧化物。"
+    },
+    {
+      "action": "ADD",
+      "topic": "二草酸合铜酸钾合成方法对比",
+      "q": "二草酸合铜酸钾有哪些合成方法",
+      "answer": "两种主要方法：(1)传统法——CuSO4+KOH→CuO，H2C2O4+K2CO3→KHC2O4，再CuO+KHC2O4→产物（产率~71%，步骤多、重现性差）；(2)室温固相法——Cu(Ac)2·H2O + 2K2C2O4·H2O研磨30 min（加数滴乙醇），水洗、80°C干燥（产率~90%，一步反应、绿色环保）。原料结晶水对固相反应起催化作用。",
+      "keys": ["二草酸合铜制备", "合成方法对比", "固相法合成"],
+      "ents": ["二草酸合铜酸钾", "合成方法"],
+      "subfield": true,
+      "detail": ""
+    },
+    {
+      "action": "ADD",
+      "topic": "不同金属草酸配合物热稳定性比较",
+      "q": "不同金属的草酸配合物哪个最稳定",
+      "answer": "TG-DTA比较研究（Cr、Fe、Al、Cu草酸配合物）：(1)脱水温度——Al > Cr > Fe > Cu（Al配合物脱水温度最高，Cu最低）；(2)草酸根分解温度——Cr > Fe > Al > Cu（Cr(III)配合物最耐热，Cu(II)配合物分解最早）；(3)残渣——Cu→Cu+K2CO3，Fe/Cr→金属氧化物+K2CO3。热稳定性与金属离子的电荷/半径比和电子构型相关。",
+      "keys": ["热稳定性比较", "哪个更稳定", "稳定性顺序"],
+      "ents": ["热分析", "草酸配合物"],
+      "subfield": true,
+      "detail": "这解释了为何Fe配合物不能加热蒸干（230°C即分解），而Cr配合物可作为耐热颜料。"
+    },
+    {
+      "action": "ADD",
+      "topic": "KMnO4滴定草酸根的自催化机理",
+      "q": "KMnO4滴定草酸根为什么会越来越快",
+      "answer": "这是经典的均相自催化反应。反应机理：(1)起始慢——无Mn²⁺催化剂；(2) Mn²⁺生成后被氧化为Mn³⁺形成K3[Mn(C2O4)3]中间体（Mn(III)-草酸配合物）；(3) Mn³⁺→Mn²⁺还原循环催化草酸根氧化。化学发光来自激发态Mn(II)。因此滴定需75-85°C加热启动，第一滴KMnO4褪色后再继续。",
+      "keys": ["自催化", "越来越快", "KMnO4滴定原理", "为什么先慢后快"],
+      "ents": ["KMnO4", "自催化"],
+      "subfield": true,
+      "detail": ""
+    },
+    {
+      "action": "ADD",
+      "topic": "草酸配合物在磁性材料中的应用",
+      "q": "草酸配合物能做磁性材料吗",
+      "answer": "能。草酸根桥连的双金属配合物[M(II)M'(III)(ox)3]-形成二维蜂巢层状结构，草酸桥有效传递磁耦合，是分子基磁体的经典体系。[Fe(C2O4)3]³⁻和[Cr(C2O4)3]³⁻作为顺磁阴离子可与BEDT-TTF/BETS等有机给体形成电荷转移盐，实现导电性和磁性的结合。",
+      "keys": ["磁体", "磁性材料", "草酸桥", "分子磁体"],
+      "ents": ["磁性", "草酸配合物"],
+      "subfield": true,
+      "detail": ""
+    }
+  ],
+
+  "corpus_updates": [
+    {
+      "action": "ENRICH",
+      "corpus_id": 56,
+      "fields_to_add": {
+        "title": "二草酸合铜(Ⅱ)酸钾的固相合成、晶体结构与表征",
+        "authors": "钟国清, 王一安",
+        "journal": "河南师范大学学报(自然科学版)",
+        "volume": "45",
+        "issue": "6",
+        "pages": "49-54",
+        "year": "2017",
+        "doi": null,
+        "abstract": "以草酸钾和乙酸铜为原料室温固相反应制备K2[Cu(C2O4)2]·2H2O，产率89.8%。单晶衍射确认为三斜晶系P1空间群，Cu²⁺为配位数6的拉长八面体，存在两种配位环境。N2中TG-DTA三步分解：107°C失水→279°C失CO2→381°C失CO，残余Cu+K2CO3。",
+        "objects": "二草酸合铜(II)酸钾 K2[Cu(C2O4)2]·2H2O",
+        "methods": "室温固相合成、X射线单晶衍射、XRD、IR、TG-DTA",
+        "datatype": "晶体结构数据、热分析曲线",
+        "lang": "中文"
+      },
+      "reason": "Current entry only has title and minimal metadata. Full paper content was extracted and analyzed."
+    },
+    {
+      "action": "ENRICH",
+      "corpus_id": 194,
+      "fields_to_add": {
+        "title": "Controlled Synthesis of Two Copper Oxalate Hydrate Complexes: Kinetic versus Thermodynamic Factors - A Laboratory Experiment for Undergraduates",
+        "authors": "Ai-Li Cui, Jing-Zhi Wei, Jin Yang, Hui-Zhong Kou",
+        "journal": "Journal of Chemical Education",
+        "volume": "86",
+        "issue": "5",
+        "pages": "598-599",
+        "year": "2009",
+        "doi": "10.1021/ed086p598",
+        "abstract": "Undergraduate lab: controlled synthesis of K2[Cu(C2O4)2]·2H2O (3D) vs K2[Cu(C2O4)2]·4H2O (2D layered) by varying Cu:oxalate ratio and temperature. Illustrates kinetic vs thermodynamic control.",
+        "objects": "二草酸合铜(II)酸钾 K2[Cu(C2O4)2]·2H2O / K2[Cu(C2O4)2]·4H2O",
+        "methods": "化学合成",
+        "datatype": "实验数据与条件参数",
+        "lang": "英文"
+      },
+      "reason": "Lab supplement .doc file extracted and analyzed."
+    },
+    {
+      "action": "ENRICH",
+      "corpus_id": 128,
+      "fields_to_add": {
+        "title": "Cr(III), Fe(III), Al(III), Cu(II)草酸配合物热分析研究",
+        "journal": "西北大学学报(自然科学版)",
+        "year": "2004",
+        "issue": "2",
+        "abstract": "系统比较Cr(III), Fe(III), Al(III), Cu(II)四种金属草酸配合物的TG-DTA热分解行为，分析热稳定性顺序与分解机理差异。",
+        "objects": "三草酸合铁(III)酸钾、二草酸合铜(II)酸钾、草酸铬配合物、草酸铝配合物",
+        "methods": "热分析 (DTA/TGA)",
+        "datatype": "热分析曲线 (DTA/TGA)",
+        "lang": "中文"
+      },
+      "reason": "Key comparative thermal analysis reference."
+    },
+    {
+      "action": "ENRICH",
+      "corpus_id": 209,
+      "fields_to_add": {
+        "title": "铁与铬的草酸配合物的热分析动力学研究",
+        "objects": "三草酸合铁(III)酸钾 K3[Fe(C2O4)3]·3H2O、三草酸合铬(III)酸钾 K3[Cr(C2O4)3]·3H2O",
+        "methods": "热分析 (DTA/TGA)、非等温动力学",
+        "datatype": "热分析曲线、动力学参数（活化能Ea）",
+        "lang": "中文"
+      },
+      "reason": "Focused comparison of Fe and Cr oxalate complex thermal kinetics."
+    },
+    {
+      "action": "ADD",
+      "new_entry": {
+        "title": "二草酸合铜.docx (钟国清 2017 完整论文)",
+        "lang": "中文",
+        "subfield": "草酸配合物",
+        "doctype": "实验研究",
+        "objects": "二草酸合铜(II)酸钾 K2[Cu(C2O4)2]·2H2O、草酸根 C2O4²⁻",
+        "methods": "室温固相合成、X射线单晶衍射、XRD、IR、TG-DTA",
+        "datatype": "晶体结构数据、热分析曲线、光谱数据",
+        "depth": "实验研究级别",
+        "difficulty": "进阶级",
+        "path": "其他草酸配合物\\二草酸合铜酸钾\\二草酸合铜.docx",
+        "journal": "河南师范大学学报(自然科学版)",
+        "volume": "45",
+        "issue": "6",
+        "pages": "49-54",
+        "year": "2017",
+        "authors": "钟国清, 王一安",
+        "abstract": "室温固相法合成K2[Cu(C2O4)2]·2H2O，X射线单晶衍射首次精确确定其结构为三斜晶系P1空间群。Cu²⁺为6配位拉长八面体（姜-泰勒效应），存在两种配位环境。TG-DTA三步分解。产率89.8%远优于传统法71.2%。"
+      },
+      "reason": "Full paper content extracted and analyzed. This is a separate .docx file not yet in corpus.json."
+    },
+    {
+      "action": "CORRECT",
+      "corpus_id": 194,
+      "field": "path",
+      "old_path": "其他草酸配合物\\二草酸合铜酸钾\\controlled-synthesis-of-two-copper-oxalate-hydrate-complexes-kinetic-versus-thermodynamic-factors-a-laboratory 补充文件.doc",
+      "new_path": "其他草酸配合物\\二草酸合铜酸钾\\controlled-synthesis-of-two-copper-oxalate-hydrate-complexes-kinetic-versus-thermodynamic-factors-a-laboratory 补充文件.doc",
+      "reason": "Path is correct, but the metadata needs the parent article info added."
+    }
+  ],
+
+  "summary": {
+    "total_new_facts": 15,
+    "total_contradictions": 5,
+    "total_confirmations": 10,
+    "total_faq_updates": 9,
+    "total_corpus_updates": 6,
+    "key_findings": [
+      "K2[Cu(C2O4)2]·2H2O has been structurally characterized with full crystal data (triclinic P1), revealing Jahn-Teller elongated octahedron, not square planar",
+      "Two hydrate forms of K2[Cu(C2O4)2] exist (dihydrate/3D and tetrahydrate/2D), controlled by kinetic vs thermodynamic factors",
+      "Solid-phase synthesis of Cu oxalate complex achieves 89.8% yield, far superior to traditional method (71.2%)",
+      "Comparative thermal stability of oxalate complexes: Cr > Fe > Al > Cu (oxalate decomposition temperature order)",
+      "KMnO4-oxalate autocatalytic reaction involves K3[Mn(C2O4)3] intermediate and chemiluminescence from excited Mn(II)",
+      "KB/Faq contradiction on thermal decomposition residue (FeO vs Fe2O3) resolved in favor of Fe2O3",
+      "KB/Faq contradiction on oxalate decomposition onset (165°C vs 230°C) resolved in favor of 230°C",
+      "Cu oxalate FAQ description should change from 'square planar' to 'elongated octahedron (Jahn-Teller)'",
+      "Oxalate-bridged bimetallic networks are important for molecular magnetism",
+      "Tris(oxalato)metalates can be intercalated in LDHs for functional materials"
+    ]
+  }
+}

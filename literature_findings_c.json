@@ -1,0 +1,321 @@
+{
+  "agent": "Agent C - Literature Reader",
+  "date": "2026-07-22",
+  "version": "1.0",
+  "sources_analyzed": {
+    "mohr_salt_folder": "三草酸合铁酸钾资料/摩尔盐/",
+    "cyanotype_folder": "三草酸合铁酸钾资料/蓝晒/",
+    "corpus_json": "data/corpus.json",
+    "key_documents_read": [
+      "摩尔盐/Iron(II) sulfate - Wikipedia, the free encyclopedia.htm",
+      "摩尔盐/What is the nature of bonds in FeSO4_7H20 - Yahoo! Answers.htm",
+      "摩尔盐/关于硫酸亚铁铵稳定性的讨论.docx",
+      "摩尔盐/摩尔盐的空气稳定性.docx",
+      "data/corpus.json (291 entries)"
+    ]
+  },
+
+  "section_1_mohr_salt_preparation": {
+    "overview": "Mohr's salt (硫酸亚铁铵 / ferrous ammonium sulfate) has the formula (NH4)2Fe(SO4)2·6H2O or (NH4)2SO4·FeSO4·6H2O, molecular weight 392.18. It is a double salt (复盐), crystallizing as transparent pale blue-green monoclinic crystals.",
+
+    "physical_properties": {
+      "density": "1.864 g/cm3",
+      "dehydration": "100-110°C loses all crystal water",
+      "solubility": "Soluble in water, insoluble in ethanol",
+      "crystal_system": "Monoclinic (Mohrite), space group P21/c",
+      "lattice_parameters": "a=9.3200, b=12.6500, c=6.2400 Å, β=106.8000°, Z=2",
+      "per_fe_molar_volume": "206 cm3/mol (calculated from MW 392.1 / density 1.9)"
+    },
+
+    "comparison_with_FeSO4": {
+      "FeSO4_7H2O_properties": {
+        "common_name": "绿矾 (green vitriol/copperas/melanterite)",
+        "molecular_weight": "278.05 g/mol (heptahydrate), 151.91 g/mol (anhydrous)",
+        "density": "1.898 g/cm3 (heptahydrate), 2.84 g/cm3 (anhydrous)",
+        "melting_point": "64°C (melts in own crystal water), 400°C (decomposition of anhydrous)",
+        "dehydration": "At 90°C heptahydrate loses water to colorless monohydrate; at 300°C loses all crystal water; decomposition at ~480°C: 2FeSO4 → Fe2O3 + SO2 + SO3",
+        "solubility": "25.6 g/100mL (anhydrous)",
+        "crystal_system": "Monoclinic, space group P21/c",
+        "lattice_parameters": "a=14.0774(9), b=6.5039(4), c=11.0506(7) Å, β=105.604(1)°, Z=4",
+        "enthalpy_of_formation": "ΔfH°solid = -928.4 kJ/mol (anhydrous)",
+        "standard_molar_entropy": "S°solid = 107.5 J/K·mol (anhydrous)",
+        "per_fe_molar_volume": "146 cm3/mol (calculated from MW 278.0 / density 1.9)",
+        "mineral_forms": "Monohydrate (szomolnokite), tetrahydrate (rozenite), pentahydrate (siderotil), hexahydrate (ferrohexahydrite), heptahydrate (melanterite)",
+        "production": [
+          "Steel pickling: Fe + H2SO4 → FeSO4 + H2",
+          "TiO2 production from ilmenite via sulfate process",
+          "Pyrite oxidation: 2FeS2 + 7O2 + 2H2O → 2FeSO4 + 2H2SO4"
+        ]
+      },
+      "standard_preparation_methods": {
+        "FeSO4_1M_solution": "Dissolve 278.01g FeSO4·7H2O in water with 10mL concentrated H2SO4, dilute to 1L. Final H2SO4 concentration ≈ 0.18 mol/L, pH ≈ 0.74.",
+        "Mohr_salt_0_1M_solution": "Dissolve 39.213g (NH4)2Fe(SO4)2·6H2O in water, add 10mL concentrated H2SO4, dilute to 1L. Final H2SO4 concentration ≈ 0.18 mol/L, pH ≈ 0.74.",
+        "note": "Both standard solutions require addition of concentrated H2SO4 and must be prepared fresh before use (用时新配). Addition of a small iron nail to the reagent bottle is recommended to scavenge any Fe3+ via Fe + 2Fe3+ → 3Fe2+."
+      }
+    }
+  },
+
+  "section_2_mohr_salt_stability_analysis": {
+    "core_question": "Why is Mohr's salt crystal more resistant to air oxidation than FeSO4·7H2O crystal?",
+
+    "theory_1_void_theory": {
+      "name": "空隙说 (Void/Gap Theory)",
+      "claim": "FeSO4·7H2O has larger crystal internal voids than Mohr's salt, allowing O2 molecules to penetrate and oxidize Fe2+.",
+      "refutation": {
+        "calculation_error": "Uses S6+ ionic radius (0.029nm) instead of SO42- thermochemical radius (0.230nm). When corrected: O2 diameter + [Fe(H2O)6]2+ radius + SO42- radius = 0.264 + 0.230 + 0.230 = 0.724nm, which is much larger than the measured Fe-S distance of 0.519nm.",
+        "density_calculation": "Per-Fe2+ molar volume: Mohr's salt = 206 cm3/mol, FeSO4·7H2O = 146 cm3/mol. FeSO4·7H2O is actually MORE densely packed (only 71% of Mohr's salt volume per Fe). This contradicts the void theory.",
+        "physical_principle": "Crystals are generally dense and impermeable. O2 molecules cannot freely pass through crystal surfaces into internal voids."
+      },
+      "verdict": "REFUTED - Uses incorrect ionic radii; density calculations disprove the claim."
+    },
+
+    "theory_2_hydrogen_bond_theory": {
+      "name": "氢键说 (Hydrogen Bond Network Theory)",
+      "claim": "Mohr's salt has more hydrogen bonds (from NH4+ ions) creating a stronger H-bond network that makes the crystal more compact and oxidation-resistant.",
+      "refutation": {
+        "h_bond_energy_analysis": {
+          "Mohr_salt_NH4_H_bonds": "8 N-H···:O bonds × 8 kJ/mol each = 64 kJ/mol total. NH4+ lacks lone pairs, cannot form O-H···:N bonds (stronger type at ~21 kJ/mol).",
+          "FeSO4_7H2O_h_bonds": "1 interstitial H2O forms 4 O-H···:O bonds × 21 kJ/mol each = 84 kJ/mol total.",
+          "conclusion": "FeSO4·7H2O actually has STRONGER hydrogen bond energy (84 kJ/mol vs 64 kJ/mol)."
+        },
+        "structural_issue": "NH4+ and [Fe(H2O)6]2+ are both cations and repel each other. They are separated by SO42- anions, so NH4+ H-bonds do not form a network involving [Fe(H2O)6]2+."
+      },
+      "verdict": "REFUTED - H-bond energy calculation shows FeSO4·7H2O has stronger H-bonds; NH4+ cannot form a network with [Fe(H2O)6]2+."
+    },
+
+    "theory_3_water_classification_theory": {
+      "name": "结晶水分类理论 (Crystal Water Classification Theory)",
+      "explanation": "Based on the structural chemistry of salt hydrates (Zhou Gongdu, 1982), water molecules in crystalline hydrates fall into three categories:",
+      "type_1_water": "Coordinates to ONE metal ion via one coordinate bond. Relatively stable.",
+      "type_2_water": "Does NOT coordinate to any metal ion. Held only by hydrogen bonds. MOST UNSTABLE - easily lost with small activation energy.",
+      "type_3_water": "Coordinates to TWO metal ions simultaneously (bridging). MOST STABLE.",
+      "application_to_FeSO4_vs_Mohr": {
+        "FeSO4_7H2O": "6 H2O coordinate to Fe2+ (Type 1), 1 H2O is interstitial - held only by H-bonds (Type 2). This 7th water is the weak point. It can easily lose H-bonds under low humidity (efflorescence), breaking the crystal structure and exposing [Fe(H2O)6]2+ to O2.",
+        "Mohr_salt": "All 6 H2O coordinate directly to Fe2+ (all Type 1). NO Type 2 water. No weak H-bond-only water to lose. Crystal surface remains intact.",
+        "mechanism": "Low humidity → Type 2 water H-bonds break in FeSO4·7H2O → surface crystal structure damaged → [Fe(H2O)6]2+ exposed → O2 oxidation → chain reaction of oxidation."
+      },
+      "experimental_prediction": "If FeSO4·7H2O is placed in a sealed, O2-containing but water vapor-saturated environment, the crystal cannot effloresce, and oxidation should be prevented. Keep reagent bottles tightly sealed as the most effective preservation measure.",
+      "verdict": "ACCEPTED - Explains the structural basis consistently with known hydrate chemistry."
+    }
+  },
+
+  "section_3_mohr_salt_solution_stability": {
+    "key_findings": [
+      "Both FeSO4 and (NH4)2Fe(SO4)2 solutions are equally prone to oxidation. Standard analytical chemistry handbooks require both to be 'prepared fresh before use' (用时新配).",
+      "From Φ-pH diagram: O2 can oxidize Fe2+ at ANY pH. The O2/H2O line (E°=1.229V) is always above the Fe3+/Fe2+ line (E°=0.770V). ΔE = 0.458V.",
+      "At pH < 1.53, the oxidation tendency is somewhat smaller (the two lines are closer). Modern handbooks use standard acid addition to achieve pH ≈ 0.74.",
+      "NH4+ hydrolysis has NEGLIGIBLE effect on solution acidity: Fe2+ (pKa=6.74, Ka=1.8×10-7) is a much stronger acid than NH4+ (Ka=5.64×10-10). For 0.1M (NH4)2Fe(SO4)2, the pH calculated from Fe2+ hydrolysis is 3.87. At this acidity, NH4+ hydrolysis is strongly suppressed.",
+      "Ionic strength difference IS significant: (NH4)2Fe(SO4)2 solution has ionic strength ~1.75 times that of FeSO4 at equal concentration. Higher ionic strength → lower Fe2+ activity coefficient (reduced 'effective concentration') + lower O2 solubility → APPARENT slower oxidation. This may explain observations of Mohr's salt solutions oxidizing slightly slower."
+    ],
+    "standard_preservation_practices": [
+      "Add sufficient acid (H2SO4 to ~0.18 mol/L, pH ~0.74)",
+      "Prepare fresh before use",
+      "Add a small iron nail to the reagent bottle: Fe + 2Fe3+ → 3Fe2+"
+    ]
+  },
+
+  "section_4_cyanotype_chemistry": {
+    "historical_context": "Cyanotype (蓝晒) was invented by Sir John Herschel in 1842. It is one of the oldest photographic printing processes, producing characteristic Prussian blue images.",
+
+    "chemical_reactions": {
+      "traditional_cyanotype": {
+        "sensitizer": "Ammonium iron(III) citrate (柠檬酸铁铵) + potassium ferricyanide (铁氰化钾 K3[Fe(CN)6])",
+        "photoreaction": "UV/blue light photoreduces Fe(III)-citrate complex to Fe(II)",
+        "printing_reaction": "Fe2+ + [Fe(CN)6]3- → Prussian blue (Fe4[Fe(CN)6]3 / KFe[Fe(CN)6]) precipitate",
+        "development": "Water wash removes unreacted sensitizer, leaving blue image",
+        "wavelength_sensitivity": "Near-UV to blue light (~300-450 nm)"
+      },
+      "ferrioxalate_cyanotype": {
+        "sensitizer": "Potassium tris(oxalato)ferrate(III) (三草酸合铁(III)酸钾 K3[Fe(C2O4)3]·3H2O) + potassium ferricyanide (optional)",
+        "photoreaction": "Light-induced ligand-to-metal charge transfer (LMCT): [Fe(C2O4)3]3- + hν → Fe2+ + C2O4·- + 2C2O42-",
+        "printing_reaction": "Fe2+ reacts with [Fe(CN)6]3- to form Prussian blue, OR with excess oxalate to precipitate FeC2O4 (developable to Prussian blue with ferricyanide post-exposure)",
+        "quantum_yield": "Quantum yield of Fe2+ production from ferrioxalate is ~1.0-1.2 across UV-visible range (basis of the Hatchard-Parker chemical actinometer)"
+      }
+    },
+
+    "key_formulations": {
+      "classic_cyanotype_solution_A": "20g ammonium iron(III) citrate (green form) in 100mL water",
+      "classic_cyanotype_solution_B": "8g potassium ferricyanide in 100mL water",
+      "working_solution": "Mix equal volumes A + B, apply to paper in dim light, dry in dark",
+      "ferrioxalate_sensitizer": "K3[Fe(C2O4)3]·3H2O aqueous solution (~0.1-0.5M), applied to paper and dried",
+      "ferrioxalate_developer": "K3[Fe(CN)6] solution (if ferrioxalate-only sensitizer used)"
+    },
+
+    "exposure_and_processing": {
+      "light_source": "Sunlight (strong UV component), UV lamp (365nm), or artificial UV source",
+      "typical_exposure_times": {
+        "direct_sunlight": "3-15 minutes depending on intensity and negative density",
+        "UV_lamp_365nm": "5-30 minutes depending on lamp power and distance",
+        "cloudy_conditions": "20-60+ minutes"
+      },
+      "development": "Wash print in running water for 5-10 minutes until unexposed areas clear (yellow-green sensitizer washes out leaving white paper)",
+      "intensification_optional": "H2O2 bath darkens the blue by oxidizing any remaining Fe(II) to Fe(III) in the Prussian blue structure",
+      "toning_optional": "Various chemical treatments can shift the blue to brown/black (e.g., tannic acid, sodium carbonate, ammonia)"
+    }
+  },
+
+  "section_5_prussian_blue_chemistry": {
+    "overview": "Prussian blue (普鲁士蓝) is the first modern synthetic pigment, discovered accidentally in Berlin around 1706 by Diesbach. It is a mixed-valence iron(III) hexacyanoferrate(II) compound.",
+    "composition": "Fe4[Fe(CN)6]3 · xH2O ('insoluble' form) or KFe[Fe(CN)6] · xH2O ('soluble' form - actually colloidal)",
+    "color_origin": "Intense blue color arises from intervalence charge-transfer (IVCT) transition: electron transfer from Fe(II) to Fe(III) via the cyanide bridge, absorbing red light (~700nm)",
+    "structure": "Face-centered cubic framework of Fe(II)-C≡N-Fe(III) units with Fe(II) octahedrally coordinated by carbon ends of cyanide and Fe(III) octahedrally coordinated by nitrogen ends. Water molecules occupy the interstitial sites.",
+    "chemical_sponge_property": "Prussian blue acts as a 'chemical sponge' - its open framework structure can sequester cations such as Cs+ and Tl+, making it useful for radioactive cesium removal (e.g., after nuclear accidents) and heavy metal detoxification.",
+    "formation_in_cyanotype": "Fe2+ (photoproduced) + K3[Fe(CN)6] → KFe[Fe(CN)6] + 2K+. The KFe[Fe(CN)6] is the 'soluble' Prussian blue form that precipitates as fine colloidal particles on the paper."
+  },
+
+  "section_6_educational_integration": {
+    "cyanotype_teaching_modules": [
+      {
+        "source": "Kmet et al. (2023), J. Chem. Educ., doi:10.1021/acs.jchemed.2c01089",
+        "content": "Ready-to-use classroom activities linking redox photochemistry, coordination chemistry, and photographic science. Covers ferrioxalate/ferric citrate sensitizers forming Prussian blue."
+      },
+      {
+        "source": "Olivo & Girelli (2015), J. Chem. Educ., doi:10.1021/ed500809n",
+        "content": "Integrated experiment: K3[Fe(C2O4)3] synthesis → paper coating → UV exposure → Prussian blue image. Connects inorganic synthesis, photochemistry, and history of photography."
+      },
+      {
+        "source": "Morizot et al. (2014), J. Chem. Educ., doi:10.1021/ed5000229",
+        "content": "First-year students synthesize Prussian blue pigment AND create cyanotype images. Links inorganic synthesis, redox photochemistry, and artistic dimensions of early photography."
+      },
+      {
+        "source": "Lawrence & Fishelson (1999), J. Chem. Educ., doi:10.1021/ed076p1216A",
+        "content": "Two-part demonstration combining cyanotype blueprinting with sunscreen UV-catalysis experiment. Connects photochemistry to everyday consumer products."
+      },
+      {
+        "source": "Regmi & Fleming (2023), J. Chem. Educ.",
+        "content": "Simple, fast, facile demonstration of photochemical redox reaction using visible light. Suitable for introductory chemistry courses."
+      }
+    ]
+  },
+
+  "section_7_numerical_data": {
+    "FeSO4_thermodynamics": {
+      "anhydrous_enthalpy_formation": "-928.4 kJ/mol",
+      "anhydrous_molar_entropy": "107.5 J/K·mol",
+      "decomposition_temperature": "~480°C",
+      "decomposition_products": "Fe2O3 + SO2 + SO3",
+      "heptahydrate_to_monohydrate": "90°C"
+    },
+    "mohr_salt_thermodynamics": {
+      "dehydration_temperature": "100-110°C (loses all 6 H2O)",
+      "density": "1.864 g/cm3"
+    },
+    "redox_potentials": {
+      "E_O2_H2O": "1.229 V",
+      "E_Fe3_Fe2": "0.770 V",
+      "delta_E": "0.458 V (O2 can oxidize Fe2+ at any pH)"
+    },
+    "acid_dissociation_constants": {
+      "Fe2_aq_pKa": "6.74 (Ka = 1.8×10-7)",
+      "NH4_pKa": "9.25 (Ka = 5.64×10-10)",
+      "Fe3_aq_pKa": "2.83"
+    },
+    "hydrogen_bond_energies": {
+      "N_H_O_h_bond": "8 kJ/mol",
+      "O_H_O_h_bond": "21 kJ/mol"
+    },
+    "crystal_lattice_parameters": {
+      "melanterite_FeSO4_7H2O": "a=14.0774, b=6.5039, c=11.0506 Å, β=105.604°, Z=4, P21/c",
+      "mohrite_Mohr_salt": "a=9.3200, b=12.6500, c=6.2400 Å, β=106.800°, Z=2, P21/c"
+    },
+    "melanterite_structure": {
+      "number_unique_H_bonds": 14,
+      "Fe_coordination": "Octahedral, 6 H2O coordinate each Fe2+",
+      "seventh_water": "One interstitial H2O not coordinated to any metal, held only by H-bonds (Type 2 water)",
+      "H_bond_network": "Links M1 octahedra to M2 octahedra via sulfate tetrahedra, forming undulating layers of SO4-M1-SO4-M2 polyhedra"
+    },
+    "cyanotype_quantum_yield": {
+      "ferrioxalate_phi_Fe2": "~1.0-1.25 in UV-visible range (wavelength-dependent)",
+      "ferrioxalate_actinometer": "Standard chemical actinometer calibrated by Hatchard-Parker (1956), IUPAC Technical Report (2004)"
+    }
+  },
+
+  "section_8_key_papers_catalog": {
+    "mohr_salt_stability": [
+      {
+        "title": "关于硫酸亚铁铵稳定性的讨论",
+        "type": "Teaching paper / critical review",
+        "key_contribution": "Systematic refutation of void theory and H-bond theory; proposes water classification theory as correct explanation for Mohr's salt stability",
+        "key_data": "H-bond energy comparison (64 vs 84 kJ/mol); per-Fe molar volume comparison (206 vs 146 cm3/mol); Type 1/2/3 water classification"
+      },
+      {
+        "title": "摩尔盐的空气稳定性 (冯博 等)",
+        "type": "Student research paper",
+        "key_contribution": "Crystal structure comparison of melanterite vs mohrite; bond distance calculations for O2 penetration analysis; solution vs crystal stability comparison; metal passivation analogy",
+        "key_data": "Crystal lattice parameters; interatomic distances in both crystals"
+      },
+      {
+        "title": "硫酸亚铁铵和硫酸亚铁稳定性的对比研究 (李俊生等, 化学教育 2014年第7期)",
+        "type": "Journal article",
+        "key_contribution": "Comparative study of FeSO4 and Mohr's salt stability (cited in the 关于稳定性讨论 paper as propounding the 'hydrogen bond theory')"
+      }
+    ],
+    "cyanotype_fundamentals": [
+      {
+        "title": "The Photochemical Basis of Cyanotype Photography",
+        "authors": "Abrahamson (2001)",
+        "journal": "J. Chem. Educ., 78(3), 311",
+        "doi": "10.1021/ed078p311.2",
+        "key_contribution": "Clarifies that near-UV light photoreduces Fe(III) in ammonium iron(III) citrate to Fe(II), which reduces ferricyanide to precipitate Prussian blue"
+      },
+      {
+        "title": "Prussian Blue: Artists' Pigment and Chemists' Sponge",
+        "authors": "Ware (2008)",
+        "journal": "J. Chem. Educ., 85(5), 612-621",
+        "doi": "10.1021/ed085p612",
+        "key_contribution": "Comprehensive review of Prussian blue: discovery, pigment use, cyanotype formation, electronic structure, IVCT color, cation sequestration"
+      },
+      {
+        "title": "The Cyanotype Process and Its Potential in Chemistry Education",
+        "authors": "Kmet et al. (2023)",
+        "journal": "J. Chem. Educ.",
+        "doi": "10.1021/acs.jchemed.2c01089",
+        "key_contribution": "Modern educational framework for cyanotype; ready-to-use classroom activities"
+      },
+      {
+        "title": "Blueprint Photography by the Cyanotype Process",
+        "authors": "Lawrence & Fishelson (1999)",
+        "journal": "J. Chem. Educ., 76(9), 1216A",
+        "doi": "10.1021/ed076p1216A",
+        "key_contribution": "Demonstration combining cyanotype with sunscreen UV absorption experiment"
+      },
+      {
+        "title": "Introducing the Human Element in Chemistry by Synthesizing Blue Pigments and Creating Cyanotypes",
+        "authors": "Morizot et al. (2014)",
+        "journal": "J. Chem. Educ., 92(1), 74-78",
+        "doi": "10.1021/ed5000229",
+        "key_contribution": "First-year chemistry: synthesize Prussian blue + create cyanotype images"
+      },
+      {
+        "title": "A New Approach toward Cyanotype Photography Using Tris-(oxalato)ferrate(III): An Integrated Experiment",
+        "authors": "Olivo & Girelli (2015)",
+        "journal": "J. Chem. Educ., 92(10), 1721-1724",
+        "doi": "10.1021/ed500809n",
+        "key_contribution": "K3[Fe(C2O4)3] synthesis → cyanotype printing integrated experiment"
+      },
+      {
+        "title": "A Photographic Process Using Easily Available Reagents",
+        "authors": "Slyusarev (2020)",
+        "journal": "J. Chem. Educ.",
+        "key_contribution": "Simplified cyanotype process with accessible reagents"
+      }
+    ]
+  },
+
+  "section_9_summary_of_new_findings": {
+    "mohr_salt_key_insights": [
+      "The widely-cited 'void theory' (空隙说) for Mohr's salt stability is based on a critical calculation error: using S6+ ionic radius (0.029nm) instead of the correct SO42- thermochemical radius (0.230nm). When corrected, O2 is too large to pass through crystal voids in EITHER salt.",
+      "The 'hydrogen bond network theory' (氢键说) also fails: FeSO4·7H2O actually has stronger total H-bond energy (84 kJ/mol from 4 O-H···:O bonds) than Mohr's salt (64 kJ/mol from 8 N-H···:O bonds).",
+      "The correct explanation is the WATER CLASSIFICATION THEORY: FeSO4·7H2O has one 'Type 2' water molecule held ONLY by hydrogen bonds (no metal coordination), which can easily be lost. This creates surface defects that expose [Fe(H2O)6]2+ to O2. Mohr's salt has all 6 waters coordinated to Fe2+ -- no weak Type 2 water.",
+      "In SOLUTION, both salts are equally oxidation-prone. Apparent differences may arise from ionic strength effects (~1.75× higher for Mohr's salt at equal concentration), not from any inherent chemical stability difference.",
+      "The standard preservation method for BOTH solutions requires: (a) ~0.18M H2SO4 (pH≈0.74), (b) fresh preparation before use, (c) iron nail in reagent bottle."
+    ],
+    "cyanotype_key_insights": [
+      "Two main sensitizer systems exist: (1) Classic: ammonium iron(III) citrate + K3[Fe(CN)6]; (2) Ferrioxalate: K3[Fe(C2O4)3]·3H2O (± K3[Fe(CN)6]).",
+      "The photochemical basis is consistent: light-driven LMCT photoreduces Fe(III) to Fe(II), which then reduces [Fe(CN)6]3- to Prussian blue.",
+      "Prussian blue's color is an intervalence charge-transfer phenomenon: electron hopping between Fe(II) and Fe(III) via cyanide bridges absorbs red light.",
+      "Prussian blue acts as a 'chemical sponge' for cations (Cs+, Tl+), relevant to environmental remediation.",
+      "Cyanotype is an ideal integrated teaching platform linking: inorganic synthesis → coordination chemistry → photochemistry → redox chemistry → art history."
+    ]
+  }
+}

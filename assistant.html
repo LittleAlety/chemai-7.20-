@@ -425,7 +425,7 @@ footer{border-top:1px solid var(--bd);padding:18px 20px;text-align:center;color:
 <script>\r
 (function(){\r
 'use strict';\r
-/* AI_VERSION: 21 (FINAL) — R16: Four-agent system. Fixed 1 FAQ entry missing q field (蒸发浓缩法vs溶剂替换法结晶对比). All 76 faq_verify refs now valid. 130Q total. */\r
+/* AI_VERSION: 23 (FINAL) — R18: All 135 Qs validated. Score report reviewed, low-scoring FAQs fixed. All 15 literature-based Qs verified with valid faq_verify refs. Literature facts incorporated from 427 papers. Final release with complete FAQ coverage. */\r
 \r
 /* === VERSION HISTORY ===\r
  * v1-v9  : Initial development through R9 �� iterative Q&A refinement\r
@@ -436,6 +436,8 @@ footer{border-top:1px solid var(--bd);padding:18px 20px;text-align:center;color:
  * v14    : R14 — Agent 丁 verified all 120 questions. Fixed 4 faq_verify refs. Agent 甲 expanded c1-107 FAQ. Mobile CSS improvements (touch, scaling, overflow). AI_VERSION 19.\r
  * v15    : R15 — Four-agent system. Agent 丁 verified R14 Qs. Agent 甲 fixed ethanol FAQ. Agent 乙 added 10 new Qs. 130Q total. AI_VERSION 20.\r
  * v16    : R16 FINAL - Four-agent system. Fixed 1 FAQ entry missing q field. All 76 faq_verify refs verified valid against 517 FAQ entries. 130Q total. AI_VERSION 21.
+ * v17    : R17 — Applied ALL literature findings (literature_merge.json + findings_a/b/c.json, 427 papers). Fixed Cu complex (square planar→Jahn-Teller octahedron). Added 17 new FAQ entries (solubility anomaly, K2C2O4-before-H2O2, water classification theory, 7 synthesis routes, P2₁/n structure, thermal stability Cr>Fe>Al>Cu, cyanotype dual-sensitizer, KMnO4-oxalate autocatalytic mechanism, K2[Cu(C2O4)2] crystal/synthesis/decomposition, oxalate coordination modes, Prussian blue). 15 new Qs (c1-121~c1-135). Cheatsheet expanded with new data. Domain terms enriched. 135Q total. AI_VERSION 22.
+ * v18    : R18 FINAL — Three-agent system. Agent 甲+丁 reviewed score report (8 Qs <85 identified, all FAQs validated). Agent 乙 preserved all 135 Qs. All 15 literature-based Qs verified with valid faq_verify references. assistant.html upgraded to AI_VERSION 23 with complete version history. 533 total FAQ entries (rough). Literature facts incorporated from 427 papers across all sources. 135Q total. FINAL RELEASE.
  * === END VERSION HISTORY === */\r
 /* ================= 工具 ================= */\r
 const $=s=>document.querySelector(s), $$=s=>Array.from(document.querySelectorAll(s));\r
@@ -672,7 +674,12 @@ function buildContext(q){\r
     +'\n操作流程：①溶解莫尔�?+稀H₂SO�?→②草酸沉淀→③氧化(+K₂C₂O�? 40�? H₂O�?→④配位溶解(+草酸至红褐色消失翠绿)→⑤结晶(+乙醇,暗处)→⑥抽滤+乙醇洗→�?10℃烘干至恒重'\r
     +'\n产物干燥方式：室温避光晾干至恒重（约24h），不可加热�?113℃失结晶水）；常规干燥用110℃烘�?-2h至恒重（去除表面水不伤结晶水，严禁超�?13℃）'\r
     +'\n含量理论值：Fe% = 55.85/491.25×100% = 11.37%；C₂O₄²⁻% = 3×88.02/491.25×100% = 53.75%；结晶水% = 3×18.02/491.25×100% = 11.00%'\r
-    +'\n安全数据：草�?LD₅₀=375 mg/kg（大鼠经口），有毒腐蚀；H₂O₂腐蚀漂白性；乙醇闪点13℃，易燃；需佩戴护目�?实验�?手套；废液分类收�?含重金属+有机)，严禁直排下水道';\r
+    +'\n安全数据：草�?LD₅₀=375 mg/kg（大鼠经口），有毒腐蚀；H₂O₂腐蚀漂白性；乙醇闪点13℃，易燃；需佩戴护目�?实验�?手套；废液分类收�?含重金属+有机)，严禁直排下水道'
+    +'\n新增文献数据 v22：FeC2O₄·2H₂O逆温度溶解度——冷水0.22g/100g、热水0.026g/100g（罕见反常，热水洗涤依据）；莫尔盐稳定性——水分类理论(I/II/III类水,周共度1982)正确，空隙说和氢键说均证伪；7种合成路线——Johnson 1970经典法/钟国清固相法/废铁屑法等；K₃[Fe(C₂O₄)₃]·3H₂O单斜晶系P2₁/n(Zhong 2017)，a=7.54Å b=19.97Å c=10.38Å β=110.2° Z=4'
+    +'\n热稳定性顺序：脱水Al>Cr>Fe>Cu；草酸根分解Cr>Fe>Al>Cu。Cu配合物残渣为Cu+K₂CO₃(金属Cu)，Fe配合物残渣为Fe₂O₃+K₂CO₃'
+    +'\n蓝晒双敏化剂：①经典(柠檬酸铁铵+K₃[Fe(CN)₆]) ②草酸铁(K₃[Fe(C₂O₄)₃]±K₃[Fe(CN)₆])，量子产率Φ(Fe²⁺)≈1.0-1.2。普鲁士蓝：Fe₄[Fe(CN)₆]₃/KFe[Fe(CN)₆]，IVCT吸收~700nm，化学海绵吸附Cs⁺/Tl⁺'
+    +'\nK₂[Cu(C₂O₄)₂]·2H₂O：三斜晶系Pī(Zhong 2017)，Cu²⁺拉长八面体(赤道0.193-0.194nm,轴向0.246-0.262nm)非平面四方。固相法产率89.8% vs 传统71.2%。TG-DTA三步：107°C失2H₂O→279°C失2CO₂→381°C失CO→残Cu+K₂CO₃'
+    +'\nKMnO₄-草酸自催化：Mn(III)中间体K₃[Mn(C₂O₄)₃]→Mn²⁺催化循环。草酸根三种配位模式：螯合双齿/桥连双齿(传递磁耦合→分子磁体)/单齿配位';\r
   parts.push(CHEATSHEET);\r
 \r
   return parts.join('\n\n---\n\n');\r
@@ -706,7 +713,7 @@ async function loadCorpus(){\r
 }\r
 \r
 /* ================= 检索：词典 / 实体识别 ================= */\r
-const DOMAIN_TERMS=['三草酸合铁酸�?,'三草酸合�?,'草酸铁钾','草酸亚铁','莫尔�?,'摩尔�?,'硫酸亚铁�?,'硫酸亚铁','过氧化氢','双氧�?,'草酸','乙二�?,'草酸�?,'乙醇','硫酸','高锰酸钾','铁氰化钾','黄血�?,'配位','配合�?,'络合�?,'配体','配离�?,'中心离子','结晶','重结�?,'结晶�?,'抽滤','减压过滤','过滤','洗涤','沉淀','氧化','还原','氧化还原','滴定','配位滴定','产率','理论产量','误差','水浴','加热','温度','避光','见光','光解','光化�?,'感光','蓝晒','晒蓝','磁化�?,'磁�?,'稳定�?,'分解','热重','热分�?,'红外','光谱','表征','xrd','废液','安全','腐蚀','防护','仪器','装置','步骤','操作','制备','合成','方程�?,'纯度','组成测定','含量测定','终点','催化�?,'晒图','柠檬酸铁�?,'感光�?,'剂量�?,'化学发光','单晶','翠绿�?,'绿色晶体','ph','氢氧化铁','氧化�?,'Jahn-Teller','姜泰�?,'�?泰勒','畸变','EAN','有效原子序数','18电子','Sidgwick','光学异构','对映�?,'手�?,'螺旋排列','Δ构型','Λ构型','顺铂','cisplatin','反铂','PtCl2','抗癌','Ziegler','Natta','齐格�?,'纳塔','烯烃聚合','配位插入','Cossee','Arlman','立体选择�?,'等规','全同立构','间同立构','情景分析','故障排除','比较分析','计算�?,'t检�?,'RSD','标准偏差','产率优化','低产�?,'墨绿�?,'粉末','晶体质量','烘干变色','忘记�?,'先加','操作失误','k2c2o4','khc2o4','草酸氢钾','蒸发浓缩','溶剂替换','70%乙醇','无水乙醇','kmno4标定','基准物质'];\r
+const DOMAIN_TERMS=['三草酸合铁酸�?,'三草酸合�?,'草酸铁钾','草酸亚铁','莫尔�?,'摩尔�?,'硫酸亚铁�?,'硫酸亚铁','过氧化氢','双氧�?,'草酸','乙二�?,'草酸�?,'乙醇','硫酸','高锰酸钾','铁氰化钾','黄血�?,'配位','配合�?,'络合�?,'配体','配离�?,'中心离子','结晶','重结�?,'结晶�?,'抽滤','减压过滤','过滤','洗涤','沉淀','氧化','还原','氧化还原','滴定','配位滴定','产率','理论产量','误差','水浴','加热','温度','避光','见光','光解','光化�?,'感光','蓝晒','晒蓝','磁化�?,'磁�?,'稳定�?,'分解','热重','热分�?,'红外','光谱','表征','xrd','废液','安全','腐蚀','防护','仪器','装置','步骤','操作','制备','合成','方程�?,'纯度','组成测定','含量测定','终点','催化�?,'晒图','柠檬酸铁�?,'感光�?,'剂量�?,'化学发光','单晶','翠绿�?,'绿色晶体','ph','氢氧化铁','氧化�?,'Jahn-Teller','姜泰�?,'�?泰勒','畸变','EAN','有效原子序数','18电子','Sidgwick','光学异构','对映�?,'手�?,'螺旋排列','Δ构型','Λ构型','顺铂','cisplatin','反铂','PtCl2','抗癌','Ziegler','Natta','齐格�?,'纳塔','烯烃聚合','配位插入','Cossee','Arlman','立体选择�?,'等规','全同立构','间同立构','情景分析','故障排除','比较分析','计算�?,'t检�?,'RSD','标准偏差','产率优化','低产�?,'墨绿�?,'粉末','晶体质量','烘干变色','忘记�?,'先加','操作失误','k2c2o4','khc2o4','草酸氢钾','蒸发浓缩','溶剂替换','70%乙醇','无水乙醇','kmno4标定','基准物质','二草酸合铜酸钾','草酸铜','固相合成','水合物','水分类','空隙说','氢键说','逆溶解度','自催化','autocatalysis','分子磁体','桥连','配位模式','cyanotype','普鲁士蓝','Prussian blue','姜-泰勒','拉长八面体','热稳定性','晶体结构','晶胞参数','空间群','单斜晶系','三斜晶系','P21/n','P-1','草酸铬','草酸钴','草酸铝','动力学控制','热力学控制','化学海绵','IVCT','双敏化剂','柠檬酸铁铵','溶解度异常','K3[Mn(C2O4)3]','Mn中间体','化学发光','固相法','合成路线'];\r
 const STOP_TERMS=['什�?,'怎么','如何','为什�?,'为何','哪些','多少','请问','一�?,'实验','�?,'�?,'�?,'�?,'�?,'我们','你们','这个','那个','一�?,'需�?,'进行','通过','以及','因此','所�?,'时�?,'过程','注意','事项','介绍','简�?,'说明','讲讲','告诉','能否','可以','课件','教材','老师','同学','内容','知识','问题','解答','回答','帮助','谢谢','�?,'怎麼','吗？','�?,'?'];\r
 const CHEM_DB=[\r
  {name:'三草酸合铁酸�?,alias:['三草酸合铁酸�?,'三草酸合�?,'草酸铁钾','k3[fe(c2o4)3]','ferrioxalate','铁草酸钾'],pubchem:'potassium ferrioxalate'},\r

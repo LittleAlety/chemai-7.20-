@@ -1,0 +1,591 @@
+{
+  "agent": "Agent B - Literature Reader",
+  "date": "2026-07-22",
+  "source_folder": "C:\\Users\\Little Alety\\Desktop\\Claude Code\\v6\\三草酸合铁酸钾资料\\Fe",
+  "corpus_source": "C:\\Users\\Little Alety\\Desktop\\Claude Code\\v6\\data\\corpus.json",
+  "total_files_in_Fe_folder": 197,
+  "subfolders": ["中文", "英文", "表征"],
+  "files_in_表征_subfolder": 2,
+  "summary": {
+    "readable_files_read": [
+      "Fe/英文/Potassium ferrioxalate - Wikipedia, the free encyclopedia.htm (extracted full substance data)",
+      "Fe/英文/All About Ferric Oxalate.mht (extracted 200+ lines)",
+      "Fe/英文/The Synthesis of an Iron Salt.mht (extracted 200 lines of experimental procedure)",
+      "Fe/英文/Synthesis of Potassium tris(oxalato)ferrate.mht (WPI procedure, full)"
+    ],
+    "corpus_entries_reviewed": "~50 entries covering all subfields",
+    "unreadable_binary_docs": [
+      "All .doc files (old binary format) -- 8 files",
+      "All .docx files (binary) -- 1 file"
+    ],
+    "pdf_only_papers": "Abstracts extracted from corpus.json entries"
+  },
+  "papers": [
+    {
+      "id": "WIKI_01",
+      "title": "Potassium ferrioxalate",
+      "source": "Wikipedia (HTM snapshot, ca. 2010)",
+      "type": "Reference/Encyclopedia",
+      "key_data": {
+        "formula_anhydrous": "K3[Fe(C2O4)3]",
+        "formula_trihydrate": "K3[Fe(C2O4)3]·3H2O",
+        "molar_mass_anhydrous": "437.20 g/mol",
+        "molar_mass_trihydrate": "491.25 g/mol",
+        "appearance": "emerald green hydrated crystals",
+        "density": "2.13 g/cm3",
+        "melting_point": "230 °C",
+        "coordination_geometry": "octahedral",
+        "dipole_moment": "0 D",
+        "cas_number": "14883-34-2",
+        "iupac_name": "Potassium ferric(III) oxalate",
+        "other_names": "Potassium ferrioxalate, Potassium trioxalatoferrate(III)",
+        "hazards": "R20 (harmful by inhalation), R21, R22, R34, R36, R37, R38"
+      },
+      "findings": {
+        "structure": "Octahedral transition metal complex with three bidentate oxalate ions bound to Fe(III) center. K+ acts as counterion balancing the -3 charge.",
+        "isomerism": "Exhibits optical activity with two non-superimposable stereoisomers: Λ (left-handed screw axis) and Δ (right-handed screw axis).",
+        "photoreduction": "In solution, ferrioxalate complex is decomposed by light. Reaction: 2[Fe(C2O4)3]3- + hν → 2[Fe(C2O4)2]2- + C2O4 2- + 2CO2. Fe(III) reduced to Fe(II). Green solution turns orange in sunlight.",
+        "synthesis_route_1": "Fe2(SO4)3 + 3 BaC2O4 + 3 K2C2O4 → 2 K3[Fe(C2O4)3] + 3 BaSO4↓ (heat ~1.5 hr in water, filter BaSO4, cool to crystallize)",
+        "applications": "Chemical actinometry (light measurement), cyanotype photography"
+      }
+    },
+    {
+      "id": "JCE_1970_47_702",
+      "title": "Convenient procedure for the preparation of potassium trioxalatoferrate(III)",
+      "authors": "Johnson",
+      "journal": "Journal of Chemical Education",
+      "year": 1970,
+      "volume": 47,
+      "issue": 10,
+      "pages": 702,
+      "doi": "10.1021/ed047p702",
+      "type": "Experimental procedure",
+      "key_data": {
+        "starting_material": "Iron(II) ammonium sulfate (Mohr's salt)",
+        "oxidant": "H2O2",
+        "ligand_source": "Oxalate (from oxalic acid or potassium oxalate)",
+        "product": "K3[Fe(C2O4)3]·3H2O, green crystals"
+      },
+      "findings": {
+        "procedure": "Reliable undergraduate preparation from Fe(II) ammonium sulfate via oxidation with H2O2 in the presence of oxalate. Good yields of well-formed green crystals suitable for further analysis.",
+        "significance": "Classic, most-cited synthesis procedure for undergraduate laboratories."
+      }
+    },
+    {
+      "id": "JCE_1974_51_129",
+      "title": "Preparation and properties of potassium trioxalatoferrate(III) trihydrate",
+      "journal": "Journal of Chemical Education",
+      "year": 1974,
+      "volume": 51,
+      "issue": 2,
+      "pages": 129,
+      "doi": "10.1021/ed051p129",
+      "type": "Experimental study",
+      "key_data": {},
+      "findings": {
+        "properties_studied": "Composition, behaviour on heating, characteristic photoreduction (photochemical decomposition to Fe(II) and CO2 on light exposure)",
+        "significance": "Illustrates photochemistry underlying use as chemical actinometer. Documents thermal behavior."
+      }
+    },
+    {
+      "id": "JCE_1984_61_1098",
+      "title": "Preparation and analysis of potassium tris(oxalato)ferrate(III) trihydrate: A general chemistry experiment",
+      "journal": "Journal of Chemical Education",
+      "year": 1984,
+      "volume": 61,
+      "issue": 12,
+      "pages": "1098-1099",
+      "doi": "10.1021/ed061p1098",
+      "type": "Experimental teaching",
+      "key_data": {
+        "analysis_methods": "Permanganate titration (oxalate), spectrophotometry (iron), gravimetric (water of hydration)"
+      },
+      "findings": {
+        "procedure": "Students prepare the complex then analyze for oxalate, iron, and water of hydration to determine empirical formula.",
+        "significance": "Combines synthesis, redox titration and spectrophotometric analysis in one laboratory sequence."
+      }
+    },
+    {
+      "id": "JCE_1995_72_936",
+      "title": "Synthesis and Characterization of Potassium Tris(oxalato)ferrate(III) Trihydrate: A Spectrophotometric Method of Iron Analysis",
+      "journal": "Journal of Chemical Education",
+      "year": 1995,
+      "volume": 72,
+      "issue": 10,
+      "pages": 936,
+      "doi": "10.1021/ed072p936",
+      "type": "Experimental study",
+      "key_data": {
+        "analysis_methods": "Chemical synthesis, photochemical experiment, spectrophotometric analysis",
+        "data_type": "Spectral data"
+      },
+      "findings": {
+        "procedure": "Students synthesize and characterize via spectrophotometric Fe determination. Demonstrates complex stoichiometry and LMCT absorption of ferrioxalate ion.",
+        "spectral_feature": "Ligand-to-metal charge-transfer (LMCT) absorption characteristic of ferrioxalate ion."
+      }
+    },
+    {
+      "id": "JCE_2002_79_1002",
+      "title": "Simple Measurement of Magnetic Susceptibility with a Small Permanent Magnet and a Top-Loading Electronic Balance",
+      "journal": "Journal of Chemical Education",
+      "year": 2002,
+      "volume": 79,
+      "issue": 8,
+      "pages": "1002-1004",
+      "doi": "10.1021/ed079p1002",
+      "type": "Experimental method",
+      "key_data": {
+        "method": "Simplified Gouy-type magnetic susceptibility measurement",
+        "equipment": "Small permanent magnet + top-loading electronic balance",
+        "sample": "K3[Fe(C2O4)3]·3H2O used as example paramagnetic complex"
+      },
+      "findings": {
+        "significance": "Allows undergraduates to estimate magnetic moments of paramagnetic complexes without dedicated magnetic balance.",
+        "magnetic_moment_expected": "Fe(III) d5 high-spin: 5 unpaired electrons, μeff ≈ 5.9 BM"
+      }
+    },
+    {
+      "id": "JCE_2004_81_1193",
+      "title": "Potassium Tris(oxalato)ferrate(III): A Versatile Compound To Illustrate the Principles of Chemical Equilibria",
+      "journal": "Journal of Chemical Education",
+      "year": 2004,
+      "volume": 81,
+      "issue": 8,
+      "pages": "1193-1195",
+      "doi": "10.1021/ed081p1193",
+      "type": "Experimental study",
+      "key_data": {
+        "method": "Spectrophotometric monitoring of ligand exchange equilibria"
+      },
+      "findings": {
+        "procedure": "Stepwise dissociation/speciation of ferrioxalate complex followed spectrophotometrically. Students observe ligand exchange and estimate equilibrium constants.",
+        "significance": "Connects solution equilibria with coordination chemistry concepts. Demonstrates stepwise formation of Fe(III)-oxalate species."
+      }
+    },
+    {
+      "id": "JCE_2005_82_1667",
+      "title": "Preparation, Analysis, and Characterization of Some Transition-Metal Complexes: A Holistic Approach",
+      "journal": "Journal of Chemical Education",
+      "year": 2005,
+      "volume": 82,
+      "issue": 11,
+      "pages": 1667,
+      "doi": "10.1021/ed082p1667",
+      "type": "Experimental program",
+      "key_data": {
+        "methods": "Titrimetry, UV-Vis spectroscopy, IR spectroscopy, magnetic susceptibility, conductivity",
+        "includes": "Tris(oxalato)ferrate(III) among other complexes"
+      },
+      "findings": {
+        "significance": "Holistic upper-level inorganic lab: synthesis + analysis + characterization suite. Comprehensive IR, UV-Vis, magnetic, and conductivity data collection.",
+        "characterization_techniques": ["UV-Vis spectroscopy", "IR spectroscopy", "Magnetic susceptibility (Gouy/Evans method)", "Conductivity measurements", "Redox titrimetry"]
+      }
+    },
+    {
+      "id": "ZHONG_2017",
+      "title": "三草酸合铁(III)酸钾的室温固相合成与晶体结构表征",
+      "authors": "钟国清 (Zhong Guoqing)",
+      "journal": "分子科学学报 (Journal of Molecular Science)",
+      "year": 2017,
+      "issue": 1,
+      "key_data": {
+        "synthesis_method": "Room-temperature solid-solid reaction",
+        "reactants": "草酸钾 (K2C2O4) + 氯化铁 (FeCl3)",
+        "characterization": "Elemental analysis, ICP, X-ray single crystal diffraction, IR spectroscopy, thermal analysis"
+      },
+      "findings": {
+        "crystal_system": "Monoclinic, space group P2(1)/n",
+        "synthesis_type": "Solid-state (固相合成) - no solvent, room temperature",
+        "significance": "Novel green synthesis route avoiding aqueous workup. High yield, simple procedure."
+      }
+    },
+    {
+      "id": "ZHONG_2016",
+      "title": "三草酸合铁(III)酸钾绿色合成与结构表征",
+      "authors": "钟国清 (Zhong Guoqing)",
+      "journal": "实验技术与管理 (Experimental Technology and Management)",
+      "year": 2016,
+      "volume": 33,
+      "issue": 9,
+      "pages": "34-37",
+      "key_data": {
+        "synthesis_method": "Improved green synthesis",
+        "starting_materials": "硫酸亚铁铵 (Mohr's salt) + 草酸钾 (K2C2O4) + H2O2 (oxidant)",
+        "characterization": "Elemental analysis, IR spectroscopy, X-ray powder diffraction (XRD), thermogravimetric analysis (TGA)"
+      },
+      "findings": {
+        "crystal_system": "Monoclinic",
+        "synthesis_features": "Mild conditions, high yield, low pollution. Suitable for undergraduate teaching.",
+        "characterization_complete": "Full characterization suite: EA, IR, XRD, TGA. Confirms structure and thermal behavior."
+      }
+    },
+    {
+      "id": "WHUT_2003",
+      "title": "复盐K3Fe(C2O4)3·3H2O的热分析研究",
+      "journal": "武汉科技学院学报 (Journal of Wuhan Institute of Science and Technology)",
+      "year": 2003,
+      "volume": 16,
+      "issue": 5,
+      "pages": "73-76",
+      "type": "Thermal analysis study",
+      "key_data": {
+        "method": "TG-DTA (Thermogravimetry-Differential Thermal Analysis)",
+        "compound": "K3[Fe(C2O4)3]·3H2O"
+      },
+      "findings": {
+        "analysis": "Systematic TG-DTA study of thermal decomposition under programmed heating. Determined temperature ranges for dehydration and oxalate decomposition steps.",
+        "decomposition_mechanism": "Discusses thermal decomposition mechanism of the complex."
+      }
+    },
+    {
+      "id": "NWU_2004",
+      "title": "Cr(III), Fe(III), Al(III), Cu(II)草酸配合物热分析研究",
+      "journal": "西北大学学报(自然科学版) (Journal of Northwest University, Natural Science)",
+      "year": 2004,
+      "issue": 2,
+      "type": "Comparative thermal analysis",
+      "key_data": {
+        "method": "TG-DTA",
+        "compounds": "Cr(III), Fe(III), Al(III), Cu(II) oxalate complexes compared"
+      },
+      "findings": {
+        "analysis": "Systematic comparison of thermal decomposition processes across different metal oxalate complexes. Compares thermal stability, identifies decomposition steps and mechanisms.",
+        "significance": "Provides comparative data for understanding relative stability of Fe(III) oxalate vs other metal oxalates."
+      }
+    },
+    {
+      "id": "BENCHCHEM_MAGNETIC",
+      "title": "The Synthesis, Chemistry and Magnetic Properties of Potassium Trioxalatoferrate(III)",
+      "source": "BenchChem (benchchem.com)",
+      "type": "Experimental study",
+      "key_data": {
+        "methods": "Chemical synthesis, magnetic susceptibility measurement",
+        "data_type": "Magnetic susceptibility data"
+      },
+      "findings": {
+        "significance": "Comprehensive study covering synthesis, chemical properties, and magnetic characterization.",
+        "expected_magnetic_data": "Fe(III) d5 (high-spin octahedral): S = 5/2, n = 5 unpaired electrons, μeff (spin-only) = 5.92 BM"
+      }
+    },
+    {
+      "id": "CNKI_MAGNETIC_SYNTH",
+      "title": "三草酸合铁酸钾的合成及磁化率的测定",
+      "type": "磁化率测定实验 (Chinese magnetic susceptibility experiment)",
+      "source": "CNKI",
+      "key_data": {
+        "methods": "Chemical synthesis + 磁化率测定 (magnetic susceptibility measurement, likely Gouy method)",
+        "data_type": "Magnetic susceptibility data"
+      },
+      "findings": {
+        "significance": "Chinese undergraduate experiment combining synthesis with magnetic susceptibility measurement. Typically uses Gouy balance or similar method."
+      }
+    },
+    {
+      "id": "JCE_1967_MAGNETIC",
+      "title": "Magnetic Moment Measurement of a Complex: K3[Fe(C2O4)3]",
+      "journal": "Journal of Chemical Education",
+      "year": 1967,
+      "file": "Fe/英文/！！JCE1967p0142 Magnetic Moment Measurement of a complexK3[Fe(C2)4)2].pdf",
+      "type": "Magnetic measurement experiment",
+      "findings": {
+        "significance": "Early undergraduate experiment for magnetic moment measurement of K3[Fe(C2O4)3]. Establishes the magnetic measurement as a standard characterization technique in teaching labs.",
+        "note": "PDF only; full text not extracted"
+      }
+    },
+    {
+      "id": "WPI_SYNTHESIS",
+      "title": "Synthesis of Potassium tris(oxalato)ferrate (WPI Laboratory Manual)",
+      "source": "Worcester Polytechnic Institute (wpi.edu)",
+      "type": "Laboratory procedure (full text extracted from MHT)",
+      "key_data": {
+        "stoichiometry": "FeCl3·6H2O (2 mmol) : H2C2O4 (6.5 mmol) : KOH (12 mmol)",
+        "solvent": "5 mL distilled water",
+        "crystallization": "Ice bath in dark, 30 minutes",
+        "purification": "Recrystallization from 3 mL water, wash with 1 mL ice-cold water",
+        "characterization_methods": "IR spectroscopy, UV-Visible spectroscopy, light response test"
+      },
+      "findings": {
+        "reaction": "Fe3+ + 3 C2O4 2- → Fe(C2O4)3 3-",
+        "procedure_detail": "Heat oxalic acid + KOH in water until dissolved. Add FeCl3·6H2O to hot solution, swirl. Filter hot through Kimwipe-plugged pipet. Crystallize in ice bath in dark. Suction filter (DO NOT WASH WITH WATER). Recrystallize.",
+        "light_response": "Product shows photochemical response - explicitly tested.",
+        "safety_notes": "Goggles, careful around open flames."
+      }
+    },
+    {
+      "id": "DAI_2021",
+      "title": "大学化学综合实验: 三草酸合铁(III)酸钾的制备和结构表征",
+      "authors": "戴小敏 (Dai Xiaomin)",
+      "journal": "化学教育(中英文) (Chinese Journal of Chemical Education)",
+      "year": 2021,
+      "volume": 42,
+      "issue": 4,
+      "pages": "56-61",
+      "key_data": {
+        "methods": "Chemical synthesis, X-ray diffraction, IR spectroscopy, redox titration",
+        "data_type": "Crystal structure data, spectral data"
+      },
+      "findings": {
+        "procedure": "Comprehensive experiment: preparation + redox titration for composition + IR spectroscopy + XRD for structure + photochemical property investigation.",
+        "significance": "Trains students in combined synthesis-analysis-characterization skills."
+      }
+    },
+    {
+      "id": "BOSTICK_SULLIVAN",
+      "title": "All About Ferric Oxalate",
+      "source": "Bostick & Sullivan (bostick-sullivan.com, ca. 2010)",
+      "type": "Technical article (full text extracted from MHT)",
+      "key_data": {
+        "traditional_formula": "Fe2(C2O4)3·5H2O (ill-defined compound per Dr. Michael Ware)",
+        "well_defined_salts": "Ammonium ferric oxalate, sodium ferric oxalate, potassium ferric oxalate (double oxalates)",
+        "color_variation": "Golden amber (low oxalic acid) → yellow (moderate) → fluorescent green (high oxalic acid)"
+      },
+      "findings": {
+        "nature_of_ferric_oxalate": "Ferric oxalate is ill-defined; may form polymers. Different precipitation rates produce differing solubilities from the same batch.",
+        "free_oxalic_acid_test": "Add 1 drop 10-20% AgNO3 to 2 mL ferric oxalate solution. White precipitate (Ag2C2O4) indicates free oxalic acid.",
+        "ferrous_oxalate_test": "Potassium ferricyanide test (unreliable with EDTA). Better: fog test (coat paper, develop without exposure -- gray tint = bad).",
+        "dissolving_methods": "Cold water with periodic stirring (12-24 hr), microwave (10 sec zaps), or hotplate stirrer at ~140°F.",
+        "double_oxalate_recipes": "Na ferric oxalate: 6.7g ferric oxalate + 5.9g sodium oxalate + 40mL water. Li ferric oxalate: 6.7g ferric oxalate + 4.4g lithium oxalate + 40mL water (higher contrast, sharper brown).",
+        "ferric_oxalate_synthesis": "200g ferric ammonium sulfate in 300mL water + 100mL strong NH4OH → Fe(OH)3 gel precipitate. Wash gel, then react with oxalic acid."
+      }
+    },
+    {
+      "id": "AQU_2001",
+      "title": "三草酸合铁(III)酸钾的合成及结构组成测定",
+      "journal": "安庆师范学院学报(自然科学版)",
+      "year": 2001,
+      "volume": 7,
+      "issue": 4,
+      "pages": "13-16",
+      "doi": "10.3969/j.issn.1007-4260.2001.04.005",
+      "key_data": {
+        "starting_materials": "FeCl2 (ferrous chloride), NH4HCO3 (ammonium bicarbonate), H2C2O4 (oxalic acid), K2C2O4 (potassium oxalate), H2O2",
+        "methods": "Chemical synthesis + chemical analysis for composition and structure"
+      },
+      "findings": {
+        "significance": "Provides feasible preparation and composition determination protocol for inorganic chemistry experimental teaching."
+      }
+    },
+    {
+      "id": "FENG_2015",
+      "title": "三草酸根合铁(III)酸钾结晶方法比较和光致还原性验证",
+      "authors": "冯丽娟 (Feng Lijuan)",
+      "journal": "实验室科学 (Laboratory Science)",
+      "year": 2015,
+      "issue": 3,
+      "pages": "33-36",
+      "key_data": {
+        "crystallization_methods_compared": [
+          "Direct ethanol addition (shorter time)",
+          "Evaporative concentration (closer to emerald green color, more stable composition)"
+        ]
+      },
+      "findings": {
+        "comparison": "Ethanol method: faster crystallization. Evaporation method: more emerald green crystals, more stable product composition.",
+        "factors_affecting_product": "Temperature, concentration, reagent amounts all affect product properties, yield, and experimental phenomena.",
+        "photoreduction": "Simple experiment confirms photochemical reduction property of the product."
+      }
+    },
+    {
+      "id": "JIN_2023",
+      "title": "三草酸合铁酸钾改进制备及其光致还原性探究",
+      "authors": "晋昊 (Jin Hao)",
+      "journal": "广州化工 (Guangzhou Chemical Industry)",
+      "year": 2023,
+      "volume": 51,
+      "issue": 7,
+      "pages": "166-168",
+      "doi": "10.3969/j.issn.1001-9677.2023.07.049",
+      "key_data": {
+        "problems_addressed": "Low yield, small crystal size in traditional preparation",
+        "optimization_parameters": "Reaction temperature, crystallization method, ethanol amount"
+      },
+      "findings": {
+        "improvements": "Optimized preparation conditions improved product yield and crystal quality. Designed simple experiment to explore photoreduction property.",
+        "significance": "Suitable for basic chemistry experimental teaching."
+      }
+    },
+    {
+      "id": "PANG_2023",
+      "title": "废铁屑制备三草酸合铁酸钾虚实结合的综合化学实验设计",
+      "authors": "庞海丽 (Pang Haili)",
+      "journal": "大学化学 (University Chemistry)",
+      "year": 2023,
+      "volume": 38,
+      "issue": 11,
+      "pages": "187-194",
+      "doi": "10.3866/PKU.DXHX202303090",
+      "key_data": {
+        "starting_material": "废铁屑 (waste iron scrap)",
+        "methods": "Virtual simulation + hands-on experiment, chemical synthesis, composition determination, structure characterization"
+      },
+      "findings": {
+        "significance": "Waste iron → K3[Fe(C2O4)3]·3H2O. Virtual-actual combined experiment. Green chemistry + curriculum ideology."
+      }
+    },
+    {
+      "id": "ION_EXCHANGE_CHARGE",
+      "title": "综合化学实验：三草酸合铁(III)酸钾的合成研究及其配阴离子电荷数的测定",
+      "authors": "王春燕 (Wang Chunyan)",
+      "type": "Experimental teaching",
+      "key_data": {
+        "methods": "Chemical synthesis + ion exchange method for charge determination"
+      },
+      "findings": {
+        "method": "Uses ion exchange to determine the charge of the complex anion [Fe(C2O4)3]3-, confirming it is 3-."
+      }
+    },
+    {
+      "id": "WHUT_2004_ENTHALPY",
+      "title": "复盐草酸合Fe(III)Cu(II)酸钾标准生成焓的测定",
+      "journal": "武汉理工大学学报 (Journal of Wuhan University of Technology)",
+      "year": 2004,
+      "volume": 26,
+      "issue": 5,
+      "pages": "38-41",
+      "key_data": {
+        "method": "Dissolution-reaction calorimetry, Hess's law thermodynamic cycle"
+      },
+      "findings": {
+        "significance": "Determined standard molar formation enthalpy of the oxalate complex salt. Provides fundamental thermochemical data for oxalate complex systems."
+      }
+    },
+    {
+      "id": "OXALIC_ACID_QUANTUM",
+      "title": "草酸分子结构与性质的量子化学计算研究",
+      "journal": "西北师范大学学报(自然科学版)",
+      "year": 2006,
+      "volume": 41,
+      "issue": 3,
+      "pages": "58-62",
+      "key_data": {
+        "methods": "MP2, B3LYP, HF at 6-311++G** level; NBO analysis",
+        "conformers_found": "8 stable conformers and 5 transition states"
+      },
+      "findings": {
+        "significance": "Quantum chemical study of oxalic acid molecular structure. Provides theoretical basis for understanding oxalate ligand geometry in complexes."
+      }
+    },
+    {
+      "id": "ION_EXCHANGE_METHOD",
+      "title": "离子交换树脂的种类和性能",
+      "file": "Fe/中文/离子交换树脂的种类和性能.mht",
+      "type": "Reference material",
+      "findings": {
+        "significance": "Reference on ion exchange resin types and properties. Used in charge determination experiments for the ferrioxalate anion."
+      }
+    }
+  ],
+  "characterization_data_summary": {
+    "XRD_crystal_structure": {
+      "crystal_system": "Monoclinic",
+      "space_group": "P2(1)/n",
+      "coordination_geometry": "Octahedral",
+      "source_papers": ["Zhong_2017 (室温固相合成)", "Zhong_2016 (绿色合成)"]
+    },
+    "thermal_analysis_TGA_DTA": {
+      "decomposition_steps": "Dehydration step(s) followed by oxalate decomposition step(s)",
+      "source_papers": [
+        "复盐K3Fe(C2O4)3·3H2O的热分析研究 (Wuhan Textile Univ., 2003)",
+        "Cr(III),Fe(III),Al(III),Cu(II)草酸配合物热分析研究 (Northwest Univ., 2004)"
+      ],
+      "note": "Exact temperature ranges and activation energies not extracted (PDF files). Papers confirm multi-step decomposition: dehydration then oxalate ligand decomposition."
+    },
+    "magnetic_properties": {
+      "electronic_configuration": "Fe(III) d5, high-spin",
+      "unpaired_electrons": 5,
+      "spin_only_magnetic_moment": "≈ 5.92 BM",
+      "measurement_methods": "Gouy method (traditional), simplified magnet+balance method (JCE 2002), Evans NMR method",
+      "source_papers": [
+        "JCE1967p0142 - Magnetic Moment Measurement",
+        "JCE 2002, 79, 1002-1004 - Simple method with magnet+balance",
+        "The Synthesis, Chemistry and Magnetic Properties (BenchChem)",
+        "三草酸合铁酸钾的合成及磁化率的测定 (CNKI)"
+      ]
+    },
+    "IR_spectroscopy": {
+      "key_features": "Characteristic ν(C=O), ν(C-O), ν(Fe-O) bands. Oxalate coordination modes identifiable.",
+      "source_papers": [
+        "JCE 2005, 82, 1667 (holistic approach including IR)",
+        "Zhong_2017 (IR as part of characterization suite)",
+        "Zhong_2016 (IR as part of characterization suite)",
+        "Dai_2021 (IR as part of comprehensive experiment)"
+      ],
+      "note": "Exact IR peak positions not extracted from PDF files."
+    },
+    "UV_Vis_spectroscopy": {
+      "key_features": "Ligand-to-metal charge-transfer (LMCT) bands characteristic of Fe(III)-oxalate. The ferrioxalate ion gives a characteristic green color.",
+      "source_papers": [
+        "JCE 1995, 72, 936 (spectrophotometric Fe analysis)",
+        "JCE 2004, 81, 1193-1195 (stepwise equilibria by UV-Vis)",
+        "JCE 2005, 82, 1667 (holistic approach including UV-Vis)"
+      ]
+    },
+    "photochemical_properties": {
+      "reaction": "2[Fe(C2O4)3]3- + hν → 2[Fe(C2O4)2]2- + C2O4 2- + 2CO2",
+      "observation": "Green solution turns orange in sunlight (hours)",
+      "mechanism": "LMCT excitation → Fe(III) photoreduction to Fe(II) + CO2 release",
+      "application": "Chemical actinometer, cyanotype photography",
+      "source_papers": [
+        "Wikipedia (summary)",
+        "JCE 1974, 51, 129",
+        "Feng_2015 (光致还原性验证)",
+        "Jin_2023 (光致还原性探究)"
+      ]
+    },
+    "ion_exchange_charge_determination": {
+      "method": "Pass complex solution through cation exchange resin (H+ form), titrate eluted H+ to determine charge of complex anion.",
+      "charge_determined": "3- (confirms [Fe(C2O4)3]3-)",
+      "source_papers": [
+        "王春燕 - 综合化学实验 (ion exchange charge determination)",
+        "武瑞芳 - 思政实验 (ion exchange charge determination)",
+        "草酸合铁酸钾的制备及其离子电荷的测定"
+      ]
+    }
+  },
+  "synthesis_methods_comparison": {
+    "method_1_johnson_1970": {
+      "route": "Mohr's salt + H2O2 + oxalate → K3[Fe(C2O4)3]·3H2O",
+      "features": "Most common undergraduate method, reliable, well-documented",
+      "source": "JCE 1970, 47, 702"
+    },
+    "method_2_basulfate_precipitation": {
+      "route": "Fe2(SO4)3 + BaC2O4 + K2C2O4 → product + BaSO4↓",
+      "features": "Uses precipitation to drive reaction, filtration to remove BaSO4",
+      "source": "Wikipedia"
+    },
+    "method_3_wpi": {
+      "route": "FeCl3·6H2O + H2C2O4 + KOH (2:6.5:12 mmol ratio) in water",
+      "features": "Direct combination, recrystallization from water, crystallization in dark on ice",
+      "source": "WPI laboratory manual (extracted from MHT)"
+    },
+    "method_4_solid_state_zhong": {
+      "route": "K2C2O4 + FeCl3 (solid-solid, room temperature)",
+      "features": "Green synthesis, no solvent, room temperature, high yield, simple",
+      "source": "Zhong_2017 (分子科学学报)"
+    },
+    "method_5_green_synthesis_zhong": {
+      "route": "Mohr's salt + K2C2O4 + H2O2",
+      "features": "Mild conditions, high yield, low pollution, suitable for teaching",
+      "source": "Zhong_2016 (实验技术与管理)"
+    },
+    "method_6_waste_iron": {
+      "route": "废铁屑 (waste iron scrap) as starting material",
+      "features": "Green chemistry, waste resource utilization, virtual-actual combined",
+      "source": "Pang_2023 (大学化学)"
+    },
+    "method_7_fecl2_route": {
+      "route": "FeCl2 + NH4HCO3 + H2C2O4 + K2C2O4 + H2O2",
+      "features": "Alternative route using FeCl2 as iron source",
+      "source": "AQU_2001 (安庆师范学院学报)"
+    }
+  },
+  "notable_gaps_and_contradictions": {
+    "gap_exact_IR_peaks": "Exact IR absorption frequencies (cm-1) for K3[Fe(C2O4)3]·3H2O were not extracted. Papers mention IR characterization but peak assignments are in PDF files only.",
+    "gap_exact_TGA_temperatures": "Precise dehydration and decomposition onset temperatures not extracted. Papers confirm multi-step decomposition but exact values are in PDF files.",
+    "gap_XRD_pattern_peaks": "Exact XRD peak positions (2θ values) and lattice parameters not extracted. Crystal system confirmed as monoclinic P2(1)/n.",
+    "gap_magnetic_susceptibility_values": "Exact measured χg, χm, μeff values not extracted. Theoretical values are well-established (d5 high-spin: 5 unpaired electrons, μeff ~5.92 BM).",
+    "gap_UV_Vis_peak_wavelengths": "LMCT bands mentioned but exact λmax values not extracted from PDFs.",
+    "contradiction_ferric_oxalate_stoichiometry": "Bostick & Sullivan article notes ferric oxalate is 'ill-defined' (Dr. Michael Ware) and may polymerize, while the potassium salt K3[Fe(C2O4)3]·3H2O is well-defined. The simple ferric oxalate Fe2(C2O4)3·5H2O is traditional but not rigorously characterized.",
+    "contradiction_crystallization_method": "Feng_2015 notes ethanol precipitation gives faster crystallization but evaporation gives more stable, better-colored product. This may explain yield/quality variations reported across different lab manuals."
+  }
+}
