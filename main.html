@@ -274,13 +274,13 @@ code{font-family:"JetBrains Mono",Consolas,monospace;background:rgba(96,165,250,
 footer{margin-top:44px;text-align:center;color:var(--t3);font-size:12.5px;line-height:1.8}
 /* ===== 响应式 ===== */
 @media (max-width:1080px){
-  .manual-wrap{grid-template-columns:1fr}
+  .manual-wrap{grid-template-columns:minmax(0,1fr)}
   .toc{display:none}
   .toc-mobile{display:block}
-  .qgrid{grid-template-columns:repeat(2,1fr)}
+  .qgrid{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 @media (max-width:640px){
-  .qgrid{grid-template-columns:1fr}
+  .qgrid{grid-template-columns:minmax(0,1fr)}
   .banner{padding:26px 22px}.banner h1{font-size:22px}
   .chapter{padding:24px 20px}
   .ch-head h2{font-size:19px}
@@ -290,6 +290,12 @@ footer{margin-top:44px;text-align:center;color:var(--t3);font-size:12.5px;line-h
   .role-badge .rname{display:none}
   .switch-btn{padding:6px 10px}
   .notice{margin:14px 14px 0}
+  .page,.manual-wrap,.chapter,.sec,.sec-body,.sec-meta,.sec-meta .src{min-width:0}
+  .chapter,.sec-body,.sec-body p,.sec-body li,.ch-summary{overflow-wrap:anywhere;word-break:break-word}
+  .fx{white-space:normal;overflow-wrap:anywhere}
+  .fx-block{white-space:normal;overflow-wrap:anywhere}
+  .sec-meta .src{overflow-wrap:anywhere}
+  footer{padding:0 14px}
 }
 </style>
 </head>

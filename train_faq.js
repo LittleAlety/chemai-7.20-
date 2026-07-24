@@ -11,7 +11,7 @@ function readJSON(fp) {
   return JSON.parse(r);
 }
 
-const FAQ = readJSON(path.join(__dirname, 'data', 'faq_auto.json'));
+const FAQ = readJSON(path.join(__dirname, 'data', 'faq_unified.json'));
 
 // Question patterns to add for different FAQ topics
 const QUESTION_PATTERNS = {
@@ -115,7 +115,7 @@ for (const entry of FAQ) {
 
 // Write enriched FAQ
 fs.writeFileSync(
-  path.join(__dirname, 'data', 'faq_auto.json'),
+  path.join(__dirname, 'data', 'faq_unified.json'),
   JSON.stringify(FAQ, null, 2),
   'utf8'
 );

@@ -1,4 +1,4 @@
-// Cleanly add FAQ entries from faq_auto.json into assistant.html
+// Cleanly add FAQ entries from faq_unified.json into assistant.html
 const fs = require('fs');
 const path = require('path');
 
@@ -8,7 +8,7 @@ cp.execSync('git checkout 9067dae -- assistant.html', {cwd: __dirname});
 
 // Read files
 let html = fs.readFileSync(path.join(__dirname, 'assistant.html'), 'utf8');
-let faqRaw = fs.readFileSync(path.join(__dirname, 'data', 'faq_auto.json'), 'utf8');
+let faqRaw = fs.readFileSync(path.join(__dirname, 'data', 'faq_unified.json'), 'utf8');
 if (faqRaw.charCodeAt(0) === 0xFEFF) faqRaw = faqRaw.slice(1);
 const faqEntries = JSON.parse(faqRaw);
 

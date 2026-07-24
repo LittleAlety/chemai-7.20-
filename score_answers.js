@@ -41,7 +41,7 @@ if (!fs.existsSync(questionFile)) {
 const QUESTION_DATA = readJSON(questionFile);
 const QUESTIONS = Array.isArray(QUESTION_DATA) ? QUESTION_DATA : (QUESTION_DATA.questions || []);
 const KB = readJSON(path.join(__dirname, 'data', 'kb.json'));
-const FAQ = readJSON(path.join(__dirname, 'data', 'faq_auto.json'));
+const FAQ = readJSON(path.join(__dirname, 'data', 'faq_unified.json'));
 
 console.log('='.repeat(70));
 console.log('LLM-as-Judge Scoring System');

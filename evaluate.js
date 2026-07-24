@@ -14,7 +14,7 @@ function readJSON(fp) {
 }
 
 const KB_DATA = readJSON(path.join(__dirname, 'data', 'kb.json'));
-const AUTO_FAQ = readJSON(path.join(__dirname, 'data', 'faq_auto.json'));
+const AUTO_FAQ = readJSON(path.join(__dirname, 'data', 'faq_unified.json'));
 const round = process.argv[2] || '2';
 const QUESTIONS = readJSON(path.join(__dirname, 'test_questions_round' + round + '.json'));
 

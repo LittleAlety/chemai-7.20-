@@ -4,8 +4,8 @@
 const fs = require('fs');
 const path = require('path');
 
-// Read faq_auto.json
-let faqRaw = fs.readFileSync(path.join(__dirname, 'data', 'faq_auto.json'), 'utf8');
+// Read faq_unified.json (consolidated FAQ collection)
+let faqRaw = fs.readFileSync(path.join(__dirname, 'data', 'faq_unified.json'), 'utf8');
 if (faqRaw.charCodeAt(0) === 0xFEFF) faqRaw = faqRaw.slice(1);
 const faqEntries = JSON.parse(faqRaw);
 
